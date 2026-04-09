@@ -21,8 +21,8 @@ catalog and lookup instructions.
 
 **Key files:**
 
-- `cite.py` — resolves compact bracket-form citations
-  (`[[LIA.10.§1.II]]`) directly to article rows. The bridge between
+- `cite.py` — resolves compact backtick-form citations
+  (``LIA.10.§1.II``) directly to article rows. The bridge between
   the prose reference (`../*.md`) and the database.
 - `lookup.py` — CLI for querying the article DB by apelido + article
   + path, with date-versioned and source-versioned options.
@@ -86,7 +86,7 @@ bugs):
 ## Why these tools live in this repo
 
 The institutions reference cites statutes inline using the compact
-bracket form `[[apelido.artigo.path]]` (see `../CLAUDE.md`). To make
+backtick form ``apelido.artigo.path`` (see `../CLAUDE.md`). To make
 those citations resolvable, the schema and lookup tooling must be
 discoverable from the same place. Shipping the code here keeps the
 contract local: the format used in the prose is the format the tools

@@ -371,7 +371,7 @@ fixed, prevenção persists across appeals.
 **Mechanism**: clarified that the câmara municipal — not the TCE — is
 the competent body for judging contas de prefeito for purposes of
 Ficha Limpa ineligibility. After Tema 157, the câmara vote became the
-single decision point for inelegibilidade under [[LI.1.I.g]].
+single decision point for inelegibilidade under `LI.1.I.g`.
 
 **Identifies**: effects of legal salience on câmara behavior. Pre-Tema
 157, the câmara vote was politically meaningful but the legal stakes

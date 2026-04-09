@@ -36,7 +36,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 
 - CADE imposes administrative fines (Lei 12.529/2011 Art. 37, up to
   20% of revenue) under an administrative process.
-- Criminal cartel prosecution runs separately, under [[LCOT.4]]
+- Criminal cartel prosecution runs separately, under `LCOT.4`
   (Lei 8.137/1990 Art. 4), in criminal courts.
 - Improbidade against the public officials who facilitated the
   cartel is yet another track, in civil courts.
@@ -85,7 +85,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
   follow it.
 - Câmara override of the TCE requires a **2/3 supermajority** (CF
   Art. 31 §2).
-- Ineligibility under [[LI.1.I.g]] (Ficha Limpa) requires the câmara
+- Ineligibility under `LI.1.I.g` (Ficha Limpa) requires the câmara
   to vote to **reject** the accounts. Omission (câmara never votes)
   also does not generate ineligibility — "inadmissível o julgamento
   ficto das contas por decurso de prazo".
@@ -252,7 +252,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - **Lei 14.133/2021** (Nova Lei de Licitações) replaces Lei 8.666,
   Lei 10.520/2002 (pregão), and Lei 12.462/2011 (RDC).
 - **Transition period**: municipalities could choose old or new
-  regime until **30 December 2023** ([[L14133.191]]). After that
+  regime until **30 December 2023** (`L14133.191`). After that
   date, Lei 14.133 is mandatory.
 - **For historical analysis** (pre-2024 conduct), Lei 8.666 is the
   relevant statute. For current operations and any post-2024
@@ -376,13 +376,13 @@ the "❌" forms below, switch to the corresponding "✓" form.
 
 ## Citations and database lookups
 
-### ❌ "[[Lei 8.429/1992 Art. 9]] is the canonical citation form"
-### ✓ Use the compact apelido form: [[LIA.9]]
+### ❌ "`Lei 8.429/1992 Art. 9` is the canonical citation form"
+### ✓ Use the compact apelido form: `LIA.9`
 
-- The canonical bracket form for cataloged laws uses the apelido,
+- The canonical backtick form for cataloged laws uses the apelido,
   not the long name. `LIA` is the apelido for Lei 8.429/1992.
-- Long form `[[Lei 13.709/2018 Art. 7]]` is reserved for **non-cataloged**
-  laws (and even then, the canonical fonte_id form `[[L13709-2018.7]]`
+- Long form ``Lei 13.709/2018 Art. 7`` is reserved for **non-cataloged**
+  laws (and even then, the canonical fonte_id form ``L13709-2018.7``
   is preferred).
 - See [`CLAUDE.md`](CLAUDE.md) "Citing statutes" section and
   [`leis_index.yaml`](leis_index.yaml) for the apelido catalog.

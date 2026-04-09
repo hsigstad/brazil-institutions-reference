@@ -9,8 +9,8 @@ This convention is used by:
 
 - The `artigo` table of the article-level law database (`artigos.db`).
 - The compact citation form documented in `../../CLAUDE.md`
-  (e.g., `[[LIA.10.§1.II]]`, where `§1.II` is the path).
-- `cite.py` for parsing bracket-form citations.
+  (e.g., ``LIA.10.§1.II``, where `§1.II` is the path).
+- `cite.py` for parsing backtick-form citations.
 
 ## Strict syntax
 

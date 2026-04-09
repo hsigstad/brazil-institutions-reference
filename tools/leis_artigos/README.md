@@ -5,7 +5,7 @@ each row is one **leaf** of an article (caput, parágrafo, inciso,
 alínea, item) with its current text, amendment history, and
 date-versioned tracking.
 
-This is the lookup backend for the compact bracket-form citations
+This is the lookup backend for the compact backtick-form citations
 used throughout the institutions reference. See
 [`../../CLAUDE.md`](../../CLAUDE.md) (section "Citing statutes")
 for the citation format.
@@ -21,10 +21,10 @@ If you just want to look up exact statutory text:
 3. **Query**:
 
    ```bash
-   # Resolve a bracket-form citation
-   python3 cite.py '[[LIA.10.§1.II]]'
-   python3 cite.py '[[LE.11.§10@2024-12-31]]'
-   python3 cite.py '[[LIA.10 from:L14230-2021]]'
+   # Resolve a backtick-form citation
+   python3 cite.py '`LIA.10.§1.II`'
+   python3 cite.py '`LE.11.§10@2024-12-31`'
+   python3 cite.py '`LIA.10 from:L14230-2021`'
 
    # Or use the lower-level lookup CLI
    python3 lookup.py LIA 9
@@ -85,7 +85,7 @@ consolidated targets).
 
 ## Catalog (as of 2026)
 
-37 laws cataloged. Apelidos used in the bracket-form citations:
+37 laws cataloged. Apelidos used in the backtick-form citations:
 
 | apelido | lei | scope |
 |---|---|---|
@@ -132,31 +132,31 @@ in [`../../leis_index.yaml`](../../leis_index.yaml).
 
 ## CLI tools
 
-### `cite.py` — resolve bracket-form citations
+### `cite.py` — resolve backtick-form citations
 
 The bridge between prose and database. Takes a citation string in the
-canonical bracket form documented in `../../CLAUDE.md` and runs the
+canonical backtick form documented in `../../CLAUDE.md` and runs the
 corresponding SQL query.
 
 ```bash
 # Default form: current version
-python3 cite.py '[[LIA.9]]'
-python3 cite.py '[[LIA.9.§1.II]]'
+python3 cite.py '`LIA.9`'
+python3 cite.py '`LIA.9.§1.II`'
 
 # Date-versioned
-python3 cite.py '[[LE.11.§10@2024-12-31]]'
+python3 cite.py '`LE.11.§10@2024-12-31`'
 
 # Source-versioned
-python3 cite.py '[[LIA.10 from:L14230-2021]]'
+python3 cite.py '`LIA.10 from:L14230-2021`'
 
 # Original version shorthand
-python3 cite.py '[[LIA.10:original]]'
+python3 cite.py '`LIA.10:original`'
 
 # Whole law
-python3 cite.py '[[LIA]]'
+python3 cite.py '`LIA`'
 
 # Just parse, don't query
-python3 cite.py --parse-only '[[LIA.17-A.caput]]'
+python3 cite.py --parse-only '`LIA.17-A.caput`'
 
 # Find all citations in a file
 python3 cite.py --find-in ../../improbidade.md

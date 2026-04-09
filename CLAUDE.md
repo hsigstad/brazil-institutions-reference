@@ -27,6 +27,8 @@ indices are designed to surface the right topical file in one grep:
 | [`glossario.md`](glossario.md) | You hit a Portuguese legal term you might be misreading (*acórdão*, *súmula vinculante*, *prevenção*, *parecer prévio*, *contas de governo* vs *gestão*) |
 | [`leis_index.yaml`](leis_index.yaml) | You need metadata about a specific law (status: vigente / parcialmente revogada / revogada; key articles; topics; files where discussed). Bridges to article-level law databases when available. |
 | [`jurisprudencia-stf.md`](jurisprudencia-stf.md) | You need the canonical description of an STF case (Tema 157, Tema 1199, ADI 4650, ADI 5766, ADPF 982, HC 126.292, etc.) — described once here, cross-referenced from topical files |
+| [`jurisprudencia_index.yaml`](jurisprudencia_index.yaml) | You need structured metadata about a case: status (vigente / superada / parcialmente_superada / modulada), supersession chain, theme, files where discussed. Resolvable via ``Tema1199``-style citations through `cite.py`. |
+| [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml) | You need the verbatim text of an STF Súmula Vinculante (all 63, scraped from the STF portal). Resolvable via ``SV14``-style citations through `cite.py`. |
 | [`README.md`](README.md) | The full topical file index, organized by section |
 
 After consulting an index, **read the relevant topical file** for the
@@ -54,27 +56,35 @@ Files are designed for grep-first reading. Useful patterns:
 ## Citing statutes — the canonical compact form
 
 This repository uses a canonical citation format that is designed to
-**resolve directly against an article-level law database** (currently
-in development under `tools/leis_artigos/`, with the database file
-shipped separately). Following the format consistently is the contract
-between the prose reference and the lookup tool.
+**resolve directly against an article-level law database** under
+`tools/leis_artigos/` (database file shipped separately). Following
+the format consistently is the contract between the prose reference
+and the lookup tool.
 
 The format is intentionally compact: most citations are 5–15
-characters inside the brackets.
+characters between the backticks.
 
 ### Form
 
+Citations are wrapped in single backticks so they render as inline
+code (monospace) on github.com and remain a single, distinctive
+greppable token:
+
 ```
-[[<identifier>.<artigo>[-<letra>][.<path>][<modifier>]]]
+`<identifier>.<artigo>[-<letra>][.<path>][<modifier>]`
 ```
 
-- **Double brackets** distinguish resolvable citations from inline
-  prose mentions and from regular markdown link syntax `[text](url)`.
+- **Single backticks** wrap every resolvable citation. The contract
+  for the resolver is "inline-code spans whose contents start with a
+  known apelido or fonte_id"; non-citation inline code (file paths,
+  function names, ordinary technical strings) is silently ignored
+  by the parser. The apelido catalog in `leis_index.yaml` is the
+  source of truth for what counts as a citation.
 - **Dot is the universal separator** between identifier, article,
   and path. The hyphen is reserved for article letters
   (e.g., `17-A`), so paths and article letters never collide.
-- **Most parts are optional** — citing just the law (`[[LIA]]`) or
-  just the article (`[[LIA.9]]`) is valid.
+- **Most parts are optional** — citing just the law (`LIA`) or
+  just the article (`LIA.9`) is valid.
 
 ### Identifier
 
@@ -120,24 +130,24 @@ the source identifier itself contains a hyphen.
 ### Examples
 
 ```
-[[LIA.9]]                          ← whole article, all current paths
-[[LIA.9.§1.II]]                    ← specific leaf, current
-[[LIA.17-A]]                       ← article with letter
-[[LIA.17-A.caput]]                 ← caput of Art. 17-A
-[[LIA.17-A.§1.II.a]]               ← alínea a of inciso II of § 1 of Art. 17-A
-[[LE.28.§1]]                       ← § 1 of Art. 28 of Lei das Eleições
-[[LE.11.§10@2024-12-31]]           ← § 10 before LC 219/2025 revoked it
-[[L14133.75.II]]                   ← inciso II of Art. 75 of Nova Lei de Licitações
-[[L13709-2018.7]]                  ← Art. 7 of Lei 13.709/2018 (LGPD; non-cataloged)
-[[LI.1.I.g]]                       ← Lei das Inelegibilidades Art. 1 I g (Ficha Limpa contas)
-[[CF.31.§2]]                       ← Constituição Art. 31 § 2
-[[CP.312]]                         ← Código Penal Art. 312
-[[LIA.11.§unico@2020-06-01]]       ← what § único said in mid-2020
-[[LIA.10 from:L14230-2021]]        ← Art. 10 as rewritten by the 2021 reform
-[[LIA.10:original]]                ← original 1992 wording of Art. 10
-[[LIA.ementa]]                     ← the law's preamble
-[[LIA]]                            ← refer to the law as a whole
-[[L14230-2021]]                    ← refer to a non-cataloged amending law as an entity
+`LIA.9`                          ← whole article, all current paths
+`LIA.9.§1.II`                    ← specific leaf, current
+`LIA.17-A`                       ← article with letter
+`LIA.17-A.caput`                 ← caput of Art. 17-A
+`LIA.17-A.§1.II.a`               ← alínea a of inciso II of § 1 of Art. 17-A
+`LE.28.§1`                       ← § 1 of Art. 28 of Lei das Eleições
+`LE.11.§10@2024-12-31`           ← § 10 before LC 219/2025 revoked it
+`L14133.75.II`                   ← inciso II of Art. 75 of Nova Lei de Licitações
+`L13709-2018.7`                  ← Art. 7 of Lei 13.709/2018 (LGPD; non-cataloged)
+`LI.1.I.g`                       ← Lei das Inelegibilidades Art. 1 I g (Ficha Limpa contas)
+`CF.31.§2`                       ← Constituição Art. 31 § 2
+`CP.312`                         ← Código Penal Art. 312
+`LIA.11.§unico@2020-06-01`       ← what § único said in mid-2020
+`LIA.10 from:L14230-2021`        ← Art. 10 as rewritten by the 2021 reform
+`LIA.10:original`                ← original 1992 wording of Art. 10
+`LIA.ementa`                     ← the law's preamble
+`LIA`                            ← refer to the law as a whole
+`L14230-2021`                    ← refer to a non-cataloged amending law as an entity
 ```
 
 ### Citing amendment events
@@ -147,35 +157,35 @@ amending lei touched which clause, but **citations don't need a
 separate amendment-event syntax**. Express the change as a combination
 of leaf citations + amending-law citations:
 
-> The 2021 reform [[L14230-2021]] rewrote [[LIA.10]] and eliminated
-> culposa improbidade. Pre-reform, [[LIA.10:original]] permitted both
+> The 2021 reform `L14230-2021` rewrote `LIA.10` and eliminated
+> culposa improbidade. Pre-reform, `LIA.10:original` permitted both
 > intentional and negligent conduct; post-reform,
-> [[LIA.10 from:L14230-2021]] requires proof of dolo.
+> `LIA.10 from:L14230-2021` requires proof of dolo.
 
 When you need to query the amendment table directly (e.g., "what did
 L14230-2021 touch?"), use the lookup tool with `--by-amending`
 flag — but the prose stays in leaf-citation form.
 
-### When to use the bracket form vs prose mention
+### When to use the backtick form vs prose mention
 
-- **Use the bracket form** when you want a *resolvable* citation —
+- **Use the backtick form** when you want a *resolvable* citation —
   one that points to a specific row (or query) in the database. This
   is most useful when discussing a specific clause's text, comparing
   versions, or anchoring a claim to the precise statutory language.
 - **Use prose mention** ("Lei 8.429/1992 Art. 9", "the 2021 reform")
   for narrative references that don't need to resolve to a specific
   database row.
-- **Both styles can coexist in the same paragraph.** The bracket form
+- **Both styles can coexist in the same paragraph.** The backtick form
   is opt-in; existing topical files mostly use prose mentions and
   that's fine.
 
 ### Migration policy
 
-- Don't sweep existing files to convert prose mentions to bracket
+- Don't sweep existing files to convert prose mentions to backtick
   form. That's high-effort and low-value.
 - When you *touch* a topical file for other reasons, you may
   opportunistically convert the most prominent statutory anchors to
-  bracket form — particularly for the four cataloged laws.
+  backtick form — particularly for the four cataloged laws.
 - When a new law gets cataloged, its apelido is added to
   `leis_index.yaml` and topical files can reference it with the new
   apelido.
@@ -192,6 +202,128 @@ flag — but the prose stays in leaf-citation form.
 - For ambiguity (`CC` could be Código Civil 2002 or Código Comercial
   1850), the first cataloged law gets the apelido and conflicts are
   resolved with a year suffix (`CC2002`, `CC1850`).
+
+## Citing jurisprudência — backtick form for cases
+
+The same backtick grammar also accepts STF (and selected STJ) case
+identifiers. These resolve against
+[`jurisprudencia_index.yaml`](jurisprudencia_index.yaml) via the same
+`cite.py` tool used for statutes.
+
+### Form
+
+```
+`<case-id>`
+```
+
+`<case-id>` is the case's classe prefix concatenated with its number,
+no spaces, no dots:
+
+```
+`Tema1199`      ← repercussão geral Tema 1199
+`Tema157`       ← repercussão geral Tema 157
+`ADI4650`       ← ADI 4650
+`ADC43`         ← ADC 43 (compound — also covers ADC 44 and 54 via aliases)
+`ADPF982`       ← ADPF 982
+`HC126292`      ← HC 126.292
+`ARE652777`     ← ARE 652.777
+`ARE843989`     ← alias for Tema 1199; resolves to the same entry
+```
+
+Recognized prefixes: `Tema`, `ADI`, `ADC`, `ADPF`, `ADO`, `RE`, `ARE`,
+`AI`, `HC`, `RHC`, `MS`, `RMS`, `MI`, `MC`, `Rcl`, `Pet`, `Inq`, `AP`,
+`AR`, `ACO`. A second pattern accepts compound named keys ending in a
+4-digit year (e.g., `LulaMoro2021`) for joint-trial entries that don't
+fit the prefix grammar.
+
+### What lookup returns
+
+Each entry in the YAML index carries:
+
+- **id, tipo, processo / processos, aliases** — identification
+- **decidido, relator, votacao, tese_certificada** — provenance
+- **tema, holding_short** — what the case is about
+- **status** — `vigente`, `superada`, `parcialmente_superada`,
+  `modulada`. Always check this before relying on a case as good law.
+- **supera, superado_por, complementa, complementado_por** —
+  supersession and complementarity chains. Lets you trace whether a
+  citation has been overruled (e.g., `HC126292` has
+  `superado_por: ADC43`).
+- **discussed_in, related_leis** — cross-references to topical files
+  and to `leis_index.yaml` apelidos.
+- **fonte** — link to the STF portal or other authoritative source.
+
+### When to use backtick form vs prose mention
+
+Same policy as for statute citations:
+
+- **Use the backtick form** when you want a *resolvable* citation —
+  one that points to a structured entry, particularly when you want to
+  signal "still good law" or anchor a claim to the canonical case.
+- **Use prose mention** ("Tema 1199", "the 2019 reversal of execução
+  provisória") for narrative references.
+- **The substantive prose description stays in
+  `jurisprudencia-stf.md`.** The YAML index is metadata, not a
+  duplicate of the case description.
+
+## Citing Súmulas Vinculantes — backtick form for SVs
+
+The backtick grammar also accepts STF Súmulas Vinculantes by number,
+resolved against [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml)
+through `cite.py`. The YAML stores the **verbatim enunciado** as
+published by STF, so a lookup returns the exact text — no
+paraphrasing, no transcription risk.
+
+### Form
+
+```
+`SV<number>`
+```
+
+```
+`SV14`    ← acesso amplo da defesa aos elementos de prova
+`SV13`    ← nepotismo
+`SV37`    ← atualização monetária / honorários
+`SV47`    ← natureza alimentar dos honorários
+`SV9`     ← (cancelada — verifique status antes de citar)
+```
+
+### What lookup returns
+
+- **numero** — the SV number
+- **enunciado** — the verbatim text as published by STF
+- **status** — `vigente`, `cancelada`, or `revogada`
+- **fonte** — canonical STF portal URL
+- **publicacao** — DOU/DJE date (currently null for most entries; not
+  auto-extracted from the STF portal — fill by hand when known)
+
+### Coverage and policy
+
+- All **63** STF Súmulas Vinculantes are present (the closed set as
+  of the 2026-04-09 scrape). SV 9 is the only one currently
+  `cancelada`.
+- Súmulas vinculantes are a closed, small, high-importance set —
+  binding under CF Art. 103-A. Worth bulk collection.
+- **Ordinary súmulas (STF, STJ, TST, TSE)** are *not* bulk-collected.
+  When a topical file cites one (e.g., Súmula STJ 568), add an entry
+  by hand at that point. The reference repo's job is making *cited*
+  things resolvable, not mirroring all of Brazilian jurisprudence.
+- When STF cancels or revokes a SV, update the YAML entry's `status`
+  field and add a `nota` line explaining the change. Do not delete the
+  entry — superseded SVs remain citable for historical analysis.
+
+### When to add a new case
+
+When a topical file cites a previously-unseen STF case:
+
+1. Add the substantive description to `jurisprudencia-stf.md` (one
+   canonical entry per case).
+2. Add a structured entry to `jurisprudencia_index.yaml` keyed by
+   the canonical backtick-form id.
+3. Set `status` honestly. If the case has been overruled, set
+   `status: superada` and fill `superado_por`.
+4. Cross-reference both ways: `discussed_in` in the YAML, and a
+   `Cited in:` line in `jurisprudencia-stf.md`.
 
 ## When you make changes
 

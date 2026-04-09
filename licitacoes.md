@@ -23,14 +23,14 @@ cartel enforcement in Brazil.
 Governed virtually all Brazilian public procurement for nearly three decades.
 Still the relevant statute for historical (pre-2021) analysis.
 
-### Modalities ([[L8666.22]])
+### Modalities (`L8666.22`)
 
 Five modalities, each defined by value thresholds and procedural requirements:
 
-- **Convite** ([[L8666.23.I.a]] / [[L8666.23.II.a]]): engineering up to
+- **Convite** (`L8666.23.I.a` / `L8666.23.II.a`): engineering up to
   R$150,000; goods/services up to R$80,000. Minimum 3 invited firms
-  ([[L8666.22.§3]]).
-- **Tomada de preços** ([[L8666.23.I.b]] / [[L8666.23.II.b]]): engineering
+  (`L8666.22.§3`).
+- **Tomada de preços** (`L8666.23.I.b` / `L8666.23.II.b`): engineering
   up to R$1,500,000; goods/services up to R$650,000. Requires prior
   cadastro.
 - **Concorrência**: above tomada de preços thresholds; open to all.
@@ -39,49 +39,49 @@ Five modalities, each defined by value thresholds and procedural requirements:
 
 Thresholds updated by Decreto 9.412/2018.
 
-### Award criteria ([[L8666.45]])
+### Award criteria (`L8666.45`)
 
 - **Menor preço** (lowest price) — default.
 - Melhor técnica; técnica e preço; maior lance (for leilões).
 
-### Publication requirements ([[L8666.21]])
+### Publication requirements (`L8666.21`)
 
 Diário Oficial, newspapers; varies by modality and value. Creates the paper
 trail exploited in Audesp / TCE-SP datasets.
 
-### Contract amendments ([[L8666.65]])
+### Contract amendments (`L8666.65`)
 
 Permitted up to **25% of original value** (50% for construction renovations,
-[[L8666.65.§1]]). Frequent vehicle for ex-post price adjustments.
+`L8666.65.§1`). Frequent vehicle for ex-post price adjustments.
 
-### Dispensa de licitação ([[L8666.24]])
+### Dispensa de licitação (`L8666.24`)
 
 Enumerated exceptions where competitive bidding is not required:
 
-- [[L8666.24.I]]: works/engineering below R$15,000 (original threshold).
-- [[L8666.24.II]]: purchases/services below R$8,000 (original threshold).
-- [[L8666.24.IV]]: emergency situations.
-- [[L8666.24.V]]: no bidders appeared (*deserto*).
+- `L8666.24.I`: works/engineering below R$15,000 (original threshold).
+- `L8666.24.II`: purchases/services below R$8,000 (original threshold).
+- `L8666.24.IV`: emergency situations.
+- `L8666.24.V`: no bidders appeared (*deserto*).
 
 Dispensations and inexigibilidade are frequently cited in improbidade cases
 as mechanisms for directing contracts without competition.
 
-### Inexigibilidade ([[L8666.25]])
+### Inexigibilidade (`L8666.25`)
 
 When competition is objectively infeasible: sole source, artistic services,
 specialized professionals.
 
-### Anti-fracionamento rule ([[L8666.23.§5]])
+### Anti-fracionamento rule (`L8666.23.§5`)
 
 Prohibits splitting works or services of the same nature that could be
 performed simultaneously or successively to circumvent modality thresholds.
-[[L14133.75.§1]] strengthens this by requiring agencies to sum all
+`L14133.75.§1` strengthens this by requiring agencies to sum all
 expenditures for objects of the same nature within a fiscal year.
 
 ### Criminal provisions (Arts. 89–98)
 
-Crimes specific to procurement: fraud in bidding ([[L8666.90]]), unlawful
-dispensation ([[L8666.89]]), obstruction of competition ([[L8666.95]]).
+Crimes specific to procurement: fraud in bidding (`L8666.90`), unlawful
+dispensation (`L8666.89`), obstruction of competition (`L8666.95`).
 
 ---
 
@@ -97,14 +97,14 @@ dispensation ([[L8666.89]]), obstruction of competition ([[L8666.95]]).
 
 ---
 
-## [[L14133]] — Nova Lei de Licitações
+## `L14133` — Nova Lei de Licitações
 
-- Replaces [[L8666]], [[LP]] (Lei do Pregão), and the RDC ([[RDC]]).
+- Replaces `L8666`, `LP` (Lei do Pregão), and the RDC (`RDC`).
 - **Transition period:** municipalities could choose old or new regime until
-  December 30, 2023 ([[L14133.191]]). After that date, [[L14133]] is mandatory.
+  December 30, 2023 (`L14133.191`). After that date, `L14133` is mandatory.
 - New modality: **diálogo competitivo** added.
-- **Dispensa thresholds** ([[L14133.75]]): works/engineering up to R$100,000
-  ([[L14133.75.I]]); goods/other services up to R$50,000 ([[L14133.75.II]]).
+- **Dispensa thresholds** (`L14133.75`): works/engineering up to R$100,000
+  (`L14133.75.I`); goods/other services up to R$50,000 (`L14133.75.II`).
   Values updated annually via Decree. Significantly higher than L8666
   thresholds.
 - Strengthened integrity requirements: compliance programs, risk matrices.

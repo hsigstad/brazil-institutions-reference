@@ -67,10 +67,10 @@ answer lives.
 → [`improbidade.md`](improbidade.md) §2; [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §1 (Tema 1199 retroactivity).
 
 **Q. What are the three categories of improbidade?**
-→ [`improbidade.md`](improbidade.md) §1: enriquecimento ilícito ([[LIA.9]]), prejuízo ao erário ([[LIA.10]]), violação de princípios ([[LIA.11]]).
+→ [`improbidade.md`](improbidade.md) §1: enriquecimento ilícito (`LIA.9`), prejuízo ao erário (`LIA.10`), violação de princípios (`LIA.11`).
 
 **Q. Who has standing to bring improbidade actions after 2021?**
-→ [[LIA.17]]: only the **Ministério Público** (post-Lei 14.230/2021). Public entities lost initiating standing.
+→ `LIA.17`: only the **Ministério Público** (post-Lei 14.230/2021). Public entities lost initiating standing.
 
 **Q. Is improbidade ressarcimento subject to prescription?**
 → [`improbidade.md`](improbidade.md) §1: STF Tema 897 holds that ressarcimento for **dolosa** improbidade is **imprescritível**; declaratory and sanction components remain subject to prescription.
@@ -80,7 +80,7 @@ answer lives.
 ## Mayoral accounts and Ficha Limpa
 
 **Q. How does Ficha Limpa work?**
-→ [`contas-municipais.md`](contas-municipais.md) §3; [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §7. Statute: [[LI.1.I.g]] amended by [[LFL]].
+→ [`contas-municipais.md`](contas-municipais.md) §3; [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §7. Statute: `LI.1.I.g` amended by `LFL`.
 
 **Q. Who decides if a mayor's accounts are rejected for Ficha Limpa purposes?**
 → The câmara municipal, not the TCE. See [`contas-municipais.md`](contas-municipais.md) §§2–3 and [`pitfalls.md`](pitfalls.md) "Mayoral accounts". STF Tema 157.
@@ -124,13 +124,13 @@ answer lives.
 ## Procurement
 
 **Q. What's the current procurement law in Brazil?**
-→ [`licitacoes.md`](licitacoes.md). [[L14133]] is current; transition from [[L8666]] ended 30 December 2023.
+→ [`licitacoes.md`](licitacoes.md). `L14133` is current; transition from `L8666` ended 30 December 2023.
 
 **Q. What are the procurement modalities?**
 → [`licitacoes.md`](licitacoes.md) §"Modalities". Concorrência, tomada de preços, convite, concurso, leilão (Lei 8.666); pregão (Lei 10.520); diálogo competitivo (Lei 14.133).
 
 **Q. What is dispensa de licitação?**
-→ [`licitacoes.md`](licitacoes.md) §"Dispensa de licitação". [[L8666.24]], [[L14133.75]].
+→ [`licitacoes.md`](licitacoes.md) §"Dispensa de licitação". `L8666.24`, `L14133.75`.
 
 **Q. How does CADE handle bid-rigging cartels?**
 → [`licitacoes.md`](licitacoes.md) §"CADE and cartel enforcement"; CADE *Guia de Combate a Cartéis em Licitação* (2019) for detailed typology.
@@ -225,7 +225,7 @@ answer lives.
 → [`transparencia-dados.md`](transparencia-dados.md) §§2, 4. Judicial transparency has its own regime; LGPD applies but with public-interest legal basis.
 
 **Q. Can researchers process personal data without consent under LGPD?**
-→ [`transparencia-dados.md`](transparencia-dados.md) §2 ("Research-specific exemption"). Yes, under [[LGPD.7]] IV (research entities) and [[LGPD.11]] II c (sensitive data for research).
+→ [`transparencia-dados.md`](transparencia-dados.md) §2 ("Research-specific exemption"). Yes, under `LGPD.7` IV (research entities) and `LGPD.11` II c (sensitive data for research).
 
 **Q. Where is federal procurement data published?**
 → [`transparencia-dados.md`](transparencia-dados.md) §3. Comprasnet (compras.gov.br), Painel de Compras.
@@ -267,10 +267,10 @@ answer lives.
 ## Citations and the article DB
 
 **Q. How do I cite a specific article in the prose?**
-→ [`CLAUDE.md`](CLAUDE.md) "Citing statutes". Use the compact bracket form `[[apelido.artigo.path]]`, e.g., `[[LIA.10.§1]]`, `[[L8666.23.I.a]]`, `[[LE.36-A]]`.
+→ [`CLAUDE.md`](CLAUDE.md) "Citing statutes". Use the compact backtick form ``apelido.artigo.path``, e.g., ``LIA.10.§1``, ``L8666.23.I.a``, ``LE.36-A``.
 
 **Q. How do I look up an exact statutory text?**
-→ [`tools/leis_artigos/README.md`](tools/leis_artigos/README.md). Use `cite.py` (bracket form) or `lookup.py` (positional args).
+→ [`tools/leis_artigos/README.md`](tools/leis_artigos/README.md). Use `cite.py` (backtick form) or `lookup.py` (positional args).
 
 **Q. Why doesn't my citation resolve?**
 → [`pitfalls.md`](pitfalls.md) "Citations and database lookups". Possible reasons: law not cataloged, path doesn't exist, article number wrong, alínea uses old concatenated form.

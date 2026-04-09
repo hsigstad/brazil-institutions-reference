@@ -121,13 +121,13 @@ keywords` line includes both Portuguese and English search terms.
   The database, the CLI tools, and the parser all live in
   [`tools/leis_artigos/`](tools/leis_artigos/). Download the prebuilt
   `artigos.db` from Dropbox (see `tools/leis_artigos/README.md` for
-  the link), then query via the bracket-form citation resolver or
+  the link), then query via the backtick-form citation resolver or
   the lower-level lookup CLI:
   ```bash
-  # Resolve a compact bracket-form citation
-  python3 tools/leis_artigos/cite.py '[[LIA.9.II]]'
-  python3 tools/leis_artigos/cite.py '[[LE.36-A@2010-01-01]]'
-  python3 tools/leis_artigos/cite.py '[[LIA.10 from:L14230-2021]]'
+  # Resolve a compact backtick-form citation (backticks optional from shell)
+  python3 tools/leis_artigos/cite.py 'LIA.9.II'
+  python3 tools/leis_artigos/cite.py 'LE.36-A@2010-01-01'
+  python3 tools/leis_artigos/cite.py 'LIA.10 from:L14230-2021'
 
   # Lower-level lookup
   python3 tools/leis_artigos/lookup.py LIA 9 --path II

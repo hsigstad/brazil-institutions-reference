@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
-"""cite.py — resolve compact bracket-form citations.
+"""cite.py — resolve compact backtick-form citations.
 
-Parses a citation string like '[[LIA.10.§1.II]]' or '[[Tema1199]]'
+Parses a citation string like `LIA.10.§1.II` or `Tema1199`
 into structured fields and resolves it against the appropriate index:
 
-- **Statute citations** ([[LIA.10.§1.II]], [[L14230-2021]], [[CF.5]])
+- **Statute citations** (`LIA.10.§1.II`, `L14230-2021`, `CF.5`)
   resolve to rows in artigos.db (article-level law database).
-- **Jurisprudence citations** ([[Tema1199]], [[ADI4650]], [[HC126292]],
-  [[ADPF982]], [[ADC43]], [[ARE652777]]) resolve to entries in
+- **Jurisprudence citations** (`Tema1199`, `ADI4650`, `HC126292`,
+  `ADPF982`, `ADC43`, `ARE652777`) resolve to entries in
   jurisprudencia_index.yaml.
+- **Súmula Vinculante citations** (`SV14`, `SV37`, `SV13`)
+  resolve to entries in sumulas_vinculantes.yaml with verbatim text.
 
-Both forms share the same [[ ]] bracket grammar; the parser disambiguates
-syntactically (case prefixes like Tema/ADI/HC are reserved for case IDs).
+Inside markdown, citations are wrapped in single backticks so they
+render as monospace inline code on github.com. The parser accepts
+either bare citations or backtick-wrapped ones; the leading/trailing
+backtick is stripped before parsing. Case prefixes like Tema/ADI/HC
+are reserved for case IDs and disambiguate syntactically from law
+identifiers.
 
 The bracket forms are documented in ../../CLAUDE.md. Path syntax for
 statutes follows PATH_CONVENTION.md.
@@ -53,11 +59,21 @@ DEFAULT_JURIS_INDEX = Path(
     )
 )
 
+# ---------------------------------------------------------------------------
+# Default Súmulas Vinculantes index location.
+# ---------------------------------------------------------------------------
+DEFAULT_SV_INDEX = Path(
+    os.environ.get(
+        "SV_INDEX",
+        Path(__file__).resolve().parent.parent.parent / "sumulas_vinculantes.yaml"
+    )
+)
+
 
 # ---------------------------------------------------------------------------
 # Citation grammar
 # ---------------------------------------------------------------------------
-# Bracket form: [[<identifier>[.<artigo>[-<letra>]][.<path>][<modifier>]]]
+# Backtick form (in markdown): `<identifier>[.<artigo>[-<letra>]][.<path>][<modifier>]`
 #
 # Where:
 #   <identifier> is one of:
@@ -74,9 +90,9 @@ DEFAULT_JURIS_INDEX = Path(
 #       <space>from:X   - version introduced by source X
 #
 # Special cases:
-#   [[LIA]]              -> whole law (no article)
-#   [[LIA.ementa]]       -> the law's ementa (path-only, no article)
-#   [[L14230-2021]]      -> non-cataloged amending law as an entity
+#   `LIA`                -> whole law (no article)
+#   `LIA.ementa`         -> the law's ementa (path-only, no article)
+#   `L14230-2021`        -> non-cataloged amending law as an entity
 
 # Identifier regex: apelidos, fonte_ids, and conventional abbreviations.
 #   - Cataloged apelidos: pure uppercase letters with optional digits (LIA, LE, L8666)
@@ -100,7 +116,7 @@ FROM_RE = r"\s+from:(?P<from_id>[A-Z][A-Z0-9]*-\d{4}|[A-Z][A-Z0-9]*)"
 # Whole-law citation: just the identifier, no article, no path, no modifier
 WHOLE_LAW_RE = re.compile(rf"^{IDENTIFIER_RE}$")
 
-# Whole-law-with-ementa: e.g., [[LIA.ementa]]
+# Whole-law-with-ementa: e.g., `LIA.ementa`
 LAW_WITH_PATH_RE = re.compile(
     rf"^{IDENTIFIER_RE}\.(?P<path>ementa|preambulo)"
     rf"(?:{DATE_RE}|{VINTAGE_RE}|{FROM_RE})?$"
@@ -114,8 +130,10 @@ ARTICLE_RE = re.compile(
     rf"(?:{DATE_RE}|{VINTAGE_RE}|{FROM_RE})?$"
 )
 
-# Citation enclosed in [[ ]] (for find_citations)
-BRACKET_RE = re.compile(r"\[\[([^\[\]]+?)\]\]")
+# Citations enclosed in single backticks (for find_citations).
+# We capture all inline-code spans here; parse() filters non-citations
+# by raising ValueError, which find_citations swallows.
+BRACKET_RE = re.compile(r"`([^`\n]+?)`")
 
 # ---------------------------------------------------------------------------
 # Jurisprudence citation grammar
@@ -142,6 +160,14 @@ CASE_ID_RE = re.compile(
     r"^(?:" + "|".join(CASE_PREFIXES) + r")\d+$"
     r"|^[A-Z][A-Za-z]+\d{4}$"
 )
+
+# ---------------------------------------------------------------------------
+# Súmula Vinculante grammar
+# ---------------------------------------------------------------------------
+# `SV14`, `SV37` etc. — STF Súmulas Vinculantes by number.
+# Resolves against sumulas_vinculantes.yaml. Strictly numeric; the
+# canonical key in the YAML is "SV<number>" (e.g., SV14).
+SV_RE = re.compile(r"^SV(\d+)$")
 
 
 # ---------------------------------------------------------------------------
@@ -232,11 +258,17 @@ class Citation:
     from_id: Optional[str] = None  # from:X
     vintage: Optional[str] = None  # :original or :current
     raw: Optional[str] = None  # original bracket string
-    is_case: bool = False  # True for jurisprudence citations like [[Tema1199]]
+    is_case: bool = False  # True for jurisprudence citations like `Tema1199`
+    is_sv: bool = False  # True for `SV14` súmula vinculante citations
 
     @property
     def is_whole_law(self) -> bool:
-        return self.artigo is None and self.path is None and not self.is_case
+        return (
+            self.artigo is None
+            and self.path is None
+            and not self.is_case
+            and not self.is_sv
+        )
 
     def to_lookup_args(self) -> List[str]:
         """Return the equivalent lookup.py CLI arguments for this citation."""
@@ -255,8 +287,8 @@ class Citation:
         return args
 
     def __str__(self) -> str:
-        if self.is_case:
-            return f"[[{self.identifier}]]"
+        if self.is_case or self.is_sv:
+            return f"`{self.identifier}`"
         s = self.identifier
         if self.artigo is not None:
             s += f".{self.artigo}"
@@ -270,18 +302,27 @@ class Citation:
             s += f" from:{self.from_id}"
         if self.vintage:
             s += f":{self.vintage}"
-        return f"[[{s}]]"
+        return f"`{s}`"
 
 
 def parse(citation: str) -> Citation:
-    """Parse a single citation string (with or without surrounding [[ ]]).
+    """Parse a single citation string (with or without surrounding backticks).
 
     Raises ValueError if the citation cannot be parsed.
     """
     raw = citation
     body = citation.strip()
-    if body.startswith("[[") and body.endswith("]]"):
+    # Strip a single pair of surrounding backticks if present
+    if len(body) >= 2 and body.startswith("`") and body.endswith("`"):
+        body = body[1:-1].strip()
+    # Backward compatibility: also accept the old [[ ]] form
+    elif body.startswith("[[") and body.endswith("]]"):
         body = body[2:-2].strip()
+
+    # Súmula Vinculante? (`SV14`, `SV37`, ...) — checked before case
+    # grammar so SV-prefixed identifiers are not misread.
+    if SV_RE.match(body):
+        return Citation(identifier=body, is_sv=True, raw=raw)
 
     # Case citation? (Tema1199, ADI4650, HC126292, LulaMoro2021, ...)
     # Checked first because case prefixes like RE, ADI overlap syntactically
@@ -324,13 +365,19 @@ def parse(citation: str) -> Citation:
 
 
 def find_citations(text: str) -> List[Citation]:
-    """Find all bracket-form citations in a markdown/text body."""
+    """Find all backtick-form citations in a markdown/text body.
+
+    Captures every inline-code span, attempts to parse each, and keeps
+    only those that successfully resolve to a Citation. Non-citation
+    inline code (function names, file paths, etc.) is silently skipped.
+    """
     out: List[Citation] = []
     for match in BRACKET_RE.finditer(text):
         try:
-            out.append(parse(f"[[{match.group(1)}]]"))
+            out.append(parse(match.group(1)))
         except ValueError:
-            # Not a citation we can parse — skip silently. Could log.
+            # Not a citation we can parse — skip silently. Most inline
+            # code in these files is not a citation.
             continue
     return out
 
@@ -386,6 +433,42 @@ def lookup_case(identifier: str, index_path: Optional[Path] = None) -> Optional[
     if entry is None:
         return None
     return {"id": key, **entry}
+
+
+# ---------------------------------------------------------------------------
+# Súmulas Vinculantes index loader
+# ---------------------------------------------------------------------------
+_sv_cache: Optional[dict] = None
+
+
+def load_sv_index(path: Optional[Path] = None) -> dict:
+    """Load and cache sumulas_vinculantes.yaml. Empty on missing file."""
+    global _sv_cache
+    if _sv_cache is not None:
+        return _sv_cache
+    if path is None:
+        path = DEFAULT_SV_INDEX
+    if not path.exists():
+        _sv_cache = {"sumulas": {}}
+        return _sv_cache
+    try:
+        import yaml
+    except ImportError:
+        _sv_cache = {"sumulas": {}}
+        return _sv_cache
+    data = yaml.safe_load(path.read_text()) or {}
+    _sv_cache = {"sumulas": data.get("sumulas", {}) or {}}
+    return _sv_cache
+
+
+def lookup_sv(identifier: str, index_path: Optional[Path] = None) -> Optional[dict]:
+    """Look up a SV by canonical key (e.g., 'SV14'). Returns the entry merged
+    with its id, or None if not found."""
+    idx = load_sv_index(index_path)
+    entry = idx["sumulas"].get(identifier)
+    if entry is None:
+        return None
+    return {"id": identifier, **entry}
 
 
 # ---------------------------------------------------------------------------
@@ -476,6 +559,25 @@ def resolve(
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+def _print_sv(entry: dict, full: bool = False) -> None:
+    """Print a Súmula Vinculante index entry to stdout."""
+    sid = entry.get("id", "?")
+    numero = entry.get("numero", "?")
+    status = entry.get("status", "")
+    enunciado = entry.get("enunciado") or ""
+
+    print(f"--- `{sid}`  Súmula Vinculante {numero}")
+    print(f"  status:    {status}")
+    if entry.get("publicacao"):
+        print(f"  publicada: {entry['publicacao']}")
+    print()
+    print(enunciado)
+    if full and entry.get("fonte"):
+        print()
+        print(f"  fonte: {entry['fonte']}")
+    print()
+
+
 def _print_case(entry: dict, full: bool = False) -> None:
     """Print a jurisprudência index entry to stdout."""
     cid = entry.get("id", "?")
@@ -485,7 +587,7 @@ def _print_case(entry: dict, full: bool = False) -> None:
     status = entry.get("status", "")
     tema = entry.get("tema", "")
 
-    print(f"--- [[{cid}]]  {tipo} {processo}".rstrip())
+    print(f"--- `{cid}`  {tipo} {processo}".rstrip())
     if tema:
         print(f"  tema:     {tema}")
     if decidido:
@@ -540,25 +642,35 @@ def _print_row(row: sqlite3.Row, full: bool = False) -> None:
 
 def main() -> int:
     ap = argparse.ArgumentParser(
-        description="Resolve a compact bracket-form citation against artigos.db.",
+        description="Resolve a compact backtick-form citation against artigos.db.",
         epilog=(
             "Examples (statute):\n"
-            "  cite.py '[[LIA.9]]'\n"
-            "  cite.py '[[LIA.10.§1.II]]'\n"
-            "  cite.py '[[LIA.11.§unico@2020-06-01]]'\n"
-            "  cite.py '[[LIA.10 from:L14230-2021]]'\n"
-            "  cite.py --parse-only '[[LE.17-A.caput]]'\n"
+            "  cite.py 'LIA.9'\n"
+            "  cite.py 'LIA.10.§1.II'\n"
+            "  cite.py 'LIA.11.§unico@2020-06-01'\n"
+            "  cite.py 'LIA.10 from:L14230-2021'\n"
+            "  cite.py --parse-only 'LE.17-A.caput'\n"
             "\n"
             "Examples (jurisprudence):\n"
-            "  cite.py '[[Tema1199]]'\n"
-            "  cite.py '[[ADI4650]]' --full\n"
-            "  cite.py '[[HC126292]]'           # superada — see superado_por\n"
+            "  cite.py 'Tema1199'\n"
+            "  cite.py 'ADI4650' --full\n"
+            "  cite.py 'HC126292'              # superada — see superado_por\n"
+            "\n"
+            "Examples (súmula vinculante):\n"
+            "  cite.py 'SV14'                  # acesso amplo da defesa\n"
+            "  cite.py 'SV13'                  # nepotismo\n"
+            "  cite.py 'SV9' --full            # cancelada\n"
             "\n"
             "  cite.py --find-in path/to/file.md\n"
+            "\n"
+            "Backticks around the citation are accepted but not required\n"
+            "from the shell. Inside markdown, citations are wrapped in\n"
+            "single backticks (e.g., `LIA.9`) so they render as inline\n"
+            "code on github.com.\n"
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    ap.add_argument("citation", nargs="?", help="Bracket-form citation, with or without [[ ]].")
+    ap.add_argument("citation", nargs="?", help="Citation, with or without surrounding backticks.")
     ap.add_argument("--db", type=Path, default=None, help=f"Path to artigos.db (default: {DEFAULT_DB})")
     ap.add_argument("--parse-only", action="store_true", help="Parse but don't query the DB.")
     ap.add_argument("--full", action="store_true", help="Show capítulo/seção/fonte metadata.")
@@ -590,7 +702,8 @@ def main() -> int:
         print(f"Parsed: {c}")
         print(f"  identifier: {c.identifier}")
         print(f"  is_case:    {c.is_case}")
-        if not c.is_case:
+        print(f"  is_sv:      {c.is_sv}")
+        if not c.is_case and not c.is_sv:
             print(f"  artigo:     {c.artigo}")
             print(f"  letra:      {c.letra}")
             print(f"  path:       {c.path}")
@@ -598,6 +711,18 @@ def main() -> int:
             print(f"  from_id:    {c.from_id}")
             print(f"  vintage:    {c.vintage}")
             print(f"  lookup args: {' '.join(c.to_lookup_args())}")
+        return 0
+
+    # Súmula Vinculante: resolve against the SV YAML
+    if c.is_sv:
+        entry = lookup_sv(c.identifier)
+        if entry is None:
+            print(
+                f"No SV match for {c} in {DEFAULT_SV_INDEX}",
+                file=sys.stderr,
+            )
+            return 3
+        _print_sv(entry, full=args.full)
         return 0
 
     # Jurisprudence citation: resolve against the YAML index

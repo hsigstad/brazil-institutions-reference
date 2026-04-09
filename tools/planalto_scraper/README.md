@@ -124,4 +124,4 @@ prose citations in ../*.md
   that consumes this database.
 - [`../README.md`](../README.md) — overview of the `tools/` directory.
 - [`../../CLAUDE.md`](../../CLAUDE.md) — citation format and how this
-  pipeline supports the bracket-form citations.
+  pipeline supports the backtick-form citations.
