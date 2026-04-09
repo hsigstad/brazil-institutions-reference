@@ -12,9 +12,10 @@ erário, violação de princípios, ação civil pública, Ministério Público,
 Ficha Limpa, STF Tema 1199, ressarcimento, imprescritível.
 
 **Snapshot as of 2026**: post-reform jurisprudence is still settling.
-STF Tema 1199 (ARE 843989, Aug 2022) governs retroactivity of the
-dolo-only standard. ADPF 982 (~2025) clarifies the TCE / câmara boundary
-for the ineligibility consequence (see `contas-municipais.md`).
+`Tema1199` (ARE 843.989, decided 2022-08-18, Rel. Alexandre de Moraes)
+governs retroactivity of the dolo-only standard. `ADPF982` (decided
+2025) clarifies the TCE / câmara boundary for the Ficha Limpa
+ineligibility consequence (see `contas-municipais.md`).
 
 For procurement-specific fact patterns most often prosecuted as
 improbidade, see `licitacoes.md`. For the Ficha Limpa eligibility
@@ -111,10 +112,12 @@ zero after October 2021.
   or from knowledge of the act (other servants).
 - **Post-reform** (`LIA.23 from:L14230-2021`): 8 years from the act,
   with intermediate prescription rules attached to procedural phases.
-- **STF Tema 897 (RE 852475)**: ressarcimento ao erário for *dolosa*
+- `Tema897` (RE 852.475): ressarcimento ao erário for *dolosa*
   improbidade is **imprescritível**. The declaratory and sanction
   components remain subject to prescription; only the reparation of
-  damages is perpetual.
+  damages is perpetual. Pre-reform conduct: the imprescritibilidade
+  attaches only to the reparação component; sanctions still expire on
+  the ordinary clock.
 
 ---
 
@@ -138,10 +141,11 @@ narrow the regime to its most serious cases:
    expanded defense opportunities, stricter standards for interim
    measures (bloqueio de bens).
 
-### STF Tema 1199 — retroactivity (ARE 843989, 18 Aug 2022, Rel. Alexandre de Moraes)
+### `Tema1199` — retroactivity of the 2021 reform
 
-Central jurisprudence on whether and how the reform reaches pre-existing
-cases. STF held:
+ARE 843.989, decided 18 Aug 2022, Rel. Min. Alexandre de Moraes.
+Central jurisprudence on whether and how the reform reaches
+pre-existing cases. STF held:
 
 1. The elimination of culposa improbidade is **irretroactive in bonam
    partem** for acts already subject to *trânsito em julgado* — past
@@ -158,7 +162,8 @@ cases. STF held:
    retroactivity limits above.
 
 For the canonical description of this case, see `jurisprudencia-stf.md`
-(Tema 1199).
+(`Tema1199`). For the structured metadata entry (status, supersession
+chain, related cases), resolve `Tema1199` via `cite.py`.
 
 ### Practical effect on caseloads
 
