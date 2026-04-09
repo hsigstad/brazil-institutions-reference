@@ -400,16 +400,75 @@ When a topical file cites a previously-unseen STF case:
 4. Cross-reference both ways: `discussed_in` in the YAML, and a
    `Cited in:` line in `jurisprudencia-stf.md`.
 
+## What belongs in a topical file
+
+Topical files are the substantive layer of this repository. The
+indices (siglas, glossario, jurisprudencia-stf, leis_index, etc.) tell
+a reader *where to look*; topical files tell them *what's there and
+why it matters*. The structure of a topical file is **emergent from
+its substance**, not imposed by a template — a file has as many or as
+few sections as its topic justifies. The header is mandatory; the
+body is whatever the substance demands.
+
+**Mandatory header** (in this order):
+
+1. Title (`# Topic name`)
+2. Scope paragraph: who/what/when this topic covers, plus the
+   load-bearing disambiguation against neighboring files
+3. `**Topics / keywords**:` line with both Portuguese and English
+   search terms
+4. `**Snapshot as of YYYY**:` line, optionally listing the load-bearing
+   recent jurisprudence or statutory changes
+5. Cross-references (`For X, see Y.md.`) to related topical files
+6. Horizontal rule (`---`)
+
+**What belongs in the body:**
+
+- **Substantive law specific to this topic.** Structure of the
+  statute, key articles, vintage-anchored citations via `cite.py`.
+  Characterize what's there and explain *why it matters*; do not
+  paraphrase the statute text — that's what `artigos.db` is for.
+- **Jurisprudence specific to this topic.** STF/TSE/STJ cases that
+  shape interpretation. Use the backtick form (`` `Tema1199` ``) when
+  the case is in `jurisprudencia_index.yaml`; describe the canonical
+  version once in `jurisprudencia-stf.md` and reference it from here.
+- **Institutional context that isn't in any single statute.** How the
+  topic works in practice — who runs it, where the discretion lives,
+  what the operational rule is. This is the "ground truth" layer that
+  the database can't serve.
+- **Empirical facts useful for research design.** Timing, caseload
+  composition, selection effects, sample-size signals, with sources.
+
+**What does NOT belong in a topical file:**
+
+- **Verbatim statute text.** Resolve via `cite.py`. Use a
+  planalto.gov.br link as fallback when the law isn't in the catalog
+  yet.
+- **Generic civil/criminal/administrative procedure** that applies to
+  any action of that type. **Deletion test:** if a section could be
+  copy-pasted into another topic with only the topic name changed,
+  it doesn't belong here — cross-reference the relevant `processo-*.md`
+  instead.
+- **Acronym definitions** (those live in `siglas.md`).
+- **Glossary entries** for Portuguese legal terms (those live in
+  `glossario.md`).
+- **Speculation or unsourced empirical findings** from in-progress
+  research, personal communications, or unpublished work. The
+  audience is public.
+- **Filler sections** that exist to satisfy a perceived template but
+  don't carry substantive content for *this* topic. The right amount
+  of structure is what the substance demands; no padding.
+
 ## When you make changes
 
-- **Preserve the conventions**. Each topical file opens with: scope
-  paragraph → `Topics / keywords` line → `Snapshot as of YYYY` →
-  scope and cross-references → topical content → cross-references at
-  bottom.
+- **Apply the deletion test.** Before adding a section, check whether
+  its content is specific to this topic or could be copy-pasted into a
+  neighboring file. If it's generic, cross-reference instead of
+  duplicating.
 - **Cite sources inline.** New claims need a statute reference, a
-  CNJ/CNMP resolution number, or a published source. Format like
-  existing files: `Lei 8.666/93 Art. 23`, `STF Tema 157`, `CNJ Res.
-  185/2013`.
+  CNJ/CNMP resolution number, or a published source. Use the backtick
+  form for resolvable citations; use prose for narrative references
+  ("the 2021 reform", "STF Tema 157").
 - **Update the indices** when you add or remove material:
   - New statute → add to `leis_index.yaml`.
   - New STF case → add to `jurisprudencia-stf.md` (canonical
@@ -420,15 +479,6 @@ When a topical file cites a previously-unseen STF case:
 - **Cross-reference both ways.** If you add content to one file that
   relates to another, add a "See also" pointer or inline link in
   both directions.
-- **Don't paste verbatim statute text.** Topical files characterize
-  what's in the statute and explain why it matters; the verbatim text
-  lives in `artigos.db` and is retrieved on demand by resolving the
-  backtick-form citations through `cite.py`. Use a planalto.gov.br
-  link as fallback when the law isn't in the catalog yet.
-- **Don't add unsourced empirical findings** from in-progress research
-  projects, personal communications, or unpublished work. The
-  audience is public. If a claim isn't verifiable against a public
-  source, leave it out or generalize it.
 
 ## Things to avoid
 
