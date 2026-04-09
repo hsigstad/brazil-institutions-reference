@@ -1,0 +1,477 @@
+# Súmulas Vinculantes — STF
+#
+# Closed set of binding interpretive theses issued by the Supremo
+# Tribunal Federal under CF Art. 103-A. Each entry stores the
+# verbatim enunciado as published by STF, the status, and the
+# canonical source URL.
+#
+# Resolved via cite.py with bracket form [[SV14]], [[SV37]], etc.
+# Documented in CLAUDE.md.
+#
+# Sources:
+# - All entries scraped from portal.stf.jus.br on 2026-04-09
+# - Verbatim enunciado matched against the first parCOM div on
+#   each detail page
+#
+# Status values:
+#   vigente   — currently binding
+#   cancelada — cancelled by STF (SV 9 is the only one as of 2026)
+#   revogada  — formally revoked
+#
+# Fields:
+#   numero     — SV number (matches the bracket-form id, e.g., 14 → [[SV14]])
+#   enunciado  — verbatim text as published by STF
+#   status     — vigente | cancelada | revogada
+#   fonte      — canonical STF portal URL
+#   publicacao — DOU/DJE date (TODO: not auto-extracted; fill by hand when known)
+#
+# When adding/editing entries:
+# - Preserve verbatim text. Do not paraphrase or reformat.
+# - When STF cancels or revokes a SV, update status and add a
+#   short note in a "nota" field explaining the change.
+
+schema_version: 1
+last_updated: 2026-04-09
+
+sumulas:
+
+  SV1:
+    numero: 1
+    status: vigente
+    enunciado: "Ofende a garantia constitucional do ato jurídico perfeito a decisão que, sem ponderar as circunstâncias do caso concreto, desconsidera a validez e a eficácia de acordo constante de termo de adesão instituído pela Lei Complementar 110/2001."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1185
+    publicacao: null
+
+  SV2:
+    numero: 2
+    status: vigente
+    enunciado: "É inconstitucional a lei ou ato normativo Estadual ou Distrital que disponha sobre sistemas de consórcios e sorteios, inclusive bingos e loterias."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1188
+    publicacao: null
+
+  SV3:
+    numero: 3
+    status: vigente
+    enunciado: "Nos processos perante o Tribunal de Contas da União asseguram-se o contraditório e a ampla defesa quando da decisão puder resultar anulação ou revogação de ato administrativo que beneficie o interessado, excetuada a apreciação da legalidade do ato de concessão inicial de aposentadoria, reforma e pensão."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1191
+    publicacao: null
+
+  SV4:
+    numero: 4
+    status: vigente
+    enunciado: "Salvo nos casos previstos na Constituição, o salário mínimo não pode ser usado como indexador de base de cálculo de vantagem de servidor público ou de empregado, nem ser substituído por decisão judicial."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1195
+    publicacao: null
+
+  SV5:
+    numero: 5
+    status: vigente
+    enunciado: "A falta de defesa técnica por advogado no processo administrativo disciplinar não ofende a Constituição."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1199
+    publicacao: null
+
+  SV6:
+    numero: 6
+    status: vigente
+    enunciado: "Não viola a Constituição o estabelecimento de remuneração inferior ao salário mínimo para as praças prestadoras de serviço militar inicial."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1202
+    publicacao: null
+
+  SV7:
+    numero: 7
+    status: vigente
+    enunciado: "A norma do § 3º do artigo 192 da Constituição, revogada pela Emenda Constitucional 40/2003, que limitava a taxa de juros reais a 12% ao ano, tinha sua aplicação condicionada à edição de lei complementar."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1205
+    publicacao: null
+
+  SV8:
+    numero: 8
+    status: vigente
+    enunciado: "São inconstitucionais o parágrafo único do artigo 5º do Decreto-Lei 1.569/1977 e os artigos 45 e 46 da Lei 8.212/1991, que tratam da prescrição e decadência do crédito tributário."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1209
+    publicacao: null
+
+  SV9:
+    numero: 9
+    status: cancelada
+    enunciado: "O disposto no artigo 127 da Lei 7.210/1984 (Lei de Execução Penal) foi recebido pela ordem constitucional vigente, e não se lhe aplica o limite temporal previsto no caput do artigo 58."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1212
+    publicacao: null
+
+  SV10:
+    numero: 10
+    status: vigente
+    enunciado: "Viola a cláusula de reserva de plenário (CF, artigo 97) a decisão de órgão fracionário de tribunal que, embora não declare expressamente a inconstitucionalidade de lei ou ato normativo do Poder Público, afasta sua incidência, no todo ou em parte."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1216
+    publicacao: null
+
+  SV11:
+    numero: 11
+    status: vigente
+    enunciado: "Só é lícito o uso de algemas em casos de resistência e de fundado receio de fuga ou de perigo à integridade física própria ou alheia, por parte do preso ou de terceiros, justificada a excepcionalidade por escrito, sob pena de responsabilidade disciplinar, civil e penal do agente ou da autoridade e de nulidade da prisão ou do ato processual a que se refere, sem prejuízo da responsabilidade civil do Estado."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1220
+    publicacao: null
+
+  SV12:
+    numero: 12
+    status: vigente
+    enunciado: "A cobrança de taxa de matrícula nas universidades públicas viola o disposto no art. 206, IV, da Constituição Federal."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1223
+    publicacao: null
+
+  SV13:
+    numero: 13
+    status: vigente
+    enunciado: "A nomeação de cônjuge, companheiro ou parente em linha reta, colateral ou por afinidade, até o terceiro grau, inclusive, da autoridade nomeante ou de servidor da mesma pessoa jurídica investido em cargo de direção, chefia ou assessoramento, para o exercício de cargo em comissão ou de confiança ou, ainda, de função gratificada na administração pública direta e indireta em qualquer dos poderes da União, dos Estados, do Distrito Federal e dos Municípios, compreendido o ajuste mediante designações recíprocas, viola a Constituição Federal."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1227
+    publicacao: null
+
+  SV14:
+    numero: 14
+    status: vigente
+    enunciado: "É direito do defensor, no interesse do representado, ter acesso amplo aos elementos de prova que, já documentados em procedimento investigatório realizado por órgão com competência de polícia judiciária, digam respeito ao exercício do direito de defesa."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1230
+    publicacao: null
+
+  SV15:
+    numero: 15
+    status: vigente
+    enunciado: "O cálculo de gratificações e outras vantagens do servidor público não incide sobre o abono utilizado para se atingir o salário mínimo."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1233
+    publicacao: null
+
+  SV16:
+    numero: 16
+    status: vigente
+    enunciado: "Os artigos 7º, IV, e 39, § 3º (redação da EC 19/98), da Constituição, referem-se ao total da remuneração percebida pelo servidor público."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1237
+    publicacao: null
+
+  SV17:
+    numero: 17
+    status: vigente
+    enunciado: "Durante o período previsto no parágrafo 1º do artigo 100 da Constituição, não incidem juros de mora sobre os precatórios que nele sejam pagos."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1241
+    publicacao: null
+
+  SV18:
+    numero: 18
+    status: vigente
+    enunciado: "A dissolução da sociedade ou do vínculo conjugal, no curso do mandato, não afasta a inelegibilidade prevista no § 7º do artigo 14 da Constituição Federal."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1245
+    publicacao: null
+
+  SV19:
+    numero: 19
+    status: vigente
+    enunciado: "A taxa cobrada exclusivamente em razão dos serviços públicos de coleta, remoção e tratamento ou destinação de lixo ou resíduos provenientes de imóveis não viola o artigo 145, II, da Constituição Federal."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1248
+    publicacao: null
+
+  SV20:
+    numero: 20
+    status: vigente
+    enunciado: "A Gratificação de Desempenho de Atividade Técnico-Administrativa - GDATA, instituída pela Lei 10.404/2002, deve ser deferida aos inativos nos valores correspondentes a 37,5 (trinta e sete vírgula cinco) pontos no período de fevereiro a maio de 2002 e, nos termos do artigo 5º, parágrafo único, da Lei 10.404/2002, no período de junho de 2002 até a conclusão dos efeitos do último ciclo de avaliação a que se refere o artigo 1º da Medida Provisória 198/2004, a partir da qual passa a ser de 60 (sessenta) pontos."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1252
+    publicacao: null
+
+  SV21:
+    numero: 21
+    status: vigente
+    enunciado: "É inconstitucional a exigência de depósito ou arrolamento prévios de dinheiro ou bens para admissibilidade de recurso administrativo."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1255
+    publicacao: null
+
+  SV22:
+    numero: 22
+    status: vigente
+    enunciado: "A Justiça do Trabalho é competente para processar e julgar as ações de indenização por danos morais e patrimoniais decorrentes de acidente de trabalho propostas por empregado contra empregador, inclusive aquelas que ainda não possuíam sentença de mérito em primeiro grau quando da promulgação da Emenda Constitucional 45/2004."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1259
+    publicacao: null
+
+  SV23:
+    numero: 23
+    status: vigente
+    enunciado: "A Justiça do Trabalho é competente para processar e julgar ação possessória ajuizada em decorrência do exercício do direito de greve pelos trabalhadores da iniciativa privada."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1262
+    publicacao: null
+
+  SV24:
+    numero: 24
+    status: vigente
+    enunciado: "Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da Lei 8.137/1990, antes do lançamento definitivo do tributo."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1265
+    publicacao: null
+
+  SV25:
+    numero: 25
+    status: vigente
+    enunciado: "É ilícita a prisão civil de depositário infiel, qualquer que seja a modalidade de depósito."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1268
+    publicacao: null
+
+  SV26:
+    numero: 26
+    status: vigente
+    enunciado: "Para efeito de progressão de regime no cumprimento de pena por crime hediondo, ou equiparado, o juízo da execução observará a inconstitucionalidade do art. 2º da Lei 8.072, de 25 de julho de 1990, sem prejuízo de avaliar se o condenado preenche, ou não, os requisitos objetivos e subjetivos do benefício, podendo determinar, para tal fim, de modo fundamentado, a realização de exame criminológico."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1271
+    publicacao: null
+
+  SV27:
+    numero: 27
+    status: vigente
+    enunciado: "Compete à Justiça Estadual julgar causas entre consumidor e concessionária de serviço público de telefonia, quando a ANATEL não seja litisconsorte passiva necessária, assistente, nem opoente."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1274
+    publicacao: null
+
+  SV28:
+    numero: 28
+    status: vigente
+    enunciado: "É inconstitucional a exigência de depósito prévio como requisito de admissibilidade de ação judicial na qual se pretenda discutir a exigibilidade de crédito tributário."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1278
+    publicacao: null
+
+  SV29:
+    numero: 29
+    status: vigente
+    enunciado: "É constitucional a adoção, no cálculo do valor de taxa, de um ou mais elementos da base de cálculo própria de determinado imposto, desde que não haja integral identidade entre uma base e outra."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1282
+    publicacao: null
+
+  SV30:
+    numero: 30
+    status: vigente
+    enunciado: "A Súmula Vinculante 30 está pendente de publicação."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=5780
+    publicacao: null
+
+  SV31:
+    numero: 31
+    status: vigente
+    enunciado: "É inconstitucional a incidência do imposto sobre serviços de qualquer natureza - ISS sobre operações de locação de bens móveis."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1286
+    publicacao: null
+
+  SV32:
+    numero: 32
+    status: vigente
+    enunciado: "O ICMS não incide sobre alienação de salvados de sinistro pelas seguradoras."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1289
+    publicacao: null
+
+  SV33:
+    numero: 33
+    status: vigente
+    enunciado: "Aplicam-se ao servidor público, no que couber, as regras do regime geral da previdência social sobre aposentadoria especial de que trata o artigo 40, § 4º, inciso III da Constituição Federal, até a edição de lei complementar específica."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1941
+    publicacao: null
+
+  SV34:
+    numero: 34
+    status: vigente
+    enunciado: "A Gratificação de Desempenho de Atividade de Seguridade Social e do Trabalho - GDASST, instituída pela Lei 10.483/2002, deve ser estendida aos inativos no valor correspondente a 60 (sessenta) pontos, desde o advento da Medida Provisória 198/2004, convertida na Lei 10.971/2004, quando tais inativos façam jus à paridade constitucional (EC 20/1998, 41/2003 e 47/2005)."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1947
+    publicacao: null
+
+  SV35:
+    numero: 35
+    status: vigente
+    enunciado: "A homologação da transação penal prevista no artigo 76 da Lei 9.099/1995 não faz coisa julgada material e, descumpridas suas cláusulas, retoma-se a situação anterior, possibilitando-se ao Ministério Público a continuidade da persecução penal mediante oferecimento de denúncia ou requisição de inquérito policial."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1953
+    publicacao: null
+
+  SV36:
+    numero: 36
+    status: vigente
+    enunciado: "Compete à Justiça Federal comum processar e julgar civil denunciado pelos crimes de falsificação e de uso de documento falso quando se tratar de falsificação da Caderneta de Inscrição e Registro (CIR) ou de Carteira de Habilitação de Amador (CHA), ainda que expedidas pela Marinha do Brasil."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1957
+    publicacao: null
+
+  SV37:
+    numero: 37
+    status: vigente
+    enunciado: "Não cabe ao Poder Judiciário, que não tem função legislativa, aumentar vencimentos de servidores públicos sob o fundamento de isonomia."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1961
+    publicacao: null
+
+  SV38:
+    numero: 38
+    status: vigente
+    enunciado: "É competente o Município para fixar o horário de funcionamento de estabelecimento comercial."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2183
+    publicacao: null
+
+  SV39:
+    numero: 39
+    status: vigente
+    enunciado: "Compete privativamente à União legislar sobre vencimentos dos membros das polícias civil e militar e do corpo de bombeiros militar do Distrito Federal."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2197
+    publicacao: null
+
+  SV40:
+    numero: 40
+    status: vigente
+    enunciado: "A contribuição confederativa de que trata o art. 8º, IV, da Constituição Federal, só é exigível dos filiados ao sindicato respectivo."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2204
+    publicacao: null
+
+  SV41:
+    numero: 41
+    status: vigente
+    enunciado: "O serviço de iluminação pública não pode ser remunerado mediante taxa."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2218
+    publicacao: null
+
+  SV42:
+    numero: 42
+    status: vigente
+    enunciado: "É inconstitucional a vinculação do reajuste de vencimentos de servidores estaduais ou municipais a índices federais de correção monetária."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2222
+    publicacao: null
+
+  SV43:
+    numero: 43
+    status: vigente
+    enunciado: "É inconstitucional toda modalidade de provimento que propicie ao servidor investir-se, sem prévia aprovação em concurso público destinado ao seu provimento, em cargo que não integra a carreira na qual anteriormente investido."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2348
+    publicacao: null
+
+  SV44:
+    numero: 44
+    status: vigente
+    enunciado: "Só por lei se pode sujeitar a exame psicotécnico a habilitação de candidato a cargo público."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2358
+    publicacao: null
+
+  SV45:
+    numero: 45
+    status: vigente
+    enunciado: "A competência constitucional do Tribunal do Júri prevalece sobre o foro por prerrogativa de função estabelecido exclusivamente pela Constituição Estadual."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2362
+    publicacao: null
+
+  SV46:
+    numero: 46
+    status: vigente
+    enunciado: "A definição dos crimes de responsabilidade e o estabelecimento das respectivas normas de processo e julgamento são de competência legislativa privativa da União."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2368
+    publicacao: null
+
+  SV47:
+    numero: 47
+    status: vigente
+    enunciado: "Os honorários advocatícios incluídos na condenação ou destacados do montante principal devido ao credor consubstanciam verba de natureza alimentar cuja satisfação ocorrerá com a expedição de precatório ou requisição de pequeno valor, observada ordem especial restrita aos créditos dessa natureza."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2504
+    publicacao: null
+
+  SV48:
+    numero: 48
+    status: vigente
+    enunciado: "Na entrada de mercadoria importada do exterior, é legítima a cobrança do ICMS por ocasião do desembaraço aduaneiro."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2505
+    publicacao: null
+
+  SV49:
+    numero: 49
+    status: vigente
+    enunciado: "Ofende o princípio da livre concorrência lei municipal que impede a instalação de estabelecimentos comerciais do mesmo ramo em determinada área."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2506
+    publicacao: null
+
+  SV50:
+    numero: 50
+    status: vigente
+    enunciado: "Norma legal que altera o prazo de recolhimento de obrigação tributária não se sujeita ao princípio da anterioridade."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2604
+    publicacao: null
+
+  SV51:
+    numero: 51
+    status: vigente
+    enunciado: "O reajuste de 28,86%, concedido aos servidores militares pelas Leis 8622/1993 e 8627/1993, estende-se aos servidores civis do poder executivo, observadas as eventuais compensações decorrentes dos reajustes diferenciados concedidos pelos mesmos diplomas legais."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2607
+    publicacao: null
+
+  SV52:
+    numero: 52
+    status: vigente
+    enunciado: "Ainda quando alugado a terceiros, permanece imune ao IPTU o imóvel pertencente a qualquer das entidades referidas pelo art. 150, VI, \"c\", da Constituição Federal, desde que o valor dos aluguéis seja aplicado nas atividades para as quais tais entidades foram constituídas."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2610
+    publicacao: null
+
+  SV53:
+    numero: 53
+    status: vigente
+    enunciado: "A competência da Justiça do Trabalho prevista no art. 114, VIII, da Constituição Federal alcança a execução de ofício das contribuições previdenciárias relativas ao objeto da condenação constante das sentenças que proferir e acordos por ela homologados."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2613
+    publicacao: null
+
+  SV54:
+    numero: 54
+    status: vigente
+    enunciado: "A medida provisória não apreciada pelo congresso nacional podia, até a Emenda Constitucional 32/2001, ser reeditada dentro do seu prazo de eficácia de trinta dias, mantidos os efeitos de lei desde a primeira edição."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=3009
+    publicacao: null
+
+  SV55:
+    numero: 55
+    status: vigente
+    enunciado: "O direito ao auxílio-alimentação não se estende aos servidores inativos."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=3014
+    publicacao: null
+
+  SV56:
+    numero: 56
+    status: vigente
+    enunciado: "A falta de estabelecimento penal adequado não autoriza a manutenção do condenado em regime prisional mais gravoso, devendo-se observar, nessa hipótese, os parâmetros fixados no RE 641.320/RS."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=3352
+    publicacao: null
+
+  SV57:
+    numero: 57
+    status: vigente
+    enunciado: "A imunidade tributária constante do art. 150, VI, d, da CF/88 aplica-se à importação e comercialização, no mercado interno, do livro eletrônico (e-book) e dos suportes exclusivamente utilizados para fixá-los, como leitores de livros eletrônicos (e-readers), ainda que possuam funcionalidades acessórias."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=5966
+    publicacao: null
+
+  SV58:
+    numero: 58
+    status: vigente
+    enunciado: "Inexiste direito a crédito presumido de IPI relativamente à entrada de insumos isentos, sujeitos à alíquota zero ou não tributáveis, o que não contraria o princípio da não cumulatividade."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=5973
+    publicacao: null
+
+  SV59:
+    numero: 59
+    status: vigente
+    enunciado: "É impositiva a fixação do regime aberto e a substituição da pena privativa de liberdade por restritiva de direitos quando reconhecida a figura do tráfico privilegiado (art. 33, § 4º, da Lei 11.343/06) e ausentes vetores negativos na primeira fase da dosimetria (art. 59 do CP), observados os requisitos do art. 33, § 2º, alínea c, e do art. 44, ambos do Código Penal."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=8161
+    publicacao: null
+
+  SV60:
+    numero: 60
+    status: vigente
+    enunciado: "O pedido e a análise administrativos de fármacos na rede pública de saúde, a judicialização do caso, bem ainda seus desdobramentos (administrativos e jurisdicionais), devem observar os termos dos 3 (três) acordos interfederativos (e seus fluxos) homologados pelo Supremo Tribunal Federal, em governança judicial colaborativa, no tema 1.234 da sistemática da repercussão geral RE 1.366.243."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=9260
+    publicacao: null
+
+  SV61:
+    numero: 61
+    status: vigente
+    enunciado: "A concessão judicial de medicamento registrado na ANVISA, mas não incorporado às listas de dispensação do Sistema Único de Saúde, deve observar as teses firmadas no julgamento do Tema 6 da Repercussão Geral (RE 566.471)."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=9296
+    publicacao: null
+
+  SV62:
+    numero: 62
+    status: vigente
+    enunciado: "É legítima a revogação da isenção estabelecida no art. 6º, II, da Lei Complementar 70/1991 pelo art. 56 da Lei 9.430/1996, dado que a LC 70/1991 é apenas formalmente complementar, mas materialmente ordinária com relação aos dispositivos concernentes à contribuição social por ela instituída."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=9347
+    publicacao: null
+
+  SV63:
+    numero: 63
+    status: vigente
+    enunciado: "O tráfico privilegiado (art. 33, § 4º, da Lei 11.343/2006) não configura crime hediondo, afastando-se a aplicação dos parâmetros mais rigorosos de progressão de regime e de livramento condicional."
+    fonte: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=9519
+    publicacao: null

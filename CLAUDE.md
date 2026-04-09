@@ -29,6 +29,7 @@ indices are designed to surface the right topical file in one grep:
 | [`jurisprudencia-stf.md`](jurisprudencia-stf.md) | You need the canonical description of an STF case (Tema 157, Tema 1199, ADI 4650, ADI 5766, ADPF 982, HC 126.292, etc.) — described once here, cross-referenced from topical files |
 | [`jurisprudencia_index.yaml`](jurisprudencia_index.yaml) | You need structured metadata about a case: status (vigente / superada / parcialmente_superada / modulada), supersession chain, theme, files where discussed. Resolvable via ``Tema1199``-style citations through `cite.py`. |
 | [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml) | You need the verbatim text of an STF Súmula Vinculante (all 63, scraped from the STF portal). Resolvable via ``SV14``-style citations through `cite.py`. |
+| [`sumulas_tse.yaml`](sumulas_tse.yaml) | You need the verbatim text of a TSE Súmula (all 72, scraped from the TSE portal). Resolvable via ``STSE38``-style citations through `cite.py`. |
 | [`README.md`](README.md) | The full topical file index, organized by section |
 
 After consulting an index, **read the relevant topical file** for the
@@ -304,13 +305,61 @@ paraphrasing, no transcription risk.
   `cancelada`.
 - Súmulas vinculantes are a closed, small, high-importance set —
   binding under CF Art. 103-A. Worth bulk collection.
-- **Ordinary súmulas (STF, STJ, TST, TSE)** are *not* bulk-collected.
-  When a topical file cites one (e.g., Súmula STJ 568), add an entry
-  by hand at that point. The reference repo's job is making *cited*
-  things resolvable, not mirroring all of Brazilian jurisprudence.
 - When STF cancels or revokes a SV, update the YAML entry's `status`
   field and add a `nota` line explaining the change. Do not delete the
   entry — superseded SVs remain citable for historical analysis.
+
+## Citing Súmulas TSE — backtick form for STSE
+
+The bracket grammar also accepts TSE (Tribunal Superior Eleitoral)
+súmulas by number, resolved against [`sumulas_tse.yaml`](sumulas_tse.yaml).
+TSE súmulas are non-binding (the electoral justice system has no
+equivalent of súmula vinculante) but highly persuasive — TSE is the
+final word on electoral law and lower electoral courts treat its
+súmulas as the operational rule.
+
+### Form
+
+```
+`STSE<number>`
+```
+
+```
+`STSE38`    ← litisconsórcio passivo necessário em ações majoritárias
+`STSE47`    ← inelegibilidade superveniente (RCED)
+`STSE62`    ← limites do pedido pelos fatos imputados
+`STSE30`    ← dissídio jurisprudencial conforme TSE
+`STSE1`     ← (cancelada — verifique status antes de citar)
+```
+
+The `S` prefix mirrors `SV` (Súmula Vinculante), and the court code
+follows. If we add other courts (STJ, TST), they'll use `SSTJ`, `STST`
+on the same pattern.
+
+### What lookup returns
+
+- **numero** — the TSE súmula number
+- **enunciado** — the verbatim text as published by TSE
+- **status** — `vigente`, `cancelada`, `revogada`, or `alterada`
+- **fonte** — canonical TSE listing URL (TSE doesn't expose stable
+  per-súmula URLs, so all entries point to the listing index)
+
+### Coverage and policy
+
+- All **72** numbered TSE súmulas are present (scrape of 2026-04-09).
+  7 are currently `cancelada` (1, 7, 8, 14, 16, 17, 21).
+- TSE súmulas are bulk-collected because the set is small (~72),
+  the topical surface area covered by this repo is heavy in electoral
+  law, and the verbatim text is short and stable.
+- **STJ, TST, and ordinary STF súmulas** are *not* bulk-collected.
+  When a topical file cites one (e.g., Súmula STJ 568, Súmula TST 331),
+  add an entry to a future `sumulas_<court>.yaml` by hand at that
+  point. The reference repo's job is making *cited* things resolvable,
+  not mirroring all of Brazilian jurisprudence.
+- When TSE cancels or revokes a súmula, re-run the scraper — TSE marks
+  cancellations directly on the listing page, so the status flips
+  automatically. Do not delete the entry — superseded súmulas remain
+  citable for historical analysis.
 
 ### When to add a new case
 
@@ -345,9 +394,11 @@ When a topical file cites a previously-unseen STF case:
 - **Cross-reference both ways.** If you add content to one file that
   relates to another, add a "See also" pointer or inline link in
   both directions.
-- **Don't paste verbatim statute text.** Files should be explanatory
-  notes and summaries, not statute copies. Link to planalto.gov.br
-  for the actual text.
+- **Don't paste verbatim statute text.** Topical files characterize
+  what's in the statute and explain why it matters; the verbatim text
+  lives in `artigos.db` and is retrieved on demand by resolving the
+  backtick-form citations through `cite.py`. Use a planalto.gov.br
+  link as fallback when the law isn't in the catalog yet.
 - **Don't add unsourced empirical findings** from in-progress research
   projects, personal communications, or unpublished work. The
   audience is public. If a claim isn't verifiable against a public

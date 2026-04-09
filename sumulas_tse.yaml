@@ -1,0 +1,470 @@
+# Súmulas TSE — Tribunal Superior Eleitoral
+#
+# Numbered súmulas of the TSE consolidating electoral jurisprudence.
+# Non-binding (no equivalent of súmula vinculante in the electoral
+# justice system) but highly persuasive: TSE is the final word on
+# electoral law and its súmulas are routinely cited as the operational
+# rule by lower electoral courts.
+#
+# Resolved via cite.py with bracket form `STSE38`, `STSE47`, etc.
+# Documented in CLAUDE.md.
+#
+# Sources:
+# - All entries scraped from www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+#   by tools/sumulas_scraper/tse.py.
+# - Verbatim text matched against the TSE Plone listing (text inline,
+#   no per-súmula detail-page fetches needed).
+#
+# Status values:
+#   vigente   — currently in force
+#   cancelada — explicitly cancelled by TSE (marked "(Cancelada)" on listing)
+#   revogada  — formally revoked
+#   alterada  — content altered by later resolução
+#
+# Fields:
+#   numero     — TSE súmula number (matches the bracket-form id, e.g., 38 → `STSE38`)
+#   enunciado  — verbatim text as published by TSE
+#   status     — vigente | cancelada | revogada | alterada
+#   fonte      — canonical TSE portal URL (listing page; TSE doesn't expose stable per-súmula URLs)
+#
+# When adding/editing entries:
+# - Preserve verbatim text. Do not paraphrase or reformat.
+# - Re-run tools/sumulas_scraper/tse.py to refresh from TSE.
+
+schema_version: 1
+last_updated: 2026-04-09
+
+sumulas:
+
+
+  STSE1:
+    numero: 1
+    status: cancelada
+    enunciado: "Proposta a ação para desconstituir a decisão que rejeitou as contas, anteriormente à impugnação, fica suspensa a inelegibilidade (Lei Complementar nº 64/90, art. 1º, I, g)."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE2:
+    numero: 2
+    status: vigente
+    enunciado: "Assinada e recebida a ficha de filiação partidária até o termo final do prazo fixado em lei, considera-se satisfeita a correspondente condição de elegibilidade, ainda que não tenha fluído, até a mesma data, o tríduo legal de impugnação."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE3:
+    numero: 3
+    status: vigente
+    enunciado: "No processo de registro de candidatos, não tendo o juiz aberto prazo para o suprimento de defeito da instrução do pedido, pode o documento, cuja falta houver motivado o indeferimento, ser juntado com o recurso ordinário."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE4:
+    numero: 4
+    status: vigente
+    enunciado: "Não havendo preferência entre candidatos que pretendam o registro da mesma variação nominal, defere-se o do que primeiro o tenha requerido."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE5:
+    numero: 5
+    status: vigente
+    enunciado: "Serventuário de cartório, celetista, não se inclui na exigência do art. 1º, II, l, da LC nº 64/90."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE6:
+    numero: 6
+    status: vigente
+    enunciado: "São inelegíveis para o cargo de Chefe do Executivo o cônjuge e os parentes, indicados no § 7º do art. 14 da Constituição Federal, do titular do mandato, salvo se este, reelegível, tenha falecido, renunciado ou se afastado definitivamente do cargo até seis meses antes do pleito."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE7:
+    numero: 7
+    status: cancelada
+    enunciado: "É inelegível para o cargo de prefeito a irmã da concubina do atual titular do mandato."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE8:
+    numero: 8
+    status: cancelada
+    enunciado: "O vice-prefeito é inelegível para o mesmo cargo."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE9:
+    numero: 9
+    status: vigente
+    enunciado: "A suspensão de direitos políticos decorrente de condenação criminal transitada em julgado cessa com o cumprimento ou a extinção da pena, independendo de reabilitação ou de prova de reparação dos danos."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE10:
+    numero: 10
+    status: vigente
+    enunciado: "No processo de registro de candidatos, quando a sentença for entregue em cartório antes de três dias contados da conclusão ao juiz, o prazo para o recurso ordinário, salvo intimação pessoal anterior, só se conta do termo final daquele tríduo."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE11:
+    numero: 11
+    status: vigente
+    enunciado: "No processo de registro de candidatos, o partido que não o impugnou não tem legitimidade para recorrer da sentença que o deferiu, salvo se se cuidar de matéria constitucional."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE12:
+    numero: 12
+    status: vigente
+    enunciado: "São inelegíveis, no município desmembrado, e ainda não instalado, o cônjuge e os parentes consangüíneos ou afins, até o segundo grau ou por adoção, do prefeito do município-mãe, ou de quem o tenha substituído, dentro dos seis meses anteriores ao pleito, salvo se já titular de mandato eletivo."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE13:
+    numero: 13
+    status: vigente
+    enunciado: "Não é auto-aplicável o § 9º do art. 14 da Constituição, com a redação da Emenda Constitucional de Revisão n° 4/94."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE14:
+    numero: 14
+    status: cancelada
+    enunciado: "A duplicidade de que cuida o parágrafo único do artigo 22 da Lei n° 9.096/95 somente fica caracterizada caso a nova filiação houver ocorrido após a remessa das listas previstas no parágrafo único do artigo 58 da referida lei."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE15:
+    numero: 15
+    status: vigente
+    enunciado: "O exercício de mandato eletivo não é circunstância capaz, por si só, de comprovar a condição de alfabetizado do candidato."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE16:
+    numero: 16
+    status: cancelada
+    enunciado: "A falta de abertura de conta bancária específica não é fundamento suficiente para a rejeição de contas de campanha eleitoral, desde que, por outros meios, se possa demonstrar sua regularidade."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE17:
+    numero: 17
+    status: cancelada
+    enunciado: "Não é admissível a presunção de que o candidato, por ser beneficiário de propaganda eleitoral irregular, tenha prévio conhecimento de sua veiculação."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE18:
+    numero: 18
+    status: vigente
+    enunciado: "Conquanto investido de poder de polícia, não tem legitimidade o juiz eleitoral para, de ofício, instaurar procedimento com a finalidade de impor multa pela veiculação de propaganda eleitoral em desacordo com a Lei nº 9.504/97."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE19:
+    numero: 19
+    status: vigente
+    enunciado: "O prazo de inelegibilidade decorrente da condenação por abuso do poder econômico ou político tem início no dia da eleição em que este se verificou e finda no dia de igual número no oitavo ano seguinte (art. 22, XIV, da LC nº 64/90)."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE20:
+    numero: 20
+    status: vigente
+    enunciado: "A prova de filiação partidária daquele cujo nome não constou da lista de filiados de que trata o art. 19 da Lei nº 9.096/95, pode ser realizada por outros elementos de convicção, salvo quando se tratar de documentos produzidos unilateralmente, destituídos de fé pública."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE21:
+    numero: 21
+    status: cancelada
+    enunciado: "O prazo para ajuizamento da representação contra doação de campanha acima do limite legal é de 180 dias, contados da data da diplomação."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE22:
+    numero: 22
+    status: vigente
+    enunciado: "Não cabe mandado de segurança contra decisão judicial recorrível, salvo situações de teratologia ou manifestamente ilegais."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE23:
+    numero: 23
+    status: vigente
+    enunciado: "Não cabe mandado de segurança contra decisão judicial transitada em julgado."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE24:
+    numero: 24
+    status: vigente
+    enunciado: "Não cabe recurso especial eleitoral para simples reexame do conjunto fático-probatório."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE25:
+    numero: 25
+    status: vigente
+    enunciado: "É indispensável o esgotamento das instâncias ordinárias para a interposição de recurso especial eleitoral."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE26:
+    numero: 26
+    status: vigente
+    enunciado: "É inadmissível o recurso que deixa de impugnar especificamente fundamento da decisão recorrida que é, por si só, suficiente para a manutenção desta."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE27:
+    numero: 27
+    status: vigente
+    enunciado: "É inadmissível recurso cuja deficiência de fundamentação impossibilite a compreensão da controvérsia."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE28:
+    numero: 28
+    status: vigente
+    enunciado: "A divergência jurisprudencial que fundamenta o recurso especial interposto com base na alínea b do inciso I do art. 276 do Código Eleitoral somente estará demonstrada mediante a realização de cotejo analítico e a existência de similitude fática entre os acórdãos paradigma e o aresto recorrido."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE29:
+    numero: 29
+    status: vigente
+    enunciado: "A divergência entre julgados do mesmo Tribunal não se presta a configurar dissídio jurisprudencial apto a fundamentar recurso especial eleitoral."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE30:
+    numero: 30
+    status: vigente
+    enunciado: "Não se conhece de recurso especial eleitoral por dissídio jurisprudencial, quando a decisão recorrida estiver em conformidade com a jurisprudência do Tribunal Superior Eleitoral."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE31:
+    numero: 31
+    status: vigente
+    enunciado: "Não cabe recurso especial eleitoral contra acórdão que decide sobre pedido de medida liminar."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE32:
+    numero: 32
+    status: vigente
+    enunciado: "É inadmissível recurso especial eleitoral por violação à legislação municipal ou estadual, ao Regimento Interno dos Tribunais Eleitorais ou às normas partidárias."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE33:
+    numero: 33
+    status: vigente
+    enunciado: "Somente é cabível ação rescisória de decisões do Tribunal Superior Eleitoral que versem sobre a incidência de causa de inelegibilidade."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE34:
+    numero: 34
+    status: vigente
+    enunciado: "Não compete ao Tribunal Superior Eleitoral processar e julgar mandado de segurança contra ato de membro de Tribunal Regional Eleitoral."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE35:
+    numero: 35
+    status: vigente
+    enunciado: "Não é cabível reclamação para arguir o descumprimento de resposta a consulta ou de ato normativo do Tribunal Superior Eleitoral."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE36:
+    numero: 36
+    status: vigente
+    enunciado: "Cabe recurso ordinário de acórdão de Tribunal Regional Eleitoral que decida sobre inelegibilidade, expedição ou anulação de diploma ou perda de mandato eletivo nas eleições federais ou estaduais (art. 121, § 4º, incisos III e IV, da Constituição Federal)."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE37:
+    numero: 37
+    status: vigente
+    enunciado: "Compete originariamente ao Tribunal Superior Eleitoral processar e julgar recurso contra expedição de diploma envolvendo eleições federais ou estaduais."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE38:
+    numero: 38
+    status: vigente
+    enunciado: "Nas ações que visem à cassação de registro, diploma ou mandato, há litisconsórcio passivo necessário entre o titular e o respectivo vice da chapa majoritária."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE39:
+    numero: 39
+    status: vigente
+    enunciado: "Não há formação de litisconsórcio necessário em processos de registro de candidatura."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE40:
+    numero: 40
+    status: vigente
+    enunciado: "O partido político não é litisconsorte passivo necessário em ações que visem à cassação de diploma."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE41:
+    numero: 41
+    status: vigente
+    enunciado: "Não cabe à Justiça Eleitoral decidir sobre o acerto ou desacerto das decisões proferidas por outros Órgãos do Judiciário ou dos Tribunais de Contas que configurem causa de inelegibilidade."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE42:
+    numero: 42
+    status: vigente
+    enunciado: "A decisão que julga não prestadas as contas de campanha impede o candidato de obter a certidão de quitação eleitoral durante o curso do mandato ao qual concorreu, persistindo esses efeitos, após esse período, até a efetiva apresentação das contas."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE43:
+    numero: 43
+    status: vigente
+    enunciado: "As alterações fáticas ou jurídicas supervenientes ao registro que beneficiem o candidato, nos termos da parte final do art. 11, § 10, da Lei n° 9.504/97, também devem ser admitidas para as condições de elegibilidade."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE44:
+    numero: 44
+    status: vigente
+    enunciado: "O disposto no art. 26-C da LC nº 64/90 não afasta o poder geral de cautela conferido ao magistrado pelo Código de Processo Civil."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE45:
+    numero: 45
+    status: vigente
+    enunciado: "Nos processos de registro de candidatura, o Juiz Eleitoral pode conhecer de ofício da existência de causas de inelegibilidade ou da ausência de condição de elegibilidade, desde que resguardados o contraditório e a ampla defesa."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE46:
+    numero: 46
+    status: vigente
+    enunciado: "É ilícita a prova colhida por meio da quebra do sigilo fiscal sem prévia e fundamentada autorização judicial, podendo o Ministério Público Eleitoral acessar diretamente apenas a relação dos doadores que excederam os limites legais, para os fins da representação cabível, em que poderá requerer, judicialmente e de forma individualizada, o acesso aos dados relativos aos rendimentos do doador."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE47:
+    numero: 47
+    status: vigente
+    enunciado: "A inelegibilidade superveniente que autoriza a interposição de recurso contra expedição de diploma, fundado no art. 262 do Código Eleitoral, é aquela de índole constitucional ou, se infraconstitucional, superveniente ao registro de candidatura, e que surge até a data do pleito."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE48:
+    numero: 48
+    status: vigente
+    enunciado: "A retirada da propaganda irregular, quando realizada em bem particular, não é capaz de elidir a multa prevista no art. 37, § 1º, da Lei nº 9.504/97."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE49:
+    numero: 49
+    status: vigente
+    enunciado: "O prazo de cinco dias, previsto no art. 3º da LC nº 64/90, para o Ministério Público impugnar o registro inicia-se com a publicação do edital, caso em que é excepcionada a regra que determina a sua intimação pessoal."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE50:
+    numero: 50
+    status: vigente
+    enunciado: "O pagamento da multa eleitoral pelo candidato ou a comprovação do cumprimento regular de seu parcelamento após o pedido de registro, mas antes do julgamento respectivo, afasta a ausência de quitação eleitoral."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE51:
+    numero: 51
+    status: vigente
+    enunciado: "O processo de registro de candidatura não é o meio adequado para se afastarem os eventuais vícios apurados no processo de prestação de contas de campanha ou partidárias."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE52:
+    numero: 52
+    status: vigente
+    enunciado: "Em registro de candidatura, não cabe examinar o acerto ou desacerto da decisão que examinou, em processo específico, a filiação partidária do eleitor."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE53:
+    numero: 53
+    status: vigente
+    enunciado: "O filiado a partido político, ainda que não seja candidato, possui legitimidade e interesse para impugnar pedido de registro de coligação partidária da qual é integrante, em razão de eventuais irregularidades havidas em convenção."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE54:
+    numero: 54
+    status: vigente
+    enunciado: "A desincompatibilização de servidor público que possui cargo em comissão é de três meses antes do pleito e pressupõe a exoneração do cargo comissionado, e não apenas seu afastamento de fato."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE55:
+    numero: 55
+    status: vigente
+    enunciado: "A Carteira Nacional de Habilitação gera a presunção da escolaridade necessária ao deferimento do registro de candidatura."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE56:
+    numero: 56
+    status: vigente
+    enunciado: "A multa eleitoral constitui dívida ativa de natureza não tributária, submetendo-se ao prazo prescricional de 10 (dez) anos, nos moldes do art. 205 do Código Civil."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE57:
+    numero: 57
+    status: vigente
+    enunciado: "A apresentação das contas de campanha é suficiente para a obtenção da quitação eleitoral, nos termos da nova redação conferida ao art. 11, § 7º, da Lei nº 9.504/97, pela Lei nº 12.034/2009."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE58:
+    numero: 58
+    status: vigente
+    enunciado: "Não compete à Justiça Eleitoral, em processo de registro de candidatura, verificar a prescrição da pretensão punitiva ou executória do candidato e declarar a extinção da pena imposta pela Justiça Comum."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE59:
+    numero: 59
+    status: vigente
+    enunciado: "O reconhecimento da prescrição da pretensão executória pela Justiça Comum não afasta a inelegibilidade prevista no art. 1º, I, e, da LC nº 64/90, porquanto não extingue os efeitos secundários da condenação."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE60:
+    numero: 60
+    status: vigente
+    enunciado: "O prazo da causa de inelegibilidade prevista no art. 1º, I, e, da LC nº 64/90 deve ser contado a partir da data em que ocorrida a prescrição da pretensão executória e não do momento da sua declaração judicial."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE61:
+    numero: 61
+    status: vigente
+    enunciado: "O prazo concernente à hipótese de inelegibilidade prevista no art. 1º, I, e, da LC nº 64/90 projeta-se por oito anos após o cumprimento da pena, seja ela privativa de liberdade, restritiva de direito ou multa."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE62:
+    numero: 62
+    status: vigente
+    enunciado: "Os limites do pedido são demarcados pelos fatos imputados na inicial, dos quais a parte se defende, e não pela capitulação legal atribuída pelo autor."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE63:
+    numero: 63
+    status: vigente
+    enunciado: "A execução fiscal de multa eleitoral só pode atingir os sócios se preenchidos os requisitos para a desconsideração da personalidade jurídica previstos no art. 50 do Código Civil, tendo em vista a natureza não tributária da dívida, observados, ainda, o contraditório e a ampla defesa."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE64:
+    numero: 64
+    status: vigente
+    enunciado: "Contra acórdão que discute, simultaneamente, condições de elegibilidade e de inelegibilidade, é cabível o recurso ordinário."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE65:
+    numero: 65
+    status: vigente
+    enunciado: "Considera-se tempestivo o recurso interposto antes da publicação da decisão recorrida."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE66:
+    numero: 66
+    status: vigente
+    enunciado: "A incidência do § 2º do art. 26-C da LC nº 64/90 não acarreta o imediato indeferimento do registro ou o cancelamento do diploma, sendo necessário o exame da presença de todos os requisitos essenciais à configuração da inelegibilidade, observados os princípios do contraditório e da ampla defesa."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE67:
+    numero: 67
+    status: vigente
+    enunciado: "A perda do mandato em razão da desfiliação partidária não se aplica aos candidatos eleitos pelo sistema majoritário."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE68:
+    numero: 68
+    status: vigente
+    enunciado: "A União é parte legítima para requerer a execução de astreintes, fixada por descumprimento de ordem judicial no âmbito da Justiça Eleitoral."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE69:
+    numero: 69
+    status: vigente
+    enunciado: "Os prazos de inelegibilidade previstos nas alíneas j e h do inciso I do art. 1º da LC nº 64/90 têm termo inicial no dia do primeiro turno da eleição e termo final no dia de igual número no oitavo ano seguinte."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE70:
+    numero: 70
+    status: vigente
+    enunciado: "O encerramento do prazo de inelegibilidade antes do dia da eleição constitui fato superveniente que afasta a inelegibilidade, nos termos do art. 11, § 10, da Lei nº 9.504/97."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE71:
+    numero: 71
+    status: vigente
+    enunciado: "Na hipótese de negativa de seguimento ao recurso especial e da consequente interposição de agravo, a parte deverá apresentar contrarrazões tanto ao agravo quanto ao recurso especial, dentro do mesmo tríduo legal."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse
+
+  STSE72:
+    numero: 72
+    status: vigente
+    enunciado: "É inadmissível o recurso especial eleitoral quando a questão suscitada não foi debatida na decisão recorrida e não foi objeto de embargos de declaração."
+    fonte: https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse

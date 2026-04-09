@@ -11,6 +11,8 @@ into structured fields and resolves it against the appropriate index:
   jurisprudencia_index.yaml.
 - **Súmula Vinculante citations** (`SV14`, `SV37`, `SV13`)
   resolve to entries in sumulas_vinculantes.yaml with verbatim text.
+- **TSE Súmula citations** (`STSE38`, `STSE47`, `STSE62`)
+  resolve to entries in sumulas_tse.yaml with verbatim text.
 
 Inside markdown, citations are wrapped in single backticks so they
 render as monospace inline code on github.com. The parser accepts
@@ -66,6 +68,16 @@ DEFAULT_SV_INDEX = Path(
     os.environ.get(
         "SV_INDEX",
         Path(__file__).resolve().parent.parent.parent / "sumulas_vinculantes.yaml"
+    )
+)
+
+# ---------------------------------------------------------------------------
+# Default TSE súmulas index location.
+# ---------------------------------------------------------------------------
+DEFAULT_STSE_INDEX = Path(
+    os.environ.get(
+        "STSE_INDEX",
+        Path(__file__).resolve().parent.parent.parent / "sumulas_tse.yaml"
     )
 )
 
@@ -169,6 +181,15 @@ CASE_ID_RE = re.compile(
 # canonical key in the YAML is "SV<number>" (e.g., SV14).
 SV_RE = re.compile(r"^SV(\d+)$")
 
+# ---------------------------------------------------------------------------
+# TSE Súmula grammar
+# ---------------------------------------------------------------------------
+# `STSE38`, `STSE47` etc. — TSE Súmulas by number.
+# Resolves against sumulas_tse.yaml. Canonical key: "STSE<number>".
+# The "S" prefix mirrors `SV` (Súmula Vinculante) so all súmula
+# citations begin with S; the court code follows.
+STSE_RE = re.compile(r"^STSE(\d+)$")
+
 
 # ---------------------------------------------------------------------------
 # Path normalization
@@ -259,7 +280,8 @@ class Citation:
     vintage: Optional[str] = None  # :original or :current
     raw: Optional[str] = None  # original bracket string
     is_case: bool = False  # True for jurisprudence citations like `Tema1199`
-    is_sv: bool = False  # True for `SV14` súmula vinculante citations
+    is_sv: bool = False  # True for `SV14` STF súmula vinculante citations
+    is_stse: bool = False  # True for `STSE38` TSE súmula citations
 
     @property
     def is_whole_law(self) -> bool:
@@ -268,6 +290,7 @@ class Citation:
             and self.path is None
             and not self.is_case
             and not self.is_sv
+            and not self.is_stse
         )
 
     def to_lookup_args(self) -> List[str]:
@@ -287,7 +310,7 @@ class Citation:
         return args
 
     def __str__(self) -> str:
-        if self.is_case or self.is_sv:
+        if self.is_case or self.is_sv or self.is_stse:
             return f"`{self.identifier}`"
         s = self.identifier
         if self.artigo is not None:
@@ -318,6 +341,11 @@ def parse(citation: str) -> Citation:
     # Backward compatibility: also accept the old [[ ]] form
     elif body.startswith("[[") and body.endswith("]]"):
         body = body[2:-2].strip()
+
+    # TSE Súmula? (`STSE38`, `STSE47`, ...) — checked before SV so the
+    # longer prefix wins.
+    if STSE_RE.match(body):
+        return Citation(identifier=body, is_stse=True, raw=raw)
 
     # Súmula Vinculante? (`SV14`, `SV37`, ...) — checked before case
     # grammar so SV-prefixed identifiers are not misread.
@@ -472,6 +500,42 @@ def lookup_sv(identifier: str, index_path: Optional[Path] = None) -> Optional[di
 
 
 # ---------------------------------------------------------------------------
+# TSE Súmulas index loader
+# ---------------------------------------------------------------------------
+_stse_cache: Optional[dict] = None
+
+
+def load_stse_index(path: Optional[Path] = None) -> dict:
+    """Load and cache sumulas_tse.yaml. Empty on missing file."""
+    global _stse_cache
+    if _stse_cache is not None:
+        return _stse_cache
+    if path is None:
+        path = DEFAULT_STSE_INDEX
+    if not path.exists():
+        _stse_cache = {"sumulas": {}}
+        return _stse_cache
+    try:
+        import yaml
+    except ImportError:
+        _stse_cache = {"sumulas": {}}
+        return _stse_cache
+    data = yaml.safe_load(path.read_text()) or {}
+    _stse_cache = {"sumulas": data.get("sumulas", {}) or {}}
+    return _stse_cache
+
+
+def lookup_stse(identifier: str, index_path: Optional[Path] = None) -> Optional[dict]:
+    """Look up a TSE súmula by canonical key (e.g., 'STSE38'). Returns the
+    entry merged with its id, or None if not found."""
+    idx = load_stse_index(index_path)
+    entry = idx["sumulas"].get(identifier)
+    if entry is None:
+        return None
+    return {"id": identifier, **entry}
+
+
+# ---------------------------------------------------------------------------
 # SQL resolver
 # ---------------------------------------------------------------------------
 def resolve(
@@ -559,14 +623,17 @@ def resolve(
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
-def _print_sv(entry: dict, full: bool = False) -> None:
-    """Print a Súmula Vinculante index entry to stdout."""
+def _print_sumula(entry: dict, label: str, full: bool = False) -> None:
+    """Print a súmula index entry (SV or STSE) to stdout.
+
+    `label` is the human-readable header (e.g., "Súmula Vinculante 14",
+    "Súmula TSE 38"). The structure is the same across courts.
+    """
     sid = entry.get("id", "?")
-    numero = entry.get("numero", "?")
     status = entry.get("status", "")
     enunciado = entry.get("enunciado") or ""
 
-    print(f"--- `{sid}`  Súmula Vinculante {numero}")
+    print(f"--- `{sid}`  {label}")
     print(f"  status:    {status}")
     if entry.get("publicacao"):
         print(f"  publicada: {entry['publicacao']}")
@@ -576,6 +643,14 @@ def _print_sv(entry: dict, full: bool = False) -> None:
         print()
         print(f"  fonte: {entry['fonte']}")
     print()
+
+
+def _print_sv(entry: dict, full: bool = False) -> None:
+    _print_sumula(entry, f"Súmula Vinculante {entry.get('numero', '?')}", full=full)
+
+
+def _print_stse(entry: dict, full: bool = False) -> None:
+    _print_sumula(entry, f"Súmula TSE {entry.get('numero', '?')}", full=full)
 
 
 def _print_case(entry: dict, full: bool = False) -> None:
@@ -661,6 +736,11 @@ def main() -> int:
             "  cite.py 'SV13'                  # nepotismo\n"
             "  cite.py 'SV9' --full            # cancelada\n"
             "\n"
+            "Examples (súmula TSE):\n"
+            "  cite.py 'STSE38'                # litisconsórcio passivo majoritário\n"
+            "  cite.py 'STSE47'                # inelegibilidade superveniente\n"
+            "  cite.py 'STSE1'                 # cancelada\n"
+            "\n"
             "  cite.py --find-in path/to/file.md\n"
             "\n"
             "Backticks around the citation are accepted but not required\n"
@@ -703,7 +783,8 @@ def main() -> int:
         print(f"  identifier: {c.identifier}")
         print(f"  is_case:    {c.is_case}")
         print(f"  is_sv:      {c.is_sv}")
-        if not c.is_case and not c.is_sv:
+        print(f"  is_stse:    {c.is_stse}")
+        if not c.is_case and not c.is_sv and not c.is_stse:
             print(f"  artigo:     {c.artigo}")
             print(f"  letra:      {c.letra}")
             print(f"  path:       {c.path}")
@@ -723,6 +804,18 @@ def main() -> int:
             )
             return 3
         _print_sv(entry, full=args.full)
+        return 0
+
+    # TSE Súmula: resolve against the STSE YAML
+    if c.is_stse:
+        entry = lookup_stse(c.identifier)
+        if entry is None:
+            print(
+                f"No TSE súmula match for {c} in {DEFAULT_STSE_INDEX}",
+                file=sys.stderr,
+            )
+            return 3
+        _print_stse(entry, full=args.full)
         return 0
 
     # Jurisprudence citation: resolve against the YAML index
