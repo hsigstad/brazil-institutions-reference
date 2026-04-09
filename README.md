@@ -89,10 +89,6 @@ keywords` line includes both Portuguese and English search terms.
 - [`leis_index.yaml`](leis_index.yaml) — Structured YAML index of statutes cited in this directory: status, key articles, topics, files where discussed.
 - [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — Consolidated STF case file. STF Temas, ADIs, ADPFs, HCs cited elsewhere are described here once and cross-referenced.
 
-### Other
-
-- [`nao-judicial.md`](nao-judicial.md) — Non-judicial institutions (diplomats, etc.)
-
 ## How to use this reference
 
 - **Grep first, then read the whole file.** Headers and subheaders are
