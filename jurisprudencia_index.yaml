@@ -56,7 +56,7 @@ cases:
     holding_short: >
       Ressarcimento ao erário em improbidade dolosa é imprescritível;
       sanções e declaratória seguem prescrição ordinária.
-    discussed_in: [improbidade.md, jurisprudencia-stf.md]
+    discussed_in: [topics/improbidade.md, jurisprudencia-stf.md]
     related_leis: [LIA, CF]
     supera: []
     superado_por: null
@@ -76,7 +76,7 @@ cases:
       transitados em julgado, mas aplica-se imediatamente a casos
       pendentes. Prescrição de 8 anos é irretroativa: para condutas
       anteriores ao reforma, conta da publicação (2021-10-26).
-    discussed_in: [improbidade.md, licitacoes.md, jurisprudencia-stf.md]
+    discussed_in: [topics/improbidade.md, topics/licitacoes.md, jurisprudencia-stf.md]
     related_leis: [LIA, L14230-2021]
     supera: []
     superado_por: null
@@ -101,7 +101,7 @@ cases:
       julgadas pela câmara municipal para fins de inelegibilidade
       (LC64/1990 Art. 1 I g). Parecer do TCE só deixa de prevalecer
       por 2/3 dos vereadores; omissão da câmara não gera inelegibilidade.
-    discussed_in: [contas-municipais.md, partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
+    discussed_in: [topics/contas-municipais.md, topics/partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
     related_leis: [LI, CF]
     supera: []
     superado_por: null
@@ -119,7 +119,7 @@ cases:
       prefeitos ordenadores de despesas, mas inelegibilidade Ficha
       Limpa só nasce de rejeição pela câmara das contas de governo.
       Complementa Tema 157, não o contradiz.
-    discussed_in: [contas-municipais.md, jurisprudencia-stf.md]
+    discussed_in: [topics/contas-municipais.md, jurisprudencia-stf.md]
     related_leis: [LI, CF]
     complementa: [Tema157]
     supera: []
@@ -139,7 +139,7 @@ cases:
       inelegibilidade por decisão de órgão colegiado (sem trânsito
       em julgado). Presunção de inocência rejeitada como objeção:
       inelegibilidade é restrição não-criminal à candidatura.
-    discussed_in: [partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
     related_leis: [LI, LC135-2010]
     supera: []
     superado_por: null
@@ -160,7 +160,7 @@ cases:
       inconstitucionais. Beneficiários da justiça gratuita não pagam
       perícia com créditos da causa; sucumbenciais ficam suspensos
       por 2 anos do trânsito em julgado.
-    discussed_in: [justica-trabalho.md, jurisprudencia-stf.md]
+    discussed_in: [topics/justica-trabalho.md, jurisprudencia-stf.md]
     related_leis: [CLT, L13467-2017]
     supera: []
     superado_por: null
@@ -181,7 +181,7 @@ cases:
       partidos (Lei 9.504/1997 e Lei 9.096/1995). Vigente a partir
       das eleições de 2016, gerou criação do FEFC (Lei 13.487/2017).
       Pré-2016 vs pós-2016 são regimes fundamentalmente distintos.
-    discussed_in: [partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
     related_leis: [LE, L9096-1995]
     supera: []
     superado_por: null
@@ -202,7 +202,7 @@ cases:
       Coeficientes fixos do FPE (LC 62/1989) declarados
       inconstitucionais por perpetuar fatias sem atualização. Congresso
       respondeu com LC 143/2013 (fórmula população + renda per capita).
-    discussed_in: [federalismo-fiscal.md, jurisprudencia-stf.md]
+    discussed_in: [topics/federalismo-fiscal.md, jurisprudencia-stf.md]
     related_leis: [LC62-1989, LC143-2013, CF]
     supera: []
     superado_por: null
@@ -221,7 +221,7 @@ cases:
       Permitiu execução de pena após confirmação em segunda
       instância, antes do trânsito em julgado. Habilitou prisões
       de réus de alto perfil da Lava Jato.
-    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    discussed_in: [topics/anticorrupcao-penal.md, jurisprudencia-stf.md]
     related_leis: [CF, CPP]
     supera: []
     superado_por: ADC43
@@ -239,7 +239,7 @@ cases:
       antes da execução penal. Reafirmou presunção de inocência em
       sua forma processual plena. Triggered release of high-profile
       defendants including Lula.
-    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    discussed_in: [topics/anticorrupcao-penal.md, jurisprudencia-stf.md]
     related_leis: [CF, CPP]
     supera: [HC126292]
     superado_por: null
@@ -255,7 +255,7 @@ cases:
       Lula não-Petrobras. (2) Sergio Moro (depois Min. da Justiça)
       atuou com parcialidade, viciando os processos. Anulou múltiplas
       condenações de Lula em bases procedimentais.
-    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    discussed_in: [topics/anticorrupcao-penal.md, jurisprudencia-stf.md]
     related_leis: [CPP, CF]
     supera: []
     superado_por: null
@@ -273,7 +273,7 @@ cases:
       constitucional, com diretrizes de implementação fixadas pelo
       STF. Implementação efetiva a partir de 2024. Separa juiz da
       investigação do juiz da instrução/julgamento.
-    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    discussed_in: [topics/anticorrupcao-penal.md, jurisprudencia-stf.md]
     related_leis: [CPP, L13964-2019]
     supera: []
     superado_por: null
@@ -290,7 +290,7 @@ cases:
       premiada (Lei 12.850/2013 Art. 4) e padrões probatórios para o
       depoimento do colaborador. Colaboração isolada não sustenta
       condenação (Art. 4 §16): exige corroboração.
-    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    discussed_in: [topics/anticorrupcao-penal.md, jurisprudencia-stf.md]
     related_leis: [L12850-2013]
     supera: []
     superado_por: null
@@ -333,7 +333,7 @@ cases:
       ocultar remuneração paga com recursos públicos. LGPD (2018)
       não revoga: divulgação segue válida sob base legal de
       interesse público.
-    discussed_in: [transparencia-dados.md, jurisprudencia-stf.md]
+    discussed_in: [topics/transparencia-dados.md, jurisprudencia-stf.md]
     related_leis: [CF, L13709-2018]
     supera: []
     superado_por: null

@@ -14,7 +14,7 @@ campaign finance, Ficha Limpa eligibility), see
 For **campaign-finance filing detail**, see
 [`prestacao-contas-eleitorais.md`](prestacao-contas-eleitorais.md).
 For **STF jurisprudence cited here**, see
-[`jurisprudencia-stf.md`](jurisprudencia-stf.md).
+[`../jurisprudencia-stf.md`](../jurisprudencia-stf.md).
 
 **Topics / keywords**: processo eleitoral, electoral procedure,
 prestação de contas, representação, AIPRC, AIME, AIJE, RCED,
@@ -223,7 +223,7 @@ Campaign donations exceeding the legal individual limit.
 
 Quick reference. Substance in §§4–7 below. For common confusions
 between these (especially deadlines and effects on inelegibilidade),
-see [`pitfalls.md`](pitfalls.md) "Electoral procedures".
+see [`../pitfalls.md`](../pitfalls.md) "Electoral procedures".
 
 | Action | Phase | Deadline | Statutory basis | Cassação? | 8y inelegibilidade? |
 |---|---|---|---|---|---|
@@ -651,7 +651,7 @@ Statutory basis: CE Art. 22 j (added 1996; not previously admitted).
 - [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) — substantive electoral system: open-list PR, coligações, federações, cláusula de desempenho, fundo partidário/FEFC, Ficha Limpa eligibility.
 - [`prestacao-contas-eleitorais.md`](prestacao-contas-eleitorais.md) — campaign finance accounting detail.
 - [`justica-eleitoral.md`](justica-eleitoral.md) — electoral courts (TSE, TREs, juízes eleitorais).
-- [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — STF cases cited above.
-- [`leis_index.yaml`](leis_index.yaml) — statutes cited (LE, CE, LC 64/90, Lei dos Partidos).
-- [`siglas.md`](siglas.md) — acronyms (TSE, TRE, MPE, AIPRC, AIJE, AIME, RCED, etc.).
-- [`glossario.md`](glossario.md) — legal terms (cassação, inelegibilidade, diplomação, conexão, prevenção, foro privilegiado).
+- [`../jurisprudencia-stf.md`](../jurisprudencia-stf.md) — STF cases cited above.
+- [`../leis_index.yaml`](../leis_index.yaml) — statutes cited (LE, CE, LC 64/90, Lei dos Partidos).
+- [`../siglas.md`](../siglas.md) — acronyms (TSE, TRE, MPE, AIPRC, AIJE, AIME, RCED, etc.).
+- [`../glossario.md`](../glossario.md) — legal terms (cassação, inelegibilidade, diplomação, conexão, prevenção, foro privilegiado).

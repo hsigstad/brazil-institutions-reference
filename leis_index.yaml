@@ -49,7 +49,7 @@ statutes:
       - "Art. 196 (saúde)"
       - "Art. 198 §2 (gasto mínimo em saúde)"
       - "Art. 212-A (FUNDEB)"
-    discussed_in: [contas-municipais.md, federalismo-fiscal.md, ministerio-publico.md, cgu-controle-interno.md, partidos-e-sistema-eleitoral.md, transparencia-dados.md, cnj-administracao-judicial.md]
+    discussed_in: [topics/contas-municipais.md, topics/federalismo-fiscal.md, topics/ministerio-publico.md, topics/cgu-controle-interno.md, topics/partidos-e-sistema-eleitoral.md, topics/transparencia-dados.md, topics/cnj-administracao-judicial.md]
 
   dl_2848_1940:
     tipo: Decreto-Lei
@@ -66,7 +66,7 @@ statutes:
       - "Art. 319 (prevaricação)"
       - "Art. 333 (corrupção ativa)"
       - "Arts. 337-E a 337-P (crimes em licitações, post-Lei 14.133/2021)"
-    discussed_in: [anticorrupcao-penal.md]
+    discussed_in: [topics/anticorrupcao-penal.md]
 
   dl_3689_1941:
     tipo: Decreto-Lei
@@ -80,7 +80,7 @@ statutes:
     key_articles:
       - "Art. 3-A (juiz das garantias, post-Lei 13.964/2019)"
       - "Art. 28-A (ANPP)"
-    discussed_in: [anticorrupcao-penal.md, processo-penal.md]
+    discussed_in: [topics/anticorrupcao-penal.md, topics/processo-penal.md]
 
   clt_1943:
     tipo: Decreto-Lei
@@ -98,7 +98,7 @@ statutes:
       - "Arts. 611-A, 611-B (negociado vs. legislado)"
       - "Art. 507-B (quitação anual)"
     reformed_by: [lei_13467_2017]
-    discussed_in: [justica-trabalho.md]
+    discussed_in: [topics/justica-trabalho.md]
 
   lei_4717_1965:
     tipo: Lei
@@ -109,7 +109,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l4717.htm
     topics: [civil_procedure, public_interest_litigation]
-    discussed_in: [ministerio-publico.md, processo-civil.md]
+    discussed_in: [topics/ministerio-publico.md, topics/processo-civil.md]
 
   codigo_eleitoral_1965:
     tipo: Lei
@@ -120,7 +120,7 @@ statutes:
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l4737.htm
     topics: [electoral_law]
-    discussed_in: [partidos-e-sistema-eleitoral.md, justica-eleitoral.md, processo-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md, topics/justica-eleitoral.md, topics/processo-eleitoral.md]
 
   ctn_1966:
     tipo: Lei
@@ -132,7 +132,7 @@ statutes:
     topics: [tax_law, federalism]
     key_articles:
       - "Art. 91 (FPM distribution)"
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   dl_1881_1981:
     tipo: Decreto-Lei
@@ -141,7 +141,7 @@ statutes:
     titulo: Distribuição do Fundo de Participação dos Municípios
     status: vigente_com_modificacoes
     topics: [federalism, FPM]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   lei_7347_1985:
     tipo: Lei
@@ -152,7 +152,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l7347orig.htm
     topics: [public_interest_litigation, MP]
-    discussed_in: [ministerio-publico.md, improbidade.md, processo-civil.md]
+    discussed_in: [topics/ministerio-publico.md, topics/improbidade.md, topics/processo-civil.md]
 
   lei_8080_1990:
     tipo: Lei
@@ -162,7 +162,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
     topics: [health_law, SUS]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   lei_8112_1990:
     tipo: Lei
@@ -175,7 +175,7 @@ statutes:
     topics: [public_servants, PAD]
     key_articles:
       - "Arts. 143-182 (PAD)"
-    discussed_in: [cgu-controle-interno.md]
+    discussed_in: [topics/cgu-controle-interno.md]
 
   lei_8137_1990:
     tipo: Lei
@@ -189,7 +189,7 @@ statutes:
     key_articles:
       - "Art. 1 (sonegação)"
       - "Art. 4 (cartel criminal)"
-    discussed_in: [anticorrupcao-penal.md, licitacoes.md, improbidade.md]
+    discussed_in: [topics/anticorrupcao-penal.md, topics/licitacoes.md, topics/improbidade.md]
 
   lei_8213_1991:
     tipo: Lei
@@ -216,7 +216,7 @@ statutes:
       - "Art. 1 I 'g' (rejeição de contas)"
       - "Art. 1 I 'e' (condenação criminal por órgão colegiado)"
     reformed_by: [lc_135_2010]
-    discussed_in: [contas-municipais.md, partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/contas-municipais.md, topics/partidos-e-sistema-eleitoral.md]
 
   lei_8429_1992:
     tipo: Lei
@@ -236,7 +236,7 @@ statutes:
       - "Art. 17-B (acordo de não persecução cível)"
       - "Art. 23 (prescrição)"
     reformed_by: [lei_14230_2021]
-    discussed_in: [improbidade.md, contas-municipais.md, licitacoes.md, ministerio-publico.md]
+    discussed_in: [topics/improbidade.md, topics/contas-municipais.md, topics/licitacoes.md, topics/ministerio-publico.md]
 
   lei_8443_1992:
     tipo: Lei
@@ -247,7 +247,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l8443.htm
     topics: [audit_courts, TCU]
-    discussed_in: [tribunais-contas.md]
+    discussed_in: [topics/tribunais-contas.md]
 
   lc_75_1993:
     tipo: Lei Complementar
@@ -258,7 +258,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm
     topics: [MP, MPU]
-    discussed_in: [ministerio-publico.md]
+    discussed_in: [topics/ministerio-publico.md]
 
   lei_8625_1993:
     tipo: Lei
@@ -269,7 +269,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l8625.htm
     topics: [MP, MPE]
-    discussed_in: [ministerio-publico.md]
+    discussed_in: [topics/ministerio-publico.md]
 
   lc_709_1993:
     tipo: Lei Complementar
@@ -279,7 +279,7 @@ statutes:
     status: vigente
     url: https://www.al.sp.gov.br/repositorio/legislacao/lei.complementar/1993/lei.complementar-709-14.01.1993.html
     topics: [audit_courts, TCE_SP]
-    discussed_in: [tribunais-contas.md]
+    discussed_in: [topics/tribunais-contas.md]
 
   lei_8666_1993:
     tipo: Lei
@@ -301,7 +301,7 @@ statutes:
     revoked_by:
       law: lei_14133_2021
       transition: até 30 de dezembro de 2023; conduta anterior segue regida pela lei antiga
-    discussed_in: [licitacoes.md, anticorrupcao-penal.md, improbidade.md]
+    discussed_in: [topics/licitacoes.md, topics/anticorrupcao-penal.md, topics/improbidade.md]
 
   lei_9096_1995:
     tipo: Lei
@@ -312,7 +312,7 @@ statutes:
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l9096.htm
     topics: [political_parties, fundo_partidario]
-    discussed_in: [partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md]
 
   lei_9504_1997:
     tipo: Lei
@@ -323,7 +323,7 @@ statutes:
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l9504.htm
     topics: [electoral_law, campaign_finance]
-    discussed_in: [partidos-e-sistema-eleitoral.md, processo-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md, topics/processo-eleitoral.md]
 
   lei_9613_1998:
     tipo: Lei
@@ -335,7 +335,7 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/leis/l9613.htm
     topics: [criminal_law, money_laundering]
     reformed_by: [lei_12683_2012]
-    discussed_in: [anticorrupcao-penal.md]
+    discussed_in: [topics/anticorrupcao-penal.md]
 
   lc_101_2000:
     tipo: Lei Complementar
@@ -353,7 +353,7 @@ statutes:
       - "Art. 42 (último ano de mandato)"
       - "Arts. 56-58 (apresentação de contas)"
       - "Art. 59 (fiscalização)"
-    discussed_in: [contas-municipais.md, federalismo-fiscal.md]
+    discussed_in: [topics/contas-municipais.md, topics/federalismo-fiscal.md]
 
   lei_10406_2002:
     tipo: Lei
@@ -364,7 +364,7 @@ statutes:
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm
     topics: [civil_law]
-    discussed_in: [processo-civil.md]
+    discussed_in: [topics/processo-civil.md]
 
   lei_10520_2002:
     tipo: Lei
@@ -378,7 +378,7 @@ statutes:
     revoked_by:
       law: lei_14133_2021
       transition: até 30 de dezembro de 2023
-    discussed_in: [licitacoes.md]
+    discussed_in: [topics/licitacoes.md]
 
   lei_10683_2003:
     tipo: Lei
@@ -387,7 +387,7 @@ statutes:
     titulo: Criação da CGU
     status: revogada
     topics: [CGU]
-    discussed_in: [cgu-controle-interno.md]
+    discussed_in: [topics/cgu-controle-interno.md]
 
   lc_135_2010:
     tipo: Lei Complementar
@@ -399,7 +399,7 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp135.htm
     topics: [electoral_law, ineligibility, ficha_limpa]
     reforms: [lc_64_1990]
-    discussed_in: [contas-municipais.md, partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/contas-municipais.md, topics/partidos-e-sistema-eleitoral.md]
 
   lei_11430_2006:
     tipo: Lei
@@ -418,7 +418,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm
     topics: [health_law, federalism]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   lei_12527_2011:
     tipo: Lei
@@ -433,7 +433,7 @@ statutes:
       - "Art. 3 (princípios)"
       - "Arts. 23-25 (classificação de sigilo)"
       - "Art. 31 (informação pessoal)"
-    discussed_in: [transparencia-dados.md]
+    discussed_in: [topics/transparencia-dados.md]
 
   lei_12529_2011:
     tipo: Lei
@@ -448,7 +448,7 @@ statutes:
       - "Art. 36 §3 (cartel)"
       - "Art. 37 (sanções)"
       - "Arts. 86-87 (leniência)"
-    discussed_in: [licitacoes.md, anticorrupcao-penal.md, improbidade.md]
+    discussed_in: [topics/licitacoes.md, topics/anticorrupcao-penal.md, topics/improbidade.md]
 
   lei_12683_2012:
     tipo: Lei
@@ -460,7 +460,7 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12683.htm
     topics: [criminal_law, money_laundering]
     reforms: [lei_9613_1998]
-    discussed_in: [anticorrupcao-penal.md]
+    discussed_in: [topics/anticorrupcao-penal.md]
 
   lei_12846_2013:
     tipo: Lei
@@ -478,7 +478,7 @@ statutes:
       - "Arts. 16-17 (acordo de leniência)"
       - "Art. 19 (sanções judiciais)"
       - "Art. 23 (CEIS / CNEP)"
-    discussed_in: [anticorrupcao-penal.md, cgu-controle-interno.md, licitacoes.md]
+    discussed_in: [topics/anticorrupcao-penal.md, topics/cgu-controle-interno.md, topics/licitacoes.md]
 
   lei_12850_2013:
     tipo: Lei
@@ -493,7 +493,7 @@ statutes:
       - "Art. 1 §1 (definição de orcrim)"
       - "Art. 2 (tipo penal)"
       - "Art. 4 (colaboração premiada)"
-    discussed_in: [anticorrupcao-penal.md, ministerio-publico.md]
+    discussed_in: [topics/anticorrupcao-penal.md, topics/ministerio-publico.md]
 
   lei_13105_2015:
     tipo: Lei
@@ -507,7 +507,7 @@ statutes:
     key_articles:
       - "Arts. 144, 146 (impedimento, suspeição)"
       - "Art. 784 (título executivo extrajudicial)"
-    discussed_in: [justica-trabalho.md, processo-civil.md]
+    discussed_in: [topics/justica-trabalho.md, topics/processo-civil.md]
 
   lei_13165_2015:
     tipo: Lei
@@ -518,7 +518,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13165.htm
     topics: [electoral_law]
-    discussed_in: [partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md]
 
   lei_13341_2016:
     tipo: Lei
@@ -527,7 +527,7 @@ statutes:
     titulo: Reorganização ministerial Temer
     status: vigente_com_modificacoes
     topics: [public_administration, CGU]
-    discussed_in: [cgu-controle-interno.md]
+    discussed_in: [topics/cgu-controle-interno.md]
 
   lei_13467_2017:
     tipo: Lei
@@ -539,7 +539,7 @@ statutes:
     topics: [labor_law, labor_courts]
     reforms: [clt_1943]
     notes: "Provisões sobre custas e justiça gratuita parcialmente declaradas inconstitucionais por STF ADI 5766 (Out 2021)"
-    discussed_in: [justica-trabalho.md]
+    discussed_in: [topics/justica-trabalho.md]
 
   lei_13487_2017:
     tipo: Lei
@@ -550,7 +550,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13487.htm
     topics: [campaign_finance, FEFC]
-    discussed_in: [partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md]
 
   lei_13709_2018:
     tipo: Lei
@@ -567,7 +567,7 @@ statutes:
       - "Art. 11 (dados sensíveis)"
       - "Art. 18 (direitos do titular)"
       - "Art. 52 (sanções)"
-    discussed_in: [transparencia-dados.md]
+    discussed_in: [topics/transparencia-dados.md]
 
   lei_13964_2019:
     tipo: Lei
@@ -582,7 +582,7 @@ statutes:
       - "CPP Art. 3-A (juiz das garantias)"
       - "CPP Art. 28-A (ANPP)"
     reforms: [dl_3689_1941, lei_12850_2013]
-    discussed_in: [anticorrupcao-penal.md, ministerio-publico.md]
+    discussed_in: [topics/anticorrupcao-penal.md, topics/ministerio-publico.md]
 
   lc_143_2013:
     tipo: Lei Complementar
@@ -592,7 +592,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp143.htm
     topics: [federalism, FPE, FPM]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   lei_14113_2020:
     tipo: Lei
@@ -602,7 +602,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm
     topics: [education, federalism, FUNDEB]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   lei_14133_2021:
     tipo: Lei
@@ -617,7 +617,7 @@ statutes:
       - "Art. 75 (dispensas)"
       - "Art. 191 (regime de transição)"
     revokes: [lei_8666_1993, lei_10520_2002]
-    discussed_in: [licitacoes.md, anticorrupcao-penal.md]
+    discussed_in: [topics/licitacoes.md, topics/anticorrupcao-penal.md]
 
   lei_14208_2021:
     tipo: Lei
@@ -627,7 +627,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14208.htm
     topics: [political_parties]
-    discussed_in: [partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md]
 
   lei_14230_2021:
     tipo: Lei
@@ -640,7 +640,7 @@ statutes:
     topics: [civil_corruption, improbidade]
     reforms: [lei_8429_1992]
     notes: "Retroatividade definida em STF Tema 1199 (ARE 843.989, Aug 2022)"
-    discussed_in: [improbidade.md, licitacoes.md, ministerio-publico.md]
+    discussed_in: [topics/improbidade.md, topics/licitacoes.md, topics/ministerio-publico.md]
 
   lei_14460_2022:
     tipo: Lei
@@ -650,7 +650,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14460.htm
     topics: [data_protection, ANPD]
-    discussed_in: [transparencia-dados.md]
+    discussed_in: [topics/transparencia-dados.md]
 
   ec_45_2004:
     tipo: Emenda Constitucional
@@ -661,7 +661,7 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc45.htm
     topics: [constitutional_amendment, judiciary, CNJ, CNMP]
     notes: "Criou CNJ e CNMP; introduziu súmula vinculante; alterou competências"
-    discussed_in: [cnj-administracao-judicial.md, ministerio-publico.md, cortes-superiores.md]
+    discussed_in: [topics/cnj-administracao-judicial.md, topics/ministerio-publico.md, topics/cortes-superiores.md]
 
   ec_76_2013:
     tipo: Emenda Constitucional
@@ -671,7 +671,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc76.htm
     topics: [constitutional_amendment, voting_modality]
-    discussed_in: [contas-municipais.md]
+    discussed_in: [topics/contas-municipais.md]
 
   ec_97_2017:
     tipo: Emenda Constitucional
@@ -681,7 +681,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc97.htm
     topics: [constitutional_amendment, electoral_law, political_parties]
-    discussed_in: [partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md]
 
   ec_108_2020:
     tipo: Emenda Constitucional
@@ -691,7 +691,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc108.htm
     topics: [constitutional_amendment, education, FUNDEB]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   ec_132_2023:
     tipo: Emenda Constitucional
@@ -702,7 +702,7 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm
     topics: [constitutional_amendment, tax_reform, federalism]
     notes: "Cria CBS, IBS, IS substituindo PIS, COFINS, ICMS, ISS, IPI; transição 2026-2033"
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   # Cataloged in the article DB but added later as part of index expansion.
 
@@ -715,7 +715,7 @@ statutes:
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp35.htm
     topics: [judiciary, judicial_career]
-    discussed_in: [carreira-juizes.md, juizes.md, cortes-superiores.md]
+    discussed_in: [topics/carreira-juizes.md, topics/juizes.md, topics/cortes-superiores.md]
 
   lei_12462_2011:
     tipo: Lei
@@ -729,7 +729,7 @@ statutes:
     revoked_by:
       law: lei_14133_2021
       transition: até 30 de dezembro de 2023
-    discussed_in: [licitacoes.md]
+    discussed_in: [topics/licitacoes.md]
 
   lei_12891_2013:
     tipo: Lei
@@ -740,7 +740,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12891.htm
     topics: [electoral_law]
-    discussed_in: [processo-eleitoral.md]
+    discussed_in: [topics/processo-eleitoral.md]
 
   lei_13019_2014:
     tipo: Lei
@@ -751,7 +751,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13019.htm
     topics: [public_administration, civil_society]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
   lei_13488_2017:
     tipo: Lei
@@ -762,7 +762,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13488.htm
     topics: [campaign_finance, electoral_law]
-    discussed_in: [partidos-e-sistema-eleitoral.md]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md]
 
   lc_131_2009:
     tipo: Lei Complementar
@@ -773,7 +773,7 @@ statutes:
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp131.htm
     topics: [fiscal_responsibility, transparency]
-    discussed_in: [federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md]
 
 # Topic glossary (controlled vocabulary used in the topics field above)
 # Useful for grep-based filtering: e.g., "topics:.*federalism" finds

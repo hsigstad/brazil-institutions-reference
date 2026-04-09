@@ -46,7 +46,7 @@ terminology, definitions, Portuguese.
 - **concurso público** — Competitive public examination for civil-service positions. The standard entry path into the judiciary, MP, public administration. *Concurso* with no qualifier almost always means a hiring competition (not the procurement *concurso* modality).
 - **conexão** — Procedural connection between cases (same parties, same cause, related facts) that justifies joint handling. Distinguish from *prevenção*.
 - **conselheiro** — A member of a TC (TCU/TCE/TCM) or of CNJ/CNMP. Not a judge in the strict sense.
-- **contas** — Accounts. *Contas de governo*: a mayor/governor/president's annual consolidated accounts (political). *Contas de gestão*: accounts of the official as ordenador de despesas (managerial). The distinction matters for Ficha Limpa — see [`contas-municipais.md`](contas-municipais.md).
+- **contas** — Accounts. *Contas de governo*: a mayor/governor/president's annual consolidated accounts (political). *Contas de gestão*: accounts of the official as ordenador de despesas (managerial). The distinction matters for Ficha Limpa — see [`topics/contas-municipais.md`](topics/contas-municipais.md).
 - **contestação** — Defendant's answer / defense brief in civil proceedings.
 - **corregedoria** — Internal disciplinary body within a tribunal or MP. Investigates judges/promotores.
 
@@ -58,7 +58,7 @@ terminology, definitions, Portuguese.
 - **denúncia** — Formal criminal complaint by the MP, marking the start of the public criminal action. Distinguish from *queixa-crime* (private criminal action).
 - **desembargador** — Second-instance judge in TJ/TRF/TRT. Sits on appellate chambers (câmaras, turmas) of state, federal, or labor courts. Not a *ministro* (which is reserved for superior courts).
 - **despacho** — Interlocutory order — administrative or procedural, not adjudicative on the merits.
-- **direito indisponível** — A right that cannot be waived even voluntarily. In labor law, many CLT protections are *indisponíveis* (Art. 611-B); a worker cannot validly contract them away. → [`justica-trabalho.md`](justica-trabalho.md)
+- **direito indisponível** — A right that cannot be waived even voluntarily. In labor law, many CLT protections are *indisponíveis* (Art. 611-B); a worker cannot validly contract them away. → [`topics/justica-trabalho.md`](topics/justica-trabalho.md)
 - **dispensa** — Exemption from competitive bidding (procurement). *Dispensa de licitação* permits direct contracting in enumerated cases (Lei 8.666 Art. 24, Lei 14.133 Art. 75).
 - **dolo / doloso** — Intent / intentional. Contrast with *culpa / culposo* (negligence). Post-Lei 14.230/2021 reform, only dolosa improbidade is actionable.
 - **domicílio eleitoral** — Voter's electoral residence; the district where they vote. Candidates must have electoral domicile in the district where they run.
@@ -74,12 +74,12 @@ terminology, definitions, Portuguese.
 ## F
 
 - **fiscal da lei** — A party (typically the MP) acting as guardian of the law in a proceeding it didn't initiate, ensuring legality and procedural fairness.
-- **foro privilegiado** — Special trial venue based on the defendant's office. Politicians and high officials have foro at higher courts for specific case types. Does NOT generally apply to improbidade actions. → [`procedimentos-legais.md`](procedimentos-legais.md)
+- **foro privilegiado** — Special trial venue based on the defendant's office. Politicians and high officials have foro at higher courts for specific case types. Does NOT generally apply to improbidade actions. → [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md)
 - **fracionamento** — Splitting of procurement to evade modality thresholds. Prohibited (Lei 8.666 Art. 23 §5; Lei 14.133 Art. 75 §1).
 
 ## G
 
-- **garantias** — Constitutional guarantees of independence. For judges and MP members: *vitaliciedade*, *inamovibilidade*, *irredutibilidade de subsídio*. → [`juizes.md`](juizes.md), [`funcoes-essenciais.md`](funcoes-essenciais.md)
+- **garantias** — Constitutional guarantees of independence. For judges and MP members: *vitaliciedade*, *inamovibilidade*, *irredutibilidade de subsídio*. → [`topics/juizes.md`](topics/juizes.md), [`topics/funcoes-essenciais.md`](topics/funcoes-essenciais.md)
 
 ## H
 
@@ -90,10 +90,10 @@ terminology, definitions, Portuguese.
 ## I
 
 - **impedimento** — Formal disqualification of a judge or member of MP based on objective grounds (e.g., relationship to a party). It is *matéria de ordem pública*: the judge can recognize it ex officio. Distinguish from *suspeição* (subjective bias), which must be raised by a party.
-- **improbidade administrativa** — Civil corruption / breach of administrative integrity, governed by Lei 8.429/1992. → [`improbidade.md`](improbidade.md)
+- **improbidade administrativa** — Civil corruption / breach of administrative integrity, governed by Lei 8.429/1992. → [`topics/improbidade.md`](topics/improbidade.md)
 - **improcedente / procedente** — Case outcomes. *Procedente*: granted on the merits (plaintiff wins). *Improcedente*: denied on the merits (defendant wins). *Extinto sem julgamento de mérito*: dismissed without reaching the merits.
 - **inamovibilidade** — Irremovability. Constitutional guarantee that a judge or MP member cannot be transferred without consent, except by majority decision of the órgão colegiado on grounds of public interest.
-- **inelegibilidade** — Ineligibility to run for elected office. Triggered by Ficha Limpa hypotheses, electoral abuse convictions, etc. Generally lasts 8 years from the triggering event. → [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md), [`contas-municipais.md`](contas-municipais.md)
+- **inelegibilidade** — Ineligibility to run for elected office. Triggered by Ficha Limpa hypotheses, electoral abuse convictions, etc. Generally lasts 8 years from the triggering event. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md), [`topics/contas-municipais.md`](topics/contas-municipais.md)
 - **inquérito civil (IC)** — MP investigative proceeding for non-criminal matters. Exclusive to MP.
 - **inquérito policial (IP)** — Police investigation in criminal matters.
 - **inexigibilidade** — Procurement exemption when competition is objectively infeasible (sole source, artistic services, etc.). Distinguish from *dispensa* (where competition would be possible but is waived).
@@ -106,7 +106,7 @@ terminology, definitions, Portuguese.
 
 ## L
 
-- **laranja** — Straw person; a passive nominee who lends their name/ID to disguise the real party in interest. → [`anticorrupcao-penal.md`](anticorrupcao-penal.md)
+- **laranja** — Straw person; a passive nominee who lends their name/ID to disguise the real party in interest. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **lei complementar (LC)** — Statute requiring an absolute majority of each house (vs. simple majority for ordinary leis). Reserved for matters the Constitution explicitly assigns to LC.
 - **lei orgânica** — Organic law that constitutes an institution. *Lei orgânica municipal*: a municipality's "constitution".
 - **liminar** — Preliminary injunction. Granted in urgent cases (perigo + plausibility of right).
@@ -122,7 +122,7 @@ terminology, definitions, Portuguese.
 
 ## N
 
-- **ne bis in idem** — Prohibition on double jeopardy. In Brazilian law, does not generally bar parallel proceedings across different regimes (criminal, civil, administrative, electoral) — see [`improbidade.md`](improbidade.md) and [`anticorrupcao-penal.md`](anticorrupcao-penal.md).
+- **ne bis in idem** — Prohibition on double jeopardy. In Brazilian law, does not generally bar parallel proceedings across different regimes (criminal, civil, administrative, electoral) — see [`topics/improbidade.md`](topics/improbidade.md) and [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md).
 - **nexo causal** — Causal nexus. The link between conduct and result that supports liability. In labor accident cases the **NTEP** establishes a statistical nexo.
 
 ## O
@@ -134,11 +134,11 @@ terminology, definitions, Portuguese.
 ## P
 
 - **parecer** — Advisory opinion. *Parecer prévio* of the TCE on annual mayoral accounts is sent to the câmara, which votes whether to follow it.
-- **parecer prévio** — TCE preliminary opinion on annual contas de governo. Prevails unless 2/3 of vereadores override (CF Art. 31 §2). → [`contas-municipais.md`](contas-municipais.md)
+- **parecer prévio** — TCE preliminary opinion on annual contas de governo. Prevails unless 2/3 of vereadores override (CF Art. 31 §2). → [`topics/contas-municipais.md`](topics/contas-municipais.md)
 - **permuta** — Mutual swap between two members of a career (judges, promotores) — both move to each other's positions.
 - **petição inicial** — Initial complaint that launches a civil action.
 - **prazo / prazos** — Deadline / time limits. Procedural prazos are generally counted in *dias úteis* (business days) post-CPC 2015.
-- **pregão** — Reverse-auction modality of public procurement (Lei 10.520/2002). Pregão *eletrônico* is now the dominant federal modality. → [`licitacoes.md`](licitacoes.md)
+- **pregão** — Reverse-auction modality of public procurement (Lei 10.520/2002). Pregão *eletrônico* is now the dominant federal modality. → [`topics/licitacoes.md`](topics/licitacoes.md)
 - **prescrição** — Statute of limitations on procedural enforcement. Distinguish from *decadência* (expiration of substantive right).
 - **prevaricação** — Willful failure of a public official to act on a duty or to act improperly, motivated by personal interest or feeling. CP Art. 319.
 - **prevenção** — Prior assignment that fixes future jurisdiction. Once a relator is assigned a case, prevenção makes them the "julgador certo" for all subsequent acts in the same processo.
@@ -166,7 +166,7 @@ terminology, definitions, Portuguese.
 - **segredo de justiça** — Judicial secrecy. Specific case categories (family law, certain criminal investigations, juveniles) are restricted from public access despite the general publicity rule (CF Art. 93 IX).
 - **sentença** — First-instance judgment. Distinguish from *acórdão* (collegiate decision).
 - **sigilo** — Secrecy / confidentiality. *Quebra de sigilo* refers to breaching tax, banking, or telecom secrecy via judicial order.
-- **sobras** — Remaining seats in proportional elections, distributed among parties that met the quociente eleitoral via successive quotient. → [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md)
+- **sobras** — Remaining seats in proportional elections, distributed among parties that met the quociente eleitoral via successive quotient. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
 - **sorteio** — Random draw. Used for case assignment in many courts and TCE relator assignment.
 - **subsídio** — The single-payment compensation of judges, MP members, and elected officials (no separate "salary" plus "benefits").
 - **súmula** — Non-binding caselaw summary issued by a superior court (STF, STJ, TST, etc.). A short statement of the court's settled position.
@@ -176,7 +176,7 @@ terminology, definitions, Portuguese.
 ## T
 
 - **tese** — Proposition of law. Used in two main contexts: (1) the formal *tese* set by STF in a Tema (e.g., "tese de Tema 157"), which binds lower courts; (2) the parties' *tese* in a case (their legal theory).
-- **testa de ferro** — Front man / nominee. Active version of *laranja* — manages assets or contracts on behalf of a hidden principal. → [`anticorrupcao-penal.md`](anticorrupcao-penal.md)
+- **testa de ferro** — Front man / nominee. Active version of *laranja* — manages assets or contracts on behalf of a hidden principal. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **trânsito em julgado** — Final and unappealable judgment. The moment a decision becomes coisa julgada and can no longer be challenged via ordinary appeal.
 - **turno / segundo turno** — Round of an election. Second turno applies to majoritário offices (President, Governador, Prefeito) when no candidate gets 50%+1 in the first round (and only in municipalities >200k voters for prefeito).
 

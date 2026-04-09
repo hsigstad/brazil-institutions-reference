@@ -16,6 +16,27 @@ indices below before reading topical files.**
   or jurisprudence inline; verify against the primary source for
   legally-current work.
 
+## Repository layout
+
+The repository is organized into two flat tiers:
+
+- **Root**: meta files (`CLAUDE.md`, `README.md`, `CONTRIBUTING.md`,
+  `LICENSE`), navigation indices (`siglas.md`, `glossario.md`,
+  `jurisprudencia-stf.md`, `faq.md`, `pitfalls.md`, `timeline.md`,
+  `quasi-experimentos.md`, `data_pointers.md`), and YAML data indices
+  (`leis_index.yaml`, `jurisprudencia_index.yaml`,
+  `sumulas_vinculantes.yaml`, `sumulas_tse.yaml`).
+- **`topics/`**: all 26 topical files (one per institution / area).
+  Cross-references between topical files are bare filenames
+  (`licitacoes.md`, not `topics/licitacoes.md`) because they're
+  siblings inside `topics/`. References from a topical file *out* to
+  the root use `../` (e.g., `../jurisprudencia-stf.md`,
+  `../tools/leis_artigos/`).
+- **`tools/`**: scrapers, parsers, and the citation resolver.
+
+This split keeps `ls` at the root readable and matches the load-bearing
+distinction between *indices* (grep first) and *topics* (read second).
+
 ## How to navigate
 
 **Always start with the indices**, not the topical files. The
@@ -39,6 +60,11 @@ substantive answer.
 
 Files are designed for grep-first reading. Useful patterns:
 
+- **Topical content**: search `topics/*.md` (or `topics/` recursively).
+  All 26 substantive files live here as siblings.
+- **Indices**: search at the root (`*.md` excluding `topics/`) for
+  acronyms, glossary terms, STF cases, FAQ entries, and timeline
+  anchors.
 - **Statute citations**: search `Lei \d+/\d+` (e.g., `Lei 8.666/93`),
   `LC \d+`, `CF Art\. \d+`, `STF Tema \d+`, `ADI \d+`, `HC \d+`. These
   appear inline at the point of assertion.

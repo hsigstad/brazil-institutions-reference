@@ -24,14 +24,14 @@ work in the literature.
 ## Cross-references
 
 For institutional context behind each entry, follow the cited file:
-- [`cgu-controle-interno.md`](cgu-controle-interno.md) — CGU random audits
-- [`federalismo-fiscal.md`](federalismo-fiscal.md) — FPM, FPE, royalties, LRF kinks
-- [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) — electoral cutoffs and reforms
-- [`justica-trabalho.md`](justica-trabalho.md) — labor reform shocks
-- [`improbidade.md`](improbidade.md) — improbidade reform
-- [`contas-municipais.md`](contas-municipais.md) — Ficha Limpa, voto secreto reforms
-- [`tribunais-contas.md`](tribunais-contas.md) — TCE relator random assignment
-- [`anticorrupcao-penal.md`](anticorrupcao-penal.md) — Lava Jato structural breaks
+- [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) — CGU random audits
+- [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, FPE, royalties, LRF kinks
+- [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — electoral cutoffs and reforms
+- [`topics/justica-trabalho.md`](topics/justica-trabalho.md) — labor reform shocks
+- [`topics/improbidade.md`](topics/improbidade.md) — improbidade reform
+- [`topics/contas-municipais.md`](topics/contas-municipais.md) — Ficha Limpa, voto secreto reforms
+- [`topics/tribunais-contas.md`](topics/tribunais-contas.md) — TCE relator random assignment
+- [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) — Lava Jato structural breaks
 - [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — STF rulings as cutoffs
 
 ---
@@ -67,7 +67,7 @@ pool and audited on different criteria.
 (*Programa de Fiscalização em Entes Federativos*). Post-2015 audits are
 not randomly assigned and require different identification assumptions.
 
-**See**: [`cgu-controle-interno.md`](cgu-controle-interno.md) §3.
+**See**: [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) §3.
 
 ---
 
@@ -100,7 +100,7 @@ which regime applies for the period of interest.
   political selection.
 - Many extensions on health, education, infrastructure outcomes.
 
-**See**: [`federalismo-fiscal.md`](federalismo-fiscal.md) §2 ("FPM").
+**See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2 ("FPM").
 
 ---
 
@@ -127,7 +127,7 @@ without population change).
 - Multiple Brazilian replication / extension papers on corruption and
   selection.
 
-**See**: [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §1.
+**See**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §1.
 
 ---
 
@@ -154,8 +154,8 @@ the constitutionality despite presunção de inocência objections.
 - Avis, Ferraz, Finan & Varjão (2022, *AEJ Applied*) and others on
   Ficha Limpa effects on electoral selection.
 
-**See**: [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §7,
-[`contas-municipais.md`](contas-municipais.md) §3.
+**See**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §7,
+[`topics/contas-municipais.md`](topics/contas-municipais.md) §3.
 
 ---
 
@@ -181,7 +181,7 @@ composition. The November 2017 cutoff produces:
 harshest cost provisions for *justiça gratuita* beneficiaries —
 introduces a second discontinuity around October 2021.
 
-**See**: [`justica-trabalho.md`](justica-trabalho.md) §"Filing costs"
+**See**: [`topics/justica-trabalho.md`](topics/justica-trabalho.md) §"Filing costs"
 and §"Impact on filing volumes".
 
 ---
@@ -200,7 +200,7 @@ treatment effect differs by *justiça gratuita* status. The November
 2017 to October 2021 window is the period of maximum filing-cost
 deterrence; post-October 2021 is a partial restoration.
 
-**See**: [`justica-trabalho.md`](justica-trabalho.md) §"STF ADI 5766",
+**See**: [`topics/justica-trabalho.md`](topics/justica-trabalho.md) §"STF ADI 5766",
 [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §3.
 
 ---
@@ -228,7 +228,7 @@ exclusively. New 8-year absolute prescription regime.
 - This creates a within-state-court pre/post comparison conditional on
   case status.
 
-**See**: [`improbidade.md`](improbidade.md) §2,
+**See**: [`topics/improbidade.md`](topics/improbidade.md) §2,
 [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §1.
 
 ---
@@ -256,7 +256,7 @@ to partially replace it.
 campaign finance regime has been unstable since (FEFC introduced,
 expenditure caps changed, allocation rules altered).
 
-**See**: [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §6,
+**See**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §6,
 [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §4.
 
 ---
@@ -281,7 +281,7 @@ commitments.
 **Cláusula de desempenho** (separate but related): tightening thresholds
 2018 → 2022 → 2026 → 2030 generate within-party variation.
 
-**See**: [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §§3–4.
+**See**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §§3–4.
 
 ---
 
@@ -306,7 +306,7 @@ reforms cite EC 76/2013 explicitly. This generates a *municipal-level*
 diffusion process from ~2014 onward, with reforms staggered across
 municipalities.
 
-**See**: [`contas-municipais.md`](contas-municipais.md) §4
+**See**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §4
 ("EC 76/2013 — federal precedent" and "Municipal reform examples").
 
 ---
@@ -332,7 +332,7 @@ diffused over two decades, accelerating after EC 76/2013.
 motivated), so DiD requires careful parallel-trends checks. Municipality
 fixed effects + state-year FE help.
 
-**See**: [`contas-municipais.md`](contas-municipais.md) §4 ("Municipal
+**See**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §4 ("Municipal
 reform examples").
 
 ---
@@ -359,7 +359,7 @@ preceding fiscal years. Once assigned, the relator becomes the
 **Caveat**: random assignment applies to the **initial** relator. Once
 fixed, prevenção persists across appeals.
 
-**See**: [`tribunais-contas.md`](tribunais-contas.md).
+**See**: [`topics/tribunais-contas.md`](topics/tribunais-contas.md).
 
 ---
 
@@ -382,7 +382,7 @@ câmara behavior may have shifted in response.
 the decision. The "effective" date depends on whether you treat the
 2016 decision or the 2019 certification as the cutoff.
 
-**See**: [`contas-municipais.md`](contas-municipais.md) §2,
+**See**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §2,
 [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §2.
 
 ---
@@ -406,7 +406,7 @@ court rulings altered the distribution rules across time.
 **Compare with**: mining royalties (CFEM, Lei 13.540/2017) which use a
 different base and distribution formula.
 
-**See**: [`federalismo-fiscal.md`](federalismo-fiscal.md) §2 ("Royalties").
+**See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2 ("Royalties").
 
 ---
 
@@ -432,7 +432,7 @@ binding LRF constraints on:
 **Caveat**: RCL is itself endogenous to local economic conditions. The
 kink works best when combined with other revenue shocks.
 
-**See**: [`federalismo-fiscal.md`](federalismo-fiscal.md) §4.
+**See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §4.
 
 ---
 
@@ -469,7 +469,7 @@ investigations.
 Each of these is its own quasi-experiment within the broader Lava Jato
 era.
 
-**See**: [`anticorrupcao-penal.md`](anticorrupcao-penal.md) §§7–9,
+**See**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §§7–9,
 [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §6.
 
 ---
@@ -494,7 +494,7 @@ period sees the old and new systems coexisting at different proportions.
 **Caveat**: as of 2026, the reform is **just beginning** — empirical
 analysis will need data from 2026 onward.
 
-**See**: [`federalismo-fiscal.md`](federalismo-fiscal.md) §1
+**See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §1
 ("Reforma tributária").
 
 ---
@@ -518,7 +518,7 @@ fiscais (≤R$10,000) on economic-unviability grounds. Resulted in
 it targets low-value cases below a sharp threshold. RD on the value
 threshold could work for cases just above/below R$10,000.
 
-**See**: [`cnj-administracao-judicial.md`](cnj-administracao-judicial.md)
+**See**: [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md)
 §7.
 
 ---

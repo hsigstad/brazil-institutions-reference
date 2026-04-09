@@ -105,10 +105,10 @@ These are the starting points before going to individual source portals.
   - Voter demographics (`perfil_eleitorado_*`): age, sex, education
     by zone.
 - **License**: public; TSE attributes itself as the source.
-- **See**: [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md),
-  [`processo-eleitoral.md`](processo-eleitoral.md),
-  [`prestacao-contas-eleitorais.md`](prestacao-contas-eleitorais.md),
-  [`justica-eleitoral.md`](justica-eleitoral.md).
+- **See**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md),
+  [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md),
+  [`topics/prestacao-contas-eleitorais.md`](topics/prestacao-contas-eleitorais.md),
+  [`topics/justica-eleitoral.md`](topics/justica-eleitoral.md).
 
 ### CEPESP-FGV
 
@@ -174,7 +174,7 @@ These are the starting points before going to individual source portals.
   derived dashboards are public.
 - **Coverage**: aspires to all tribunals; actual completeness varies
   by tribunal.
-- **See**: [`cnj-administracao-judicial.md`](cnj-administracao-judicial.md) §2.
+- **See**: [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) §2.
 
 ### CNJ Justiça em Números
 
@@ -218,7 +218,7 @@ These are the starting points before going to individual source portals.
   in places.
 - **Useful for**: building case-level datasets on specific subjects
   (improbidade, family law, civil disputes, etc.).
-- **See**: [`cnj-administracao-judicial.md`](cnj-administracao-judicial.md) §4.
+- **See**: [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) §4.
 
 ### TRFs and Justiça Federal
 
@@ -234,7 +234,7 @@ These are the starting points before going to individual source portals.
   also publishes some aggregated statistics via TST.
 - **TST estatísticas**: <https://www.tst.jus.br/web/estatistica>
 - **TRT2 (São Paulo)**: <https://ww2.trt2.jus.br/>
-- **See**: [`justica-trabalho.md`](justica-trabalho.md).
+- **See**: [`topics/justica-trabalho.md`](topics/justica-trabalho.md).
 
 ### Electoral courts (TSE/TREs)
 
@@ -255,7 +255,7 @@ These are the starting points before going to individual source portals.
   views. Bulk export available for some series.
 - **Coverage**: federal government only.
 - **basedosdados**: partial coverage in `br_governo_compras_*`.
-- **See**: [`licitacoes.md`](licitacoes.md).
+- **See**: [`topics/licitacoes.md`](topics/licitacoes.md).
 
 ### Painel de Compras
 
@@ -276,8 +276,8 @@ These are the starting points before going to individual source portals.
 - **Coverage**: 644 non-capital São Paulo municipalities.
 - **Useful for**: the canonical source for São Paulo municipal
   procurement research.
-- **See**: [`tribunais-contas.md`](tribunais-contas.md),
-  [`licitacoes.md`](licitacoes.md).
+- **See**: [`topics/tribunais-contas.md`](topics/tribunais-contas.md),
+  [`topics/licitacoes.md`](topics/licitacoes.md).
 
 ### Other state TCEs
 
@@ -298,8 +298,8 @@ These are the starting points before going to individual source portals.
   the aggregated annual reports.
 - **Access**: web search + per-case detail pages. Bulk export limited.
 - **Useful for**: cartel-prosecution research, merger control.
-- **See**: [`licitacoes.md`](licitacoes.md),
-  [`anticorrupcao-penal.md`](anticorrupcao-penal.md).
+- **See**: [`topics/licitacoes.md`](topics/licitacoes.md),
+  [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md).
 
 ---
 
@@ -318,8 +318,8 @@ These are the starting points before going to individual source portals.
 - **basedosdados**: `br_me_siconfi`.
 - **Useful for**: the single most comprehensive municipal fiscal
   source. Standardized across all levels.
-- **See**: [`federalismo-fiscal.md`](federalismo-fiscal.md) §5,
-  [`contas-municipais.md`](contas-municipais.md).
+- **See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §5,
+  [`topics/contas-municipais.md`](topics/contas-municipais.md).
 
 ### SIOPS (Sistema de Informações sobre Orçamentos Públicos em Saúde)
 
@@ -330,7 +330,7 @@ These are the starting points before going to individual source portals.
 - **Access**: web interface + downloadable per município/state.
 - **Useful for**: studies of municipal health spending,
   constitutional minimums (15% of own-source revenue rule).
-- **See**: [`federalismo-fiscal.md`](federalismo-fiscal.md) §5.
+- **See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §5.
 
 ### SIOPE (Sistema de Informações sobre Orçamentos Públicos em Educação)
 
@@ -570,8 +570,8 @@ These are the starting points before going to individual source portals.
 - **Access**: web search + bulk download (CSV).
 - **Useful for**: linking firm-level corruption sanctions to
   procurement and political activity.
-- **See**: [`anticorrupcao-penal.md`](anticorrupcao-penal.md) §5,
-  [`cgu-controle-interno.md`](cgu-controle-interno.md) §4.
+- **See**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §5,
+  [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) §4.
 
 ### CNEP — Cadastro Nacional de Empresas Punidas
 
@@ -597,7 +597,7 @@ These are the starting points before going to individual source portals.
   risk-based selection.
 - **Useful for**: the canonical Brazilian RD on corruption — see
   [`quasi-experimentos.md`](quasi-experimentos.md) §1.
-- **See**: [`cgu-controle-interno.md`](cgu-controle-interno.md) §3.
+- **See**: [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) §3.
 
 ### Portal da Transparência (federal)
 
@@ -606,7 +606,7 @@ These are the starting points before going to individual source portals.
   FPM, FUNDEB), servant salaries, beneficiaries of social programs.
   Maintained by CGU.
 - **Access**: web interface + bulk downloads + some API endpoints.
-- **See**: [`transparencia-dados.md`](transparencia-dados.md) §3.
+- **See**: [`topics/transparencia-dados.md`](topics/transparencia-dados.md) §3.
 
 ### SICONV / Plataforma +Brasil
 
@@ -664,7 +664,7 @@ These are the starting points before going to individual source portals.
   CGU.
 - **Useful for**: when public data isn't accessible elsewhere — file
   a LAI request.
-- **See**: [`transparencia-dados.md`](transparencia-dados.md) §1.
+- **See**: [`topics/transparencia-dados.md`](topics/transparencia-dados.md) §1.
 
 ### State and municipal transparency portals
 
@@ -696,21 +696,21 @@ of service, ongoing maintenance).
 
 ## Cross-references
 
-- [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md)
+- [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
   — institutional context for TSE data.
-- [`federalismo-fiscal.md`](federalismo-fiscal.md) — institutional
+- [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — institutional
   context for SICONFI, SIOPS, FPM, etc.
-- [`tribunais-contas.md`](tribunais-contas.md) — institutional context
+- [`topics/tribunais-contas.md`](topics/tribunais-contas.md) — institutional context
   for Audesp and TCE data.
-- [`licitacoes.md`](licitacoes.md) — institutional context for
+- [`topics/licitacoes.md`](topics/licitacoes.md) — institutional context for
   Comprasnet, Audesp, CADE.
-- [`improbidade.md`](improbidade.md) — institutional context for
+- [`topics/improbidade.md`](topics/improbidade.md) — institutional context for
   TJSP improbidade case data.
-- [`cgu-controle-interno.md`](cgu-controle-interno.md) — CGU PFS
+- [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) — CGU PFS
   random audits, CEIS/CNEP.
-- [`cnj-administracao-judicial.md`](cnj-administracao-judicial.md) —
+- [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) —
   DataJud, CNJ Painéis, Justiça em Números.
-- [`transparencia-dados.md`](transparencia-dados.md) — LAI/LGPD,
+- [`topics/transparencia-dados.md`](topics/transparencia-dados.md) — LAI/LGPD,
   Portal da Transparência, judicial data regime.
 - [`quasi-experimentos.md`](quasi-experimentos.md) — natural
   experiments using these data sources.

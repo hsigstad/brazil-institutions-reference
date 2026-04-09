@@ -44,47 +44,47 @@ keywords` line includes both Portuguese and English search terms.
 
 ### Constitutional framework
 
-- [`juizes.md`](juizes.md) — Garantias, deveres, ingresso, promoções, subsídio, aposentadoria, remoção (constitutional provisions about individual judges)
-- [`funcoes-essenciais.md`](funcoes-essenciais.md) — MP, advocacia pública, advocacia, defensoria (constitutional overview; see `ministerio-publico.md` for MP detail)
+- [`topics/juizes.md`](topics/juizes.md) — Garantias, deveres, ingresso, promoções, subsídio, aposentadoria, remoção (constitutional provisions about individual judges)
+- [`topics/funcoes-essenciais.md`](topics/funcoes-essenciais.md) — MP, advocacia pública, advocacia, defensoria (constitutional overview; see `topics/ministerio-publico.md` for MP detail)
 
 ### Courts
 
-- [`cortes-superiores.md`](cortes-superiores.md) — CNJ, CJF, STF, STJ
-- [`justica-federal.md`](justica-federal.md) — Federal courts (lower)
-- [`justica-estadual.md`](justica-estadual.md) — State courts
-- [`justica-eleitoral.md`](justica-eleitoral.md) — Electoral courts (TSE, TREs)
-- [`justica-trabalho.md`](justica-trabalho.md) — Labor courts (TST, TRTs, varas)
-- [`tribunais-contas.md`](tribunais-contas.md) — TCU, TCEs, TCMs (audit courts)
-- [`cnj-administracao-judicial.md`](cnj-administracao-judicial.md) — CNJ normative power, Justiça em Números, PJe/e-Proc/ESAJ, TPU, case numbering, specialization
+- [`topics/cortes-superiores.md`](topics/cortes-superiores.md) — CNJ, CJF, STF, STJ
+- [`topics/justica-federal.md`](topics/justica-federal.md) — Federal courts (lower)
+- [`topics/justica-estadual.md`](topics/justica-estadual.md) — State courts
+- [`topics/justica-eleitoral.md`](topics/justica-eleitoral.md) — Electoral courts (TSE, TREs)
+- [`topics/justica-trabalho.md`](topics/justica-trabalho.md) — Labor courts (TST, TRTs, varas)
+- [`topics/tribunais-contas.md`](topics/tribunais-contas.md) — TCU, TCEs, TCMs (audit courts)
+- [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) — CNJ normative power, Justiça em Números, PJe/e-Proc/ESAJ, TPU, case numbering, specialization
 
 ### Procedure (processo)
 
-- [`processo-civil.md`](processo-civil.md) — Civil procedure (CPC, ação civil pública, improbidade, ação popular, recursos)
-- [`processo-eleitoral.md`](processo-eleitoral.md) — Electoral procedure (AIPRC, AIME, AIJE, RCED, recursos)
-- [`processo-penal.md`](processo-penal.md) — Criminal procedure
-- [`procedimentos-legais.md`](procedimentos-legais.md) — General procedural notes
+- [`topics/processo-civil.md`](topics/processo-civil.md) — Civil procedure (CPC, ação civil pública, improbidade, ação popular, recursos)
+- [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md) — Electoral procedure (AIPRC, AIME, AIJE, RCED, recursos)
+- [`topics/processo-penal.md`](topics/processo-penal.md) — Criminal procedure
+- [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) — General procedural notes
 
 ### Career & history
 
-- [`carreira-juizes.md`](carreira-juizes.md) — Judicial career (selection, promotion, discipline)
-- [`reformas-judiciais.md`](reformas-judiciais.md) — Chronology of statutory reforms to the judiciary and civil procedure (CPC reforms, EC 45/2004, etc.)
-- [`organizacao-historica.md`](organizacao-historica.md) — Historical organization, judicial districts
+- [`topics/carreira-juizes.md`](topics/carreira-juizes.md) — Judicial career (selection, promotion, discipline)
+- [`topics/reformas-judiciais.md`](topics/reformas-judiciais.md) — Chronology of statutory reforms to the judiciary and civil procedure (CPC reforms, EC 45/2004, etc.)
+- [`topics/organizacao-historica.md`](topics/organizacao-historica.md) — Historical organization, judicial districts
 
 ### Institutions (controle, prosecution, politics)
 
-- [`ministerio-publico.md`](ministerio-publico.md) — MP structure (MPU/MPF/MPE/MPC), career, CNMP, inquérito civil, TAC, ACP, GAECO
-- [`cgu-controle-interno.md`](cgu-controle-interno.md) — CGU: controle interno federal, Programa de Fiscalização por Sorteios (random audits), PAD, Lei Anticorrupção enforcement
-- [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) — Open-list PR, cláusula de desempenho, coligações/federações, fundo partidário/FEFC, Ficha Limpa eligibility
-- [`federalismo-fiscal.md`](federalismo-fiscal.md) — FPM, FPE, ICMS quota-parte, SUS transfers, royalties, IPTU/ISS, LRF limits, reforma tributária EC 132/2023
+- [`topics/ministerio-publico.md`](topics/ministerio-publico.md) — MP structure (MPU/MPF/MPE/MPC), career, CNMP, inquérito civil, TAC, ACP, GAECO
+- [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) — CGU: controle interno federal, Programa de Fiscalização por Sorteios (random audits), PAD, Lei Anticorrupção enforcement
+- [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — Open-list PR, cláusula de desempenho, coligações/federações, fundo partidário/FEFC, Ficha Limpa eligibility
+- [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, FPE, ICMS quota-parte, SUS transfers, royalties, IPTU/ISS, LRF limits, reforma tributária EC 132/2023
 
 ### Substantive areas
 
-- [`licitacoes.md`](licitacoes.md) — Public procurement law (Lei 8.666/93, pregão, Lei 14.133/21), CADE cartel typology, bid-rigging red flags
-- [`improbidade.md`](improbidade.md) — Lei 8.429/92 + Lei 14.230/21 reform, three categories, STF Tema 1199, MP standing, sanctions, prescription
-- [`anticorrupcao-penal.md`](anticorrupcao-penal.md) — Criminal corruption statutes (CP, Lei 8.137, lavagem 9.613, orcrim 12.850, colaboração premiada) + Lei Anticorrupção 12.846 (corporate liability)
-- [`contas-municipais.md`](contas-municipais.md) — Fiscal oversight of mayors: contas de governo vs. gestão, câmara vote, 2/3 rule, Ficha Limpa ineligibility, LRF
-- [`prestacao-contas-eleitorais.md`](prestacao-contas-eleitorais.md) — Campaign finance accounting (electoral, not fiscal)
-- [`transparencia-dados.md`](transparencia-dados.md) — LAI (Lei 12.527), LGPD (Lei 13.709), ANPD, Portal da Transparência, Comprasnet, SICONV, research implications
+- [`topics/licitacoes.md`](topics/licitacoes.md) — Public procurement law (Lei 8.666/93, pregão, Lei 14.133/21), CADE cartel typology, bid-rigging red flags
+- [`topics/improbidade.md`](topics/improbidade.md) — Lei 8.429/92 + Lei 14.230/21 reform, three categories, STF Tema 1199, MP standing, sanctions, prescription
+- [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) — Criminal corruption statutes (CP, Lei 8.137, lavagem 9.613, orcrim 12.850, colaboração premiada) + Lei Anticorrupção 12.846 (corporate liability)
+- [`topics/contas-municipais.md`](topics/contas-municipais.md) — Fiscal oversight of mayors: contas de governo vs. gestão, câmara vote, 2/3 rule, Ficha Limpa ineligibility, LRF
+- [`topics/prestacao-contas-eleitorais.md`](topics/prestacao-contas-eleitorais.md) — Campaign finance accounting (electoral, not fiscal)
+- [`topics/transparencia-dados.md`](topics/transparencia-dados.md) — LAI (Lei 12.527), LGPD (Lei 13.709), ANPD, Portal da Transparência, Comprasnet, SICONV, research implications
 
 ### Indices and reference (look here first when navigating)
 
@@ -146,8 +146,8 @@ keywords` line includes both Portuguese and English search terms.
   enough to locate the cited provision.
 - **Cross-reference files.** Many files have "See also" pointers near
   the top. Follow them when the topic spans multiple files (e.g., a
-  question about procurement fraud touches `licitacoes.md`,
-  `improbidade.md`, and `anticorrupcao-penal.md`).
+  question about procurement fraud touches `topics/licitacoes.md`,
+  `topics/improbidade.md`, and `topics/anticorrupcao-penal.md`).
 
 ## Conventions
 

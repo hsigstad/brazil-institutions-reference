@@ -29,7 +29,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - The same conduct can also be prosecuted under criminal law in
   parallel (CP, Lei 8.137/90, Lei 9.613/98 lavagem) — those run in
   separate proceedings.
-- See [`improbidade.md`](improbidade.md) §3 ("Procedural framework").
+- See [`topics/improbidade.md`](topics/improbidade.md) §3 ("Procedural framework").
 
 ### ❌ "If a CADE proceeding finds a cartel, the firm has been criminally convicted"
 ### ✓ CADE proceedings are **administrative**
@@ -43,8 +43,8 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - A single bid-rigging scheme can generate three parallel proceedings
   with three different sanction regimes — none of them ne bis in
   idem because the legal "matters" are distinct.
-- See [`anticorrupcao-penal.md`](anticorrupcao-penal.md) §7 (parallel
-  prosecution table) and [`licitacoes.md`](licitacoes.md) §"CADE".
+- See [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §7 (parallel
+  prosecution table) and [`topics/licitacoes.md`](topics/licitacoes.md) §"CADE".
 
 ---
 
@@ -70,7 +70,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
   involving **federal** funds (FPM, SUS, FUNDEB transfers) → MPF.
 - Career movement: a Promotor de Justiça in MPE-SP **cannot** lateral
   into MPF without a new concurso. They are different careers.
-- See [`ministerio-publico.md`](ministerio-publico.md) §2.
+- See [`topics/ministerio-publico.md`](topics/ministerio-publico.md) §2.
 
 ---
 
@@ -92,7 +92,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - Even when the câmara rejects, the rejection must meet additional
   cumulative conditions: insanable irregularity, ato doloso, and
   decisão irrecorrível.
-- See [`contas-municipais.md`](contas-municipais.md) §§2–3.
+- See [`topics/contas-municipais.md`](topics/contas-municipais.md) §§2–3.
 
 ### ❌ "Contas de governo and contas de gestão are the same thing"
 ### ✓ Different categories with different judging bodies
@@ -104,7 +104,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
   (managerial — specific contracts, payments), judged **directly by
   the TCE**, can impose débitos and multas, but **does not** generate
   Ficha Limpa ineligibility under STF ADPF 982 (~2025).
-- See [`contas-municipais.md`](contas-municipais.md) §2.
+- See [`topics/contas-municipais.md`](topics/contas-municipais.md) §2.
 
 ---
 
@@ -178,7 +178,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - Most state-level officeholders (vereadores, prefeitos, etc.) do
   NOT have foro privilegiado at the STF. Some have foro at the TJ
   for criminal cases (e.g., prefeitos at TJ).
-- See [`procedimentos-legais.md`](procedimentos-legais.md).
+- See [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md).
 
 ---
 
@@ -190,20 +190,20 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - **AIPRC** (Ação de Impugnação ao Pedido de Registro de
   Candidatura) — **before** the election. Challenges the candidate's
   registration. Filed within 5 days of the registration request,
-  with hard cutoff at 15 August. → [`processo-eleitoral.md`](processo-eleitoral.md) §4.
+  with hard cutoff at 15 August. → [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md) §4.
 - **AIJE** (Ação de Investigação Judicial Eleitoral) — **during** the
   campaign. Investigates abuse of economic/political/media power.
   Filed between candidate registration and diplomação. →
-  [`processo-eleitoral.md`](processo-eleitoral.md) §6.
+  [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md) §6.
 - **AIME** (Ação de Impugnação de Mandato Eletivo) — **after** the
   election. Revokes the mandate of an elected candidate based on
   corruption, abuse of economic power, or fraude. **15-day deadline**
   after diplomação. CF Art. 14 §10. **Segredo de justiça**. →
-  [`processo-eleitoral.md`](processo-eleitoral.md) §5.
+  [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md) §5.
 - **RCED** (Recurso Contra a Expedição do Diploma) — also after the
   election. Challenges the diploma based on supervening or
   constitutional ineligibility. 3-day deadline after diplomação. →
-  [`processo-eleitoral.md`](processo-eleitoral.md) §7.
+  [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md) §7.
 - AIJE and AIME generate inelegibilidade (8 years) only for **abuse
   of economic power**, not for corrupção or fraude alone.
 
@@ -219,7 +219,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - **Coligações for majoritário offices remain legal** (President,
   Governor, Prefeito, Senador).
 - Any pre-2020 vs post-2020 comparison must account for this.
-- See [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §3.
+- See [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §3.
 
 ---
 
@@ -239,7 +239,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
   partial pre-2017 protection.
 - Filing volume dropped ~34% in 2018 vs 2017 — the sharpest filing
   shock in any major federal cost reform.
-- See [`justica-trabalho.md`](justica-trabalho.md).
+- See [`topics/justica-trabalho.md`](topics/justica-trabalho.md).
 
 ---
 
@@ -257,7 +257,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - **For historical analysis** (pre-2024 conduct), Lei 8.666 is the
   relevant statute. For current operations and any post-2024
   conduct, Lei 14.133.
-- See [`licitacoes.md`](licitacoes.md).
+- See [`topics/licitacoes.md`](topics/licitacoes.md).
 
 ### ❌ "Pregão is the same as concorrência"
 ### ✓ Different modalities with different procedures
@@ -271,7 +271,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
   since Decreto 10.024/2019 and is the dominant modality in practice.
 - Lei 14.133/2021 absorbs both into the same statute but preserves
   the distinction.
-- See [`licitacoes.md`](licitacoes.md).
+- See [`topics/licitacoes.md`](topics/licitacoes.md).
 
 ---
 
@@ -288,7 +288,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - This is why the FPM step function is a canonical RD instrument —
   small municipalities are extremely sensitive to FPM coefficient
   changes.
-- See [`federalismo-fiscal.md`](federalismo-fiscal.md) §2 and §3.
+- See [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2 and §3.
 
 ### ❌ "FPM is distributed proportionally to population"
 ### ✓ FPM is distributed by population *brackets* (a step function)
@@ -301,7 +301,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - This step function is used as an RD design in the empirical
   literature (Litschig & Morrison; Brollo–Nannicini–Perotti–Tabellini;
   many others).
-- See [`federalismo-fiscal.md`](federalismo-fiscal.md) §2 and
+- See [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2 and
   [`quasi-experimentos.md`](quasi-experimentos.md).
 
 ---
@@ -320,8 +320,8 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - A given irregularity in federal funds can be pursued by both CGU
   (internal control, can refer to MP) and TCU (external control,
   binding decisions on administrators).
-- See [`cgu-controle-interno.md`](cgu-controle-interno.md) and
-  [`tribunais-contas.md`](tribunais-contas.md).
+- See [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) and
+  [`topics/tribunais-contas.md`](topics/tribunais-contas.md).
 
 ### ❌ "CGU random audits are still running"
 ### ✓ The random lottery program ended in 2015
@@ -333,7 +333,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
   selection instead of random lottery.
 - **The random-assignment property applies strictly to 2003–2015**.
   Post-2015 audits require different identification assumptions.
-- See [`cgu-controle-interno.md`](cgu-controle-interno.md) §3 and
+- See [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) §3 and
   [`quasi-experimentos.md`](quasi-experimentos.md).
 
 ---
@@ -354,7 +354,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - The new 8-year prescription rule is also irretroactive — for
   pre-reform conduct, the 8-year clock starts from 26 October 2021
   (the law's publication date).
-- See [`improbidade.md`](improbidade.md) §2 and
+- See [`topics/improbidade.md`](topics/improbidade.md) §2 and
   [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §1.
 
 ### ❌ "Tema 157 says the câmara has the final word on all mayoral conduct"
@@ -369,7 +369,7 @@ the "❌" forms below, switch to the corresponding "✓" form.
 - The câmara controls the *electoral consequence* (inelegibilidade);
   the TCE controls the *administrative consequence* (financial
   liability and sanctions).
-- See [`contas-municipais.md`](contas-municipais.md) §2 and
+- See [`topics/contas-municipais.md`](topics/contas-municipais.md) §2 and
   [`jurisprudencia-stf.md`](jurisprudencia-stf.md) §2.
 
 ---

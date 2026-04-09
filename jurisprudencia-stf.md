@@ -37,7 +37,7 @@ modulated, overruled, or superseded by checking
 - **Significance**: A practical workaround for prescription defenses
   in old corruption cases — the state can always pursue restitution
   even when sanctions are time-barred.
-- **Cited in**: [`improbidade.md`](improbidade.md) §1.
+- **Cited in**: [`topics/improbidade.md`](topics/improbidade.md) §1.
 
 ### Tema 1199 — ARE 843.989 — Retroatividade da Lei 14.230/2021
 
@@ -59,8 +59,8 @@ modulated, overruled, or superseded by checking
      improbidade because it is a civil regime, but the elimination of
      culposa is recognized as a substantive change with the limited
      retroactivity above.
-- **Cited in**: [`improbidade.md`](improbidade.md) §2,
-  [`licitacoes.md`](licitacoes.md) §"Related statutes".
+- **Cited in**: [`topics/improbidade.md`](topics/improbidade.md) §2,
+  [`topics/licitacoes.md`](topics/licitacoes.md) §"Related statutes".
 - **Source**: <https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1199>.
 
 ---
@@ -87,8 +87,8 @@ modulated, overruled, or superseded by checking
   not trigger ineligibility — the câmara must vote to reject. Omission
   by the câmara also does not generate ineligibility ("inadmissível o
   julgamento ficto das contas por decurso de prazo").
-- **Cited in**: [`contas-municipais.md`](contas-municipais.md) §2,
-  [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §7.
+- **Cited in**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §2,
+  [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §7.
 - **Source**: <https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157>.
 
 ### ADPF 982 — TCE / câmara boundary revisited
@@ -102,7 +102,7 @@ modulated, overruled, or superseded by checking
      arises only from câmara rejection of contas de governo, not from
      TCE decisions on contas de gestão.
   3. Complements rather than contradicts Tema 157.
-- **Cited in**: [`contas-municipais.md`](contas-municipais.md) §2.
+- **Cited in**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §2.
 - **Source**: [Migalhas analysis](https://www.migalhas.com.br/depeso/433107/adpf-982-quem-julga-as-contas-do-prefeito-afinal).
 
 ### ADC 29/30 + ADI 4578 (2012) — Constitucionalidade da Ficha Limpa
@@ -114,7 +114,7 @@ modulated, overruled, or superseded by checking
   julgado). Rejected the *presunção de inocência* objection on the
   ground that ineligibility is a non-criminal restriction on
   candidacy, not a punishment.
-- **Cited in**: [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §7.
+- **Cited in**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §7.
 
 ---
 
@@ -137,7 +137,7 @@ modulated, overruled, or superseded by checking
   gratuita beneficiaries. The 40% RGPS income threshold for automatic
   eligibility remains in force; non-beneficiaries still face the full
   cost regime.
-- **Cited in**: [`justica-trabalho.md`](justica-trabalho.md)
+- **Cited in**: [`topics/justica-trabalho.md`](topics/justica-trabalho.md)
   §"Filing costs".
 
 ---
@@ -159,7 +159,7 @@ modulated, overruled, or superseded by checking
   pre-2016 vs. post-2016 campaign finance regimes are fundamentally
   different and any empirical work crossing the boundary must
   account for it.
-- **Cited in**: [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md) §6.
+- **Cited in**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §6.
 - **Source**: <https://portal.stf.jus.br/processos/detalhe.asp?incidente=4136819>.
 
 ---
@@ -176,7 +176,7 @@ modulated, overruled, or superseded by checking
 - **Aftermath**: Congress responded with **LC 143/2013**, which
   introduced a population + per-capita-income formula transitioning
   toward more equalizing distribution.
-- **Cited in**: [`federalismo-fiscal.md`](federalismo-fiscal.md) §2.
+- **Cited in**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2.
 
 ---
 
@@ -210,7 +210,7 @@ modulated, overruled, or superseded by checking
      the underlying convictions, vitiating the proceedings.
 - **Significance**: Annulled multiple Lula convictions on procedural
   grounds; major institutional moment in the post-Lava Jato phase.
-- **Cited in**: [`anticorrupcao-penal.md`](anticorrupcao-penal.md) §9.
+- **Cited in**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §9.
 
 ### ADIs 6.298–6.305 (August 2023) — Juiz das garantias
 
@@ -222,7 +222,7 @@ modulated, overruled, or superseded by checking
 - **Significance**: Mandates separation of investigatory and trial
   judges in criminal proceedings — a structural change to Brazilian
   criminal procedure.
-- **Cited in**: [`anticorrupcao-penal.md`](anticorrupcao-penal.md) §6.
+- **Cited in**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §6.
 
 ### HC 127.483 (Ulisses Ramos) and HC 164.493 (Bendine)
 
@@ -230,7 +230,7 @@ modulated, overruled, or superseded by checking
   premiada agreements (Lei 12.850/2013 Art. 4) and the evidentiary
   standards for collaborator testimony. A colaboração alone cannot
   sustain a conviction (Art. 4 §16); corroboration is required.
-- **Cited in**: [`anticorrupcao-penal.md`](anticorrupcao-penal.md) §3.
+- **Cited in**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §3.
 
 ---
 
@@ -265,7 +265,7 @@ modulated, overruled, or superseded by checking
   Transparência practice of publishing servant salaries by name. The
   LGPD (2018) does not override this — public salary disclosure
   remains lawful under the public-interest legal basis.
-- **Cited in**: [`transparencia-dados.md`](transparencia-dados.md) §1.
+- **Cited in**: [`topics/transparencia-dados.md`](topics/transparencia-dados.md) §1.
 
 ---
 
@@ -293,12 +293,12 @@ modulated, overruled, or superseded by checking
 
 ## Cross-references
 
-- [`improbidade.md`](improbidade.md), [`contas-municipais.md`](contas-municipais.md),
-  [`partidos-e-sistema-eleitoral.md`](partidos-e-sistema-eleitoral.md),
-  [`anticorrupcao-penal.md`](anticorrupcao-penal.md),
-  [`justica-trabalho.md`](justica-trabalho.md),
-  [`transparencia-dados.md`](transparencia-dados.md),
-  [`federalismo-fiscal.md`](federalismo-fiscal.md) — files where these
+- [`topics/improbidade.md`](topics/improbidade.md), [`topics/contas-municipais.md`](topics/contas-municipais.md),
+  [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md),
+  [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md),
+  [`topics/justica-trabalho.md`](topics/justica-trabalho.md),
+  [`topics/transparencia-dados.md`](topics/transparencia-dados.md),
+  [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — files where these
   cases are discussed in their substantive context.
 - [`leis_index.yaml`](leis_index.yaml) — index of statutes whose
   interpretation these decisions shape.

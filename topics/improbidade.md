@@ -152,7 +152,7 @@ pre-existing cases. STF held:
    culposa is recognized as a substantive change with the
    retroactivity limits above.
 
-For the canonical description of this case, see `jurisprudencia-stf.md`
+For the canonical description of this case, see `../jurisprudencia-stf.md`
 (`Tema1199`). For the structured metadata entry (status, supersession
 chain, related cases), resolve `Tema1199` via `cite.py`.
 
