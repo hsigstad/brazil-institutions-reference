@@ -51,7 +51,7 @@ Files are designed for grep-first reading. Useful patterns:
   inline. Treat anything without a date as durable; treat anything
   with a date as needing verification before being cited as current.
 
-## Citing statutes — the canonical bracket form
+## Citing statutes — the canonical compact form
 
 This repository uses a canonical citation format that is designed to
 **resolve directly against an article-level law database** (currently
@@ -59,16 +59,22 @@ in development under `tools/leis_artigos/`, with the database file
 shipped separately). Following the format consistently is the contract
 between the prose reference and the lookup tool.
 
+The format is intentionally compact: most citations are 5–15
+characters inside the brackets.
+
 ### Form
 
 ```
-[[apelido Art. N path :modifier]]
+[[<identifier>.<artigo>[-<letra>][.<path>][<modifier>]]]
 ```
 
 - **Double brackets** distinguish resolvable citations from inline
   prose mentions and from regular markdown link syntax `[text](url)`.
-- **Inside the brackets**: identifier, optional article, optional
-  path, optional vintage modifier — separated by single spaces.
+- **Dot is the universal separator** between identifier, article,
+  and path. The hyphen is reserved for article letters
+  (e.g., `17-A`), so paths and article letters never collide.
+- **Most parts are optional** — citing just the law (`[[LIA]]`) or
+  just the article (`[[LIA.9]]`) is valid.
 
 ### Identifier
 
@@ -76,21 +82,26 @@ between the prose reference and the lookup tool.
   cataloged: `LIA` (Lei 8.429/1992), `L8666` (Lei 8.666/1993),
   `L14133` (Lei 14.133/2021), `LE` (Lei 9.504/1997). New apelidos are
   added as the database grows.
-- **Non-cataloged laws** use the long form: `Lei 13.709/2018`,
-  `LC 64/1990`, `CF`, `CP`, `CPP`, `CLT`, etc. Same bracketed
-  structure; same `Art. N path` syntax inside; just doesn't resolve
-  via the lookup tool until cataloged.
-- **Whole laws by canonical id** use the `fonte_id` form from the
-  database: `L14230-2021`, `LC219-2025`, `EC45-2004`, `DL2848-1940`.
+- **Non-cataloged laws** use the canonical fonte_id form from the
+  database: `L<numero>-<ano>` for leis (`L13709-2018`),
+  `LC<numero>-<ano>` for leis complementares (`LC64-1990`),
+  `EC<numero>-<ano>` for emendas constitucionais (`EC97-2017`),
+  `DL<numero>-<ano>` for decretos-lei (`DL2848-1940`).
+- **Conventional abbreviations** for codes and the constitution:
+  `CF`, `CP`, `CPP`, `CLT`, `CTN`. These are not cataloged as
+  separate fonte_ids but follow the same syntax.
 
 ### Article and path
 
-- `Art. N` for plain article number (e.g., `Art. 9`).
-- `Art. N-X` for articles with letters (e.g., `Art. 17-A`).
-- `path` follows the structural-path convention used by the database:
-  `caput`, `II`, `II.a`, `§1`, `§1.II`, `§1.II.a`, `§unico`, `ementa`.
-  See `tools/leis_artigos/PATH_CONVENTION.md` for the full grammar
-  once the tool is in place.
+- `<artigo>` is the article number. Plain integer (`9`, `145`).
+- `<letra>` (optional) is an article letter, separated by hyphen
+  (`17-A`, `21-B`).
+- `<path>` (optional) follows the structural-path convention used by
+  the database: `caput`, `II`, `II.a`, `§1`, `§1.II`, `§1.II.a`,
+  `§unico`, `ementa`. See `tools/leis_artigos/PATH_CONVENTION.md`
+  for the full grammar once the tool is in place.
+- The article and path are separated by a dot, as is anything inside
+  the path.
 
 ### Vintage modifiers (optional)
 
@@ -98,25 +109,35 @@ between the prose reference and the lookup tool.
 |---|---|---|
 | (none) | Currently in force | `vigente_ate IS NULL` |
 | `@YYYY-MM-DD` | Version in force on this date | `vigente_desde <= date AND (vigente_ate IS NULL OR date < vigente_ate)` |
-| `from:fonte_id` | Version introduced by a specific source | `fonte_id = X` |
+| ` from:fonte_id` | Version introduced by a specific source | `fonte_id = X` |
 | `:original` | The first-published version | min(`vigente_desde`) for that path |
 | `:current` | Explicit "currently in force" (same as no modifier) | `vigente_ate IS NULL` |
+
+The `@date` and `:original`/`:current` modifiers are appended directly
+with no space. The `from:` modifier requires a leading space because
+the source identifier itself contains a hyphen.
 
 ### Examples
 
 ```
-[[LIA Art. 9]]                          ← whole article, all current paths
-[[LIA Art. 9 §1.II]]                    ← specific leaf, current
-[[LIA Art. 17-A caput]]                 ← article with letter
-[[LIA Art. 11 §unico @2020-06-01]]      ← what § único said in mid-2020
-[[LE Art. 11 §10 @2024-12-31]]          ← § 10 before LC 219/2025 revoked it
-[[LIA Art. 10 from:L14230-2021]]        ← Art. 10 as rewritten by the 2021 reform
-[[LIA Art. 10 :original]]               ← original 1992 wording
-[[LIA ementa]]                          ← the law's preamble
-[[LIA]]                                 ← refer to the law as a whole
-[[L14230-2021]]                         ← refer to a non-cataloged amending law
-[[Lei 13.709/2018 Art. 7]]              ← long form for non-cataloged law
-[[CF Art. 31 §2]]                       ← long form for the constitution
+[[LIA.9]]                          ← whole article, all current paths
+[[LIA.9.§1.II]]                    ← specific leaf, current
+[[LIA.17-A]]                       ← article with letter
+[[LIA.17-A.caput]]                 ← caput of Art. 17-A
+[[LIA.17-A.§1.II.a]]               ← alínea a of inciso II of § 1 of Art. 17-A
+[[LE.28.§1]]                       ← § 1 of Art. 28 of Lei das Eleições
+[[LE.11.§10@2024-12-31]]           ← § 10 before LC 219/2025 revoked it
+[[L14133.75.II]]                   ← inciso II of Art. 75 of Nova Lei de Licitações
+[[L13709-2018.7]]                  ← Art. 7 of Lei 13.709/2018 (LGPD; non-cataloged)
+[[LC64-1990.1.I.g]]                ← LC 64/1990 Art. 1 inciso I alínea g
+[[CF.31.§2]]                       ← Constituição Art. 31 § 2
+[[CP.312]]                         ← Código Penal Art. 312
+[[LIA.11.§unico@2020-06-01]]       ← what § único said in mid-2020
+[[LIA.10 from:L14230-2021]]        ← Art. 10 as rewritten by the 2021 reform
+[[LIA.10:original]]                ← original 1992 wording of Art. 10
+[[LIA.ementa]]                     ← the law's preamble
+[[LIA]]                            ← refer to the law as a whole
+[[L14230-2021]]                    ← refer to a non-cataloged amending law as an entity
 ```
 
 ### Citing amendment events
@@ -126,10 +147,10 @@ amending lei touched which clause, but **citations don't need a
 separate amendment-event syntax**. Express the change as a combination
 of leaf citations + amending-law citations:
 
-> The 2021 reform [[L14230-2021]] rewrote [[LIA Art. 10]] and
-> eliminated culposa improbidade. Pre-reform, [[LIA Art. 10 :original]]
-> permitted both intentional and negligent conduct; post-reform,
-> [[LIA Art. 10 from:L14230-2021]] requires proof of dolo.
+> The 2021 reform [[L14230-2021]] rewrote [[LIA.10]] and eliminated
+> culposa improbidade. Pre-reform, [[LIA.10:original]] permitted both
+> intentional and negligent conduct; post-reform,
+> [[LIA.10 from:L14230-2021]] requires proof of dolo.
 
 When you need to query the amendment table directly (e.g., "what did
 L14230-2021 touch?"), use the lookup tool with `--by-amending`
