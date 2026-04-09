@@ -63,7 +63,7 @@ keywords` line includes both Portuguese and English search terms.
 ### Career & history
 
 - [`carreira-juizes.md`](carreira-juizes.md) — Judicial career (selection, promotion, discipline)
-- [`reformas.md`](reformas.md) — Judicial reforms (history of reforms to the judiciary)
+- [`reformas-judiciais.md`](reformas-judiciais.md) — Chronology of statutory reforms to the judiciary and civil procedure (CPC reforms, EC 45/2004, etc.)
 - [`organizacao-historica.md`](organizacao-historica.md) — Historical organization, judicial districts
 
 ### Institutions (controle, prosecution, politics)
