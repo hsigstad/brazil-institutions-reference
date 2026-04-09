@@ -24,15 +24,6 @@ into ineligibility, see `contas-municipais.md`. For criminal statutes
 that may run in parallel (lavagem, organização criminosa, Lei
 Anticorrupção), see `anticorrupcao-penal.md`.
 
-This file does not paraphrase statutory text. For the verbatim wording
-of any LIA article — current, original, or as amended by a specific
-law — resolve the backtick-wrapped citations against `tools/leis_artigos/`.
-The text below characterizes what's in the statute and explains why
-it matters.
-
-Compiled from personal research notes on civil corruption prosecution
-in Brazil.
-
 ---
 
 ## 1. Structure of the LIA
