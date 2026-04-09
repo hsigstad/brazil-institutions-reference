@@ -480,6 +480,79 @@ body is whatever the substance demands.
   relates to another, add a "See also" pointer or inline link in
   both directions.
 
+### When auditing an existing topical file
+
+These rules apply when an agent (sandboxed or otherwise) is asked to
+*bring an existing file into compliance* with the content rules
+above. They are stricter than the rules for normal edits, because
+audits run with less human oversight per change and the failure modes
+are subtle.
+
+1. **Verify every backtick citation before adding it.**
+   For any new `` `LIA.10` ``, `` `Tema1199` ``, etc. you write into
+   the file, run `tools/leis_artigos/cite.py 'X'` first and confirm
+   it returns a row. If it doesn't resolve, use prose mention
+   instead — do **not** invent the citation, do **not** add a
+   speculative entry to `jurisprudencia_index.yaml` or
+   `leis_index.yaml`, and do **not** modify the YAML indices in any
+   way during a topical audit.
+
+2. **Audit ≠ expand scope.**
+   The goal is to bring the file into compliance with the rules,
+   not to add new substantive content the rules now permit. If you
+   feel an audited file is missing a fact, a case, or a statute,
+   leave a `<!-- TODO: consider adding X -->` comment and report it.
+   Do not add the content yourself.
+
+3. **Preserve voice.**
+   Match the existing register: terse, citation-dense,
+   research-design-framed, Portuguese where translation loses
+   meaning. Do **not** rewrite content that already passes the
+   rules just to use different wording. Reword only sections you
+   are restructuring or fixing.
+
+4. **Apply the load-bearing test alongside the deletion test.**
+   The deletion test catches generic procedure that doesn't belong
+   in a topical file. But before deleting any section that fails
+   it, ask the second question: *does this carry a research-design
+   hook?* — a ratio, a threshold, a timing fact, a selection
+   effect, a structural number that matters for empirical work.
+   If yes, keep it even if it looks like statute paraphrase.
+   Example: `LIA.12`'s 14/12/4-year sanction structure paraphrases
+   the statute, but the ratio is the load-bearing fact that
+   determines which category the MP charges under, so it stays.
+
+5. **Flag factual uncertainty; do not silently rewrite.**
+   If a claim in the existing file looks wrong but you cannot
+   verify it against `cite.py` (statutes), `jurisprudencia_index.yaml`
+   (cases), or a primary source you can fetch, leave a
+   `<!-- TODO: verify — original claim was X -->` marker and skip
+   the rewrite. Do **not** rewrite from memory; do **not** delete
+   on suspicion alone. The point of these files is correctness;
+   silently introduced errors are worse than uncited claims.
+
+6. **Topical audits do not modify other files.**
+   When auditing `topics/X.md`, do not edit `CLAUDE.md`, `README.md`,
+   `siglas.md`, `glossario.md`, `jurisprudencia-stf.md`, any YAML
+   index, or any other topical file. If you find a needed update
+   elsewhere (e.g., a stub in `procedimentos-legais.md` is out of
+   date, or `jurisprudencia_index.yaml` is missing a case the
+   audited file references), flag it in your report and stop.
+   Cross-file changes need the human to coordinate.
+
+7. **One file per commit, one audit per session.**
+   Each topical-file audit produces exactly one commit. The commit
+   message names the file, summarizes which rules were applied
+   (deletion test → which sections cut; verification → which
+   citations checked; etc.), and lists any TODO markers added.
+   Don't bundle multiple files. The user reviews each diff
+   independently, and the cost of a bad audit should never exceed
+   one file's worth of damage.
+
+These guard rails are a contract: if an audit run produces output
+that breaks any of them, the audit failed and the diff should be
+discarded, not partially applied.
+
 ## Things to avoid
 
 - **Don't invent statute numbers, article numbers, STF case numbers,
