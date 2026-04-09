@@ -252,9 +252,9 @@ regimes:
 | Regime | Statute | Competent authority | Sanction type |
 |---|---|---|---|
 | Improbidade | `LIA` | MP → TJ/TRF | Civil sanctions (loss of office, political rights, fines, ressarcimento) |
-| Criminal corruption | `CP` + Lei 8.137/90 + `L8666` Arts. 89–98 | MP → criminal court | Criminal penalties (imprisonment, fines) |
-| Cartel / competition | Lei 12.529/11 | CADE (admin) | Administrative fines up to 20% of revenue |
-| Corporate liability | Lei 12.846/13 (Anticorrupção) | CGU / MP | Administrative + judicial sanctions on firms |
+| Criminal corruption | `CP` + `LCOT` + `L8666` Arts. 89–98 | MP → criminal court | Criminal penalties (imprisonment, fines) |
+| Cartel / competition | `LCADE` | CADE (admin) | Administrative fines up to 20% of revenue |
+| Corporate liability | `LAC` (Lei Anticorrupção) | CGU / MP | Administrative + judicial sanctions on firms |
 | Fiscal / audit | LC 101/00 (LRF), TC statutes | TCU / TCE / TCM | Débitos, multas, inabilitação |
 | Electoral ineligibility | `LI.1.I.g` | Câmara → TSE | 8-year ineligibility (Ficha Limpa) |
 
@@ -271,21 +271,20 @@ Part IV, p. 58 (summary table).
 
 ## 5. Ministério Público's role
 
-MP-SP (Ministério Público do Estado de São Paulo) is the dominant actor
-in state-level improbidade prosecution. Federal cases (involving
-federal funds or entities) go to MPF.
+For MP structure in general — career, entrânia tiers, specialized
+positions in the capital, CNMP oversight — see `ministerio-publico.md`.
+What's improbidade-specific:
 
-- **~2,000 active promotores** in São Paulo state.
-- Organized by **entrância** (tier): Inicial → Intermediária → Final.
-  Small comarcas = inicial; São Paulo capital = final.
-- **Specialized positions in the capital**: Promotor de Justiça do
-  Patrimônio Público (corruption-specific); GAECO (organized crime);
-  Promotor de Justiça Criminal.
-- **Small comarcas**: single prosecutor handles all case types,
-  including improbidade.
-- **Selection discretion**: MP exercises broad discretion in which
-  investigations to pursue. This is a major source of sample selection
-  for researchers — not all alleged irregularities become ACPs.
-
-For general MP structure (career, guarantees, CNMP oversight), see
-`ministerio-publico.md`.
+- **MP-SP dominates state-level improbidade prosecution** in volume
+  terms (its ~2,000 promotores and the entrânia distribution make
+  São Paulo the main supply of state-court ACPs); MPF handles federal
+  cases when federal funds are involved.
+- **Selection discretion is the load-bearing fact for empirical work.**
+  Not all alleged irregularities become ACPs — MP exercises broad
+  discretion in which inquéritos civis to convert into filed actions.
+  This is a major source of sample selection for researchers studying
+  conviction rates, sanction severity, or political-target patterns:
+  the population of *filed* improbidade actions is not the population
+  of *alleged* improbidade. Specialized varas (Promotor de Justiça do
+  Patrimônio Público in the capital, where they exist) further skew
+  the selection.
