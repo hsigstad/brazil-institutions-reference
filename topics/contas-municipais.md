@@ -3,155 +3,120 @@
 Constitutional, statutory, and jurisprudential framework for the annual
 judgment of mayoral accounts: the TCE parecer prévio, the câmara vote,
 the 2/3 override rule, and the Ficha Limpa ineligibility consequences.
-For TCE organization and relator assignment, see `tribunais-contas.md`.
-For campaign finance accounts, see `prestacao-contas-eleitorais.md`.
+For TCE organization, relator assignment, and the contas de governo /
+contas de gestão distinction at the institutional level, see
+`tribunais-contas.md`. For the LRF as a fiscal-federalism instrument
+and broader transfer mechanics, see `federalismo-fiscal.md`. For
+campaign finance accounts, see `prestacao-contas-eleitorais.md`. For
+the improbidade consequence of a rejected account, see `improbidade.md`.
 
 **Topics / keywords**: mayoral accounts, fiscal oversight, câmara
 municipal, parecer prévio, contas de governo, contas de gestão, Ficha
 Limpa, ineligibility, 2/3 override, secret vs. open voting, Lei de
 Responsabilidade Fiscal, LRF, STF Tema 157, ADPF 982, EC 76/2013.
 
-**Snapshot as of 2026**: STF jurisprudence on contas de governo / gestão
-is current through ADPF 982 (~2025). The set of municipalities that have
-reformed to open voting is a living list — the examples below are
-illustrative, not exhaustive or current.
-
-Compiled from personal research notes on municipal fiscal oversight.
+**Snapshot as of 2026**: STF jurisprudence on contas de governo /
+gestão is current through `ADPF982` (2025). The set of municipalities
+that have reformed to open voting is a living list — the examples
+below are illustrative, not a systematic census.
 
 ---
 
-## 1. Constitutional framework — Art. 31 and related
+## 1. Constitutional anchor — CF Art. 31
 
-### Art. 31 — municipal fiscal oversight
+The load-bearing constitutional rule is CF Art. 31 §2: the TCE
+parecer prévio on the mayor's annual accounts "somente deixará de
+prevalecer por decisão de dois terços dos membros da Câmara
+Municipal." That is, the TCE recommendation prevails by default; only
+a 2/3 override of the câmara can reverse it. This single sentence is
+the entire institutional architecture from which the rest of this
+file follows.
 
-- **§1**: External control of the municipality is exercised by the câmara
-  municipal, with the assistance of the state or municipal Tribunal de
-  Contas (where one exists).
-- **§2**: The parecer prévio issued by the competent body on the annual
-  mayoral accounts "somente deixará de prevalecer por decisão de dois
-  terços dos membros da Câmara Municipal" — i.e., it prevails unless 2/3
-  of councillors vote to override.
-- **§3**: Municipal accounts shall be available for 60 days annually for
-  any taxpayer to examine and question their legitimacy.
-- **§4**: Creation of new municipal-level Tribunais de Contas is
-  prohibited (existing TCMs grandfathered).
+Other relevant clauses of Art. 31:
 
-**Source:** [CF/1988, Art. 31](https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=31).
+- §1: external control is exercised by the câmara with TCE/TCM
+  assistance.
+- §3: municipal accounts are open to taxpayer inspection for 60 days
+  per year.
+- §4: creation of new municipal-level Tribunais de Contas is
+  prohibited (existing TCMs grandfathered — relevant only for São
+  Paulo and Rio de Janeiro municipalities and a handful of others).
 
-### Art. 29 — Lei Orgânica Municipal
+The contas de governo / contas de gestão distinction itself is rooted
+in CF Art. 71 I/II (parecer prévio vs. judgment of administrators);
+that institutional split is described in `tribunais-contas.md`.
 
-- Each municipality is governed by a Lei Orgânica, voted in two rounds
-  with a minimum 10-day interval, approved by 2/3 of the câmara.
-- The Lei Orgânica sets the internal structure of the câmara, including
-  voting procedures.
-- No uniform federal rule on secret vs. open voting for contas de prefeito
-  — each municipality regulates this through its Lei Orgânica and
-  Regimento Interno, subject to constitutional symmetry.
-
-**Source:** [CF/1988, Art. 29](https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=29).
-
-### Art. 37 — publicity principle
-
-- "A administração pública … obedecerá aos princípios de legalidade,
-  impessoalidade, moralidade, **publicidade** e eficiência."
-- Main constitutional argument used by reformers and the Ministério
-  Público to challenge secret voting in câmaras.
-
-**Source:** CF/1988, Art. 37 caput.
-
-### Arts. 70–71, 75 — Tribunais de Contas
-
-See `tribunais-contas.md`. Art. 71 I/II creates the parecer prévio
-(advisory) vs. judgment of administrators (binding) distinction, which
-maps onto contas de governo vs. contas de gestão (§2 below).
+There is **no federal rule** on secret vs. open voting in câmaras
+municipais — each municipality regulates the act of judging contas
+through its Lei Orgânica and Regimento Interno (CF Art. 29). This is
+load-bearing for the diffusion analysis in §4.
 
 ---
 
 ## 2. Contas de governo vs. contas de gestão
 
-### The distinction
+The distinction matters because it determines (a) who has final say
+over the accounts and (b) whether rejection triggers Ficha Limpa
+ineligibility.
 
-- **Contas de governo**: the mayor's annual consolidated accounts covering
-  overall budgetary execution, fiscal targets, and compliance with fiscal
-  rules. Political accounts of the head of the executive. TCE issues
-  parecer prévio; câmara has exclusive authority to approve or reject
-  (CF Art. 31 §2, Art. 71 I).
+- **Contas de governo**: the mayor's annual consolidated accounts —
+  budgetary execution, fiscal targets, compliance with fiscal rules.
+  Political accounts of the head of the executive. TCE issues
+  parecer prévio; câmara has exclusive authority to approve or
+  reject (CF Art. 31 §2, Art. 71 I).
 - **Contas de gestão**: accounts related to the mayor's acts as
-  *ordenador de despesas* — specific contracts, payments, procurement.
-  Administrative-managerial acts. The TCE can judge these directly and
-  impose sanctions (CF Art. 71 II).
+  *ordenador de despesas* — specific contracts, payments,
+  procurement. Administrative-managerial. The TCE judges these
+  directly and can impose sanctions (CF Art. 71 II).
 
-### STF — RE 848.826 / Tema 157 (judged 10 Aug 2016, certified 18 Oct 2019)
+The split was contested for years and resolved in two STF decisions:
 
-Tese: *"Para os fins do artigo 1º, inciso I, alínea g, da Lei Complementar
-64/1990, a apreciação das contas de Prefeito, tanto as de governo quanto
-as de gestão, será exercida pelas Câmaras Municipais, com auxílio dos
-Tribunais de Contas competentes, cujo parecer prévio somente deixará de
-prevalecer por decisão de dois terços dos vereadores."*
+### `Tema157` — RE 848.826 (decided 2016-08-10, certified 2019-10-18)
 
-- Vote: 6–5 (narrow majority).
-- Majority: Lewandowski, Gilmar Mendes, Fachin, Cármen Lúcia, Marco Aurélio,
-  Celso de Mello.
-- Dissent: Barroso, Zavascki, Rosa Weber, Fux, Toffoli (would have allowed
-  TCEs to independently judge contas de gestão).
-- Held that **both** contas de governo and contas de gestão fall under
-  câmara jurisdiction for purposes of ineligibility under Ficha Limpa.
+Vote 6–5. Held that **both** contas de governo and contas de gestão
+fall under câmara jurisdiction *for purposes of Ficha Limpa
+ineligibility*. The TCE parecer alone does not generate
+ineligibility — the câmara must vote to reject, by ordinary majority
+to follow the TCE or by 2/3 to override it. Omission of the câmara
+does not generate ineligibility either: "inadmissível o julgamento
+ficto das contas por decurso de prazo." See `../jurisprudencia-stf.md`
+for the canonical description and the dissent line-up.
 
-**Source:** [STF — Tema 157](https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157);
-[Dizer o Direito analysis](https://www.dizerodireito.com.br/2016/09/competencia-para-julgamento-das-contas.html).
+### `ADPF982` (decided 2025)
 
-### STF — ADPF 982 (decided ~2025)
+Revisited the boundary. Reaffirmed that TCEs can independently judge
+contas de gestão and impose administrative sanctions (débitos,
+multas) on mayors as ordenadores de despesas. Clarified that
+**electoral ineligibility** under Ficha Limpa arises only from
+câmara rejection of contas de governo, not from TCE decisions on
+contas de gestão. Complements rather than contradicts `Tema157`.
 
-- Revisited the contas de governo / contas de gestão boundary.
-- Reaffirmed that TCEs can independently judge contas de gestão and impose
-  administrative sanctions (débitos, multas) on mayors acting as
-  ordenadores de despesas.
-- Clarified that **electoral ineligibility** under Ficha Limpa arises only
-  from câmara rejection of contas de governo, not from TCE decisions on
-  contas de gestão.
-- Complements rather than contradicts Tema 157.
-
-**Source:** [Migalhas — ADPF 982 analysis](https://www.migalhas.com.br/depeso/433107/adpf-982-quem-julga-as-contas-do-prefeito-afinal).
+The combined effect: TCE rulings on contas de gestão have real
+sanctioning bite (financial, administrative) but do not by themselves
+make a mayor ineligible. Ineligibility flows only through the câmara
+vote on contas de governo.
 
 ---
 
 ## 3. Lei da Ficha Limpa — ineligibility from rejected accounts
 
-### Legal provision — `LI.1.I.g` (amended by `LFL`)
+The relevant provision is `LI.1.I.g` (as amended by `LFL`). All four
+of the following conditions must be met simultaneously to trigger the
+8-year ineligibility:
 
-Ineligible are those who have had their accounts rejected due to:
+1. Rejection of accounts related to the exercise of public office.
+2. Existence of an **irregularidade insanável** (the flaw cannot be
+   cured ex post).
+3. The irregularity configures **ato doloso de improbidade
+   administrativa**.
+4. **Decisão irrecorrível do órgão competente**, not suspended or
+   annulled by the Judiciary.
 
-1. **Irregularidade insanável** (the flaw cannot be corrected after the fact),
-2. that constitutes **ato doloso de improbidade administrativa**,
-3. by **decisão irrecorrível do órgão competente**,
-
-— unless the decision has been suspended or annulled by the Judiciary.
-
-**Duration:** 8 years from the date of the decision.
-
-**Source:** `LI.1.I.g`; `LFL`.
-
-### Who is the "órgão competente"?
-
-- Per STF Tema 157: the **câmara municipal** is the competent organ for
-  contas de prefeito (both de governo and de gestão, for ineligibility
-  purposes).
-- A TCE parecer prévio alone does **not** trigger ineligibility — the
-  câmara must vote to reject.
-- Omission (câmara never votes) also does not generate ineligibility:
-  "inadmissível o julgamento ficto das contas por decurso de prazo."
-
-### Cumulative requirements in practice
-
-All four conditions must be met simultaneously for Ficha Limpa ineligibility:
-
-1. Rejection of accounts related to exercise of public office.
-2. Existence of insanable irregularity.
-3. Irregularity configures willful administrative impropriety.
-4. Irrevocable decision of the competent organ.
-
-Many council rejections do **not** lead to ineligibility if the
-irregularity is deemed curable, non-dolous, or subject to judicial appeal.
+The "órgão competente" for contas de prefeito is the câmara
+municipal, per `Tema157`. A standalone TCE parecer does not suffice;
+neither does câmara omission. Many câmara rejections do not in fact
+generate ineligibility because the irregularity is deemed curable,
+non-dolous, or remains under judicial appeal.
 
 **Source:** [TSE — Inelegibilidade por rejeição de contas](https://www.tse.jus.br/institucional/escola-judiciaria-eleitoral/publicacoes/revistas-da-eje/artigos/revista-eletronica-eje-n.-4-ano-3/inelegibilidade-por-rejeicao-de-contas-orgao-competente-para-julgar-as-contas-de-prefeito).
 
@@ -159,142 +124,128 @@ irregularity is deemed curable, non-dolous, or subject to judicial appeal.
 
 ## 4. Voting modality in câmaras municipais
 
-### Legal framework
+There is no federal mandate for open or secret voting on contas de
+prefeito. Each municipality regulates this through its Lei Orgânica
+and Regimento Interno. The constitutional default is publicity (CF
+Art. 37 caput): secret voting requires explicit constitutional
+authorization, and at the municipal level there is none. Despite
+this, a substantial number of câmaras voted contas de prefeito by
+secret ballot through the 2010s, on the strength of pre-1988 Lei
+Orgânica clauses that were never updated.
 
-- No federal statute mandates open or secret voting for the act of judging
-  contas de prefeito.
-- Each municipality regulates this through its Lei Orgânica and Regimento
-  Interno (CF Art. 29).
+### EC 76/2013 — federal precedent
 
-### Constitutional default rule
+Promulgated 2013-11-28. Abolished secret voting in Congress for two
+acts:
 
-- **"A regra é a publicidade"**: secret voting requires explicit
-  constitutional authorization; silence means open voting applies.
-- The Federal Constitution mandates secret voting only for specific acts
-  at the federal level (Art. 52 III/IV/XI: Senate approval of judges,
-  diplomats, Procurador-Geral; formerly Art. 55 mandate revocation and
-  Art. 66 veto override, until EC 76/2013).
-- There is **no constitutional requirement** for secret voting in câmaras
-  municipais for account judgment.
+- **CF Art. 55**: loss of parliamentary mandate (cassação) — secret
+  → open.
+- **CF Art. 66 §4**: appreciation of presidential vetoes — secret →
+  open.
 
-**Source:** [Dizer o Direito — EC 76/2013 commentary](https://www.dizerodireito.com.br/2013/11/comentarios-ec-762013-voto-aberto-no.html).
+Catalyzed by the Natan Donadon case (August 2013), where deputies in
+secret ballot upheld the mandate of a congressman sentenced to 13
+years for embezzlement. EC 76/2013 is not directly binding on
+câmaras municipais, but it served as the rhetorical and political
+catalyst for subsequent municipal reforms, which routinely cite it
+alongside CF Art. 37.
 
-### Emenda Constitucional 76/2013 — federal precedent
+### Municipal reform — diffusion, not coordination
 
-- Promulgated 28 November 2013.
-- Abolished secret voting in Congress for:
-  - **Art. 55**: loss of parliamentary mandate (cassação) — secret → open.
-  - **Art. 66 §4**: appreciation of presidential vetoes — secret → open.
-- Votes that **remain secret** after EC 76/2013: Senate confirmation of
-  judges/diplomats/PGR (Art. 52 III/IV/XI); mesa diretora elections (via
-  internal rules).
-- Catalyzed by the Natan Donadon case (August 2013), where deputies in
-  secret ballot upheld the mandate of a congressman sentenced to 13 years
-  for embezzlement.
+The conversion from secret to open voting at the municipal level is a
+two-decade diffusion process rather than a single coordinated event.
+The examples below are collected from ad-hoc review of individual
+câmara records and are **illustrative, not a systematic census**:
 
-**Source:** [Senado Notícias — EC 76/2013](https://www12.senado.leg.br/noticias/materias/2013/11/28/acaba-o-voto-secreto-para-cassacao-de-mandatos-e-exame-de-vetos-presidenciais);
-[Câmara dos Deputados](https://www.camara.leg.br/noticias/422091-EMENDA-DO-VOTO-ABERTO-PARA-CASSACOES-E-VETOS-E-PROMULGADA-PELO-CONGRESSO).
-
-Not directly binding on câmaras municipais, but served as a catalyst for
-subsequent municipal reforms that cite EC 76/2013 and the publicity
-principle.
-
-### Municipal reform examples
-
-Diffusion process over two decades rather than a single coordinated event.
-The examples below are illustrative, collected through ad-hoc review of
-individual câmara records; they are **not** a systematic census:
-
-- **Early movers**: Criciúma/SC (2004, RI Art. 180), Canelinha/SC (2008,
-  Emenda LOM nº 9), Belo Horizonte/MG (2012).
+- **Early movers**: Criciúma/SC (2004, RI Art. 180), Canelinha/SC
+  (2008, Emenda LOM nº 9), Belo Horizonte/MG (2012).
 - **Post-EC 76/2013 acceleration (~2019–2021)**: Morro da Fumaça/SC,
-  Ilhota/SC, Ibicaré/SC; Recife/PE; Pedralva/MG; São Simão/GO; Marechal
-  Cândido Rondon/PR; Guarapari/ES; Uruguaiana/RS.
+  Ilhota/SC, Ibicaré/SC; Recife/PE; Pedralva/MG; São Simão/GO;
+  Marechal Cândido Rondon/PR; Guarapari/ES; Uruguaiana/RS.
 - **Late movers**: Capinzal/SC (2025).
 
-**Pedralva/MG reform mechanism (2019):** The original Lei Orgânica
-prescribed secret voting for four deliberations. A 2007 amendment abolished
-most. A 2019 amendment (Projeto de Emenda à Lei Orgânica 01/2019) eliminated
-the last remaining secret ballot, approved unanimously, citing CF Art. 37.
-
-**Source:** [Pedralva câmara municipal](https://www.pedralva.mg.leg.br/institucional/noticias/fim-do-voto-secreto-e-aprovado).
+**Pedralva/MG mechanism (2019):** the original Lei Orgânica
+prescribed secret voting for four deliberations. A 2007 amendment
+abolished most. A 2019 amendment (Projeto de Emenda à Lei Orgânica
+01/2019) eliminated the last remaining secret ballot, approved
+unanimously, citing CF Art. 37. ([source](https://www.pedralva.mg.leg.br/institucional/noticias/fim-do-voto-secreto-e-aprovado))
 
 ### Practice vs. legal rule
 
-- Even where the Lei Orgânica prescribes nominal roll call, actual practice
-  may diverge (show of hands, voice votes, informal arrangements).
-- Conversely, some municipalities with secret-ballot rules may conduct
-  votes that are de facto open (small councils where everyone knows how
-  everyone voted).
+Even where the Lei Orgânica prescribes nominal roll call, actual
+practice may diverge (show of hands, voice votes). Conversely, in
+small câmaras even formally-secret ballots are de facto open because
+everyone in the room knows everyone's position. For empirical work,
+the legal rule is at best a noisy proxy for what voters actually
+observe.
+
+<!-- TODO: consider adding a systematic source for the diffusion
+data — currently relies on ad-hoc câmara records. -->
 
 ---
 
-## 5. Lei de Responsabilidade Fiscal — LC 101/2000
+## 5. Lei de Responsabilidade Fiscal — load-bearing thresholds
 
-### Overview
+The LRF (LC 101/2000) is the substantive backdrop against which most
+adverse TCE pareceres are written. For the LRF as a federalism
+instrument and the broader transfer/cap framework, see
+`federalismo-fiscal.md`. The structural numbers that matter
+specifically for mayoral accounts:
 
-- Establishes fiscal responsibility rules for all levels of government.
-- **Limits on personnel spending** (Arts. 19–20): 60% of net current
-  revenue for municipalities, of which up to 6% for the câmara.
-- **Debt limits**: Arts. 29–30.
-- **Budgetary procedures**: general framework.
-- Violations of LRF limits are a common ground for adverse TCE opinions.
-
-### Account submission and review (Arts. 56–58)
-
-- **Art. 56**: heads of the executive submit accounts that include those
-  of the presidents of legislative, judiciary, and other autonomous bodies,
-  consolidated.
-- **Art. 57**: accounts must be available for public consultation,
-  including via electronic means.
-- TCE issues parecer prévio within **60 days** of receipt (municipalities
-  under 200k population: 180 days if the TCE so determines).
-
-### Fiscal oversight (Art. 59)
-
-- The Legislative Power, directly or through Tribunais de Contas and
-  internal control systems, exercises fiscal oversight.
-- TCEs must alert branches when spending approaches LRF limits.
+- **Personnel spending caps** (LRF Arts. 19–20): municipalities are
+  capped at **60% of net current revenue** for total personnel, of
+  which up to **6%** is reserved for the câmara itself. Breaching
+  these caps is by far the most common ground for adverse TCE
+  pareceres on contas de governo.
+- **TCE parecer deadline** (LRF Arts. 56–57): the TCE issues parecer
+  prévio within **60 days** of receipt; municipalities under 200k
+  population may be granted **180 days** at the TCE's discretion.
+  Mayoral accounts must be published and made available for public
+  consultation, including electronically.
+- **Alert mechanism** (LRF Art. 59): TCEs must alert branches when
+  spending approaches the LRF limits, before the breach is
+  consummated. The alert is the operational tripwire that converts a
+  fiscal trajectory into a documentary record the TCE relator can
+  later cite.
 
 **Source:** [LC 101/2000](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm).
 
 ---
 
-## 6. Câmara municipal — procedure for judging contas
+## 6. Câmara procedure — the 2/3 rule and its asymmetry
 
-### Typical procedure (varies by municipality)
+The general legislative-process steps (committee parecer → plenary
+discussion → vote → decreto legislativo) are standard câmara
+procedure and not specific to contas. What is specific — and
+load-bearing — is the quorum structure of CF Art. 31 §2.
 
-1. TCE parecer prévio received by the câmara.
-2. Sent to the relevant committee (comissão de contas, comissão de
-   finanças, or similar).
-3. Committee issues its own parecer (typically within 15–30 days),
-   agreeing or disagreeing with the TCE.
-4. Committee parecer and a draft legislative decree (projeto de decreto
-   legislativo) go to the plenary.
-5. Plenary discussion.
-6. **Vote**: open nominal roll call or secret ballot, per Lei Orgânica /
-   Regimento Interno.
-7. **Quorum**: simple majority to follow the TCE recommendation; **2/3 of
-   all members** to override the TCE parecer (CF Art. 31 §2).
-8. Result formalized as a decreto legislativo.
+### The 2/3 rule is asymmetric in only one direction
 
-### The 2/3 rule — asymmetry
+| TCE recommends | Câmara wants to | Quorum needed |
+|---|---|---|
+| Reject | Approve (override) | **2/3 of members** |
+| Approve | Reject (override) | **2/3 of members** |
+| Either | Follow the TCE | Simple majority |
 
-- TCE recommends **rejection**, câmara wants to **approve** (override):
-  needs 2/3.
-- TCE recommends **approval**, câmara wants to **reject** (override): also
-  needs 2/3.
-- Câmara **follows** the TCE recommendation: simple majority suffices.
-- Strong asymmetry favoring the TCE recommendation: overriding requires
-  a supermajority.
+Following the TCE is "free" (simple majority); overriding the TCE in
+either direction requires a supermajority. This is a strong
+institutional thumb on the scale in favor of the TCE
+recommendation, regardless of which side the TCE comes down on. For
+empirical work, it means the câmara vote is informative mainly when
+it diverges from the TCE — and divergence is rare and concentrated
+in cases where 2/3 of councillors share an interest.
 
-### Omission / failure to vote
+### Omission as a strategy
 
-- Some câmaras never vote on pending accounts, sometimes for years.
-- Per STF Tema 157: omission does **not** generate Ficha Limpa ineligibility
-  — "inadmissível o julgamento ficto das contas por decurso de prazo."
-- Omission may itself be a strategic choice: no rejection = no ineligibility,
-  while avoiding the political cost of an explicit approval vote.
+Some câmaras never vote on pending accounts, sometimes for years.
+Per `Tema157`, omission does **not** generate Ficha Limpa
+ineligibility ("inadmissível o julgamento ficto das contas por
+decurso de prazo"). Omission can therefore be a deliberate strategic
+equilibrium: no rejection (so no ineligibility for an allied mayor),
+but also no explicit approval vote (so no political cost). For
+research design, the share of pending-but-unvoted accounts is itself
+a useful outcome variable — it tracks câmara-mayor alignment more
+cleanly than the rejection rate does.
 
 ---
 
@@ -305,7 +256,7 @@ the last remaining secret ballot, approved unanimously, citing CF Art. 37.
 | 1988 | CF/1988 promulgated | Art. 31 §2 establishes parecer prévio / 2/3 override |
 | 2000 | LC 101/2000 (LRF) | Fiscal rules whose violation generates TCE rejections |
 | 2010 | LC 135/2010 (Ficha Limpa) | Strengthens ineligibility consequences |
-| 2013-11-28 | EC 76/2013 | Abolishes secret voting in Congress for cassação and vetoes; federal precedent for municipal reforms |
-| 2016-08-10 | STF RE 848.826 (Tema 157) decided | Câmara is the competent organ; TCE parecer alone doesn't trigger ineligibility |
-| 2019-10-18 | Tema 157 thesis certified | Binding precedent formally established |
-| ~2025 | ADPF 982 decided | TCEs can independently judge contas de gestão; only câmara rejection of contas de governo triggers Ficha Limpa |
+| 2013-11-28 | EC 76/2013 | Open voting in Congress for cassação and vetoes; rhetorical catalyst for municipal reforms |
+| 2016-08-10 | STF `Tema157` decided | Câmara is the competent organ; TCE parecer alone doesn't trigger ineligibility |
+| 2019-10-18 | `Tema157` thesis certified | Binding precedent formally established |
+| 2025 | `ADPF982` decided | TCEs can independently judge contas de gestão; only câmara rejection of contas de governo triggers Ficha Limpa |
