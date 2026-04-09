@@ -82,6 +82,13 @@ keywords` line includes both Portuguese and English search terms.
 - [`prestacao-contas-eleitorais.md`](prestacao-contas-eleitorais.md) — Campaign finance accounting (electoral, not fiscal)
 - [`transparencia-dados.md`](transparencia-dados.md) — LAI (Lei 12.527), LGPD (Lei 13.709), ANPD, Portal da Transparência, Comprasnet, SICONV, research implications
 
+### Indices and reference (look here first when navigating)
+
+- [`siglas.md`](siglas.md) — Alphabetical acronym registry. Look up CGU, MPF, FPM, LRF, SUS, TPU, etc. with file pointers.
+- [`glossario.md`](glossario.md) — Portuguese legal terms glossary. Look up *acórdão*, *súmula vinculante*, *trânsito em julgado*, *prevenção*, *parecer prévio*, etc.
+- [`leis_index.yaml`](leis_index.yaml) — Structured YAML index of statutes cited in this directory: status, key articles, topics, files where discussed.
+- [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — Consolidated STF case file. STF Temas, ADIs, ADPFs, HCs cited elsewhere are described here once and cross-referenced.
+
 ### Other
 
 - [`nao-judicial.md`](nao-judicial.md) — Non-judicial institutions (diplomats, etc.)

@@ -1,0 +1,730 @@
+# Leis index — structured metadata for Brazilian statutes cited in this directory.
+#
+# Purpose: a lightweight, queryable index that bridges the topical
+# markdown files to the article-level law database. Each entry names a
+# statute, gives a one-line summary, current status, the topics it
+# covers, and the files in this directory that discuss it.
+#
+# Format: YAML, top-level "statutes" mapping keyed by canonical short
+# name (e.g., "lei_8666_1993"). Status values: "vigente",
+# "parcialmente_revogada", "revogada", "vigente_com_modificacoes".
+#
+# Conventions:
+# - All planalto links use https://www.planalto.gov.br/ccivil_03/...
+# - "discussed_in" lists are filenames in this directory.
+# - Reform laws are cross-linked via "reformed_by" / "reforms".
+# - Constitutional amendments (EC) and decree-laws (DL) follow the
+#   same schema with appropriate tipo field.
+
+schema_version: 1
+last_updated: 2026-04-09
+
+statutes:
+
+  cf_1988:
+    tipo: Constituição
+    titulo: Constituição da República Federativa do Brasil
+    ano: 1988
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+    topics: [constitutional_framework, federalism, fundamental_rights]
+    key_articles:
+      - "Art. 5 (direitos fundamentais)"
+      - "Art. 14 §9 (inelegibilidades)"
+      - "Art. 29, 31 (municípios)"
+      - "Art. 37 (administração pública)"
+      - "Art. 70-75 (controle externo)"
+      - "Art. 93 IX (publicidade dos atos judiciais)"
+      - "Art. 103-A (súmula vinculante)"
+      - "Art. 103-B (CNJ)"
+      - "Art. 127-130 (MP)"
+      - "Art. 145-162 (sistema tributário)"
+      - "Art. 159 (FPM, FPE)"
+      - "Art. 196 (saúde)"
+      - "Art. 198 §2 (gasto mínimo em saúde)"
+      - "Art. 212-A (FUNDEB)"
+    discussed_in: [contas-municipais.md, federalismo-fiscal.md, ministerio-publico.md, cgu-controle-interno.md, partidos-e-sistema-eleitoral.md, transparencia-dados.md, cnj-administracao-judicial.md]
+
+  dl_2848_1940:
+    tipo: Decreto-Lei
+    numero: "2848"
+    ano: 1940
+    titulo: Código Penal
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
+    topics: [criminal_law, corruption, peculato, lavagem]
+    key_articles:
+      - "Art. 312 (peculato)"
+      - "Art. 316 (concussão)"
+      - "Art. 317 (corrupção passiva)"
+      - "Art. 319 (prevaricação)"
+      - "Art. 333 (corrupção ativa)"
+      - "Arts. 337-E a 337-P (crimes em licitações, post-Lei 14.133/2021)"
+    discussed_in: [anticorrupcao-penal.md]
+
+  dl_3689_1941:
+    tipo: Decreto-Lei
+    numero: "3689"
+    ano: 1941
+    titulo: Código de Processo Penal (CPP)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689compilado.htm
+    topics: [criminal_procedure]
+    key_articles:
+      - "Art. 3-A (juiz das garantias, post-Lei 13.964/2019)"
+      - "Art. 28-A (ANPP)"
+    discussed_in: [anticorrupcao-penal.md, processo-penal.md]
+
+  clt_1943:
+    tipo: Decreto-Lei
+    numero: "5452"
+    ano: 1943
+    titulo: Consolidação das Leis do Trabalho (CLT)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm
+    topics: [labor_law, labor_courts]
+    key_articles:
+      - "Arts. 71, 74 §2 (jornada e registro)"
+      - "Arts. 789, 790, 790-B, 791-A (custas e honorários, pós-2017)"
+      - "Art. 818 (ônus da prova)"
+      - "Arts. 844, 849, 850, 855-B a 855-E (audiências, homologação)"
+      - "Arts. 611-A, 611-B (negociado vs. legislado)"
+      - "Art. 507-B (quitação anual)"
+    reformed_by: [lei_13467_2017]
+    discussed_in: [justica-trabalho.md]
+
+  lei_4717_1965:
+    tipo: Lei
+    numero: "4717"
+    ano: 1965
+    titulo: Lei da Ação Popular
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l4717.htm
+    topics: [civil_procedure, public_interest_litigation]
+    discussed_in: [ministerio-publico.md, processo-civil.md]
+
+  codigo_eleitoral_1965:
+    tipo: Lei
+    numero: "4737"
+    ano: 1965
+    titulo: Código Eleitoral
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l4737.htm
+    topics: [electoral_law]
+    discussed_in: [partidos-e-sistema-eleitoral.md, justica-eleitoral.md, processo-eleitoral.md]
+
+  ctn_1966:
+    tipo: Lei
+    numero: "5172"
+    ano: 1966
+    titulo: Código Tributário Nacional (CTN)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm
+    topics: [tax_law, federalism]
+    key_articles:
+      - "Art. 91 (FPM distribution)"
+    discussed_in: [federalismo-fiscal.md]
+
+  dl_1881_1981:
+    tipo: Decreto-Lei
+    numero: "1881"
+    ano: 1981
+    titulo: Distribuição do Fundo de Participação dos Municípios
+    status: vigente_com_modificacoes
+    topics: [federalism, FPM]
+    discussed_in: [federalismo-fiscal.md]
+
+  lei_7347_1985:
+    tipo: Lei
+    numero: "7347"
+    ano: 1985
+    titulo: Lei da Ação Civil Pública
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l7347orig.htm
+    topics: [public_interest_litigation, MP]
+    discussed_in: [ministerio-publico.md, improbidade.md, processo-civil.md]
+
+  lei_8080_1990:
+    tipo: Lei
+    numero: "8080"
+    ano: 1990
+    titulo: Lei Orgânica do SUS
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+    topics: [health_law, SUS]
+    discussed_in: [federalismo-fiscal.md]
+
+  lei_8112_1990:
+    tipo: Lei
+    numero: "8112"
+    ano: 1990
+    titulo: Regime Jurídico Único dos Servidores Públicos Federais
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm
+    topics: [public_servants, PAD]
+    key_articles:
+      - "Arts. 143-182 (PAD)"
+    discussed_in: [cgu-controle-interno.md]
+
+  lei_8137_1990:
+    tipo: Lei
+    numero: "8137"
+    ano: 1990
+    titulo: Crimes contra a Ordem Tributária e Econômica
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8137.htm
+    topics: [criminal_law, tax_crimes, cartel]
+    key_articles:
+      - "Art. 1 (sonegação)"
+      - "Art. 4 (cartel criminal)"
+    discussed_in: [anticorrupcao-penal.md, licitacoes.md, improbidade.md]
+
+  lei_8213_1991:
+    tipo: Lei
+    numero: "8213"
+    ano: 1991
+    titulo: Plano de Benefícios da Previdência Social
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm
+    topics: [social_security, NTEP]
+    key_articles:
+      - "Art. 21-A (NTEP, added by Lei 11.430/2006)"
+    discussed_in: []
+
+  lc_64_1990:
+    tipo: Lei Complementar
+    numero: "64"
+    ano: 1990
+    titulo: Lei das Inelegibilidades
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp64.htm
+    topics: [electoral_law, ineligibility, ficha_limpa]
+    key_articles:
+      - "Art. 1 I 'g' (rejeição de contas)"
+      - "Art. 1 I 'e' (condenação criminal por órgão colegiado)"
+    reformed_by: [lc_135_2010]
+    discussed_in: [contas-municipais.md, partidos-e-sistema-eleitoral.md]
+
+  lei_8429_1992:
+    tipo: Lei
+    numero: "8429"
+    ano: 1992
+    titulo: Lei de Improbidade Administrativa (LIA)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8429.htm
+    topics: [civil_corruption, improbidade, MP]
+    key_articles:
+      - "Art. 9 (enriquecimento ilícito)"
+      - "Art. 10 (prejuízo ao erário)"
+      - "Art. 11 (violação de princípios)"
+      - "Art. 12 (sanções)"
+      - "Art. 17 (legitimidade ativa)"
+      - "Art. 17-B (acordo de não persecução cível)"
+      - "Art. 23 (prescrição)"
+    reformed_by: [lei_14230_2021]
+    discussed_in: [improbidade.md, contas-municipais.md, licitacoes.md, ministerio-publico.md]
+
+  lei_8443_1992:
+    tipo: Lei
+    numero: "8443"
+    ano: 1992
+    titulo: Lei Orgânica do Tribunal de Contas da União
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8443.htm
+    topics: [audit_courts, TCU]
+    discussed_in: [tribunais-contas.md]
+
+  lc_75_1993:
+    tipo: Lei Complementar
+    numero: "75"
+    ano: 1993
+    titulo: Lei Orgânica do MPU (LOMPU)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm
+    topics: [MP, MPU]
+    discussed_in: [ministerio-publico.md]
+
+  lei_8625_1993:
+    tipo: Lei
+    numero: "8625"
+    ano: 1993
+    titulo: Lei Orgânica Nacional do MP (LONMP)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8625.htm
+    topics: [MP, MPE]
+    discussed_in: [ministerio-publico.md]
+
+  lc_709_1993:
+    tipo: Lei Complementar
+    numero: "709"
+    ano: 1993
+    titulo: Lei Orgânica do TCE-SP
+    status: vigente
+    url: https://www.al.sp.gov.br/repositorio/legislacao/lei.complementar/1993/lei.complementar-709-14.01.1993.html
+    topics: [audit_courts, TCE_SP]
+    discussed_in: [tribunais-contas.md]
+
+  lei_8666_1993:
+    tipo: Lei
+    numero: "8666"
+    ano: 1993
+    titulo: Lei Geral de Licitações
+    status: parcialmente_revogada
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8666cons.htm
+    topics: [procurement, corruption]
+    key_articles:
+      - "Art. 22 (modalidades)"
+      - "Art. 23 (limites)"
+      - "Art. 24 (dispensa)"
+      - "Art. 25 (inexigibilidade)"
+      - "Art. 45 (critérios)"
+      - "Art. 65 (alterações contratuais)"
+      - "Arts. 89-98 (crimes)"
+    revoked_by:
+      law: lei_14133_2021
+      transition: até 30 de dezembro de 2023; conduta anterior segue regida pela lei antiga
+    discussed_in: [licitacoes.md, anticorrupcao-penal.md, improbidade.md]
+
+  lei_9096_1995:
+    tipo: Lei
+    numero: "9096"
+    ano: 1995
+    titulo: Lei dos Partidos Políticos
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9096.htm
+    topics: [political_parties, fundo_partidario]
+    discussed_in: [partidos-e-sistema-eleitoral.md]
+
+  lei_9504_1997:
+    tipo: Lei
+    numero: "9504"
+    ano: 1997
+    titulo: Lei das Eleições
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9504.htm
+    topics: [electoral_law, campaign_finance]
+    discussed_in: [partidos-e-sistema-eleitoral.md, processo-eleitoral.md]
+
+  lei_9613_1998:
+    tipo: Lei
+    numero: "9613"
+    ano: 1998
+    titulo: Lei de Lavagem de Dinheiro
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9613.htm
+    topics: [criminal_law, money_laundering]
+    reformed_by: [lei_12683_2012]
+    discussed_in: [anticorrupcao-penal.md]
+
+  lc_101_2000:
+    tipo: Lei Complementar
+    numero: "101"
+    ano: 2000
+    titulo: Lei de Responsabilidade Fiscal (LRF)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm
+    topics: [fiscal_responsibility, federalism]
+    key_articles:
+      - "Art. 2 IV (RCL)"
+      - "Arts. 19-20 (limites de pessoal)"
+      - "Arts. 29-30 (limites de dívida)"
+      - "Art. 42 (último ano de mandato)"
+      - "Arts. 56-58 (apresentação de contas)"
+      - "Art. 59 (fiscalização)"
+    discussed_in: [contas-municipais.md, federalismo-fiscal.md]
+
+  lei_10406_2002:
+    tipo: Lei
+    numero: "10406"
+    ano: 2002
+    titulo: Código Civil
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm
+    topics: [civil_law]
+    discussed_in: [processo-civil.md]
+
+  lei_10520_2002:
+    tipo: Lei
+    numero: "10520"
+    ano: 2002
+    titulo: Lei do Pregão
+    status: parcialmente_revogada
+    url: https://www.planalto.gov.br/ccivil_03/leis/2002/l10520.htm
+    topics: [procurement, pregao]
+    revoked_by:
+      law: lei_14133_2021
+      transition: até 30 de dezembro de 2023
+    discussed_in: [licitacoes.md]
+
+  lei_10683_2003:
+    tipo: Lei
+    numero: "10683"
+    ano: 2003
+    titulo: Criação da CGU
+    status: revogada
+    topics: [CGU]
+    discussed_in: [cgu-controle-interno.md]
+
+  lc_135_2010:
+    tipo: Lei Complementar
+    numero: "135"
+    ano: 2010
+    titulo: Lei da Ficha Limpa
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp135.htm
+    topics: [electoral_law, ineligibility, ficha_limpa]
+    reforms: [lc_64_1990]
+    discussed_in: [contas-municipais.md, partidos-e-sistema-eleitoral.md]
+
+  lei_11430_2006:
+    tipo: Lei
+    numero: "11430"
+    ano: 2006
+    titulo: Adicionou Art. 21-A à Lei 8.213/91 (NTEP)
+    status: vigente
+    topics: [social_security, NTEP]
+    discussed_in: []
+
+  lc_141_2012:
+    tipo: Lei Complementar
+    numero: "141"
+    ano: 2012
+    titulo: Regulamentação do gasto mínimo em saúde
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm
+    topics: [health_law, federalism]
+    discussed_in: [federalismo-fiscal.md]
+
+  lei_12527_2011:
+    tipo: Lei
+    numero: "12527"
+    ano: 2011
+    titulo: Lei de Acesso à Informação (LAI)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm
+    topics: [transparency, access_to_information]
+    key_articles:
+      - "Art. 3 (princípios)"
+      - "Arts. 23-25 (classificação de sigilo)"
+      - "Art. 31 (informação pessoal)"
+    discussed_in: [transparencia-dados.md]
+
+  lei_12529_2011:
+    tipo: Lei
+    numero: "12529"
+    ano: 2011
+    titulo: Lei de Defesa da Concorrência
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12529.htm
+    topics: [antitrust, CADE, cartel]
+    key_articles:
+      - "Art. 36 §3 (cartel)"
+      - "Art. 37 (sanções)"
+      - "Arts. 86-87 (leniência)"
+    discussed_in: [licitacoes.md, anticorrupcao-penal.md, improbidade.md]
+
+  lei_12683_2012:
+    tipo: Lei
+    numero: "12683"
+    ano: 2012
+    titulo: Reforma da Lei de Lavagem
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12683.htm
+    topics: [criminal_law, money_laundering]
+    reforms: [lei_9613_1998]
+    discussed_in: [anticorrupcao-penal.md]
+
+  lei_12846_2013:
+    tipo: Lei
+    numero: "12846"
+    ano: 2013
+    titulo: Lei Anticorrupção
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm
+    topics: [corporate_liability, corruption, CGU]
+    key_articles:
+      - "Art. 2 (responsabilidade objetiva)"
+      - "Art. 5 (atos lesivos)"
+      - "Art. 6 (sanções administrativas)"
+      - "Arts. 16-17 (acordo de leniência)"
+      - "Art. 19 (sanções judiciais)"
+      - "Art. 23 (CEIS / CNEP)"
+    discussed_in: [anticorrupcao-penal.md, cgu-controle-interno.md, licitacoes.md]
+
+  lei_12850_2013:
+    tipo: Lei
+    numero: "12850"
+    ano: 2013
+    titulo: Lei das Organizações Criminosas
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12850.htm
+    topics: [criminal_law, organized_crime, colaboracao_premiada]
+    key_articles:
+      - "Art. 1 §1 (definição de orcrim)"
+      - "Art. 2 (tipo penal)"
+      - "Art. 4 (colaboração premiada)"
+    discussed_in: [anticorrupcao-penal.md, ministerio-publico.md]
+
+  lei_13105_2015:
+    tipo: Lei
+    numero: "13105"
+    ano: 2015
+    titulo: Código de Processo Civil (NCPC)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm
+    topics: [civil_procedure]
+    key_articles:
+      - "Arts. 144, 146 (impedimento, suspeição)"
+      - "Art. 784 (título executivo extrajudicial)"
+    discussed_in: [justica-trabalho.md, processo-civil.md]
+
+  lei_13165_2015:
+    tipo: Lei
+    numero: "13165"
+    ano: 2015
+    titulo: Minirreforma Eleitoral 2015
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13165.htm
+    topics: [electoral_law]
+    discussed_in: [partidos-e-sistema-eleitoral.md]
+
+  lei_13341_2016:
+    tipo: Lei
+    numero: "13341"
+    ano: 2016
+    titulo: Reorganização ministerial Temer
+    status: vigente_com_modificacoes
+    topics: [public_administration, CGU]
+    discussed_in: [cgu-controle-interno.md]
+
+  lei_13467_2017:
+    tipo: Lei
+    numero: "13467"
+    ano: 2017
+    titulo: Reforma Trabalhista
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm
+    topics: [labor_law, labor_courts]
+    reforms: [clt_1943]
+    notes: "Provisões sobre custas e justiça gratuita parcialmente declaradas inconstitucionais por STF ADI 5766 (Out 2021)"
+    discussed_in: [justica-trabalho.md]
+
+  lei_13487_2017:
+    tipo: Lei
+    numero: "13487"
+    ano: 2017
+    titulo: Criação do FEFC (Fundo Especial de Financiamento de Campanha)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13487.htm
+    topics: [campaign_finance, FEFC]
+    discussed_in: [partidos-e-sistema-eleitoral.md]
+
+  lei_13709_2018:
+    tipo: Lei
+    numero: "13709"
+    ano: 2018
+    titulo: Lei Geral de Proteção de Dados (LGPD)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+    topics: [data_protection, privacy, research_ethics]
+    key_articles:
+      - "Art. 5 XVIII (entidades de pesquisa)"
+      - "Art. 7 (bases legais)"
+      - "Art. 11 (dados sensíveis)"
+      - "Art. 18 (direitos do titular)"
+      - "Art. 52 (sanções)"
+    discussed_in: [transparencia-dados.md]
+
+  lei_13964_2019:
+    tipo: Lei
+    numero: "13964"
+    ano: 2019
+    titulo: Pacote Anticrime
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm
+    topics: [criminal_law, criminal_procedure]
+    key_articles:
+      - "CPP Art. 3-A (juiz das garantias)"
+      - "CPP Art. 28-A (ANPP)"
+    reforms: [dl_3689_1941, lei_12850_2013]
+    discussed_in: [anticorrupcao-penal.md, ministerio-publico.md]
+
+  lc_143_2013:
+    tipo: Lei Complementar
+    numero: "143"
+    ano: 2013
+    titulo: Reforma da distribuição do FPE
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp143.htm
+    topics: [federalism, FPE, FPM]
+    discussed_in: [federalismo-fiscal.md]
+
+  lei_14113_2020:
+    tipo: Lei
+    numero: "14113"
+    ano: 2020
+    titulo: Regulamentação do FUNDEB permanente
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14113.htm
+    topics: [education, federalism, FUNDEB]
+    discussed_in: [federalismo-fiscal.md]
+
+  lei_14133_2021:
+    tipo: Lei
+    numero: "14133"
+    ano: 2021
+    titulo: Nova Lei de Licitações
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm
+    topics: [procurement]
+    key_articles:
+      - "Art. 75 (dispensas)"
+      - "Art. 191 (regime de transição)"
+    revokes: [lei_8666_1993, lei_10520_2002]
+    discussed_in: [licitacoes.md, anticorrupcao-penal.md]
+
+  lei_14208_2021:
+    tipo: Lei
+    numero: "14208"
+    ano: 2021
+    titulo: Federações Partidárias
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14208.htm
+    topics: [political_parties]
+    discussed_in: [partidos-e-sistema-eleitoral.md]
+
+  lei_14230_2021:
+    tipo: Lei
+    numero: "14230"
+    ano: 2021
+    titulo: Reforma da Lei de Improbidade Administrativa
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14230.htm
+    topics: [civil_corruption, improbidade]
+    reforms: [lei_8429_1992]
+    notes: "Retroatividade definida em STF Tema 1199 (ARE 843.989, Aug 2022)"
+    discussed_in: [improbidade.md, licitacoes.md, ministerio-publico.md]
+
+  lei_14460_2022:
+    tipo: Lei
+    numero: "14460"
+    ano: 2022
+    titulo: ANPD como autarquia
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14460.htm
+    topics: [data_protection, ANPD]
+    discussed_in: [transparencia-dados.md]
+
+  ec_45_2004:
+    tipo: Emenda Constitucional
+    numero: "45"
+    ano: 2004
+    titulo: Reforma do Judiciário
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc45.htm
+    topics: [constitutional_amendment, judiciary, CNJ, CNMP]
+    notes: "Criou CNJ e CNMP; introduziu súmula vinculante; alterou competências"
+    discussed_in: [cnj-administracao-judicial.md, ministerio-publico.md, cortes-superiores.md]
+
+  ec_76_2013:
+    tipo: Emenda Constitucional
+    numero: "76"
+    ano: 2013
+    titulo: Voto aberto para cassação e vetos no Congresso
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc76.htm
+    topics: [constitutional_amendment, voting_modality]
+    discussed_in: [contas-municipais.md]
+
+  ec_97_2017:
+    tipo: Emenda Constitucional
+    numero: "97"
+    ano: 2017
+    titulo: Fim das coligações proporcionais e cláusula de desempenho
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc97.htm
+    topics: [constitutional_amendment, electoral_law, political_parties]
+    discussed_in: [partidos-e-sistema-eleitoral.md]
+
+  ec_108_2020:
+    tipo: Emenda Constitucional
+    numero: "108"
+    ano: 2020
+    titulo: FUNDEB permanente
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc108.htm
+    topics: [constitutional_amendment, education, FUNDEB]
+    discussed_in: [federalismo-fiscal.md]
+
+  ec_132_2023:
+    tipo: Emenda Constitucional
+    numero: "132"
+    ano: 2023
+    titulo: Reforma Tributária
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm
+    topics: [constitutional_amendment, tax_reform, federalism]
+    notes: "Cria CBS, IBS, IS substituindo PIS, COFINS, ICMS, ISS, IPI; transição 2026-2033"
+    discussed_in: [federalismo-fiscal.md]
+
+# Topic glossary (controlled vocabulary used in the topics field above)
+# Useful for grep-based filtering: e.g., "topics:.*federalism" finds
+# all federalism-related statutes.
+topics_vocabulary:
+  - access_to_information
+  - antitrust
+  - audit_courts
+  - campaign_finance
+  - cartel
+  - CGU
+  - civil_corruption
+  - civil_law
+  - civil_procedure
+  - colaboracao_premiada
+  - constitutional_amendment
+  - constitutional_framework
+  - corporate_liability
+  - corruption
+  - criminal_law
+  - criminal_procedure
+  - data_protection
+  - education
+  - electoral_law
+  - federalism
+  - FEFC
+  - ficha_limpa
+  - FPE
+  - FPM
+  - FUNDEB
+  - fundo_partidario
+  - fundamental_rights
+  - health_law
+  - improbidade
+  - ineligibility
+  - judiciary
+  - labor_courts
+  - labor_law
+  - money_laundering
+  - MP
+  - MPE
+  - MPU
+  - NTEP
+  - organized_crime
+  - PAD
+  - peculato
+  - political_parties
+  - pregao
+  - privacy
+  - procurement
+  - public_administration
+  - public_interest_litigation
+  - public_servants
+  - research_ethics
+  - social_security
+  - SUS
+  - tax_crimes
+  - tax_law
+  - tax_reform
+  - TCU
+  - TCE_SP
+  - transparency
