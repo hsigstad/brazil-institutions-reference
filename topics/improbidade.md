@@ -171,51 +171,76 @@ chain, related cases), resolve `Tema1199` via `cite.py`.
 
 ---
 
-## 3. Procedural framework (Ação Civil Pública de Improbidade)
+## 3. Procedural framework
+
+The general civil procedure for ACPs (filing, instrução, sentença,
+appeals to TJ/STJ/STF, conviction outcomes) is the standard ACP path
+documented in `processo-civil.md`. This section covers only what's
+improbidade-specific.
 
 ### Investigation and filing
 
-- **Notícia de Fato (NF)**: initial intake at the MP. 120 days
-  (extendable) to triage.
-- **Inquérito Civil (IC)**: formal investigation by the MP. Should
-  conclude in 1 year, frequently extended.
-- **Ação Civil Pública (ACP)**: filed before the competent court (TJ
-  state-level for state/municipal officials; TRF federal for federal
-  officials or federal funds).
+ACPs are preceded by the standard MP intake pipeline — Notícia de
+Fato → Inquérito Civil → ACP — governed by CNMP procedure, not LIA
+itself. See `ministerio-publico.md` for the IC mechanics. Once the
+ACP is filed, jurisdiction follows the money:
 
-### Jurisdiction
+- **State-level** (TJ) for state/municipal officials and
+  state/municipal funds — the bulk of the caseload in volume terms.
+- **Federal** (TRFs) when federal funds are at stake (convênios, SUS
+  transfers, FPM, etc.) or the defendant is a federal official, per
+  the federal-competence rule in `CF.109`.
+- **No foro por prerrogativa.** Improbidade actions follow ordinary
+  first-instance rules regardless of the defendant's political office,
+  including for governors and mayors. Settled by STF in 2018 (QO Pet
+  3.240, not yet in `jurisprudencia_index.yaml`); see
+  `procedimentos-legais.md` for the broader foro discussion. This is
+  load-bearing for empirical work because mayors are prosecuted at the
+  same first-instance vara as ordinary defendants.
 
-- **State-level** (TJ) for state/municipal officials and state/municipal
-  funds — the bulk of the caseload.
-- **Federal** (TRFs) when federal funds are involved (convênios, SUS
-  transfers, FPM, etc.) or when the defendant is a federal official.
-- **Foro por prerrogativa**: improbidade actions do **not** carry
-  foro-privilegiado status in general — they follow ordinary
-  first-instance rules regardless of the defendant's political office.
-  See `procedimentos-legais.md` for the broader foro discussion.
+### The 2021 reform restructured the case flow
 
-### Case flow and timing
+This is the procedural change that matters. Pre- and post-reform LIA
+prescribe substantially different paths from petição inicial to
+contestação:
 
-- Filing → *notificação prévia* of the accused (60 days for preliminary
-  response, post-2021) → judicial decision whether to receive the
-  petition → contestação → instrução → sentença → appeal.
-- **Typical duration**: 7–8 years from filing to first-instance
-  sentença in TJSP is common in observed cases.
-- CNJ study cited in MPSP Manual: average time to judgment in state
-  courts ~1,586 days (~4.3 years).
+**Pre-reform** (`LIA.17.§7:original`, `LIA.17.§8:original`,
+`LIA.17.§9:original`):
 
-### Outcomes
+1. ACP filed
+2. Judge orders *notificação* of the defendant for written
+   *manifestação* — **15 days** to respond
+3. Judge has **30 days** to decide whether to receive the petition;
+   may dismiss before citação if convinced of inexistência do ato,
+   improcedência, or inadequação da via
+4. Only if received → citação for contestação
 
-- **Procedente**: conviction (full or partial).
-- **Improcedente**: acquittal on the merits.
-- **Extinta**: dismissed on procedural or legal grounds (prescription,
-  standing, res judicata, etc.).
+**Post-reform** (`LIA.17.§6 from:L14230-2021`,
+`LIA.17.§7 from:L14230-2021`):
 
-### Appeals
+1. ACP filed, with heightened pleading requirements: must
+   *individualizar a conduta*, point to *elementos probatórios mínimos*
+   of dolo, and meet specified evidentiary thresholds
+2. If the petição is in *devida forma*, the judge orders **direct
+   citação** for contestação — **30 days**
 
-- Appeal to the TJ chambers (apelação).
-- Further recourse to STJ (recurso especial) and STF (recurso
-  extraordinário) on federal-law / constitutional questions.
+The key structural change is the **elimination of the pre-citação
+judicial filter step**. Pre-reform, judges could dismiss improbidade
+actions before the defendant was even cited; post-reform, the burden
+shifts: actions proceed straight to citação and the defendant litigates
+from the start. The trade-off built into the reform is heavier
+pleading requirements at the front end (`LIA.17.§6 from:L14230-2021`)
+to compensate for the loss of judicial pre-filtering.
+
+### Empirical timing
+
+| Fact | Value | Source |
+|---|---|---|
+| Average state-court judgment time | ~1,586 days (~4.3 years) | CNJ study cited in MPSP Manual |
+| Typical TJSP duration (filing → sentença) | 7–8 years | Observed in sampled TJSP cases |
+
+These predate the reform; the post-2021 caseload is too young to have
+re-stabilized timing data.
 
 ---
 
@@ -264,12 +289,3 @@ federal funds or entities) go to MPF.
 
 For general MP structure (career, guarantees, CNMP oversight), see
 `ministerio-publico.md`.
-
----
-
-## 6. Key empirical facts
-
-| Fact | Value | Source |
-|---|---|---|
-| Average state-court judgment time | ~1,586 days (~4.3 years) | CNJ study cited in MPSP Manual |
-| Typical improbidade duration (TJSP) | 7–8 years filing → sentença | Observed in sampled TJSP cases |
