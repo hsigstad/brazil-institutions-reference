@@ -579,7 +579,7 @@ discarded, not partially applied.
 ## Repository setup
 
 This repository is a standalone public reference, hosted at
-<https://github.com/hsigstad/brazil-institutions-reference>. It is
+<https://github.com/hsigstad/brazil-institutions>. It is
 designed to be used in two modes:
 
 1. **Standalone**: clone and use directly.
