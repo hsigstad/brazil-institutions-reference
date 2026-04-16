@@ -10,7 +10,7 @@ gratuita, honorários de sucumbência, conciliation, settlement, judicial
 homologation, direitos indisponíveis, overtime, horas extras, impedimento,
 case assignment, ADI 5766.
 
-**Snapshot as of 2026**: 2017 reform provisions reflect STF ADI 5766
+**Snapshot as of 2026**: 2017 reform provisions reflect `ADI5766`
 (October 2021). Filing-volume figures are from CNJ *Justiça em Números*
 and TST reports through ~2024. Monetary thresholds (RGPS ceiling, minimum
 wage) update annually.
@@ -20,23 +20,20 @@ highest conciliation rate in the Brazilian judiciary. They also offer a
 relatively rare empirical feature: **nearly all settlements are
 judicially mediated and observable in the data**.
 
-For the 2017 reform as a quasi-experiment (Lei 13.467/17 + STF ADI
-5766), see [`../quasi-experimentos.md`](../quasi-experimentos.md) §§5–6. For
+For the 2017 reform as a quasi-experiment (Lei 13.467/17 + `ADI5766`),
+see [`../quasi-experimentos.md`](../quasi-experimentos.md) §§5–6. For
 the date timeline of related events, see [`../timeline.md`](../timeline.md).
 For common confusions (pre-2017 vs post-2017 cost regimes), see
 [`../pitfalls.md`](../pitfalls.md) "Labor courts".
-
-Compiled from personal research notes on Brazilian labor courts, with
-citations to published CNJ and TST reports where relevant.
 
 ---
 
 ## Constitutional and statutory basis
 
-- **TST**: [LOMAN Art. 12](lei/loman.org::*Art.%2012).
-- **TRTs**: [LOMAN Art. 13](lei/loman.org::*Art.%2013).
+- **TST**: `LOMAN.12`.
+- **TRTs**: `LOMAN.13`.
 - Substantive law: **CLT** (Consolidação das Leis do Trabalho, DL 5.452/1943).
-- Procedure governed by CLT (Arts. 763 onward) supplemented by CPC.
+- Procedure governed by CLT (`CLT.763` onward) supplemented by CPC.
 
 ---
 
@@ -57,14 +54,14 @@ citations to published CNJ and TST reports where relevant.
   third degree (includes in-laws, excludes cousins).
 - If recused: case goes to the substitute judge in the same vara, or to
   the next vara if no substitute.
-- **Legal basis**: CPC 2016 Arts. 144 and 146; CNJ Resolution of March 2,
+- **Legal basis**: `CPC.144` and `CPC.146`; CNJ Resolution of March 2,
   2015.
 - **Pre-2015**: impedimento only when the lawyer was actively acting in
   the case (not merely a member of the firm).
 - **2015 CNJ Resolution**: extended to cases where the relative is sócio,
   associado, colaborador, or empregado of the law firm, or maintains any
   professional link.
-- **NCPC Art. 144 III §3 (2016)**: formalized the extension to members of
+- **`CPC.144.III.§3`** (2016): formalized the extension to members of
   the same law firm "even if they do not directly intervene in the case".
 - Impedimento is *matéria de ordem pública*: judge can recognize ex
   officio. Suspeição (bias) is not — must be raised by a party.
@@ -95,8 +92,8 @@ citations to published CNJ and TST reports where relevant.
 
 ### Post-2017 regime (Lei 13.467/17, effective 11 Nov 2017)
 
-Workers now face financial risk from filing (Arts. 789, 790, 790-B, 791-A,
-844 §2, CLT):
+Workers now face financial risk from filing (`CLT.789`, `CLT.790`,
+`CLT.790-B`, `CLT.791-A`, `CLT.844.§2`):
 
 - **Custas processuais**: 2% of claim value, min R$10.64, max 4× RGPS
   ceiling. At the 2018 RGPS ceiling (R$5,645.80), max ≈ R$22,583. Ceiling
@@ -107,25 +104,25 @@ Workers now face financial risk from filing (Arts. 789, 790, 790-B, 791-A,
   against the losing party **on each claim** — a plaintiff who wins some
   but loses others pays honorários on the lost claims.
 - **Honorários periciais**: the losing party on the technical issue pays
-  the expert (Art. 790-B) — relevant for *insalubridade* and other
+  the expert (`CLT.790-B`) — relevant for *insalubridade* and other
   expert-dependent claims.
-- **No-show penalty** (Art. 844 §2): if plaintiff fails to attend the
+- **No-show penalty** (`CLT.844.§2`): if plaintiff fails to attend the
   hearing, the case is archived and the plaintiff must pay court costs
   to refile, even if a *justiça gratuita* beneficiary.
-- **Justiça gratuita threshold tightened** (Art. 790 §3): automatic only
+- **Justiça gratuita threshold tightened** (`CLT.790.§3`): automatic only
   for those earning up to 40% of RGPS ceiling (≈ R$2,258 in 2018, ~2.4×
   minimum wage at that time — both the ceiling and the minimum wage are
   updated annually). Above that: must affirmatively prove economic
-  insufficiency (Art. 790 §4).
+  insufficiency (`CLT.790.§4`).
 
-### STF — ADI 5766 (October 2021)
+### `ADI5766` (October 2021)
 
 Declared unconstitutional two key provisions restricting access to justice
 for *justiça gratuita* beneficiaries:
 
-- **Art. 790-B caput and §4**: provision requiring beneficiaries to pay
+- **`CLT.790-B` caput and §4**: provision requiring beneficiaries to pay
   expert fees from credits obtained in the case — struck down.
-- **Art. 791-A §4**: provision allowing deduction of honorários de
+- **`CLT.791-A.§4`**: provision allowing deduction of honorários de
   sucumbência from credits in other proceedings — struck down. Obligation
   now suspended for 2 years from *trânsito em julgado*; extinguished if
   the economic situation does not change.
@@ -163,21 +160,21 @@ CNJ *Justiça em Números*.
 
 The CLT prescribes an *audiência una* (single unified hearing) in which
 conciliation attempt, defense, evidence, and judgment occur in one session
-(Arts. 849–850 CLT). In practice, most courts fractionate into 2–3 sessions.
+(`CLT.849`–`CLT.850`). In practice, most courts fractionate into 2–3 sessions.
 
 1. **Audiência inaugural / de conciliação**: mandatory conciliation
-   proposal (Art. 846). If both parties agree, settlement is homologated
+   proposal (`CLT.846`). If both parties agree, settlement is homologated
    and the case ends. Otherwise, the defendant presents *contestação*
    orally (20 min) or in writing. Judge may take *depoimento pessoal* and
    schedule the next hearing.
 2. **Audiência de instrução e julgamento**: evidence (witness testimony,
-   documentary, expert reports); *razões finais* (10 min each, Art. 850);
-   renewed conciliation proposal (Art. 850); judgment immediately or
+   documentary, expert reports); *razões finais* (10 min each, `CLT.850`);
+   renewed conciliation proposal (`CLT.850`); judgment immediately or
    within a reserved period.
-3. **Rito sumaríssimo** (claims up to 40 minimum wages, Art. 852-C):
+3. **Rito sumaríssimo** (claims up to 40 minimum wages, `CLT.852-C`):
    hearing within 15 days of filing; designed for a single session.
 
-- If interrupted, continuation must be scheduled within 30 days (Art. 849).
+- If interrupted, continuation must be scheduled within 30 days (`CLT.849`).
 - After the hearing, judgment must be rendered within 15 days.
 
 ---
@@ -209,7 +206,7 @@ Institutional reasons:
    still file a lawsuit. Employers therefore had no incentive to settle
    out of court, pushing virtually all settlement activity into the
    mandatory conciliation hearing (recorded in the case file).
-2. **Post-2017 (Arts. 855-B – 855-E CLT, added by Lei 13.467/17)**:
+2. **Post-2017 (`CLT.855-B`–`CLT.855-E`, added by Lei 13.467/17)**:
    formal procedure for judicial homologation of extrajudicial agreements.
    Both parties must be represented by **separate** attorneys. The agreement
    is submitted to a labor judge. Once homologated, it gains *título
@@ -219,7 +216,7 @@ Institutional reasons:
    waived even voluntarily; judges verify this during homologation. Further
    channels settlement through the courts.
 
-**Contrast with civil courts**: under CPC Art. 784, private agreements
+**Contrast with civil courts**: under `CPC.784`, private agreements
 signed by parties + 2 witnesses are directly enforceable as *título
 executivo extrajudicial*; judicial homologation is optional. Civil
 settlements are therefore largely unobservable, creating the standard
@@ -232,19 +229,19 @@ courts**.
 
 Brazilian labor law distinguishes *direitos disponíveis* (waivable) from
 *direitos indisponíveis* (non-waivable, considered protections of *ordem
-pública*). Grounded in CF Art. 7.
+pública*). Grounded in `CF.7`.
 
 The 2017 reform clarified the boundary through two CLT articles:
 
-- **Art. 611-A — negotiable via collective bargaining**: work schedules,
+- **`CLT.611-A` — negotiable via collective bargaining**: work schedules,
   banco de horas, intervalo interjornada, telework, time-tracking methods,
   and others.
-- **Art. 611-B — non-negotiable (direitos indisponíveis)**, cannot be
+- **`CLT.611-B` — non-negotiable (direitos indisponíveis)**, cannot be
   reduced even by collective agreement:
   - Salário mínimo and irredutibilidade salarial
   - FGTS deposits and the 40% multa rescisória
   - 13º salário
-  - Adicional de horas extras (min 50% above regular rate, CF Art. 7 XVI)
+  - Adicional de horas extras (min 50% above regular rate, `CF.7.XVI`)
   - Adicional noturno
   - Adicional de insalubridade/periculosidade
   - Repouso semanal remunerado
@@ -258,12 +255,12 @@ The 2017 reform clarified the boundary through two CLT articles:
 - **In-court settlement**: judges accept discounts on disputed amounts
   (e.g., 60% of claimed overtime) because existence/quantum are genuinely
   disputed, but will not approve waivers of rights proven to exist.
-- **Extrajudicial settlement (Art. 855-B)**: same principle; judge may
+- **Extrajudicial settlement (`CLT.855-B`)**: same principle; judge may
   reject if it appears to waive indisposable rights.
 - **Private release pre-2017**: essentially no legal force regarding
   indisposable rights.
 
-### Quitação anual (Art. 507-B, added by Lei 13.467/17)
+### Quitação anual (`CLT.507-B`, added by Lei 13.467/17)
 
 - Employer and employee appear before the employee's union and sign a
   statement itemizing all labor obligations fulfilled for the year.
@@ -290,7 +287,7 @@ Key legal standards:
   the employee — plaintiff's allegations presumed true.
 - **CLT Art. 71**: meal and rest breaks.
 - **NR-17**: ergonomic breaks for specific occupations.
-- **CLT Art. 818** (amended by Lei 13.467/17): burden of proof rules.
+- **`CLT.818`** (amended by Lei 13.467/17): burden of proof rules.
 - **Portaria 1.510/2009**: timecards with variable entry/exit times and no
   other irregularity are presumed valid; absence of signature does not
   invalidate.

@@ -88,16 +88,16 @@ suggested priority (most CF/LRF citations first), not mandatory.
 - [x] `topics/cgu-controle-interno.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/cnj-administracao-judicial.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/cortes-superiores.md` — audited (2026-04-16), raw notes, no changes
-- [ ] `topics/justica-federal.md`
-- [ ] `topics/justica-estadual.md`
-- [ ] `topics/justica-trabalho.md`
-- [ ] `topics/juizes.md`
-- [ ] `topics/carreira-juizes.md`
-- [ ] `topics/funcoes-essenciais.md`
-- [ ] `topics/processo-civil.md`
-- [ ] `topics/processo-penal.md`
-- [ ] `topics/reformas-judiciais.md`
-- [ ] `topics/organizacao-historica.md`
+- [x] `topics/justica-federal.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/justica-estadual.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/justica-trabalho.md` — audited (2026-04-16), rules 1–9 complete
+- [x] `topics/juizes.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/carreira-juizes.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/funcoes-essenciais.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/processo-civil.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/processo-penal.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/reformas-judiciais.md` — audited (2026-04-16), raw notes, no changes
+- [x] `topics/organizacao-historica.md` — audited (2026-04-16), raw notes, no changes
 
 ## Conventions reminders
 
