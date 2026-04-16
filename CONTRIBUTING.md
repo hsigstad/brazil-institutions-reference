@@ -1,61 +1,98 @@
 # Contributing
 
-This is a personal research reference, maintained occasionally when
-working on related empirical projects. Contributions are welcome but
-reviewed on a slow cadence.
+Contributions are welcome — factual corrections, new topical areas,
+updated statute references, improved coverage of institutions you
+work with.
 
 ## What's in scope
 
 - **Factual corrections** to statute references, article numbers,
   jurisprudence citations, or dates.
 - **Updates** for recent reforms, new STF decisions, new CNJ resoluções.
-- **Additional source citations** for existing claims, especially links
-  to primary sources (planalto.gov.br, STF, TSE, CNJ).
+- **New topical files** covering Brazilian institutional areas not yet
+  in the repo (health law, environmental regulation, social security,
+  tax procedure, etc.).
+- **New quasi-experiment entries** for identification strategies in
+  the literature.
+- **Additional statute/case entries** in `leis_index.yaml` or
+  `jurisprudencia_index.yaml`.
 - **Cross-references** between files that would help navigation.
-- **Topic keyword additions** to improve searchability.
 
 ## What's out of scope
 
-- **Adding verbatim statute text.** Files should be explanatory notes
-  and summaries, not copies of law text. Link to the source instead.
-- **Original research findings** from unpublished work.
+- **Verbatim statute text.** Topical files should explain and
+  summarize, not reproduce law text. Use backtick citations (e.g.,
+  `` `LIA.9` ``) that resolve via cite.py instead.
+- **Original unpublished research findings.**
 - **Opinions or editorializing** beyond what is needed to orient a
-  researcher. Keep the tone descriptive.
-- **Expansion into jurisdictions other than Brazil.**
-- **Personal communications** or claims attributable only to private
-  sources. Every factual claim should be verifiable against a public
-  source.
+  researcher.
+- **Jurisdictions other than Brazil.**
 
 ## How to contribute
 
-1. **Open an issue first** for substantial additions — a new topical
-   file, a major reorganization, a disputed point of interpretation.
-   For small fixes (typos, broken links, missing citations), a PR is
-   fine without a prior issue.
-2. **One topic per PR.** Bundle fixes by topic, not by file count.
-3. **Cite sources inline** in the same format as existing files: e.g.,
-   `Lei 8.666/93 Art. 23`, `CF Art. 31 §2`, `STF Tema 157`, with a URL
-   to planalto or the tribunal where useful.
-4. **Preserve the existing conventions**: topic keywords at the top,
-   "Snapshot as of YYYY" for volatile content, Portuguese legal terms
-   preserved.
-5. **Write for research orientation, not legal practice.** The audience
-   is a researcher who wants to understand how the institution works
-   well enough to design an empirical study, not a lawyer seeking
-   current binding law.
+### Small fixes (typos, broken links, citation errors)
+
+Open a PR directly. No issue needed.
+
+### New topical files
+
+1. **Open an issue first** describing the institutional area and
+   why it matters for empirical research.
+2. Follow the existing file format:
+   - Mandatory header: title, scope paragraph, `Topics / keywords`,
+     `Snapshot as of YYYY`, cross-references, horizontal rule.
+   - Terse, citation-dense prose. Portuguese where translation loses
+     meaning, English otherwise.
+   - Research-design framing: what matters for empirical work, where
+     the quasi-random variation lives, what the selection effects are.
+3. Add the file to the appropriate section of `README.md`.
+4. Add any new acronyms to `siglas.md`, terms to `glossario.md`,
+   and laws to `leis_index.yaml`.
+
+### New statute or case entries
+
+- **Laws**: add to `leis_index.yaml` with apelido, fonte_id, status,
+  url, key articles, topics, and discussed_in fields. Follow existing
+  entries for the format.
+- **Cases**: add to `jurisprudencia_index.yaml` (structured metadata)
+  AND `jurisprudencia-stf.md` (canonical description). See
+  `CLAUDE.md` §"When to add a new case" for the checklist.
+- **Súmulas**: TSE and TST are bulk-collected via scrapers. STJ
+  súmulas are added on demand to `sumulas_stj.yaml`. STF ordinary
+  súmulas are not yet collected.
+
+### Citation format
+
+Use the backtick citation form documented in `CLAUDE.md`:
+
+```
+`LIA.9`          — article 9 of Lei de Improbidade
+`CF.31.§2`       — CF Art. 31 § 2
+`Tema1199`       — STF repercussão geral Tema 1199
+`SV14`           — Súmula Vinculante 14
+`STSE38`         — TSE Súmula 38
+`STST331`        — TST Súmula 331
+```
+
+Verify that new citations resolve before committing:
+```bash
+python3 tools/leis_artigos/cite.py 'YOUR_CITATION'
+```
+
+## Quality standards
+
+- **Don't invent statute numbers, case numbers, or dates.** If you're
+  not sure, say so or look it up.
+- **Cite sources inline.** Every factual claim should be anchored in a
+  statute, case, or published source.
+- **Apply the deletion test.** If a section could be copy-pasted into
+  a different topical file with only the topic name changed, it's
+  generic procedure — cross-reference instead.
+- **Write for research orientation, not legal practice.** The audience
+  is a researcher designing an empirical study, not a lawyer seeking
+  current binding law.
 
 ## Review
 
 PRs are reviewed when the maintainer is working on related research.
-Expect delays. If something is urgent, note it in the PR description.
-
-## Reporting errors
-
-If you spot a factual error but don't have time for a PR, open an
-issue with:
-
-- The file and section.
-- The current (incorrect) claim.
-- The correct claim and the source.
-
-Thank you for helping keep this reference accurate.
+For urgent corrections, note it in the PR description.

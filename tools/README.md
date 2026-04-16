@@ -7,7 +7,33 @@ text or want to resolve a citation programmatically.
 
 ## Subdirectories
 
-### `leis_artigos/` — article-level law database
+### `tse_ce_anotado/` — TSE annotated Electoral Code
+
+Scrapes the TSE's Código Eleitoral Anotado into `ce_anotado.db`.
+Each CE article is mapped to its TSE jurisprudence annotations
+(acórdãos, resoluções, CF cross-references). 422 annotations across
+176 articles. Integrated with `cite.py --annotations`.
+
+### `stf_constituicao/` — STF annotated Constitution
+
+Scrapes "A Constituição e o Supremo" via the STF's JSON API into
+`cf_stf_anotada.db`. Each CF article is mapped to STF decisions
+(controle concentrado, repercussão geral, julgados correlatos).
+1,758 annotations across 183 articles, 1,655 with extractable case
+citations. Integrated with `cite.py --annotations`.
+
+### `tst_scraper/` — TST Súmulas (via Playwright)
+
+Scrapes all 463 TST Súmulas via browser automation (TST blocks
+non-browser API access). Output: `sumulas_tst.yaml` at repo root.
+Requires `pip install playwright && playwright install chromium`.
+
+### `sumulas_scraper/` — STF SV and TSE súmula scrapers
+
+Scrapes STF Súmulas Vinculantes and TSE Súmulas. Output:
+`sumulas_vinculantes.yaml` and `sumulas_tse.yaml` at repo root.
+
+### `leis_artigos/` — article-level law database and citation resolver
 
 Parses planalto.gov.br consolidated HTML into a structured SQLite
 table where each row is one **leaf** of an article (caput,

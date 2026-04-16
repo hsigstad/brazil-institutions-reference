@@ -1,185 +1,184 @@
-# Brazilian institutions — a research reference
+# Brazilian institutions — a structured reference for research
 
-A topical reference on Brazilian legal and political institutions,
-compiled for empirical research use. Covers courts, procedure, the
-Ministério Público, fiscal federalism, electoral system, procurement,
-corruption statutes, and related topics.
+A dense, citation-backed reference on Brazilian legal and political
+institutions, designed to be read by both researchers and LLM agents.
+Covers courts, procedure, the Ministério Público, fiscal federalism,
+electoral system, procurement, corruption statutes, and related topics.
 
-These are **personal research notes**, not an authoritative legal
-treatise. The target audience is researchers who need an orientation
-to Brazilian institutions dense enough to inform research design but
-not exhaustive. Most claims cite statutes or jurisprudence inline; each
-file lists topic keywords at the top to help search.
+**What this gives you:**
 
-## Status and scope
+- **28 topical files** with inline statute and jurisprudence citations
+- **Citation resolver** (`cite.py`) that looks up any statute article,
+  STF case, or súmula from a compact backtick citation
+- **Annotated legislation databases** — STF decisions mapped to each CF
+  article; TSE jurisprudence mapped to each Electoral Code article
+- **463 TST súmulas**, 72 TSE súmulas, 63 STF Súmulas Vinculantes,
+  3 STJ súmulas — all resolvable via cite.py
+- **22 quasi-experiment designs** cataloged from the Brazilian
+  empirical literature
+- **Common-pitfalls list** so you don't make the mistakes everyone
+  makes about Brazilian institutions
 
-**This is a living reference, updated continuously as research projects
-surface new material.** That said, coverage is uneven and not every file
-is revisited on every change in the law. Treat anything time-volatile
-as potentially stale unless the surrounding section was clearly updated
-recently. Areas especially prone to drift:
+**What this is not:** an authoritative legal treatise, current binding
+law, or a substitute for reading the statute. Coverage reflects the
+maintainer's research areas (corruption, courts, elections, fiscal
+federalism). Most claims cite statutes or jurisprudence inline; verify
+against the primary source for legally-current work.
 
-- Post-2017 CPC reforms and subsequent CNJ resoluções.
-- Electoral law (coligações, federações, cláusula de desempenho) changed
-  substantially 2017–2022 and continues to evolve.
-- Lei de Improbidade reformed by Lei 14.230/2021; STF Tema 1199 (2022)
-  governs retroactivity, and post-reform jurisprudence is still settling.
-- Reforma tributária (EC 132/2023) is in phase-in through 2033.
-- Monetary thresholds (RGPS ceiling, minimum wage, FPM coefficients)
-  update annually.
+## Quick start
 
-Each topical file carries a `Snapshot as of YYYY` line indicating when
-its content was last meaningfully reviewed. For project work that depends
-on legally-current details, verify against the current statute text
-(<https://www.planalto.gov.br>) — this reference is for orientation, not
-citation.
+```bash
+# Look up a statute article
+python3 tools/leis_artigos/cite.py 'LIA.9'
 
-**Language**: Portuguese where translation loses meaning, English
-otherwise. Many legal terms have no clean English equivalent
-(*improbidade*, *prestação de contas*, *recurso especial*, etc.) and
-are kept in Portuguese throughout. Each file's top-of-file `Topics /
-keywords` line includes both Portuguese and English search terms.
+# Look up an STF case
+python3 tools/leis_artigos/cite.py 'Tema1199'
+
+# Look up a súmula (STF SV, TSE, TST, STJ)
+python3 tools/leis_artigos/cite.py 'SV14'
+python3 tools/leis_artigos/cite.py 'STSE38'
+python3 tools/leis_artigos/cite.py 'STST331'
+
+# Show STF jurisprudence for a CF article
+python3 tools/leis_artigos/cite.py 'CF.37' --annotations
+
+# Show TSE jurisprudence for a CE article
+python3 tools/leis_artigos/cite.py 'CE.35' --annotations
+
+# Find all citations in a markdown file
+python3 tools/leis_artigos/cite.py --find-in topics/improbidade.md
+```
+
+The citation resolver works without the statute-text database (which
+is built separately via the Planalto scraper). Jurisprudence, súmula,
+and annotation lookups use YAML/SQLite files shipped in this repo.
+
+## Using with LLM agents
+
+This repo is optimized for [Claude Code](https://claude.com/claude-code)
+and similar agents. The format conventions — topic keywords, inline
+statute citations, cross-reference backlinks, alphabetical indices —
+are designed for fast grep and self-contained claims that survive being
+read out of context.
+
+**For agents:** [`CLAUDE.md`](CLAUDE.md) is the entry point (auto-loaded
+by Claude Code). It has a quick-start guide, navigation instructions,
+and the full citation grammar.
+
+**For humans:** start here, then grep [`siglas.md`](siglas.md) for
+acronyms and [`glossario.md`](glossario.md) for Portuguese legal terms.
 
 ## Contents
 
+### Cross-cutting flows
+
+- [`topics/fluxo-corrupcao-municipal.md`](topics/fluxo-corrupcao-municipal.md) — Life cycle of a municipal corruption case: detection → TCE → câmara → MP → improbidade → sanctions → Ficha Limpa
+- [`topics/fluxo-transferencia-federal.md`](topics/fluxo-transferencia-federal.md) — How a federal transfer becomes a municipal expenditure: allocation → budget → procurement → audit → enforcement
+
 ### Constitutional framework
 
-- [`topics/juizes.md`](topics/juizes.md) — Garantias, deveres, ingresso, promoções, subsídio, aposentadoria, remoção (constitutional provisions about individual judges)
-- [`topics/funcoes-essenciais.md`](topics/funcoes-essenciais.md) — MP, advocacia pública, advocacia, defensoria (constitutional overview; see `topics/ministerio-publico.md` for MP detail)
+- [`topics/juizes.md`](topics/juizes.md) — Judicial guarantees, duties, entry, promotion (CF provisions)
+- [`topics/funcoes-essenciais.md`](topics/funcoes-essenciais.md) — MP, advocacia pública, advocacia, defensoria
 
 ### Courts
 
-- [`topics/cortes-superiores.md`](topics/cortes-superiores.md) — CNJ, CJF, STF, STJ
-- [`topics/justica-federal.md`](topics/justica-federal.md) — Federal courts (lower)
-- [`topics/justica-estadual.md`](topics/justica-estadual.md) — State courts
-- [`topics/justica-eleitoral.md`](topics/justica-eleitoral.md) — Electoral courts (TSE, TREs)
-- [`topics/justica-trabalho.md`](topics/justica-trabalho.md) — Labor courts (TST, TRTs, varas)
+- [`topics/cortes-superiores.md`](topics/cortes-superiores.md) — STF, STJ, TSE, TST, STM, CNJ composition and competence
+- [`topics/justica-federal.md`](topics/justica-federal.md) — TRFs, varas federais, federal competence
+- [`topics/justica-estadual.md`](topics/justica-estadual.md) — TJs, comarcas, entrância system
+- [`topics/justica-eleitoral.md`](topics/justica-eleitoral.md) — TSE, TREs, zonas eleitorais
+- [`topics/justica-trabalho.md`](topics/justica-trabalho.md) — TST, TRTs, varas do trabalho, 2017 reform
 - [`topics/tribunais-contas.md`](topics/tribunais-contas.md) — TCU, TCEs, TCMs (audit courts)
-- [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) — CNJ normative power, Justiça em Números, PJe/e-Proc/ESAJ, TPU, case numbering, specialization
+- [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) — CNJ normative power, Justiça em Números, PJe, case numbering
 
-### Procedure (processo)
+### Procedure
 
-- [`topics/processo-civil.md`](topics/processo-civil.md) — Civil procedure (CPC, ação civil pública, improbidade, ação popular, recursos)
-- [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md) — Electoral procedure (AIPRC, AIME, AIJE, RCED, recursos)
-- [`topics/processo-penal.md`](topics/processo-penal.md) — Criminal procedure
-- [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) — General procedural notes
+- [`topics/processo-civil.md`](topics/processo-civil.md) — CPC 2015, recursos, execução, tutela provisória
+- [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md) — AIPRC, AIME, AIJE, RCED, recursos eleitorais
+- [`topics/processo-penal.md`](topics/processo-penal.md) — CPP, prescrição, recursos criminais
+- [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) — Foro privilegiado, case assignment, segredo de justiça
 
-### Career & history
+### Career and history
 
-- [`topics/carreira-juizes.md`](topics/carreira-juizes.md) — Judicial career (selection, promotion, discipline)
-- [`topics/reformas-judiciais.md`](topics/reformas-judiciais.md) — Chronology of statutory reforms to the judiciary and civil procedure (CPC reforms, EC 45/2004, etc.)
-- [`topics/organizacao-historica.md`](topics/organizacao-historica.md) — Historical organization, judicial districts
+- [`topics/carreira-juizes.md`](topics/carreira-juizes.md) — Concurso, entrância, promoção, quinto constitucional
+- [`topics/reformas-judiciais.md`](topics/reformas-judiciais.md) — Chronology of reforms 1965–2019
+- [`topics/organizacao-historica.md`](topics/organizacao-historica.md) — Judiciary structural overview
 
-### Institutions (controle, prosecution, politics)
+### Institutions
 
-- [`topics/ministerio-publico.md`](topics/ministerio-publico.md) — MP structure (MPU/MPF/MPE/MPC), career, CNMP, inquérito civil, TAC, ACP, GAECO
-- [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) — CGU: controle interno federal, Programa de Fiscalização por Sorteios (random audits), PAD, Lei Anticorrupção enforcement
-- [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — Open-list PR, cláusula de desempenho, coligações/federações, fundo partidário/FEFC, Ficha Limpa eligibility
-- [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, FPE, ICMS quota-parte, SUS transfers, royalties, IPTU/ISS, LRF limits, reforma tributária EC 132/2023
+- [`topics/ministerio-publico.md`](topics/ministerio-publico.md) — MP structure, career, CNMP, investigative instruments
+- [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) — CGU, random municipal audits, PAD, Lei Anticorrupção
+- [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — Open-list PR, coligações/federações, campaign finance, Ficha Limpa
+- [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, ICMS, SUS transfers, LRF limits
 
 ### Substantive areas
 
-- [`topics/licitacoes.md`](topics/licitacoes.md) — Public procurement law (Lei 8.666/93, pregão, Lei 14.133/21), CADE cartel typology, bid-rigging red flags
-- [`topics/improbidade.md`](topics/improbidade.md) — Lei 8.429/92 + Lei 14.230/21 reform, three categories, STF Tema 1199, MP standing, sanctions, prescription
-- [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) — Criminal corruption statutes (CP, Lei 8.137, lavagem 9.613, orcrim 12.850, colaboração premiada) + Lei Anticorrupção 12.846 (corporate liability)
-- [`topics/contas-municipais.md`](topics/contas-municipais.md) — Fiscal oversight of mayors: contas de governo vs. gestão, câmara vote, 2/3 rule, Ficha Limpa ineligibility, LRF
-- [`topics/prestacao-contas-eleitorais.md`](topics/prestacao-contas-eleitorais.md) — Campaign finance accounting (electoral, not fiscal)
-- [`topics/transparencia-dados.md`](topics/transparencia-dados.md) — LAI (Lei 12.527), LGPD (Lei 13.709), ANPD, Portal da Transparência, Comprasnet, SICONV, research implications
+- [`topics/licitacoes.md`](topics/licitacoes.md) — Procurement law, CADE cartel typology, bid-rigging
+- [`topics/improbidade.md`](topics/improbidade.md) — Lei 8.429/92, 2021 reform, Tema 1199
+- [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) — Criminal corruption, lavagem, colaboração premiada, Lei Anticorrupção
+- [`topics/contas-municipais.md`](topics/contas-municipais.md) — Mayoral accounts, TCE parecer, câmara vote, Ficha Limpa
+- [`topics/prestacao-contas-eleitorais.md`](topics/prestacao-contas-eleitorais.md) — Campaign finance accounting
+- [`topics/transparencia-dados.md`](topics/transparencia-dados.md) — LAI, LGPD, data infrastructure
 
-### Indices and reference (look here first when navigating)
+### Indices (start here when navigating)
 
-- [`siglas.md`](siglas.md) — Alphabetical acronym registry. Look up CGU, MPF, FPM, LRF, SUS, TPU, etc. with file pointers.
-- [`glossario.md`](glossario.md) — Portuguese legal terms glossary. Look up *acórdão*, *súmula vinculante*, *trânsito em julgado*, *prevenção*, *parecer prévio*, etc.
-- [`leis_index.yaml`](leis_index.yaml) — Structured YAML index of statutes cited in this directory: status, key articles, topics, files where discussed.
-- [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — Consolidated STF case file. STF Temas, ADIs, ADPFs, HCs cited elsewhere are described here once and cross-referenced.
-- [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml) — All 63 STF Súmulas Vinculantes (verbatim). Resolve via `SV14`, `SV13`, etc.
-- [`sumulas_tse.yaml`](sumulas_tse.yaml) — All 72 TSE Súmulas (verbatim). Resolve via `STSE38`, `STSE47`, etc.
-- [`sumulas_stj.yaml`](sumulas_stj.yaml) — STJ Súmulas (on demand, currently 3). Resolve via `SSTJ359`, `SSTJ385`, etc.
-- [`pitfalls.md`](pitfalls.md) — Common mistakes about Brazilian institutions, paired ❌/✓ format. Read first when in doubt.
-- [`faq.md`](faq.md) — Common research questions mapped to topical files. Navigation aid by question, not by topic.
-- [`timeline.md`](timeline.md) — Date-anchored timeline of statutory and jurisprudential changes (1988 CF through 2026), with key cutoffs as design tools.
-- [`quasi-experimentos.md`](quasi-experimentos.md) — Index of identification strategies and natural experiments embedded in Brazilian institutions (CGU random audits, FPM step function, electoral cutoffs, reform shocks, etc.).
-- [`data_pointers.md`](data_pointers.md) — Where Brazilian institutional data lives. Public sources organized by topic, with basedosdados table IDs where available and pointers to scraping requirements where not.
+| Index | What it answers |
+|---|---|
+| [`siglas.md`](siglas.md) | "What does this acronym mean?" |
+| [`glossario.md`](glossario.md) | "What does this Portuguese legal term mean?" |
+| [`pitfalls.md`](pitfalls.md) | "Am I about to make a common mistake?" |
+| [`leis_index.yaml`](leis_index.yaml) | "What's the status/apelido of this law?" |
+| [`jurisprudencia-stf.md`](jurisprudencia-stf.md) | "What did the STF decide in this case?" |
+| [`quasi-experimentos.md`](quasi-experimentos.md) | "What natural experiments exist in Brazilian institutions?" |
+| [`data_pointers.md`](data_pointers.md) | "Where does this data live?" |
+| [`timeline.md`](timeline.md) | "When did this reform/decision happen?" |
+| [`faq.md`](faq.md) | "How do I find X?" (by research question) |
 
-## How to use this reference
+### Súmula indices
 
-- **Grep first, then read the whole file.** Headers and subheaders are
-  descriptive; topic keywords appear at the top of each topical file.
-  Try both Portuguese and English terms — e.g., "bid rigging" won't hit,
-  but "cartel" and "licitação" will. Most files include a `Topics /
-  keywords` line at the top for exactly this reason.
-- **Verify before citing for legal-current work.** Time-volatile claims
-  — monetary thresholds, lists of municipalities/TCEs, pending STF
-  theses, most recent reforms — are flagged with "as of YYYY" where
-  possible. For anything that depends on currently-binding law text,
-  verify against [planalto.gov.br](https://www.planalto.gov.br) or the
-  primary source.
-- **For exact statutory text, query the article DB.** All cataloged
-  laws (37 as of 2026, including LIA, L8666, L14133, LE, CPC, CPP, CC,
-  CE, LFL, LI, LRF, LAC, LCO, LP, LAP, etc.) are parsed into a
-  searchable SQLite table at `~/research/data/lei/artigos.db`. Each
-  row is one leaf of an article (caput, paragraph, inciso) with
-  date-versioned amendment tracking.
+| File | Court | Count | Citation prefix |
+|---|---|---|---|
+| [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml) | STF (binding) | 63 | `SV14` |
+| [`sumulas_tse.yaml`](sumulas_tse.yaml) | TSE | 72 | `STSE38` |
+| [`sumulas_tst.yaml`](sumulas_tst.yaml) | TST | 463 | `STST331` |
+| [`sumulas_stj.yaml`](sumulas_stj.yaml) | STJ (on demand) | 3 | `SSTJ359` |
 
-  The database, the CLI tools, and the parser all live in
-  [`tools/leis_artigos/`](tools/leis_artigos/). Download the prebuilt
-  `artigos.db` from Dropbox (see `tools/leis_artigos/README.md` for
-  the link), then query via the backtick-form citation resolver or
-  the lower-level lookup CLI:
-  ```bash
-  # Resolve a compact backtick-form citation (backticks optional from shell)
-  python3 tools/leis_artigos/cite.py 'LIA.9.II'
-  python3 tools/leis_artigos/cite.py 'LE.36-A@2010-01-01'
-  python3 tools/leis_artigos/cite.py 'LIA.10 from:L14230-2021'
+## Tools
 
-  # Lower-level lookup
-  python3 tools/leis_artigos/lookup.py LIA 9 --path II
-  python3 tools/leis_artigos/lookup.py LE 36-A --as-of 2010-01-01
-  python3 tools/leis_artigos/lookup.py --by-amending L14230-2021
-  ```
-  See [`tools/README.md`](tools/README.md) for the full overview and
-  [`tools/leis_artigos/README.md`](tools/leis_artigos/README.md) for
-  the catalog and CLI reference. The companion scraper that builds
-  the raw input for the article DB is in
-  [`tools/planalto_scraper/`](tools/planalto_scraper/).
-- **Broken legacy links.** Several of the older migrated files contain
-  internal references in the form `[CF103](lei/cf.org::*Art.%20103)`.
-  These are dead pointers to the original author's local notes system
-  and do not resolve. The article number after the prefix is usually
-  enough to locate the cited provision.
-- **Cross-reference files.** Many files have "See also" pointers near
-  the top. Follow them when the topic spans multiple files (e.g., a
-  question about procurement fraud touches `topics/licitacoes.md`,
-  `topics/improbidade.md`, and `topics/anticorrupcao-penal.md`).
+| Tool | Purpose |
+|---|---|
+| [`tools/leis_artigos/cite.py`](tools/leis_artigos/) | Citation resolver — statutes, cases, súmulas, annotations |
+| [`tools/planalto_scraper/`](tools/planalto_scraper/) | Scraper for statute text from planalto.gov.br |
+| [`tools/tse_ce_anotado/`](tools/tse_ce_anotado/) | TSE annotated Electoral Code → SQLite (422 annotations) |
+| [`tools/stf_constituicao/`](tools/stf_constituicao/) | STF annotated Constitution → SQLite (1,758 annotations) |
+| [`tools/tst_scraper/`](tools/tst_scraper/) | TST Súmulas via Playwright (463 entries) |
+| [`tools/sumulas_scraper/`](tools/sumulas_scraper/) | STF SV and TSE súmula scrapers |
 
-## Conventions
+## Extending to new areas
 
-- Each topical file opens with a scope paragraph, a `Topics / keywords`
-  line, a `Snapshot as of YYYY` note for volatile content, and
-  cross-references to related files.
-- Statute citations appear inline (e.g., `Lei 8.666/93 Art. 23`, `CF
-  Art. 31 §2`, `STF Tema 157`) to enable fast grep.
-- Portuguese legal terms are preserved; English is used for narrative
-  explanation.
+This repo covers the institutional areas most relevant to the
+maintainer's research (corruption, courts, elections, fiscal
+federalism). If your research touches a different area — health law,
+environmental regulation, tax procedure, social security — the
+architecture is designed to extend:
 
-## Contributing
+1. **Add a topical file** in `topics/` following the existing format
+   (header with scope, keywords, snapshot date, cross-references).
+2. **Add statutes** to `leis_index.yaml` with an apelido so cite.py
+   can resolve them.
+3. **Add cases** to `jurisprudencia_index.yaml` and
+   `jurisprudencia-stf.md` as needed.
+4. **Add acronyms** to `siglas.md` and terms to `glossario.md`.
 
-This is a personal reference. Issues and pull requests are welcome for
-factual corrections, updated statute references, or additional source
-citations. Please see `CONTRIBUTING.md` for guidelines.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
+
+## Status
+
+A living reference, updated as research projects surface new material.
+Coverage is uneven — not every file is revisited on every change in
+the law. Each topical file carries a `Snapshot as of YYYY` line. For
+legally-current details, verify against the primary source.
 
 ## License
 
-Released under **CC BY 4.0** (see `LICENSE`). You are free to use,
-share, and adapt the material with attribution.
-
-## Designed for use with Claude Code
-
-This repository is structured for use with [Claude Code](https://claude.com/claude-code)
-and similar coding agents working on Brazilian institutional research.
-The format conventions (topic keywords, inline statute citations,
-cross-reference back-links, alphabetical indices) are optimized for
-fast grep and self-contained claims that survive being read out of
-context. See [`CLAUDE.md`](CLAUDE.md) for the agent-facing entry
-point. Humans should start with this README; Claude Code sessions
-will auto-load `CLAUDE.md`.
+Released under **CC BY 4.0** (see [`LICENSE`](LICENSE)). You are free
+to use, share, and adapt the material with attribution.
