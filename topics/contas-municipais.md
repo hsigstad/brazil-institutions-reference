@@ -154,9 +154,6 @@ practice may diverge (show of hands, voice votes). In small câmaras
 even formally-secret ballots are de facto open. The legal rule is a
 noisy proxy for actual observability.
 
-<!-- TODO: consider adding a systematic source for the diffusion
-data — currently relies on ad-hoc câmara records. -->
-
 ---
 
 ## 5. `LRF` — load-bearing thresholds

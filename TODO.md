@@ -44,19 +44,6 @@ were completed by the 2026-04-16 audit pass.
 
 ## Topical files — content gaps flagged inline
 
-- **`topics/contas-municipais.md` §4** — diffusion of open voting in
-  câmaras municipais relies on ad-hoc municipal records collected by
-  hand. A systematic source (e.g., a CNM or IBGE survey, an academic
-  dataset) would let the section move from "illustrative examples" to
-  "census of N municipalities". Flagged with inline TODO comment in
-  the file. Effort: depends on whether such a dataset exists.
-
-- **`topics/procedimentos-legais.md` §"Foro privilegiado"** — the
-  state-by-state list of which auxiliary officials carry foro
-  (vereadores, auditores, delegados) is currently a one-line summary
-  with São Paulo as the only worked example. Worth expanding to a
-  table covering at least the largest 5–10 states if the data is
-  retrievable from state constitutions. Effort: ~2 hours.
 
 - ~~**`topics/justica-estadual.md`**~~ — added cross-state comarca
   count table (2,666 comarcas, 26 states, from diarios module) and
