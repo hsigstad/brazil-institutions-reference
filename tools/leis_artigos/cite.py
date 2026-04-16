@@ -91,6 +91,16 @@ DEFAULT_SSTJ_INDEX = Path(
     )
 )
 
+# ---------------------------------------------------------------------------
+# Default TST súmulas index location.
+# ---------------------------------------------------------------------------
+DEFAULT_STST_INDEX = Path(
+    os.environ.get(
+        "STST_INDEX",
+        Path(__file__).resolve().parent.parent.parent / "sumulas_tst.yaml"
+    )
+)
+
 
 # ---------------------------------------------------------------------------
 # Citation grammar
@@ -208,6 +218,10 @@ STSE_RE = re.compile(r"^STSE(\d+)$")
 # Added on demand as topical/project files cite them (not bulk-collected).
 SSTJ_RE = re.compile(r"^SSTJ(\d+)$")
 
+# `STST1`, `STST331` etc. — TST Súmulas by number.
+# Resolves against sumulas_tst.yaml. Canonical key: "STST<number>".
+STST_RE = re.compile(r"^STST(\d+)$")
+
 
 # ---------------------------------------------------------------------------
 # Path normalization
@@ -300,6 +314,7 @@ class Citation:
     is_case: bool = False  # True for jurisprudence citations like `Tema1199`
     is_sv: bool = False  # True for `SV14` STF súmula vinculante citations
     is_stse: bool = False  # True for `STSE38` TSE súmula citations
+    is_stst: bool = False  # True for `STST331` TST súmula citations
     is_sstj: bool = False  # True for `SSTJ359` STJ súmula citations
 
     @property
@@ -311,6 +326,7 @@ class Citation:
             and not self.is_sv
             and not self.is_stse
             and not self.is_sstj
+            and not self.is_stst
         )
 
     def to_lookup_args(self) -> List[str]:
@@ -330,7 +346,7 @@ class Citation:
         return args
 
     def __str__(self) -> str:
-        if self.is_case or self.is_sv or self.is_stse or self.is_sstj:
+        if self.is_case or self.is_sv or self.is_stse or self.is_sstj or self.is_stst:
             return f"`{self.identifier}`"
         s = self.identifier
         if self.artigo is not None:
@@ -366,6 +382,10 @@ def parse(citation: str) -> Citation:
     # prefix wins.
     if SSTJ_RE.match(body):
         return Citation(identifier=body, is_sstj=True, raw=raw)
+
+    # TST Súmula? (`STST1`, `STST331`, ...)
+    if STST_RE.match(body):
+        return Citation(identifier=body, is_stst=True, raw=raw)
 
     # TSE Súmula? (`STSE38`, `STSE47`, ...) — checked before SV so the
     # longer prefix wins.
@@ -597,6 +617,41 @@ def lookup_sstj(identifier: str, index_path: Optional[Path] = None) -> Optional[
 
 
 # ---------------------------------------------------------------------------
+# TST Súmulas index loader
+# ---------------------------------------------------------------------------
+_stst_cache: Optional[dict] = None
+
+
+def load_stst_index(path: Optional[Path] = None) -> dict:
+    """Load and cache sumulas_tst.yaml. Empty on missing file."""
+    global _stst_cache
+    if _stst_cache is not None:
+        return _stst_cache
+    if path is None:
+        path = DEFAULT_STST_INDEX
+    if not path.exists():
+        _stst_cache = {"sumulas": {}}
+        return _stst_cache
+    try:
+        import yaml
+    except ImportError:
+        _stst_cache = {"sumulas": {}}
+        return _stst_cache
+    data = yaml.safe_load(path.read_text()) or {}
+    _stst_cache = {"sumulas": data.get("sumulas", {}) or {}}
+    return _stst_cache
+
+
+def lookup_stst(identifier: str, index_path: Optional[Path] = None) -> Optional[dict]:
+    """Look up a TST súmula by canonical key (e.g., 'STST331')."""
+    idx = load_stst_index(index_path)
+    entry = idx["sumulas"].get(identifier)
+    if entry is None:
+        return None
+    return {"id": identifier, **entry}
+
+
+# ---------------------------------------------------------------------------
 # SQL resolver
 # ---------------------------------------------------------------------------
 def resolve(
@@ -728,6 +783,10 @@ def _print_stse(entry: dict, full: bool = False) -> None:
 
 def _print_sstj(entry: dict, full: bool = False) -> None:
     _print_sumula(entry, f"Súmula STJ {entry.get('numero', '?')}", full=full)
+
+
+def _print_stst(entry: dict, full: bool = False) -> None:
+    _print_sumula(entry, f"Súmula TST {entry.get('numero', '?')}", full=full)
 
 
 def _print_case(entry: dict, full: bool = False) -> None:
@@ -948,7 +1007,8 @@ def main() -> int:
         print(f"  is_sv:      {c.is_sv}")
         print(f"  is_stse:    {c.is_stse}")
         print(f"  is_sstj:    {c.is_sstj}")
-        if not c.is_case and not c.is_sv and not c.is_stse and not c.is_sstj:
+        print(f"  is_stst:    {c.is_stst}")
+        if not c.is_case and not c.is_sv and not c.is_stse and not c.is_sstj and not c.is_stst:
             print(f"  artigo:     {c.artigo}")
             print(f"  letra:      {c.letra}")
             print(f"  path:       {c.path}")
@@ -968,6 +1028,18 @@ def main() -> int:
             )
             return 3
         _print_sv(entry, full=args.full)
+        return 0
+
+    # TST Súmula: resolve against the STST YAML
+    if c.is_stst:
+        entry = lookup_stst(c.identifier)
+        if entry is None:
+            print(
+                f"No TST súmula match for {c} in {DEFAULT_STST_INDEX}",
+                file=sys.stderr,
+            )
+            return 3
+        _print_stst(entry, full=args.full)
         return 0
 
     # STJ Súmula: resolve against the SSTJ YAML
