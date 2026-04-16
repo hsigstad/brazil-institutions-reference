@@ -405,6 +405,64 @@ the "❌" forms below, switch to the corresponding "✓" form.
 
 ---
 
+## Empirical research traps
+
+### ❌ "Pre/post-2017 labor court filings are comparable"
+### ✓ The 2017 reform (Lei 13.467) changed cost rules — filing rates dropped ~35%
+
+- Before Nov 2017: workers filed for free (*justiça gratuita* near-universal).
+- After: losing parties may owe honorários de sucumbência and perícia costs
+  (though STF `ADI5766` struck down part of these provisions in Oct 2021).
+- Any time series crossing Nov 2017 has a structural break that is a cost
+  effect, not a change in underlying disputes. →
+  [`topics/justica-trabalho.md`](topics/justica-trabalho.md)
+
+### ❌ "Post-2024 court congestion improved because courts got more efficient"
+### ✓ CNJ Res. 547/2024 extinguished >10M execuções fiscais administratively
+
+- Execuções fiscais ≤R$10,000 were mass-extinguished on economic-unviability
+  grounds. Stock fell from ~27M to ~16.5M in <2 years.
+- Any pre/post-2024 comparison of congestion rates, pending-case counts,
+  or average-duration statistics is contaminated by this administrative
+  cleanup. → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) §7
+
+### ❌ "Conviction rate = enforcement rate"
+### ✓ The same conduct generates parallel proceedings — specify which regime
+
+- A single corruption scheme can appear simultaneously in criminal court
+  (CP/LCOT), civil court (LIA improbidade), administrative tribunal
+  (CADE), CGU (Lei Anticorrupção), TCE (audit), and electoral justice
+  (Ficha Limpa). Each has different conviction/sanction rates.
+- "What share of corruption cases result in conviction?" is meaningless
+  without specifying the regime. →
+  [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §7
+
+### ❌ "Pre-2020 and post-2020 proportional election results are directly comparable"
+### ✓ EC 97/2017 banned coligações in proportional elections from 2020 onward
+
+- Under coligações, a popular candidate in party A "carried" weak candidates
+  from party B into office via pooled vote totals. Post-2020, each party
+  (or federação) stands alone. The mapping from votes to seats changed
+  structurally. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §3
+
+### ❌ "LAI requests always existed — I can study transparency across all years"
+### ✓ LAI took effect May 2012 — pre-2012 data availability is structurally different
+
+- Before LAI, access to public data depended on ad-hoc requests and
+  institutional goodwill. After May 2012, agencies must respond within
+  20 days with a formal appeal chain (CGU for federal executive).
+- Projects spanning this boundary should account for measurement
+  differences. → [`topics/transparencia-dados.md`](topics/transparencia-dados.md) §1
+
+### ❌ "Execução fiscal cases represent real judicial work"
+### ✓ ~34% of pending cases are execuções fiscais — mostly dormant
+
+- Execuções fiscais (tax enforcement) are ~34% of all pending cases and
+  have an ~88% congestion rate. Most sit dormant waiting for asset
+  location. Including them in aggregate productivity or duration
+  statistics dramatically skews the picture. →
+  [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) §7
+
 ## When in doubt
 
 If you're about to make a confident-sounding claim about Brazilian
