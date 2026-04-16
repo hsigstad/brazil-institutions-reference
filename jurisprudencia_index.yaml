@@ -82,6 +82,31 @@ cases:
     superado_por: null
     fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1199
 
+  ADI2797:
+    tipo: ADI
+    numero: 2797
+    processo: ADI 2.797 / DF
+    aliases: [ADI2860]  # ADI 2.860 julgada em conjunto
+    relator: Sepúlveda Pertence
+    decidido: 2005-09-15
+    votacao: maioria
+    tema: foro privilegiado — inconstitucionalidade de foro para improbidade via CPP Art. 84 §2
+    status: vigente
+    holding_short: >
+      Declarou inconstitucional o § 2º do art. 84 do CPP, introduzido
+      pela Lei 10.628/2002, que estendia o foro por prerrogativa de
+      função a ações de improbidade administrativa. A CF reserva o foro
+      especial a infrações penais comuns; a improbidade tem natureza
+      civil e tramita em primeira instância independentemente do cargo
+      do réu.
+    discussed_in: [topics/improbidade.md, topics/procedimentos-legais.md, jurisprudencia-stf.md]
+    related_leis: [LIA, CF]
+    complementa: []
+    complementado_por: [Pet3240]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=2093529
+
   Pet3240:
     tipo: AgR_Pet
     numero: 3240
@@ -100,17 +125,11 @@ cases:
       penais comuns (Arts. 102 e 105) não se estende a ela. Mesmo
       autoridades com foro criminal (ministros de Estado, governadores,
       parlamentares) respondem em primeira instância em ações de
-      improbidade. Reafirma ADI 2797 (2005), que já havia declarado
-      inconstitucional a tentativa do Lei 10.628/2002 de criar foro
-      para improbidade via § 2º do art. 84 do CPP.
+      improbidade. Reafirma `ADI2797` (2005).
     discussed_in: [topics/improbidade.md, topics/procedimentos-legais.md, jurisprudencia-stf.md]
     related_leis: [LIA, CF]
-    nota: >
-      Reafirma ADI 2797 (decidida 2005-09-15, Rel. Sepúlveda Pertence),
-      que declarou inconstitucional o § 2º do art. 84 do CPP introduzido
-      pela Lei 10.628/2002 — tentativa legislativa de criar foro
-      privilegiado para improbidade. ADI 2797 ainda não consta deste
-      índice.
+    complementa: [ADI2797]
+    complementado_por: []
     supera: []
     superado_por: null
     fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=2230342

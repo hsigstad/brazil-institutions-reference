@@ -63,6 +63,25 @@ modulated, overruled, or superseded by checking
   [`topics/licitacoes.md`](topics/licitacoes.md) §"Related statutes".
 - **Source**: <https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1199>.
 
+### ADI 2797 — Inconstitucionalidade de foro privilegiado para improbidade
+
+- **Decided**: 15 September 2005, Plenário.
+- **Rel.**: Min. Sepúlveda Pertence.
+- **Votação**: maioria (julgada em conjunto com ADI 2860).
+- **Holding**: Declared unconstitutional § 2º of CPP Art. 84,
+  introduced by Lei 10.628/2002, which had extended foro por
+  prerrogativa de função to ações de improbidade administrativa.
+  The CF reserves foro especial to "infrações penais comuns";
+  improbidade has civil nature and must be adjudicated in first
+  instance regardless of the defendant's office.
+- **Why it matters for empirical work**: establishes that all
+  improbidade defendants — mayors through ministers — appear in
+  first-instance dockets. No parallel STF improbidade track to
+  account for. Reaffirmed by `Pet3240` (2018, 10–1).
+- **Cited in**: [`topics/improbidade.md`](topics/improbidade.md) §3,
+  [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) §"Foro privilegiado".
+- **Source**: <https://portal.stf.jus.br/processos/detalhe.asp?incidente=2093529>.
+
 ### Pet 3.240 AgR — Inexistência de foro por prerrogativa em improbidade
 
 - **Decided**: 10 May 2018, Plenário (DJe 22 August 2018).
@@ -77,12 +96,10 @@ modulated, overruled, or superseded by checking
   parlamentares, including in principle the President) respond to
   improbidade actions in **first instance**, alongside ordinary
   defendants.
-- **Doctrinal posture**: reaffirms **ADI 2797** (Plenário, decided
-  15 September 2005, Rel. Sepúlveda Pertence), which had already
+- **Doctrinal posture**: reaffirms `ADI2797` (2005), which had already
   declared unconstitutional the legislative attempt in Lei 10.628/2002
   to add § 2º to CPP Art. 84 and create a foro privilegiado for
   improbidade. Pet 3240 closes the door on revival of that argument.
-  (ADI 2797 not yet in `jurisprudencia_index.yaml`; should be added.)
 - **Why it matters for empirical work**: this is the case that lets
   researchers study improbidade caseloads at the first-instance level
   uniformly, without segregating defendants by political rank.

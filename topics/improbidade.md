@@ -193,7 +193,7 @@ ACP is filed, jurisdiction follows the money:
   first-instance rules regardless of the defendant's political office,
   including for governors, ministros, and mayors. Settled by `Pet3240`
   (STF Plenário, 2018-05-10, Rel. Roberto Barroso, 10–1), which
-  reaffirmed ADI 2797 (2005). See `procedimentos-legais.md` for the
+  reaffirmed `ADI2797` (2005). See `procedimentos-legais.md` for the
   broader foro discussion. Load-bearing for empirical work: the
   population of improbidade defendants is uniformly first-instance,
   with no parallel STF docket to segregate.

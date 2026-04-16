@@ -81,7 +81,7 @@ The largest constitutional transfer to municípios.
   `EC112-2021` (more in Sept), bringing total by ~2026 to ~25.5% of
   IR+IPI.
 - **Distribution**: by coefficient based on population tiers (Decreto-Lei
-  1.881/1981 + LC 62/1989). **Capital cities** get 10% of the total;
+  1.881/1981 + `LC62`). **Capital cities** get 10% of the total;
   **interior municipalities** get 86.4%; the remainder goes to a reserve
   for larger interior municipalities (Lei 5.172/1966 Art. 91).
 - **Interior coefficient structure**: 16 population-tier brackets. Small
@@ -93,17 +93,17 @@ The largest constitutional transfer to municípios.
   capita.
 - **Population estimates**: IBGE releases annual estimates; FPM
   coefficients for year t are set by TCU based on IBGE estimate published
-  by August of year t−1. Rule changes in 2013 (LC 143/2013) altered the
+  by August of year t−1. Rule changes in 2013 (`LC143`) altered the
   reclassification mechanics.
 
-**Source**: LC 62/1989; LC 143/2013; Decreto-Lei 1.881/1981.
+**Source**: `LC62`; `LC143`; Decreto-Lei 1.881/1981.
 
 ### FPE — Fundo de Participação dos Estados
 
 - **Source**: 21.5% of IR + IPI (`CF.159.I`).
-- **Distribution**: originally fixed coefficients from LC 62/1989 (declared
+- **Distribution**: originally fixed coefficients from `LC62` (declared
   unconstitutional by STF in ADI 875 et al., 2010, for perpetuating
-  rigid shares). Replaced by **LC 143/2013**, which adopted a formula
+  rigid shares). Replaced by **`LC143`**, which adopted a formula
   based on population and per-capita income, transitioning toward a
   more equalizing distribution.
 

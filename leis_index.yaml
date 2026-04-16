@@ -626,6 +626,33 @@ statutes:
       - "Art. 7 (mínimo municipal — 15% da receita)"
     discussed_in: []
 
+  lc_62_1989:
+    tipo: Lei Complementar
+    numero: "62"
+    ano: 1989
+    apelido: LC62
+    titulo: Normas sobre FPE e FPM — cálculo, entrega e controle
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp62.htm
+    topics: [fiscal_federalism, FPM, FPE]
+    key_articles:
+      - "Art. 1 (cálculo e entrega de FPE e FPM)"
+      - "Art. 2 (coeficientes de distribuição)"
+    discussed_in: [topics/federalismo-fiscal.md]
+
+  lc_143_2013:
+    tipo: Lei Complementar
+    numero: "143"
+    ano: 2013
+    apelido: LC143
+    titulo: Altera LC 62/1989 — reclassificação de coeficientes FPM/FPE
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp143.htm
+    topics: [fiscal_federalism, FPM, FPE]
+    key_articles:
+      - "Art. 1 (nova redação do Art. 2 da LC 62)"
+    discussed_in: [topics/federalismo-fiscal.md]
+
   lei_12414_2011:
     tipo: Lei
     numero: "12414"

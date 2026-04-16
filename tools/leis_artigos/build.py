@@ -460,7 +460,9 @@ LAW_CATALOG = [
     ('LCMP',    '75',    '1993', None, 'lei_complementar'),   # LC 75 — Estatuto do MP da União
     # Public administration / fiscal
     ('LRF',     '101',   '2000', None, 'lei_complementar'),   # Lei de Responsabilidade Fiscal
+    ('LC62',    '62',    '1989', 27,   'lei_complementar'),   # FPM/FPE coeficientes
     ('LCT',     '131',   '2009', None, 'lei_complementar'),   # Lei da Transparência
+    ('LC143',   '143',   '2013', 24,   'lei_complementar'),   # FPM reclassificação
     ('LAI',     '12527', '2011', None, 'lei'),                # Lei de Acesso à Informação
     ('LOTCU',   '8443',  '1992', None, 'lei'),                # Lei Orgânica do TCU
     ('L8112',   '8112',  '1990', None, 'lei'),                # Estatuto dos Servidores
