@@ -13,9 +13,6 @@ improbidade, compras governamentais.
 thresholds under Lei 14.133 are updated annually via Decree — verify
 current values before using specific R$ figures for post-2023 work.
 
-Compiled from personal research notes on municipal procurement and
-cartel enforcement in Brazil.
-
 ---
 
 ## Lei 8.666/1993 — Lei Geral de Licitações
@@ -93,7 +90,7 @@ dispensation (`L8666.89`), obstruction of competition (`L8666.95`).
   10.024/2019; widely adopted by municipalities.
 - Most common modality in municipal procurement during the 8.666 era.
 
-**Source:** [Lei 10.520/2002](https://www.planalto.gov.br/ccivil_03/leis/2002/l10520.htm); Decreto 10.024/2019.
+**Source:** `LP`; Decreto 10.024/2019.
 
 ---
 
@@ -109,7 +106,7 @@ dispensation (`L8666.89`), obstruction of competition (`L8666.95`).
   thresholds.
 - Strengthened integrity requirements: compliance programs, risk matrices.
 
-**Source:** [Lei 14.133/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm).
+**Source:** `L14133`.
 
 ---
 
@@ -119,13 +116,13 @@ dispensation (`L8666.89`), obstruction of competition (`L8666.95`).
 
 - Established **CADE** (Conselho Administrativo de Defesa Econômica) as an
   autarquia with adjudicatory powers.
-- **Cartel prohibition** (Art. 36 §3, I): agreements between competitors to
+- **Cartel prohibition** (`LCADE.36`): agreements between competitors to
   fix prices, divide markets, or rig bids are administrative infractions.
-- **Sanctions** (Art. 37): fines of 0.1% to 20% of gross revenue.
-- **Leniency program** (Arts. 86–87): first confessor receives full or
+- **Sanctions** (`LCADE.37`): fines of 0.1% to 20% of gross revenue.
+- **Leniency program** (`LCADE.86`–`LCADE.87`): first confessor receives full or
   partial immunity; key source of information on cartel mechanics.
 
-**Source:** [Lei 12.529/2011](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12529.htm).
+**Source:** `LCADE`.
 
 ### CADE typology of collusive strategies
 
@@ -148,7 +145,7 @@ Part II, Section II.3:
 - **Market division** (*divisão de mercado*): geographic or client-based
   allocation among cartel members. Often combined with cover bidding or
   bid suppression.
-- **Other**: abuse of consórcios (Art. 33, Lei 8.666) and subcontracting
+- **Other**: abuse of consórcios (`L8666.33`) and subcontracting
   to implement agreements and split cartel profits.
 
 ### Red flags for collusion
@@ -173,10 +170,10 @@ CADE guide Part IV (pp. 52–58):
   reinforce each other: officials may direct specifications or leak
   information to facilitate the cartel (p. 55).
 - The same conduct can be prosecuted in parallel:
-  - Administrative infraction by CADE (Lei 12.529/2011 Art. 36).
-  - Criminal offense under Lei 8.137/1990 Art. 4 and Lei 8.666/1993 Art. 90.
-  - Improbidade administrativa by MP (Lei 8.429/1992).
-  - Corporate liability under Lei Anticorrupção 12.846/2013 Art. 5.
+  - Administrative infraction by CADE (`LCADE.36`).
+  - Criminal offense under Lei 8.137/1990 Art. 4 and `L8666.90`.
+  - Improbidade administrativa by MP (`LIA`).
+  - Corporate liability under `LAC.5`.
 - Summary table on p. 58 maps sanctions, agreement types, and competent
   authorities across CADE, CGU, and MP/Police.
 
@@ -205,10 +202,10 @@ CADE guide Part IV (pp. 52–58):
 
 ## Related statutes (cross-reference)
 
-- **Lei 8.429/1992** — improbidade administrativa (civil corruption
+- `LIA` — improbidade administrativa (civil corruption
   prosecution; see `contas-municipais.md` §3 for the Ficha Limpa interaction).
 - **Lei 8.137/1990** — crimes contra a ordem econômica (Art. 4 criminalizes
   cartel conduct).
-- **Lei 12.846/2013** — Lei Anticorrupção (corporate liability).
-- **Lei 14.230/2021** — reform of improbidade (eliminated culposa conduct;
-  STF Tema 1199 on retroactive application).
+- `LAC` — Lei Anticorrupção (corporate liability).
+- `L14230-2021` — reform of improbidade (eliminated culposa conduct;
+  `Tema1199` on retroactive application).
