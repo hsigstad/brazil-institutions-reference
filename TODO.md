@@ -58,7 +58,13 @@ were completed by the 2026-04-16 audit pass.
 ~~**TSE Código Eleitoral Anotado**~~ — completed (2026-04-16).
 Scraper at `tools/tse_ce_anotado/scraper.py`, DB at
 `tools/tse_ce_anotado/ce_anotado.db` (422 annotations, 176 articles).
-Integrated with `cite.py --annotations`.
+
+~~**STF "A Constituição e o Supremo"**~~ — completed (2026-04-16).
+Scraper at `tools/stf_constituicao/scraper.py`, DB at
+`tools/stf_constituicao/cf_stf_anotada.db` (1,758 annotations, 183
+articles, 1,655 case citations).
+
+Both integrated with `cite.py --annotations`.
 
 **Future candidates** (lower priority, harder to scrape):
 - TSE SNE (8 thematic PDFs — would need PDF extraction)

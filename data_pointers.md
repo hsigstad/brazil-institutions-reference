@@ -263,11 +263,18 @@ jurisprudence cross-references:
   from 2011.
   **URL**: <https://www.dizerodireito.com.br/>.
 
-**Not freely available**: annotated versions of CPC, CPP, CP, CLT,
-CF, or LIA exist only in paid platforms (RT Online, Vade Mecum
-Saraiva, JusBrasil Pro). LexML indexes legislation and jurisprudence
-separately but does not cross-reference them. Planalto.gov.br
-provides raw text with amendment notes only.
+- **STF "A Constituição e o Supremo"** — article-by-article annotated
+  CF with STF decisions (ADIs, repercussão geral, julgados correlatos).
+  Clean JSON API. **Scraped** into `tools/stf_constituicao/cf_stf_anotada.db`
+  (1,758 annotations, 183 articles, 1,655 case citations). Integrated
+  with `cite.py 'CF.109' --annotations`.
+  **URL**: <https://constituicao.stf.jus.br/>.
+
+**Not freely available**: annotated CPC, CPP, CP, CLT, or LIA exist
+only in paid platforms (RT Online, Vade Mecum Saraiva, JusBrasil Pro).
+LexML indexes legislation and jurisprudence separately but does not
+cross-reference them. Planalto.gov.br provides raw text with amendment
+notes only.
 
 ### Comarcas and judicial organization
 
