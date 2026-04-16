@@ -24,26 +24,24 @@ became an autarquia in 2022 (Lei 14.460/2022), consolidating its
 enforcement role. LAI review doctrine continues to evolve via STF and
 CGU guidance.
 
-Not sourced from a specific project file; built from general knowledge.
-
 ---
 
-## 1. Lei 12.527/2011 — Lei de Acesso à Informação (LAI)
+## 1. `LAI` — Lei de Acesso à Informação
 
 ### Constitutional basis
 
-- **CF Art. 5 XXXIII**: "todos têm direito a receber dos órgãos públicos
+- **`CF.5.XXXIII`**: "todos têm direito a receber dos órgãos públicos
   informações de seu interesse particular, ou de interesse coletivo ou
   geral, que serão prestadas no prazo da lei, sob pena de
   responsabilidade, ressalvadas aquelas cujo sigilo seja imprescindível
   à segurança da sociedade e do Estado."
-- **Art. 37 §3 II**: access to administrative records and information on
+- **`CF.37.§3.II`**: access to administrative records and information on
   government acts.
-- **Art. 216 §2**: cultural/historical documents.
+- **`CF.216.§2`**: cultural/historical documents.
 
 ### Statutory framework
 
-- **Lei 12.527/2011** (promulgated November 2011, effective May 2012)
+- **`LAI`** (promulgated November 2011, effective May 2012)
   regulates the constitutional right of access.
 - Binds **all branches** (Executivo, Legislativo, Judiciário) at
   **all levels** (União, estados, DF, municípios), plus indirect
@@ -52,7 +50,7 @@ Not sourced from a specific project file; built from general knowledge.
 
 ### Core principles
 
-- **Publicidade como regra, sigilo como exceção** (Art. 3 I): publicity
+- **Publicidade como regra, sigilo como exceção** (`LAI.3.I`): publicity
   is the rule, secrecy the exception.
 - **Divulgação proativa** (transparência ativa): agencies must publish
   a minimum set of information without waiting for a request — budgets,
@@ -66,7 +64,7 @@ Not sourced from a specific project file; built from general knowledge.
   the competent external authority (CGU for federal Executivo;
   equivalent bodies elsewhere), then ultimately to the judiciary.
 
-### Classification of sigilo (Arts. 23–25)
+### Classification of sigilo (`LAI.23`–`LAI.25`)
 
 Information can be classified as sigilosa only if disclosure would
 threaten:
@@ -89,7 +87,7 @@ Classifications require authorization by high-ranking officials; any
 classification can be reviewed and overturned via CGU recourse or
 judicial action.
 
-### Personal information (Art. 31)
+### Personal information (`LAI.31`)
 
 - Personal information about **third parties** is protected for **100
   years** by default, but this protection does not override legitimate
@@ -132,7 +130,7 @@ municipalities must adopt their own decrees and systems.
 ### LAI for researchers — what works
 
 - **Salary and identification of public servants**: generally
-  disclosable (affirmed by STF in ARE 652,777, 2015, repercussão geral).
+  disclosable (affirmed by STF `ARE652777`, 2015, repercussão geral).
 - **Contract details, contractor names, payment records**: generally
   disclosable.
 - **Individual beneficiary data in social programs**: partially
@@ -142,11 +140,11 @@ municipalities must adopt their own decrees and systems.
   (see §4 below and `cnj-administracao-judicial.md`).
 - **Ongoing investigations**: sigilo usually upheld until conclusion.
 
-**Source**: [Lei 12.527/2011](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm); [Decreto 7.724/2012](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7724.htm); STF ARE 652,777.
+**Source**: `LAI`; Decreto 7.724/2012; `ARE652777`.
 
 ---
 
-## 2. Lei 13.709/2018 — Lei Geral de Proteção de Dados (LGPD)
+## 2. `LGPD` — Lei Geral de Proteção de Dados
 
 ### Overview
 
@@ -158,11 +156,11 @@ Brazil's comprehensive data protection statute, modeled on the EU GDPR.
   2021.
 - **Scope**: processing of personal data by any natural or legal entity
   operating in Brazil, regardless of where the processing occurs, when
-  the data subject is in Brazil, the data was collected in Brazil, or
+  the data subject is in Brazil, the data collected in Brazil, or
   the processing aims to offer services to individuals in Brazil
-  (Art. 3).
+  (`LGPD.3`).
 
-### Legal bases for processing (Art. 7)
+### Legal bases for processing (`LGPD.7`)
 
 Ten legal bases, any one sufficient:
 
@@ -180,20 +178,20 @@ Ten legal bases, any one sufficient:
 
 ### Research-specific exemption
 
-- **Art. 7 IV** permits processing for **research by research entities**
-  (defined in Art. 5 XVIII as bodies dedicated to basic or applied
+- **`LGPD.7.IV`** permits processing for **research by research entities**
+  (defined in `LGPD.5.XVIII` as bodies dedicated to basic or applied
   historical, scientific, or statistical research).
 - Anonymization should be applied "whenever possible".
-- **Art. 11 II c** allows processing of *sensitive* personal data
+- **`LGPD.11.II.c`** allows processing of *sensitive* personal data
   (health, race, religion, politics, etc.) for research by research
   entities.
-- **Article 13**: specific allowance for public-health research
+- **`LGPD.13`**: specific allowance for public-health research
   (pandemic, epidemiology).
 - Research entities can process personal data without consent but must
   apply the principles of adequacy, necessity, finality, security,
   non-discrimination, and accountability.
 
-### Data subject rights (Art. 18)
+### Data subject rights (`LGPD.18`)
 
 - Confirmation of processing.
 - Access to data.
@@ -203,7 +201,7 @@ Ten legal bases, any one sufficient:
 - Information about sharing.
 - Revocation of consent.
 
-### Sanctions (Art. 52)
+### Sanctions (`LGPD.52`)
 
 - Warning, obligation to publicize the violation, blocking, erasure,
   and **fines up to 2% of revenue (max R$50M per infraction)**.
@@ -222,20 +220,20 @@ Ten legal bases, any one sufficient:
 
 - **Public salary disclosure**: LGPD does not override LAI — public
   servant salaries, individually identified, remain disclosable under
-  STF ARE 652,777. LGPD applies to the data controller's duties but
-  the public-interest legal basis (Art. 7 III) covers the processing.
+  `ARE652777`. LGPD applies to the data controller's duties but
+  the public-interest legal basis (`LGPD.7.III`) covers the processing.
 - **Court data**: scraping identified court records is more contested.
   CNJ and STF guidance is that identified data in judicial proceedings
-  remains accessible under the publicity principle (CF Art. 93 IX),
+  remains accessible under the publicity principle (`CF.93.IX`),
   with **limited** restrictions for specific categories (segredo de
   justiça). Researchers should document their legal basis and consider
   anonymization for publication.
 - **Scraped personal data**: projects that scrape identified data
-  should document Art. 7 IV as the legal basis, minimize personal data
+  should document `LGPD.7.IV` as the legal basis, minimize personal data
   retention, anonymize for analysis where possible, and keep LGPD
   DPIA-style documentation of processing purposes.
 
-**Source**: [Lei 13.709/2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm); [Lei 14.460/2022](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14460.htm).
+**Source**: `LGPD`; Lei 14.460/2022.
 
 ---
 
@@ -308,9 +306,9 @@ Ten legal bases, any one sufficient:
 
 ### Sanctioned-entity registries
 
-- **CEIS** — firms barred from public contracting (Lei 12.846 Art. 23,
-  Lei 8.666, Lei 14.133 sanctions). Maintained by CGU.
-- **CNEP** — firms sanctioned under Lei 12.846 specifically. CGU.
+- **CEIS** — firms barred from public contracting (`LAC.23`,
+  `L8666`, `L14133` sanctions). Maintained by CGU.
+- **CNEP** — firms sanctioned under `LAC` specifically. CGU.
 - **CEPIM** — entities impeded under Lei 10.522/02 (tax debtors).
 - See `cgu-controle-interno.md`.
 
@@ -320,14 +318,14 @@ Ten legal bases, any one sufficient:
 
 Judicial data has its own transparency framework anchored in:
 
-- **CF Art. 93 IX**: publicity of judicial acts (with exceptions for
+- **`CF.93.IX`**: publicity of judicial acts (with exceptions for
   privacy and public interest).
 - **CNJ Resoluções**: Res. 121/2010 (publication of judicial data),
   Res. 215/2015 (LAI applied to judiciary), Res. 331/2020 (PJe and
   data-management).
 - **LGPD interaction**: CNJ Res. 363/2021 addressed data protection in
   judicial context; processing for judicial purposes has its own legal
-  basis under LGPD Art. 7 VI.
+  basis under `LGPD.7.VI`.
 
 Practical consequences for researchers:
 
@@ -370,7 +368,7 @@ e-Proc), tribunal-level data-release rules, and Justiça em Números.
   availability; projects spanning this boundary should account for
   measurement differences.
 - **LGPD considerations in empirical work**: document the legal basis
-  for personal-data processing (Art. 7 IV or V); anonymize in
+  for personal-data processing (`LGPD.7.IV` or `LGPD.7.V`); anonymize in
   publications where possible; set retention limits; keep processing
   documentation.
 - **CEIS/CNEP linkage**: the sanctioned-entity registries can be
@@ -381,13 +379,7 @@ e-Proc), tribunal-level data-release rules, and Justiça em Números.
 
 ## 7. Sources and cross-references
 
-**Statutes**:
-- [Lei 12.527/2011 — LAI](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm)
-- [Decreto 7.724/2012 — LAI regulamento federal](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7724.htm)
-- [Lei 13.709/2018 — LGPD](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm)
-- [Lei 14.460/2022 — ANPD autarquia](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14460.htm)
-- [Decreto 8.777/2016 — dados abertos](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm)
-- CNJ Res. 121/2010, 215/2015, 331/2020, 363/2021
+**Statutes**: `LAI`, Decreto 7.724/2012, `LGPD`, Lei 14.460/2022, Decreto 8.777/2016, CNJ Res. 121/2010, 215/2015, 331/2020, 363/2021.
 
 **Cross-references**:
 - `cgu-controle-interno.md` — CGU runs most federal transparency infra
