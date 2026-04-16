@@ -124,18 +124,29 @@ names, glossary.
 
 ## L
 
-- **LAI** — Lei de Acesso à Informação (Lei 12.527/2011). → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
+- **LAC** — Lei Anticorrupção (Lei 12.846/2013). Corporate anti-corruption — objective liability of legal entities. cite.py apelido: `LAC`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md), [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
+- **LAI** — Lei de Acesso à Informação (Lei 12.527/2011). cite.py apelido: `LAI`. → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
 - **LC** — Lei Complementar. Supermajority statute, required for specific constitutional matters.
+- **LCADE** — Lei de Defesa da Concorrência (Lei 12.529/2011). Competition law / CADE. cite.py apelido: `LCADE`. → [`topics/licitacoes.md`](topics/licitacoes.md)
+- **LCO** — Lei das Organizações Criminosas (Lei 12.850/2013). Colaboração premiada framework. cite.py apelido: `LCO`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
+- **LCOT** — Lei de Crimes contra a Ordem Tributária e Econômica (Lei 8.137/1990). cite.py apelido: `LCOT`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **LDO** — Lei de Diretrizes Orçamentárias. Annual budget guidelines (Art. 165 CF).
-- **LGPD** — Lei Geral de Proteção de Dados (Lei 13.709/2018). → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
-- **LIA** — Lei de Improbidade Administrativa (Lei 8.429/1992). → [`topics/improbidade.md`](topics/improbidade.md)
+- **LE** — Lei das Eleições (Lei 9.504/1997). cite.py apelido: `LE`. → [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md), [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+- **LFL** — Lei da Ficha Limpa (LC 135/2010). Amended LC 64/1990 to tighten inelegibility rules. cite.py apelido: `LFL`. → [`topics/contas-municipais.md`](topics/contas-municipais.md), [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+- **LGPD** — Lei Geral de Proteção de Dados (Lei 13.709/2018). cite.py apelido: `LGPD`. → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
+- **LI** — Lei das Inelegibilidades (LC 64/1990). cite.py apelido: `LI`. → [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md), [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+- **LIA** — Lei de Improbidade Administrativa (Lei 8.429/1992). cite.py apelido: `LIA`. → [`topics/improbidade.md`](topics/improbidade.md)
+- **LL** — Lei de Lavagem de Dinheiro (Lei 9.613/1998). cite.py apelido: `LL`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **LOA** — Lei Orçamentária Anual. Annual budget law (Art. 165 CF).
 - **LOM** — Lei Orgânica Municipal. Each municipality's "constitution".
-- **LOMAN** — Lei Orgânica da Magistratura Nacional (LC 35/1979). → [`topics/carreira-juizes.md`](topics/carreira-juizes.md)
-- **LOMP / LOMPE** — Lei Orgânica do MP / MP Estadual.
-- **LOMPU** — Lei Orgânica do MPU (LC 75/1993). → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
+- **LOMAN** — Lei Orgânica da Magistratura Nacional (LC 35/1979). cite.py apelido: `LOMAN`. → [`topics/carreira-juizes.md`](topics/carreira-juizes.md)
+- **LOMP / LOMPE** — Lei Orgânica do MP / MP Estadual. cite.py apelido: `LOMP`.
+- **LOMPU** — Lei Orgânica do MPU (LC 75/1993). cite.py apelido: `LCMP`. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
 - **LONMP** — Lei Orgânica Nacional do MP (Lei 8.625/1993). → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
-- **LRF** — Lei de Responsabilidade Fiscal (LC 101/2000). → [`topics/contas-municipais.md`](topics/contas-municipais.md), [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
+- **LPC** — Lei do Pacote Anticrime (Lei 13.964/2019). cite.py apelido: `LPC`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
+- **LPP** — Lei dos Partidos Políticos (Lei 9.096/1995). cite.py apelido: `LPP`. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+- **LRF** — Lei de Responsabilidade Fiscal (LC 101/2000). cite.py apelido: `LRF`. → [`topics/contas-municipais.md`](topics/contas-municipais.md), [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
+- **LRT** — Reforma Trabalhista (Lei 13.467/2017). cite.py apelido: `LRT`. → [`topics/justica-trabalho.md`](topics/justica-trabalho.md)
 
 ## M
 
@@ -177,6 +188,11 @@ names, glossary.
 - **PPA** — Plano Plurianual. 4-year fiscal plan (Art. 165 CF).
 - **PSF** — Programa Saúde da Família. SUS family-health program.
 
+## Q
+
+- **QE** — Quociente Eleitoral. Electoral quotient for proportional seat allocation. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+- **QP** — Quociente Partidário. Party quotient (party votes ÷ QE). → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+
 ## R
 
 - **RCL** — Receita Corrente Líquida. Denominator for LRF percentage limits. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md), [`topics/contas-municipais.md`](topics/contas-municipais.md)
@@ -209,10 +225,13 @@ names, glossary.
 - **SISAB** — Sistema de Informação em Saúde para a Atenção Básica (SUS).
 - **SISCOR** — Sistema de Correição do Poder Executivo Federal. CGU coordination system for federal disciplinary actions. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
 - **SPCE** — Sistema de Prestação de Contas Eleitorais. TSE campaign-finance filing system. → [`topics/prestacao-contas-eleitorais.md`](topics/prestacao-contas-eleitorais.md)
+- **SSTJ** — cite.py prefix for STJ Súmulas (e.g., `SSTJ359`). Resolved against [`sumulas_stj.yaml`](sumulas_stj.yaml).
 - **STF** — Supremo Tribunal Federal. Brazilian constitutional court. → [`topics/cortes-superiores.md`](topics/cortes-superiores.md), [`jurisprudencia-stf.md`](jurisprudencia-stf.md)
 - **STJ** — Superior Tribunal de Justiça. Federal-law court of last resort. → [`topics/cortes-superiores.md`](topics/cortes-superiores.md)
 - **STM** — Superior Tribunal Militar.
 - **STN** — Secretaria do Tesouro Nacional. National Treasury, runs SICONFI.
+- **STSE** — cite.py prefix for TSE Súmulas (e.g., `STSE38`). Resolved against [`sumulas_tse.yaml`](sumulas_tse.yaml).
+- **STST** — cite.py prefix for TST Súmulas (e.g., `STST331`). Resolved against [`sumulas_tst.yaml`](sumulas_tst.yaml). → [`topics/justica-trabalho.md`](topics/justica-trabalho.md)
 - **SUS** — Sistema Único de Saúde. Brazilian universal health system. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 
 ## T

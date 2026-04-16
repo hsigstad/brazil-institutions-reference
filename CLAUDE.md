@@ -5,6 +5,16 @@ political institutions. This file is the entry point for Claude Code
 and similar agents. **Read this once at session start; then grep the
 indices below before reading topical files.**
 
+## Quick start — answering a question about Brazilian institutions
+
+1. **Unknown acronym?** → grep [`siglas.md`](siglas.md)
+2. **Unfamiliar Portuguese legal term?** → grep [`glossario.md`](glossario.md)
+3. **Need a statute's text?** → `python3 tools/leis_artigos/cite.py 'LIA.9'`
+4. **Need STF case detail?** → `python3 tools/leis_artigos/cite.py 'Tema1199'`
+5. **Need the substance?** → read the topical file in `topics/` (find it via the indices above)
+6. **Common mistake?** → check [`pitfalls.md`](pitfalls.md)
+7. **STF jurisprudence on a CF article?** → `cite.py 'CF.37' --annotations`
+
 ## What this is and isn't
 
 - **Is**: a topical reference compiled for empirical research on
