@@ -63,6 +63,39 @@ should convert:
   table covering at least the largest 5–10 states if the data is
   retrievable from state constitutions. Effort: ~2 hours.
 
+## Audit progress
+
+Checklist for the topical-file audit pass (CLAUDE.md rules 1–9).
+Mark each file `[x]` after its audit commit lands. Order is
+suggested priority (most CF/LRF citations first), not mandatory.
+
+- [ ] `topics/contas-municipais.md` — partially audited (2026-04-10), needs rules 8–9
+- [ ] `topics/improbidade.md` — partially audited (2026-04-10), needs rules 8–9
+- [ ] `topics/federalismo-fiscal.md`
+- [ ] `topics/tribunais-contas.md`
+- [ ] `topics/ministerio-publico.md`
+- [ ] `topics/licitacoes.md`
+- [ ] `topics/anticorrupcao-penal.md`
+- [ ] `topics/procedimentos-legais.md`
+- [ ] `topics/prestacao-contas-eleitorais.md`
+- [ ] `topics/processo-eleitoral.md`
+- [ ] `topics/partidos-e-sistema-eleitoral.md`
+- [ ] `topics/justica-eleitoral.md`
+- [ ] `topics/transparencia-dados.md`
+- [ ] `topics/cgu-controle-interno.md`
+- [ ] `topics/cnj-administracao-judicial.md`
+- [ ] `topics/cortes-superiores.md`
+- [ ] `topics/justica-federal.md`
+- [ ] `topics/justica-estadual.md`
+- [ ] `topics/justica-trabalho.md`
+- [ ] `topics/juizes.md`
+- [ ] `topics/carreira-juizes.md`
+- [ ] `topics/funcoes-essenciais.md`
+- [ ] `topics/processo-civil.md`
+- [ ] `topics/processo-penal.md`
+- [ ] `topics/reformas-judiciais.md`
+- [ ] `topics/organizacao-historica.md`
+
 ## Conventions reminders
 
 - Cases added to `jurisprudencia_index.yaml` need: canonical key,

@@ -541,14 +541,17 @@ are subtle.
    on suspicion alone. The point of these files is correctness;
    silently introduced errors are worse than uncited claims.
 
-6. **Topical audits do not modify other files.**
-   When auditing `topics/X.md`, do not edit `CLAUDE.md`, `README.md`,
-   `siglas.md`, `glossario.md`, `jurisprudencia-stf.md`, any YAML
-   index, or any other topical file. If you find a needed update
-   elsewhere (e.g., a stub in `procedimentos-legais.md` is out of
-   date, or `jurisprudencia_index.yaml` is missing a case the
+6. **Topical audits do not modify other files** (with one
+   exception). When auditing `topics/X.md`, do not edit `CLAUDE.md`,
+   `README.md`, `siglas.md`, `glossario.md`, `jurisprudencia-stf.md`,
+   any YAML index, or any other topical file. If you find a needed
+   update elsewhere (e.g., a stub in `procedimentos-legais.md` is out
+   of date, or `jurisprudencia_index.yaml` is missing a case the
    audited file references), flag it in your report and stop.
    Cross-file changes need the human to coordinate.
+   **Exception:** after committing the audit, mark the file `[x]` in
+   `TODO.md` §"Audit progress" — this is bookkeeping, not a
+   substantive change. Include it in the same commit.
 
 7. **One file per commit, one audit per session.**
    Each topical-file audit produces exactly one commit. The commit
@@ -586,16 +589,60 @@ are subtle.
    clutter) are cheaper than false positives (deleting substance).
 
 9. **Convert prose statute references to backtick form.**
-   When a file mentions a statute in prose (e.g., "LRF Arts. 19–20")
-   and the backtick form resolves via `cite.py`, convert it
-   (e.g., `` `LRF.19` ``, `` `LRF.20` ``). Run `cite.py` to confirm
-   resolution before converting — do not guess. If the citation
-   doesn't resolve (e.g., CF articles, uncataloged laws), leave the
-   prose mention as-is.
+   When a file mentions a statute in prose (e.g., "LRF Arts. 19–20",
+   "CF Art. 31 §2") and the backtick form resolves via `cite.py`,
+   convert it (e.g., `` `LRF.19` ``, `` `CF.31.§2` ``). Run `cite.py`
+   to confirm resolution before converting — do not guess. If the
+   citation doesn't resolve (uncataloged law, missing article), leave
+   the prose mention as-is.
 
 These guard rails are a contract: if an audit run produces output
 that breaks any of them, the audit failed and the diff should be
 discarded, not partially applied.
+
+### Audit workflow — practical steps
+
+This section describes the concrete steps an agent should follow when
+running a topical-file audit. The rules above (1–9) define *what* to
+do; this section defines *how*.
+
+1. **Pick the file.** Check `TODO.md` §"Audit progress" for the next
+   unaudited file. If all are marked done, stop.
+
+2. **Baseline check.** Run
+   `python3 tools/leis_artigos/cite.py --find-in topics/X.md` to
+   list every citation the file already contains and whether it
+   resolves. Note any that fail — these need investigation (typo?
+   uncataloged law?) but do **not** delete them.
+
+3. **Read the file end-to-end.** Identify sections to tighten
+   (rule 8), prose statute/case references to convert (rule 9),
+   and content that fails the deletion test (rule 4).
+
+4. **For each new backtick citation you write**, run
+   `python3 tools/leis_artigos/cite.py '<citation>'` and confirm it
+   returns a row. Do this *before* editing, not after.
+
+5. **Edit the file.** Apply rules 1–9. One pass, all changes in one
+   commit.
+
+6. **Post-edit verification.** Run `--find-in` again on the edited
+   file. Every citation that resolved before should still resolve;
+   every new citation should resolve. If any new citation fails,
+   revert it to prose.
+
+7. **Commit.** One file, one commit. The commit message should
+   summarize: which rules were applied, approximate line reduction,
+   any TODO markers added, any cross-file issues flagged.
+
+8. **Report.** After committing, output a structured summary:
+   - **File**: `topics/X.md`
+   - **Lines**: before → after (reduction %)
+   - **Citations converted**: list of prose → backtick conversions
+   - **Citations that didn't resolve**: list (left as prose)
+   - **TODOs added**: list
+   - **Cross-file issues**: anything that needs human coordination
+     (missing YAML entries, stale cross-references, etc.)
 
 ## Things to avoid
 
