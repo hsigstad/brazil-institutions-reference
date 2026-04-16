@@ -28,22 +28,19 @@ CNJ-sponsored unified platform but multiple tribunals still run e-Proc
 (CJF-developed, used by TRFs and some TJs) or ESAJ (TJSP) alongside or
 instead of PJe. Interoperability remains partial.
 
-Built from general knowledge, fragments in `cortes-superiores.md`, and
-the CNJ public documentation.
-
 ---
 
 ## 1. CNJ — mandate and normative power
 
 ### Creation
 
-- Created by **EC 45/2004** (Reforma do Judiciário); installed in June
+- Created by `EC45-2004` (Reforma do Judiciário); installed in June
   2005.
-- Constitutional basis: **CF Art. 103-B**.
+- Constitutional basis: `CF.103-B`.
 - Composed of 15 conselheiros serving 2-year renewable terms (see
   `cortes-superiores.md` §1 for composition).
 
-### Mandate (CF Art. 103-B §4)
+### Mandate (`CF.103-B.§4`)
 
 - **Administrative and financial control** of the judiciary.
 - **Disciplinary oversight** of judges and court employees.
@@ -89,7 +86,7 @@ the CNJ public documentation.
 - Sanctions: advertência, censura, removal, aposentadoria compulsória,
   disponibilidade.
 
-**Source**: [CF Art. 103-B](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm); [Resoluções CNJ (portal)](https://atos.cnj.jus.br/).
+**Source**: `CF.103-B`; [Resoluções CNJ (portal)](https://atos.cnj.jus.br/).
 
 ---
 
@@ -219,7 +216,7 @@ backbone of any structured analysis of court data.
 
 ### Specialization rules
 
-- **CF Art. 96 I**: tribunals have constitutional authority to organize
+- `CF.96.I`: tribunals have constitutional authority to organize
   their own structure, including creating specialized varas.
 - In practice, specialization is driven by:
   - Local caseload pressure (e.g., dedicated execução fiscal varas in
@@ -329,7 +326,7 @@ the case stock substantially.
 
 ### Data governance principles
 
-- **Publicity is the rule** (CF Art. 93 IX), subject to segredo de
+- **Publicity is the rule** (`CF.93.IX`), subject to segredo de
   justiça for specific case categories.
 - **LGPD applies** to the judiciary but has its own balancing framework
   (CNJ Res. 363/2021). See `transparencia-dados.md` §4.
@@ -366,4 +363,4 @@ the case stock substantially.
 - `data_catalog/` (workspace) — actual datasets derived from tribunal
   systems.
 
-**Sources**: [CF Art. 103-B](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm); [Portal de atos CNJ](https://atos.cnj.jus.br/); [Justiça em Números](https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/); [DataJud — Res. 331/2020](https://atos.cnj.jus.br/atos/detalhar/3412).
+**Sources**: `CF.103-B`; [Portal de atos CNJ](https://atos.cnj.jus.br/); [Justiça em Números](https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/).

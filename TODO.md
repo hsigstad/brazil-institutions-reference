@@ -86,7 +86,7 @@ suggested priority (most CF/LRF citations first), not mandatory.
 - [x] `topics/justica-eleitoral.md` — audited (2026-04-16), raw notes, 1 citation converted
 - [x] `topics/transparencia-dados.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/cgu-controle-interno.md` — audited (2026-04-16), rules 1–9 complete
-- [ ] `topics/cnj-administracao-judicial.md`
+- [x] `topics/cnj-administracao-judicial.md` — audited (2026-04-16), rules 1–9 complete
 - [ ] `topics/cortes-superiores.md`
 - [ ] `topics/justica-federal.md`
 - [ ] `topics/justica-estadual.md`
