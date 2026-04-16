@@ -25,7 +25,9 @@ terminology, definitions, Portuguese.
 - **apelação** — Ordinary appeal from a first-instance decision (sentença) to the corresponding tribunal.
 - **arguição** — Formal challenge or motion. Arguição de descumprimento de preceito fundamental (ADPF) is the STF action of that name.
 - **audiência** — Hearing. *Audiência inaugural / de conciliação*: opening hearing. *Audiência de instrução e julgamento*: evidence-and-judgment hearing.
+- **agente político** — Political office holder (elected or appointed to politically-directed positions: president, governors, mayors, ministers, secretários). Distinct from *servidor público* (career civil servant) and *empregado público* (CLT-regime public employee).
 - **auto / autos** — Case file. "Os autos" = the case record.
+- **autarquia** — Self-governing public entity with legal personality, budget, and staff, but created by law and subject to public-law rules (e.g., INSS, CADE, ANATEL). Contrast with *empresa pública* (state-owned enterprise under mixed public/private rules) and *sociedade de economia mista* (state holds majority but shares trade publicly — e.g., Petrobras, Banco do Brasil).
 - **autoria** — Authorship of a criminal act; identifies who committed the conduct (vs. *materialidade*, which proves that the act occurred).
 
 ## B
@@ -40,9 +42,10 @@ terminology, definitions, Portuguese.
 - **cartório** — Notary office; also used for the registry/clerk's office of a court vara.
 - **cassação** — Loss of mandate via revocation. For elected officials, can be triggered by Ficha Limpa, electoral abuse, or improbidade.
 - **causa de pedir** — Cause of action; the legal-factual basis for a claim.
-- **coisa julgada** — Res judicata. *Trânsito em julgado* refers to the moment a decision becomes coisa julgada (no more appeals).
+- **coisa julgada** — Res judicata. *Trânsito em julgado* refers to the moment a decision becomes coisa julgada (no more appeals). Contrast with *litispendência* (case still pending).
 - **coligação** — Electoral coalition. For majoritário offices, still permitted. For proportional offices, abolished by EC 97/2017 from 2020 elections onward; partially replaced by *federações partidárias*.
-- **comarca** — Judicial district at the state-court level. The basic territorial unit of the Justiça Estadual.
+- **comarca** — Judicial district at the state-court level. The basic territorial unit of the Justiça Estadual. Contrast with *seção judiciária* (federal courts) and *vara* (court unit within a comarca).
+- **competência absoluta / relativa** — *Absoluta*: jurisdiction that cannot be changed by the parties or waived (e.g., ratione materiae — the subject determines the court). *Relativa*: jurisdiction that can be modified by the parties' agreement or is waived if not raised timely (e.g., ratione loci — geographic). Absolute incompetência is declared ex officio; relative requires party objection.
 - **concurso público** — Competitive public examination for civil-service positions. The standard entry path into the judiciary, MP, public administration. *Concurso* with no qualifier almost always means a hiring competition (not the procurement *concurso* modality).
 - **conexão** — Procedural connection between cases (same parties, same cause, related facts) that justifies joint handling. Distinguish from *prevenção*.
 - **conselheiro** — A member of a TC (TCU/TCE/TCM) or of CNJ/CNMP. Not a judge in the strict sense.
@@ -66,8 +69,10 @@ terminology, definitions, Portuguese.
 ## E
 
 - **ementa** — Headnote or abstract. For a statute, a one-sentence summary of its purpose appearing right after the law number/date. For a judgment, the editor-prepared summary of holdings.
+- **empregado público** — Public employee under CLT (labor-law) regime, typically in state-owned enterprises (*empresas públicas* and *sociedades de economia mista*). Distinct from *servidor público* (statutory regime under Lei 8.112 at federal level) and *agente político* (political appointees/elected officials).
+- **empresa pública** — State-owned enterprise with 100% public capital, subject to mixed public/private rules (e.g., Caixa Econômica Federal, Correios). Contrast with *autarquia* (pure public-law entity) and *sociedade de economia mista* (state-majority but shares traded publicly).
 - **enriquecimento ilícito** — Illicit enrichment; one of the three categories of improbidade (Art. 9 Lei 8.429/92).
-- **entrância** — Career tier within the MP and judiciary. Inicial → intermediária → final. Small comarcas are inicial; state capital is final. Promotion between entrâncias is by *antiguidade* or *merecimento*.
+- **entrância** — Career tier within the MP and judiciary. Inicial → intermediária → final. Small comarcas are inicial; state capital is final. Promotion between entrâncias is by *antiguidade* or *merecimento*. Contrast with *instância* (hierarchical court level: first instance = vara, second = TJ/TRF).
 - **estabilidade** — Job tenure for civil servants. Acquired after 3 years (CF Art. 41 §4) for concursados.
 - **execução** — Enforcement phase of a case. *Fase de execução*: post-judgment phase where the judgment is enforced. *Execução fiscal*: tax enforcement (the largest source of judicial congestion in Brazil).
 
@@ -94,8 +99,9 @@ terminology, definitions, Portuguese.
 - **improcedente / procedente** — Case outcomes. *Procedente*: granted on the merits (plaintiff wins). *Improcedente*: denied on the merits (defendant wins). *Extinto sem julgamento de mérito*: dismissed without reaching the merits.
 - **inamovibilidade** — Irremovability. Constitutional guarantee that a judge or MP member cannot be transferred without consent, except by majority decision of the órgão colegiado on grounds of public interest.
 - **inelegibilidade** — Ineligibility to run for elected office. Triggered by Ficha Limpa hypotheses, electoral abuse convictions, etc. Generally lasts 8 years from the triggering event. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md), [`topics/contas-municipais.md`](topics/contas-municipais.md)
-- **inquérito civil (IC)** — MP investigative proceeding for non-criminal matters. Exclusive to MP.
-- **inquérito policial (IP)** — Police investigation in criminal matters.
+- **inquérito civil (IC)** — MP investigative proceeding for non-criminal matters. Exclusive to MP. Contrast with *inquérito policial* (criminal investigation led by police).
+- **inquérito policial (IP)** — Police investigation in criminal matters. Led by *delegado de polícia*. Contrast with *inquérito civil* (MP-led, non-criminal).
+- **instância** — Hierarchical court level. First instance = vara (trial court). Second instance = TJ/TRF/TRT (appellate). Superior instance = STJ/TST. Constitutional = STF. Contrast with *entrância* (career tier based on comarca size, not court hierarchy).
 - **inexigibilidade** — Procurement exemption when competition is objectively infeasible (sole source, artistic services, etc.). Distinguish from *dispensa* (where competition would be possible but is waived).
 
 ## J
@@ -110,6 +116,7 @@ terminology, definitions, Portuguese.
 - **lei complementar (LC)** — Statute requiring an absolute majority of each house (vs. simple majority for ordinary leis). Reserved for matters the Constitution explicitly assigns to LC.
 - **lei orgânica** — Organic law that constitutes an institution. *Lei orgânica municipal*: a municipality's "constitution".
 - **liminar** — Preliminary injunction. Granted in urgent cases (perigo + plausibility of right).
+- **litispendência** — Lis pendens; a case pending on the same parties, cause, and object as another. Bars a second action on the same claim. Contrast with *coisa julgada* (the claim has already been finally decided).
 - **lista tríplice** — Triple list. A list of three names submitted by a body (MP, OAB) from which a higher authority chooses an appointee. Common in PG and tribunal selections.
 
 ## M
@@ -167,6 +174,8 @@ terminology, definitions, Portuguese.
 - **sentença** — First-instance judgment. Distinguish from *acórdão* (collegiate decision).
 - **sigilo** — Secrecy / confidentiality. *Quebra de sigilo* refers to breaching tax, banking, or telecom secrecy via judicial order.
 - **sobras** — Remaining seats in proportional elections, distributed among parties that met the quociente eleitoral via successive quotient. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+- **servidor público** — Career civil servant under statutory regime (Lei 8.112/1990 at federal level). Hired by concurso público, protected by *estabilidade* after 3 years. Contrast with *empregado público* (CLT regime, typically in state enterprises) and *agente político* (elected/politically appointed).
+- **sociedade de economia mista** — Mixed-capital corporation with state majority shareholding but shares publicly traded (e.g., Petrobras, Banco do Brasil). Employees are *empregados públicos* under CLT. Contrast with *empresa pública* (100% public capital) and *autarquia* (pure public-law entity).
 - **sorteio** — Random draw. Used for case assignment in many courts and TCE relator assignment.
 - **subsídio** — The single-payment compensation of judges, MP members, and elected officials (no separate "salary" plus "benefits").
 - **súmula** — Non-binding caselaw summary issued by a superior court (STF, STJ, TST, etc.). A short statement of the court's settled position.
@@ -175,6 +184,7 @@ terminology, definitions, Portuguese.
 
 ## T
 
+- **tutela provisória** — Provisional judicial relief before final judgment. Two types: *tutela de urgência* (granted on danger of irreparable harm + plausibility of right — equivalent to preliminary injunction) and *tutela de evidência* (granted on strength of evidence alone, no urgency required). *Tutela antecipada* is the older pre-CPC/2015 term for tutela de urgência satisfativa. → [`topics/processo-civil.md`](topics/processo-civil.md)
 - **tese** — Proposition of law. Used in two main contexts: (1) the formal *tese* set by STF in a Tema (e.g., "tese de Tema 157"), which binds lower courts; (2) the parties' *tese* in a case (their legal theory).
 - **testa de ferro** — Front man / nominee. Active version of *laranja* — manages assets or contracts on behalf of a hidden principal. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **trânsito em julgado** — Final and unappealable judgment. The moment a decision becomes coisa julgada and can no longer be challenged via ordinary appeal.
