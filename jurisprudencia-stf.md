@@ -110,6 +110,27 @@ modulated, overruled, or superseded by checking
   [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) §"Foro privilegiado".
 - **Source**: <https://portal.stf.jus.br/processos/detalhe.asp?incidente=2230342>.
 
+### AP 937 QO — Restrição do foro privilegiado criminal
+
+- **Decided**: 3 May 2018, Plenário.
+- **Rel.**: Min. Roberto Barroso.
+- **Holding**: Criminal foro por prerrogativa de função applies only to
+  crimes committed *during the exercise of the mandate* AND *related to
+  the functions of the office held*. Crimes outside this scope —
+  whether committed before the mandate or unconnected to office — are
+  tried at first instance even if the defendant currently holds a
+  foro-bearing position.
+- **Companion to `Pet3240`**: decided one week before Pet 3.240
+  (2018-05-10). AP 937 restricts the *criminal* foro; Pet 3240
+  confirms the *civil* (improbidade) foro never existed. Together they
+  define the current scope of foro privilegiado.
+- **Movement of cases**: when a defendant takes office, qualifying
+  criminal cases move *up* to the higher court; when they leave, cases
+  move back *down*. STF flagged that downward movement near
+  prescription may constitute abuse.
+- **Cited in**: [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) §"Foro privilegiado".
+- **Source**: <https://portal.stf.jus.br/processos/detalhe.asp?incidente=4776682>.
+
 ---
 
 ## 2. Contas municipais e Ficha Limpa

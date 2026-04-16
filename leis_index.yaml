@@ -911,6 +911,25 @@ statutes:
     topics: [public_administration, civil_society]
     discussed_in: [topics/federalismo-fiscal.md]
 
+  lei_13467_2017:
+    tipo: Lei
+    numero: "13467"
+    ano: 2017
+    titulo: Reforma Trabalhista
+    apelido: LRT
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm
+    topics: [labor_law, CLT_reform]
+    key_articles:
+      - "Art. 611-A (negociado sobre legislado)"
+      - "Art. 611-B (direitos indisponíveis)"
+      - "Art. 507-B (quitação anual)"
+      - "Art. 790-B (honorários periciais)"
+      - "Art. 791-A (honorários de sucumbência)"
+      - "Art. 844 §2 (no-show penalty)"
+      - "Arts. 855-B–855-E (homologação extrajudicial)"
+    discussed_in: [topics/justica-trabalho.md, topics/reformas-judiciais.md]
+
   lei_13488_2017:
     tipo: Lei
     numero: "13488"

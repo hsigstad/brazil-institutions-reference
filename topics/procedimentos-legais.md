@@ -43,15 +43,14 @@ level provisions.
   already declared unconstitutional the legislative attempt in
   Lei 10.628/2002 to create foro for improbidade via `CPP.84` § 2º.
 - **Restricted to mandate-period crimes connected to the office.**
-  In **AP 937 QO** (Plenário, 2018-05-03, Rel. Roberto Barroso),
-  decided one week before Pet 3240, STF restricted criminal foro
+  `AP937` (Plenário, 2018-05-03, Rel. Roberto Barroso),
+  decided one week before `Pet3240`, restricted criminal foro
   privilegiado to crimes committed *during the mandate* AND *in
   connection with the office held*. Crimes outside this window or
   unconnected to office are tried at first instance, even when the
-  defendant currently occupies a foro-bearing position. (AP 937 QO is
-  not yet in `jurisprudencia_index.yaml`; should be added.)
+  defendant currently occupies a foro-bearing position.
 - **Movement of cases between instances.** When a defendant takes
-  office, criminal cases against them that meet the AP 937 criteria
+  office, criminal cases against them that meet the `AP937` criteria
   move *up* to the higher court; when they leave office, cases move
   back *down*. STF has flagged that downward movement just before
   prescription is suspect and may be policed for abuse.
@@ -68,22 +67,25 @@ canonical descriptions of `Pet3240` and `ADI2797`.
 
 ### Allocation of cases to judges
 
-Should be by lottery
+General rule: random distribution (*sorteio*) among judges/varas of the
+same competence. Each tribunal's regimento interno governs the details.
 
-But courts could have internal rules
+- **Prevenção**: once a judge is assigned, related cases are routed to
+  the same judge. The definition of "related" is governed by tribunal
+  rules and can be disputed by the parties.
+- **STF**: the relator is drawn by *sorteio*; prevenção attaches if a
+  case is related to one already assigned (RISTF Art. 69). The relator
+  or the presidente decides whether the relationship holds.
+- See `cnj-administracao-judicial.md` §5 for case-assignment
+  quasi-randomness and specialization rules relevant to research design.
 
-**STF**
+### Segredo de justiça
 
-Gets case if related to previous case (grey zone)
+Certain case categories are shielded from public access (`CF.93.IX`
+exception):
 
-The judge and/or the president decides whether related
-
-A party can dispute the allocation (prevencao, Art
-[69](lei/6.org::*Art%209) Regimento Interno do STF)
-
-### Classified cases
-
-Criminal cases against politicians for instance
-
-In some cases not even a case number exists
-
+- Family law, child/adolescent cases (ECA), sexual-violence cases.
+- Some criminal investigations during the inquérito phase.
+- Cases where a party's privacy outweighs the publicity interest.
+- In segredo cases, access is restricted to parties, lawyers, and MP.
+  Case numbers exist but records are not publicly searchable.

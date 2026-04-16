@@ -321,16 +321,16 @@ Not exhaustive, but the most consequential:
   *final, unappealable* conviction; Ficha Limpa lowered this to a
   decision by a collegiate body, dramatically expanding the pool of
   ineligible candidates.
-- The STF upheld constitutionality (ADC 29/30, ADI 4578, 2012) despite
-  the *presunção de inocência* objection, on the ground that
-  inelegibility is not a criminal sanction.
+- The STF upheld constitutionality (`ADC29`, 2012) despite the
+  *presunção de inocência* objection, on the ground that inelegibility
+  is not a criminal sanction.
 
 ### Duration
 
 - Typically **8 years** from the triggering event (conclusion of
   sentence, end of mandate, irrevocable decision, etc.).
 
-Primary statutes: `LI`, `LFL`. STF ADC 29/30, ADI 4578 (constitutionality upheld, 2012).
+Primary statutes: `LI`, `LFL`. STF `ADC29` (constitutionality upheld, 2012).
 
 ---
 

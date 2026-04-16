@@ -63,5 +63,5 @@ highlights:
   administrative, and budgetary), paralleling MP autonomy.
 - Entry by concurso público. Members enjoy functional independence.
 - **Legitimidade para ACP**: the Defensoria has standing to file ações
-  civis públicas on behalf of vulnerable populations (affirmed by
-  STF, ADI 3.943/2015).
+  civis públicas on behalf of vulnerable populations (`ADI3943`,
+  2015).

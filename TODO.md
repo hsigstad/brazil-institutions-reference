@@ -18,37 +18,29 @@ unlocks backtick-form citations and structured metadata. For each:
 verify against the STF process page or Lexml acórdão record before
 adding; do not fabricate from memory.
 
-- **AP 937 QO** — STF Plenário, decided 2018-05-03, Rel. Min.
-  Roberto Barroso. Restricted criminal foro privilegiado to crimes
-  committed *during the mandate* AND *in connection with the office
-  held*. Companion case to `Pet3240` (decided one week later) on the
-  improbidade-civil side. Currently flagged inline in
-  `topics/procedimentos-legais.md` §"Foro privilegiado".
-  Effort: ~30 min (one YAML entry + one description block in
-  `jurisprudencia-stf.md`).
+- ~~**AP 937 QO**~~ — added to `jurisprudencia_index.yaml` and
+  `jurisprudencia-stf.md` (2026-04-16).
 
 - ~~**ADI 2797**~~ — added to `jurisprudencia_index.yaml` and
   `jurisprudencia-stf.md` (2026-04-16).
 
-## Statute catalog — prose mentions to sweep
+## Statute catalog — uncataloged laws still referenced in prose
 
-These laws are cataloged (apelido exists, `cite.py` resolves) but
-topical files still use prose mentions that the audit pass (rule 9)
-should convert:
+These laws appear in topical files as prose mentions but lack an
+apelido in `leis_index.yaml`. Adding them enables backtick citations.
 
-- **LRF** — already ingested. Prose mentions remain in
-  `topics/contas-municipais.md`, `topics/federalismo-fiscal.md`,
-  `topics/improbidade.md`.
-- **CF** — ingested (2026-04-16). All topical files use prose
-  CF references; audit pass should convert where `cite.py` resolves.
-- **CP** — ingested (2026-04-16). Prose mentions in
-  `topics/anticorrupcao-penal.md`, `topics/processo-penal.md`.
-- **CLT** — ingested (2026-04-16). Prose mentions in
-  `topics/justica-trabalho.md`.
-- **CTN** — ingested (2026-04-16). Prose mentions in
-  `topics/federalismo-fiscal.md`.
-- **EC citations** — `EC<num>-<year>` now resolves to the CF articles
-  the EC amended. Audit pass can convert prose EC mentions.
+- ~~**Lei 13.467/2017**~~ (Reforma Trabalhista) — added as `LRT`
+  (2026-04-16).
+- **Lei 14.208/2021** (Federações partidárias) — referenced in
+  `topics/partidos-e-sistema-eleitoral.md`.
+- **DL 201/1967** (Crimes de responsabilidade de prefeitos) —
+  referenced in `topics/processo-penal.md`.
+- **Lei 10.628/2002** (foro para improbidade, declared unconstitutional
+  by `ADI2797`) — referenced in `topics/procedimentos-legais.md`.
+- **Lei 11.798/2008** (CJF) — referenced in `topics/justica-federal.md`.
+
+Previously listed sweep items (LRF, CF, CP, CLT, CTN, EC citations)
+were completed by the 2026-04-16 audit pass.
 
 ## Topical files — content gaps flagged inline
 
@@ -65,6 +57,14 @@ should convert:
   with São Paulo as the only worked example. Worth expanding to a
   table covering at least the largest 5–10 states if the data is
   retrievable from state constitutions. Effort: ~2 hours.
+
+- **`topics/justica-estadual.md`** — TJSP comarca count time series
+  (1832–present) and cross-state total-comarcas comparison table.
+  Flagged with inline TODO comments. Effort: ~1 hour per item if
+  data sources exist.
+
+- **`topics/contas-municipais.md`** — `CF.31.§1` does not resolve via
+  `cite.py`; may need DB ingestion or path-convention fix.
 
 ## Audit progress
 

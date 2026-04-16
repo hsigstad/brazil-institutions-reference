@@ -134,6 +134,56 @@ cases:
     superado_por: null
     fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=2230342
 
+  AP937:
+    tipo: QO
+    numero: 937
+    processo: AP 937 QO / RJ
+    aliases: [AP937QO]
+    relator: Roberto Barroso
+    decidido: 2018-05-03
+    votacao: Plenário
+    tema: foro privilegiado criminal — restrição a crimes no cargo e durante o mandato
+    status: vigente
+    holding_short: >
+      O foro por prerrogativa de função aplica-se apenas a crimes
+      cometidos *durante o exercício do cargo* e *relacionados às
+      funções desempenhadas*. Crimes anteriores ao mandato ou sem
+      conexão com o cargo são processados em primeira instância, mesmo
+      que o réu ocupe posição com foro privilegiado. Decidida uma
+      semana antes de `Pet3240` (2018-05-10), que aplicou lógica
+      análoga à improbidade civil.
+    discussed_in: [topics/procedimentos-legais.md, jurisprudencia-stf.md]
+    related_leis: [CF, CPP]
+    complementa: [Pet3240]
+    complementado_por: []
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=4776682
+
+  ADI3943:
+    tipo: ADI
+    numero: 3943
+    processo: ADI 3.943 / DF
+    aliases: []
+    relator: Cármen Lúcia
+    decidido: 2015-05-07
+    votacao: Plenário, por maioria
+    tema: Defensoria Pública — legitimidade para ação civil pública
+    status: vigente
+    holding_short: >
+      A Defensoria Pública tem legitimidade para propor ação civil
+      pública em defesa de direitos difusos, coletivos e individuais
+      homogêneos, sem restrição a hipossuficientes individualizados.
+      A legitimação da Defensoria para ACP (LACP Art. 5 II, incluído
+      pela Lei 11.448/2007) é constitucional.
+    discussed_in: [topics/funcoes-essenciais.md, jurisprudencia-stf.md]
+    related_leis: [LACP, CF]
+    complementa: []
+    complementado_por: []
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=2382617
+
   # ---------------------------------------------------------------------
   # 2. Contas municipais e Ficha Limpa
   # ---------------------------------------------------------------------
