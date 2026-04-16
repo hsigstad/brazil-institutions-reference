@@ -499,11 +499,25 @@ statutes:
       - "Art. 4 (colaboração premiada)"
     discussed_in: [topics/anticorrupcao-penal.md, topics/ministerio-publico.md]
 
+  lei_5869_1973:
+    tipo: Lei
+    numero: "5869"
+    ano: 1973
+    apelido: CPC1973
+    titulo: Código de Processo Civil (1973, revogado)
+    status: revogada
+    url: https://www.planalto.gov.br/ccivil_03/leis/l5869.htm
+    topics: [civil_procedure]
+    revoked_by:
+      law: lei_13105_2015
+      date: 2016-03-18
+    discussed_in: []
+
   lei_13105_2015:
     tipo: Lei
     numero: "13105"
     ano: 2015
-    titulo: Código de Processo Civil (NCPC)
+    titulo: Código de Processo Civil
     apelido: CPC
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm
@@ -511,6 +525,7 @@ statutes:
     key_articles:
       - "Arts. 144, 146 (impedimento, suspeição)"
       - "Art. 784 (título executivo extrajudicial)"
+    revokes: [lei_5869_1973]
     discussed_in: [topics/justica-trabalho.md, topics/processo-civil.md]
 
   lei_13165_2015:

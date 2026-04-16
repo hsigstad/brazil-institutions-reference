@@ -479,7 +479,8 @@ LAW_CATALOG = [
     ('LPC',     '13964', '2019', None, 'lei'),                # Pacote Anticrime
     ('L14230',  '14230', '2021', None, 'lei'),                # LIA reform
     # Civil / process
-    ('CPC',     '13105', '2015', None, 'lei'),                # Código de Processo Civil
+    ('CPC',     '13105', '2015', 1003, 'lei'),                 # Código de Processo Civil (2015)
+    ('CPC1973', '5869',  '1973', 5419, 'lei', '1973-01-11'),  # Código de Processo Civil (1973, revogado)
     ('CPP',     '3689',  '1941', None, 'decreto_lei'),        # Código de Processo Penal
     ('CC',      '10406', '2002', None, 'lei'),                # Código Civil
     ('LACP',    '7347',  '1985', None, 'lei'),                # Ação Civil Pública
