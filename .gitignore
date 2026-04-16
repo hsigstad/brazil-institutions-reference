@@ -10,3 +10,4 @@ __pycache__/
 
 # Local override databases (these are build artifacts, not source)
 tools/leis_artigos/*.db
+*.pdf

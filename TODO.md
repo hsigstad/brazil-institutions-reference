@@ -73,14 +73,10 @@ source citations.
 - [ ] **Labor court filing drop** — from TST data: quantify the
   post-Nov-2017 filing drop and the post-ADI-5766 partial recovery.
   Add to `topics/justica-trabalho.md`.
-- [ ] **CNMP data extraction** — CNMP stopped PDF reports after 2018;
-  post-2018 data is on an interactive Tableau dashboard at
-  `https://www.cnmp.mp.br/portal/relatoriosbi/mp-um-retrato`.
-  Visit in browser, extract IC counts, ACP counts, TAC counts by
-  state, member counts by branch. The 2018 PDF (base year 2017) is at
-  `https://www.cnmp.mp.br/portal/images/Publicacoes/documentos/2019/Anu%C3%A1rio_um_retrato_2018_ERRATA_1.pdf`
-  but data is in image-based charts, not text-extractable.
-  Add to `topics/ministerio-publico.md`.
+- [x] **CNMP data extraction** — extracted from Tableau dashboard
+  exports (2018 base year). IC pipeline, top subjects, workforce
+  numbers added to `topics/ministerio-publico.md` (2026-04-16).
+  Future: re-extract with more recent year if dashboard is updated.
 
 ## Annotated legislation — scraping
 
