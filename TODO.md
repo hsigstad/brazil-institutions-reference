@@ -35,20 +35,17 @@ adding; do not fabricate from memory.
   `topics/improbidade.md`, and the `nota` field of `Pet3240` in
   `jurisprudencia_index.yaml`. Effort: ~30 min.
 
-## Statute catalog — laws cited but not yet apelido'd
+## Statute catalog — prose mentions to sweep
 
-These laws are cited in topical files but don't have apelidos in
-`leis_index.yaml`. Topical files use prose mentions (e.g., "LC 101/00
-(LRF)") because the resolver can't reach them yet. Cataloging unlocks
-backtick-form citations.
+These laws are cataloged (apelido exists, `cite.py` resolves) but
+topical files still use prose mentions that the audit pass (rule 9)
+should convert:
 
-- **LRF — LC 101/2000.** Cited heavily in
-  `topics/contas-municipais.md` §5, `topics/federalismo-fiscal.md`,
-  `topics/improbidade.md` §4. Apelido should be `LRF`. Required steps:
-  (a) ingest into `artigos.db` via `tools/leis_artigos/build.py`;
-  (b) add entry to `leis_index.yaml`; (c) sweep prose mentions in
-  topical files to backtick form. Effort: ~1 hour (the ingestion is
-  the slow part).
+- **LRF** — already ingested. Prose mentions remain in
+  `topics/contas-municipais.md`, `topics/federalismo-fiscal.md`,
+  `topics/improbidade.md`.
+- **CF** — newly ingested (2026-04-16). All topical files use prose
+  CF references; audit pass should convert where `cite.py` resolves.
 
 ## Topical files — content gaps flagged inline
 

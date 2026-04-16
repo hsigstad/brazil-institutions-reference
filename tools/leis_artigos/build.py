@@ -231,6 +231,7 @@ TIPO_TO_PREFIX = {
     'Decreto-Lei': 'DL',
     'Decreto': 'D',
     'Emenda Constitucional': 'EC',
+    'Constituição': 'CF',
 }
 
 
@@ -280,9 +281,15 @@ def resolve_leaves_to_rows(
     - The current version's vigente_desde = its annotation's lei date,
       vigente_ate = NULL (or the date of any later revision).
     """
-    original_fonte = f'Lei nº {numero_lei[:-3]}.{numero_lei[-3:]}, de {ano_lei}' \
-        if len(numero_lei) >= 4 else f'Lei nº {numero_lei}, de {ano_lei}'
-    original_fonte_id = f'L{numero_lei}-{ano_lei}'
+    if apelido == 'CF':
+        original_fonte = 'Constituição da República Federativa do Brasil de 1988'
+        original_fonte_id = 'CF-1988'
+    elif len(numero_lei) >= 4:
+        original_fonte = f'Lei nº {numero_lei[:-3]}.{numero_lei[-3:]}, de {ano_lei}'
+        original_fonte_id = f'L{numero_lei}-{ano_lei}'
+    else:
+        original_fonte = f'Lei nº {numero_lei}, de {ano_lei}'
+        original_fonte_id = f'L{numero_lei}-{ano_lei}'
 
     def date_for(ann) -> Optional[str]:
         if not ann:
@@ -431,6 +438,8 @@ LAW_CATALOG = [
     ('L8666',   '8666',  '1993', 247,  'lei'),
     ('L14133',  '14133', '2021', 2607, 'lei'),
     ('LE',      '9504',  '1997', 5450, 'lei'),
+    # Constitution
+    ('CF',      '91',    '1988', 1,    'constituicao', '1988-10-05'),  # CF/1988
     # Constitutional / judicial framework
     ('LOMAN',   '35',    '1979', None, 'lei_complementar'),  # LC 35 — Lei Orgânica da Magistratura
     # Electoral
@@ -563,13 +572,19 @@ def main():
             sys.exit(f'apelido {args.apelido!r} not in catalog')
 
     for entry in catalog:
-        # Catalog entries can be (apelido, numero, ano, id) (4-tuple, legacy)
-        # or (apelido, numero, ano, id, tipo) (5-tuple, new format).
+        # Catalog entries can be:
+        #   (apelido, numero, ano, id)                     — 4-tuple, legacy
+        #   (apelido, numero, ano, id, tipo)               — 5-tuple
+        #   (apelido, numero, ano, id, tipo, original_date) — 6-tuple
         if len(entry) == 4:
             apelido, numero, ano, planalto_id = entry
             tipo = 'lei'
-        else:
+            date_override = None
+        elif len(entry) == 5:
             apelido, numero, ano, planalto_id, tipo = entry
+            date_override = None
+        else:
+            apelido, numero, ano, planalto_id, tipo, date_override = entry
 
         print(f'Processing {apelido} ({tipo} {numero}/{ano})...', file=sys.stderr)
 
@@ -586,6 +601,8 @@ def main():
             print(f'  not found in planalto DB (id={planalto_id})', file=sys.stderr)
             continue
         html, original_date = result
+        if date_override:
+            original_date = date_override
         leaves = parse_law_html(html)
         rows = resolve_leaves_to_rows(leaves, apelido, numero, ano, original_date, src_cur)
         rows, n_overrides = apply_overrides(rows, apelido)

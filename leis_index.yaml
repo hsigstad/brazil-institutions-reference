@@ -31,6 +31,7 @@ statutes:
     tipo: Constituição
     titulo: Constituição da República Federativa do Brasil
     ano: 1988
+    apelido: CF
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
     topics: [constitutional_framework, federalism, fundamental_rights]

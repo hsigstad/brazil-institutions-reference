@@ -405,7 +405,17 @@ When a topical file cites a previously-unseen STF case:
 Topical files are the substantive layer of this repository. The
 indices (siglas, glossario, jurisprudencia-stf, leis_index, etc.) tell
 a reader *where to look*; topical files tell them *what's there and
-why it matters*. The structure of a topical file is **emergent from
+why it matters*.
+
+**Audience.** The primary consumers of these files are LLM agents
+(Claude) assisting with research design. Human researchers read them
+too, but the writing should optimize for an agent that benefits from
+density and precision, not from narrative scaffolding, worked
+examples, or restating what a heading already conveys. Every sentence
+should carry information the reader can't derive from the heading,
+the citation, or the statute text itself.
+
+The structure of a topical file is **emergent from
 its substance**, not imposed by a template — a file has as many or as
 few sections as its topic justifies. The header is mandatory; the
 body is whatever the substance demands.
@@ -504,12 +514,12 @@ are subtle.
    leave a `<!-- TODO: consider adding X -->` comment and report it.
    Do not add the content yourself.
 
-3. **Preserve voice.**
+3. **Preserve voice; prefer terse.**
    Match the existing register: terse, citation-dense,
    research-design-framed, Portuguese where translation loses
    meaning. Do **not** rewrite content that already passes the
    rules just to use different wording. Reword only sections you
-   are restructuring or fixing.
+   are restructuring, fixing, or tightening per rule 8.
 
 4. **Apply the load-bearing test alongside the deletion test.**
    The deletion test catches generic procedure that doesn't belong
@@ -548,6 +558,40 @@ are subtle.
    Don't bundle multiple files. The user reviews each diff
    independently, and the cost of a bad audit should never exceed
    one file's worth of damage.
+
+8. **Tighten prose.**
+   The primary audience is an LLM agent, not a human reading for
+   narrative flow. Apply these cuts:
+   - **Preambles that restate the heading.** If a section heading
+     says "Contas de governo vs. contas de gestão", the first
+     sentence should not say "The distinction between contas de
+     governo and contas de gestão matters because..." — start with
+     the substance.
+   - **Worked examples of a single municipality / case history**
+     that illustrate a general point but don't carry a
+     research-design hook. One-line mentions are fine; multi-paragraph
+     narratives of how Pedralva/MG reformed its Lei Orgânica are not.
+   - **Statements of the obvious for the audience.** "For empirical
+     work, the legal rule is at best a noisy proxy" — an agent doing
+     research design already knows this.
+   - **Redundant restatement.** If a table and the surrounding prose
+     say the same thing, keep whichever is more compact and cut the
+     other.
+   - **External links that duplicate a cataloged citation.** If `LRF`
+     resolves via `cite.py`, a trailing planalto.gov.br link to the
+     same law is clutter.
+   The goal is to reduce each file by roughly 20–40% without losing
+   any load-bearing content. When in doubt whether something is
+   redundant or load-bearing, keep it — false negatives (leaving
+   clutter) are cheaper than false positives (deleting substance).
+
+9. **Convert prose statute references to backtick form.**
+   When a file mentions a statute in prose (e.g., "LRF Arts. 19–20")
+   and the backtick form resolves via `cite.py`, convert it
+   (e.g., `` `LRF.19` ``, `` `LRF.20` ``). Run `cite.py` to confirm
+   resolution before converting — do not guess. If the citation
+   doesn't resolve (e.g., CF articles, uncataloged laws), leave the
+   prose mention as-is.
 
 These guard rails are a contract: if an audit run produces output
 that breaks any of them, the audit failed and the diff should be
