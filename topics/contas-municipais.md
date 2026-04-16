@@ -38,8 +38,7 @@ Other relevant clauses:
 - `CF.31.§4`: creation of new municipal-level Tribunais de Contas is
   prohibited (existing TCMs grandfathered — São Paulo and Rio de
   Janeiro municipalities and a handful of others).
-<!-- TODO: verify — CF.31.§1 does not resolve in cite.py; leaving as prose -->
-- §1: external control is exercised by the câmara with TCE/TCM
+- `CF.31.§1`: external control is exercised by the câmara with TCE/TCM
   assistance.
 
 The contas de governo / contas de gestão distinction is rooted in

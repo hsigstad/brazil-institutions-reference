@@ -241,6 +241,22 @@ These are the starting points before going to individual source portals.
 - **TSE**: <https://www.tse.jus.br/sai>
 - **Diários da Justiça Eleitoral** are scraped from each TRE.
 
+### Comarcas and judicial organization
+
+- **Município→comarca mapping** (all states): available in
+  `Publicação - Impacts of Audits on Legal Outcomes/data/improbidade/municipio.csv`
+  (Dropbox). 5,855 municipalities, ~2,754 comarcas, with IBGE codes.
+  Snapshot date: check file metadata.
+- **TJSP historical comarca creation**: Decreto 9.775/1938 and
+  Lei 1.940/1952 PDFs in `Dropbox/org/media/judiciario/`. Cover the
+  earliest systematic comarca organization in São Paulo.
+- **TJRJ comarca history**: PDF in same directory.
+- **CNJ Justiça em Números**: annual comarca/vara counts per state are
+  published in the annexes. Cross-check against the municipality mapping
+  above for completeness.
+- **See**: [`topics/justica-estadual.md`](topics/justica-estadual.md) §3,
+  [`topics/organizacao-historica.md`](topics/organizacao-historica.md) §4.
+
 ---
 
 ## Procurement

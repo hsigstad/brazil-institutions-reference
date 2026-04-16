@@ -31,13 +31,13 @@ apelido in `leis_index.yaml`. Adding them enables backtick citations.
 
 - ~~**Lei 13.467/2017**~~ (Reforma Trabalhista) — added as `LRT`
   (2026-04-16).
-- **Lei 14.208/2021** (Federações partidárias) — referenced in
-  `topics/partidos-e-sistema-eleitoral.md`.
-- **DL 201/1967** (Crimes de responsabilidade de prefeitos) —
-  referenced in `topics/processo-penal.md`.
-- **Lei 10.628/2002** (foro para improbidade, declared unconstitutional
-  by `ADI2797`) — referenced in `topics/procedimentos-legais.md`.
-- **Lei 11.798/2008** (CJF) — referenced in `topics/justica-federal.md`.
+- ~~**Lei 14.208/2021**~~ (Federações partidárias) — added as `LFED`
+  (2026-04-16).
+- ~~**DL 201/1967**~~ (Crimes de prefeitos) — added as `DL201`
+  (2026-04-16).
+- ~~**Lei 10.628/2002**~~ (foro improbidade, inconstitucional) — added
+  as `L10628` (2026-04-16).
+- ~~**Lei 11.798/2008**~~ (CJF) — added as `LCJF` (2026-04-16).
 
 Previously listed sweep items (LRF, CF, CP, CLT, CTN, EC citations)
 were completed by the 2026-04-16 audit pass.
@@ -63,8 +63,8 @@ were completed by the 2026-04-16 audit pass.
   Flagged with inline TODO comments. Effort: ~1 hour per item if
   data sources exist.
 
-- **`topics/contas-municipais.md`** — `CF.31.§1` does not resolve via
-  `cite.py`; may need DB ingestion or path-convention fix.
+- ~~`CF.31.§1`~~ — resolved. Issue was missing DB, not a parse
+  problem. Converted to backtick form (2026-04-16).
 
 ## Audit progress
 

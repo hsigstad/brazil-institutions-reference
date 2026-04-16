@@ -952,6 +952,50 @@ statutes:
     topics: [fiscal_responsibility, transparency]
     discussed_in: [topics/federalismo-fiscal.md]
 
+  lei_14208_2021:
+    tipo: Lei
+    numero: "14208"
+    ano: 2021
+    titulo: Federações partidárias
+    apelido: LFED
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14208.htm
+    topics: [electoral_law, parties]
+    discussed_in: [topics/partidos-e-sistema-eleitoral.md]
+
+  dl_201_1967:
+    tipo: Decreto-Lei
+    numero: "201"
+    ano: 1967
+    titulo: Crimes de responsabilidade de prefeitos e vereadores
+    apelido: DL201
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del0201.htm
+    topics: [criminal_law, municipal_governance]
+    discussed_in: [topics/processo-penal.md]
+
+  lei_10628_2002:
+    tipo: Lei
+    numero: "10628"
+    ano: 2002
+    titulo: Foro por prerrogativa de função em improbidade (declarada inconstitucional por ADI 2797)
+    apelido: L10628
+    status: parcialmente_declarada_inconstitucional
+    url: https://www.planalto.gov.br/ccivil_03/leis/2002/l10628.htm
+    topics: [improbidade, foro_privilegiado]
+    discussed_in: [topics/procedimentos-legais.md, topics/improbidade.md]
+
+  lei_11798_2008:
+    tipo: Lei
+    numero: "11798"
+    ano: 2008
+    titulo: Conselho da Justiça Federal (CJF)
+    apelido: LCJF
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11798.htm
+    topics: [judicial_organization]
+    discussed_in: [topics/justica-federal.md]
+
 # Topic glossary (controlled vocabulary used in the topics field above)
 # Useful for grep-based filtering: e.g., "topics:.*federalism" finds
 # all federalism-related statutes.
