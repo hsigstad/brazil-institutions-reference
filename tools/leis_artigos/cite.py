@@ -796,42 +796,82 @@ def _print_row(row: sqlite3.Row, full: bool = False) -> None:
 # Annotations (TSE Código Eleitoral Anotado)
 # ---------------------------------------------------------------------------
 
-_DEFAULT_ANNOT_DB = Path(__file__).resolve().parent.parent / "tse_ce_anotado" / "ce_anotado.db"
+_DEFAULT_CE_ANNOT_DB = Path(__file__).resolve().parent.parent / "tse_ce_anotado" / "ce_anotado.db"
+_DEFAULT_CF_ANNOT_DB = Path(__file__).resolve().parent.parent / "stf_constituicao" / "cf_stf_anotada.db"
 
 
 def _show_annotations(c, db_path: Optional[Path] = None) -> None:
-    """Show TSE jurisprudence annotations for a CE article."""
-    db = db_path or _DEFAULT_ANNOT_DB
-    if not db.exists():
-        print(f"  (annotations DB not found at {db})", file=sys.stderr)
-        return
-
+    """Show jurisprudence annotations for CE or CF articles."""
     import sqlite3 as _sql
-    con = _sql.connect(str(db))
-    con.row_factory = _sql.Row
-    rows = con.execute(
-        "SELECT tipo, referencia, texto FROM anotacao "
-        "WHERE lei = ? AND artigo = ? ORDER BY id",
-        (c.identifier, c.artigo),
-    ).fetchall()
-    con.close()
 
-    if not rows:
-        return
+    if c.identifier == "CE":
+        db = db_path or _DEFAULT_CE_ANNOT_DB
+        if not db.exists():
+            print(f"  (CE annotations DB not found at {db})", file=sys.stderr)
+            return
 
-    print(f"\n  --- TSE annotations for CE Art. {c.artigo} ({len(rows)} entries) ---")
-    for row in rows:
-        tipo = row["tipo"]
-        ref = row["referencia"]
-        texto = row["texto"]
-        label = f"[{tipo}]"
-        if ref:
-            label = f"[{tipo}: {ref}]"
-        # Truncate long texts for display
-        if len(texto) > 200:
-            texto = texto[:197] + "..."
-        print(f"  {label}")
-        print(f"    {texto}")
+        con = _sql.connect(str(db))
+        con.row_factory = _sql.Row
+        rows = con.execute(
+            "SELECT tipo, referencia, texto FROM anotacao "
+            "WHERE lei = ? AND artigo = ? ORDER BY id",
+            (c.identifier, c.artigo),
+        ).fetchall()
+        con.close()
+
+        if not rows:
+            return
+
+        print(f"\n  --- TSE annotations for CE Art. {c.artigo} ({len(rows)} entries) ---")
+        for row in rows:
+            tipo = row["tipo"]
+            ref = row["referencia"]
+            texto = row["texto"]
+            label = f"[{tipo}]"
+            if ref:
+                label = f"[{tipo}: {ref}]"
+            if len(texto) > 200:
+                texto = texto[:197] + "..."
+            print(f"  {label}")
+            print(f"    {texto}")
+
+    elif c.identifier == "CF":
+        db = db_path or _DEFAULT_CF_ANNOT_DB
+        if not db.exists():
+            print(f"  (CF annotations DB not found at {db})", file=sys.stderr)
+            return
+
+        con = _sql.connect(str(db))
+        con.row_factory = _sql.Row
+        rows = con.execute(
+            "SELECT tipo, caso, relator, turma, texto FROM anotacao "
+            "WHERE artigo = ? ORDER BY id",
+            (c.artigo,),
+        ).fetchall()
+        con.close()
+
+        if not rows:
+            return
+
+        print(f"\n  --- STF annotations for CF Art. {c.artigo} ({len(rows)} entries) ---")
+        for row in rows:
+            tipo = row["tipo"]
+            caso = row["caso"]
+            relator = row["relator"]
+            turma = row["turma"]
+            texto = row["texto"]
+            label = f"[{tipo}]"
+            if caso:
+                parts = [caso]
+                if relator:
+                    parts.append(f"rel. {relator}")
+                if turma:
+                    parts.append(turma)
+                label = f"[{', '.join(parts)}]"
+            if len(texto) > 200:
+                texto = texto[:197] + "..."
+            print(f"  {label}")
+            print(f"    {texto}")
 
 
 def main() -> int:
@@ -972,13 +1012,13 @@ def main() -> int:
     except FileNotFoundError as e:
         print(str(e), file=sys.stderr)
         # Even if the DB is missing, try annotations if requested
-        if args.annotations and c.identifier == "CE" and c.artigo:
+        if args.annotations and c.identifier in ("CE", "CF") and c.artigo:
             _show_annotations(c, args.annotations_db)
         return 2
 
     if not rows:
         print(f"No rows match {c}", file=sys.stderr)
-        if args.annotations and c.identifier == "CE" and c.artigo:
+        if args.annotations and c.identifier in ("CE", "CF") and c.artigo:
             _show_annotations(c, args.annotations_db)
         return 3
 
@@ -986,7 +1026,7 @@ def main() -> int:
         _print_row(row, full=args.full)
 
     # Show annotations if requested
-    if args.annotations and c.identifier == "CE" and c.artigo:
+    if args.annotations and c.identifier in ("CE", "CF") and c.artigo:
         _show_annotations(c, args.annotations_db)
 
     return 0
