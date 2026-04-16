@@ -571,6 +571,61 @@ statutes:
       - "Art. 6 (direitos básicos do consumidor)"
     discussed_in: []
 
+  lei_8080_1990:
+    tipo: Lei
+    numero: "8080"
+    ano: 1990
+    apelido: LSUS
+    titulo: Lei Orgânica do SUS
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+    topics: [health, SUS]
+    key_articles:
+      - "Art. 6 (campo de atuação do SUS)"
+      - "Art. 19-M a 19-U (assistência terapêutica / CONITEC)"
+    discussed_in: []
+
+  lei_8906_1994:
+    tipo: Lei
+    numero: "8906"
+    ano: 1994
+    apelido: EOAB
+    titulo: Estatuto da Advocacia e da OAB
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm
+    topics: [legal_profession, access_to_justice]
+    discussed_in: []
+
+  lei_9099_1995:
+    tipo: Lei
+    numero: "9099"
+    ano: 1995
+    apelido: LJE
+    titulo: Lei dos Juizados Especiais
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9099.htm
+    topics: [special_courts, access_to_justice]
+    key_articles:
+      - "Art. 3 (competência cível)"
+      - "Art. 9 (dispensa de advogado até 20 SM)"
+      - "Art. 41 (competência criminal)"
+    discussed_in: []
+
+  lc_141_2012:
+    tipo: Lei Complementar
+    numero: "141"
+    ano: 2012
+    apelido: LC141
+    titulo: Gasto mínimo em saúde (regulamenta EC 29/2000)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm
+    topics: [health, fiscal_federalism]
+    key_articles:
+      - "Art. 5 (mínimo federal — variação nominal do PIB)"
+      - "Art. 6 (mínimo estadual — 12% da receita)"
+      - "Art. 7 (mínimo municipal — 15% da receita)"
+    discussed_in: []
+
   lei_12414_2011:
     tipo: Lei
     numero: "12414"
@@ -584,6 +639,18 @@ statutes:
       - "Art. 5 (direitos do cadastrado)"
       - "Art. 7 (fontes autorizadas)"
     reformed_by: [lc_166_2019]
+    discussed_in: []
+
+  lc_166_2019:
+    tipo: Lei Complementar
+    numero: "166"
+    ano: 2019
+    apelido: LC166
+    titulo: Reforma do Cadastro Positivo (opt-in → automático)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp166.htm
+    topics: [consumer_protection, credit_registries]
+    reforms: [lei_12414_2011]
     discussed_in: []
 
   lei_13709_2018:

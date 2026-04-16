@@ -485,9 +485,17 @@ LAW_CATALOG = [
     ('LAP',     '4717',  '1965', 10390, 'lei'),               # Ação Popular
     # Antitrust
     ('LCADE',   '12529', '2011', None, 'lei'),                # Lei de Defesa da Concorrência
-    # Consumer
+    # Consumer / credit
     ('CDC',     '8078',  '1990', 2820, 'lei'),                # Código de Defesa do Consumidor
     ('L12414',  '12414', '2011', 4724, 'lei'),                # Cadastro Positivo
+    ('LC166',   '166',   '2019', 219,  'lei_complementar'),   # Cadastro Positivo reform
+    # Health
+    ('LSUS',    '8080',  '1990', 2771, 'lei'),                # Lei Orgânica do SUS
+    ('LC141',   '141',   '2012', 95,   'lei_complementar'),   # Gasto mínimo em saúde
+    # Procedural / special courts
+    ('LJE',     '9099',  '1995', 2304, 'lei'),                # Juizados Especiais
+    # Legal profession
+    ('EOAB',    '8906',  '1994', 1430, 'lei'),                # Estatuto da OAB
     # Other
     ('LGPD',    '13709', '2018', None, 'lei'),                # LGPD
     ('L13019',  '13019', '2014', None, 'lei'),                # MROSC
