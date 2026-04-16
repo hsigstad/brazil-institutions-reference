@@ -381,11 +381,14 @@ on the same pattern.
   [`sumulas_stj.yaml`](sumulas_stj.yaml) and resolved via `SSTJ<number>`
   (e.g., `SSTJ359`, `SSTJ385`, `SSTJ404`). Currently 3 entries. Not
   bulk-collected — add when a topical or project file cites one.
-- **TST and ordinary STF súmulas** are *not* yet collected.
-  When a topical file cites one (e.g., Súmula TST 331),
-  add an entry to a future `sumulas_<court>.yaml` by hand.
-  The reference repo's job is making *cited* things resolvable,
-  not mirroring all of Brazilian jurisprudence.
+- **TST súmulas** are bulk-collected in
+  [`sumulas_tst.yaml`](sumulas_tst.yaml) and resolved via `STST<number>`
+  (e.g., `STST331`, `STST1`). All 463 numbered TST súmulas present
+  (scrape of 2026-04-16 via Playwright). 117 vigente, 161 cancelada,
+  185 alterada.
+- **Ordinary STF súmulas** are *not* yet collected.
+  When a topical file cites one, add an entry to a future
+  `sumulas_stf.yaml` by hand.
 - When TSE cancels or revokes a súmula, re-run the scraper — TSE marks
   cancellations directly on the listing page, so the status flips
   automatically. Do not delete the entry — superseded súmulas remain
@@ -427,6 +430,45 @@ cited by a topical file or project-level `institutions.md`.
   not bulk-collect — STJ has ~700 súmulas and most are irrelevant.
 - When adding: copy the verbatim enunciado from the STJ portal, set
   status, and include the approval date and a fonte URL.
+
+## Citing Súmulas TST — backtick form for STST
+
+TST (Tribunal Superior do Trabalho) súmulas are bulk-collected in
+[`sumulas_tst.yaml`](sumulas_tst.yaml) and resolved via `STST<number>`.
+TST súmulas are non-binding but operationally authoritative in the
+Justiça do Trabalho — labor courts treat them as the working rule.
+
+### Form
+
+```
+`STST<number>`
+```
+
+```
+`STST331`   ← terceirização (the most-cited labor súmula)
+`STST1`     ← prazo judicial (sexta-feira)
+`STST443`   ← dispensa discriminatória
+`STST2`     ← (cancelada — verifique status antes de citar)
+```
+
+### What lookup returns
+
+- **numero** — the TST súmula number
+- **titulo** — short title
+- **enunciado** — the verbatim text
+- **status** — `vigente`, `cancelada`, `alterada`, `convertida`,
+  `incorporada`
+- **publicacao** — publication date
+- **historico** — amendment history
+- **precedentes** — count of underlying precedente decisions
+
+### Coverage and policy
+
+- All **463** numbered TST súmulas present (scrape of 2026-04-16 via
+  Playwright). 117 vigente, 161 cancelada, 185 alterada.
+- Scraper uses Playwright (browser automation) because TST's nginx
+  blocks non-browser API access. Re-run with
+  `python3 tools/tst_scraper/scraper.py all`.
 
 ### When to add a new case
 

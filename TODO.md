@@ -72,9 +72,8 @@ Both integrated with `cite.py --annotations`.
 - **STJ** — all endpoints return 403; would need browser automation
   (Playwright/Selenium) to access the jurisprudence search at
   scon.stj.jus.br. Not worth the fragility for now.
-- **TST** — SPA at jurisprudencia.tst.jus.br has a REST API
-  (`/rest/pesquisa-textual`) but nginx blocks non-browser POSTs.
-  Same browser-automation requirement as STJ.
+- ~~**TST**~~ — completed (2026-04-16) via Playwright. 463 súmulas
+  in `sumulas_tst.yaml`. Resolved via `STST<number>` in cite.py.
 - No free annotated CPC/CPP/CP/CLT/LIA exists in any scrapeable form
 
 ## Audit progress
