@@ -53,6 +53,30 @@ were completed by the 2026-04-16 audit pass.
 - ~~`CF.31.§1`~~ — resolved. Issue was missing DB, not a parse
   problem. Converted to backtick form (2026-04-16).
 
+## Operational-reality baselines — needs data access
+
+These items require running queries against research datasets in a
+non-sandboxed session. Add results to the relevant topical files with
+source citations.
+
+- [ ] **Improbidade base rates** — from the audit-paper improbidade
+  dataset: filing rates per year, MP vs entity filing share (pre-2021),
+  conviction rates, average duration, sanction distribution by LIA
+  category (Art. 9/10/11). Add to `topics/improbidade.md`.
+- [ ] **TCE rejection rates** — from TCE-SP Audesp or contas data:
+  what fraction of parecer prévio recommendations are rejection vs
+  approval? How often does the câmara override? Add to
+  `topics/contas-municipais.md`.
+- [ ] **TJSP case-type composition** — from ESAJ data: what fraction
+  of TJSP first-instance cases are execução fiscal, fazenda pública,
+  improbidade, family, criminal? Add to `topics/justica-estadual.md`.
+- [ ] **Labor court filing drop** — from TST data: quantify the
+  post-Nov-2017 filing drop and the post-ADI-5766 partial recovery.
+  Add to `topics/justica-trabalho.md`.
+- [ ] **CNMP report extraction** — download latest *MP: Um Retrato*
+  from CNMP portal; extract IC counts, ACP counts, TAC counts by
+  state. Add to `topics/ministerio-publico.md`.
+
 ## Annotated legislation — scraping
 
 ~~**TSE Código Eleitoral Anotado**~~ — completed (2026-04-16).
