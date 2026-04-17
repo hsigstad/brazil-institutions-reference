@@ -42,12 +42,14 @@ from pathlib import Path
 from typing import List, Optional
 
 # ---------------------------------------------------------------------------
-# Default DB location. Override with --db or ARTIGOS_DB env var.
+# Default DB location. Override with --db or INSTITUTIONS_DB env var.
+# Consolidated DB bundles statute text (artigo, amendment) + annotations
+# (cf_stf_anotacao, ce_tse_anotacao). Built by build_institutions.py.
 # ---------------------------------------------------------------------------
 DEFAULT_DB = Path(
     os.environ.get(
-        "ARTIGOS_DB",
-        Path.home() / "research" / "data" / "lei" / "artigos.db"
+        "INSTITUTIONS_DB",
+        Path.home() / "research" / "data" / "institutions.db"
     )
 )
 
@@ -852,27 +854,23 @@ def _print_row(row: sqlite3.Row, full: bool = False) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Annotations (TSE Código Eleitoral Anotado)
+# Annotations (STF on CF, TSE on CE) — read from consolidated institutions.db
 # ---------------------------------------------------------------------------
 
-_DEFAULT_CE_ANNOT_DB = Path(__file__).resolve().parent.parent / "tse_ce_anotado" / "ce_anotado.db"
-_DEFAULT_CF_ANNOT_DB = Path(__file__).resolve().parent.parent / "stf_constituicao" / "cf_stf_anotada.db"
-
-
-def _show_annotations(c, db_path: Optional[Path] = None) -> None:
+def _show_annotations(c, db_path: Path) -> None:
     """Show jurisprudence annotations for CE or CF articles."""
     import sqlite3 as _sql
 
-    if c.identifier == "CE":
-        db = db_path or _DEFAULT_CE_ANNOT_DB
-        if not db.exists():
-            print(f"  (CE annotations DB not found at {db})", file=sys.stderr)
-            return
+    if not db_path.exists():
+        print(f"  (institutions DB not found at {db_path})", file=sys.stderr)
+        return
 
-        con = _sql.connect(str(db))
-        con.row_factory = _sql.Row
+    con = _sql.connect(str(db_path))
+    con.row_factory = _sql.Row
+
+    if c.identifier == "CE":
         rows = con.execute(
-            "SELECT tipo, referencia, texto FROM anotacao "
+            "SELECT tipo, referencia, texto FROM ce_tse_anotacao "
             "WHERE lei = ? AND artigo = ? ORDER BY id",
             (c.identifier, c.artigo),
         ).fetchall()
@@ -895,15 +893,8 @@ def _show_annotations(c, db_path: Optional[Path] = None) -> None:
             print(f"    {texto}")
 
     elif c.identifier == "CF":
-        db = db_path or _DEFAULT_CF_ANNOT_DB
-        if not db.exists():
-            print(f"  (CF annotations DB not found at {db})", file=sys.stderr)
-            return
-
-        con = _sql.connect(str(db))
-        con.row_factory = _sql.Row
         rows = con.execute(
-            "SELECT tipo, caso, relator, turma, texto FROM anotacao "
+            "SELECT tipo, caso, relator, turma, texto FROM cf_stf_anotacao "
             "WHERE artigo = ? ORDER BY id",
             (c.artigo,),
         ).fetchall()
@@ -969,13 +960,12 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     ap.add_argument("citation", nargs="?", help="Citation, with or without surrounding backticks.")
-    ap.add_argument("--db", type=Path, default=None, help=f"Path to artigos.db (default: {DEFAULT_DB})")
+    ap.add_argument("--db", type=Path, default=None,
+                    help=f"Path to institutions.db (default: {DEFAULT_DB})")
     ap.add_argument("--parse-only", action="store_true", help="Parse but don't query the DB.")
     ap.add_argument("--full", action="store_true", help="Show capítulo/seção/fonte metadata.")
     ap.add_argument("--annotations", action="store_true",
-                    help="Show TSE jurisprudence annotations (CE articles only; requires ce_anotado.db).")
-    ap.add_argument("--annotations-db", type=Path, default=None,
-                    help="Path to ce_anotado.db (default: ../tse_ce_anotado/ce_anotado.db)")
+                    help="Show STF/TSE jurisprudence annotations (CF or CE articles only).")
     ap.add_argument("--find-in", metavar="FILE", help="Find and parse all citations in a file.")
 
     args = ap.parse_args()
@@ -1085,13 +1075,13 @@ def main() -> int:
         print(str(e), file=sys.stderr)
         # Even if the DB is missing, try annotations if requested
         if args.annotations and c.identifier in ("CE", "CF") and c.artigo:
-            _show_annotations(c, args.annotations_db)
+            _show_annotations(c, args.db or DEFAULT_DB)
         return 2
 
     if not rows:
         print(f"No rows match {c}", file=sys.stderr)
         if args.annotations and c.identifier in ("CE", "CF") and c.artigo:
-            _show_annotations(c, args.annotations_db)
+            _show_annotations(c, args.db or DEFAULT_DB)
         return 3
 
     for row in rows:
@@ -1099,7 +1089,7 @@ def main() -> int:
 
     # Show annotations if requested
     if args.annotations and c.identifier in ("CE", "CF") and c.artigo:
-        _show_annotations(c, args.annotations_db)
+        _show_annotations(c, args.db or DEFAULT_DB)
 
     return 0
 

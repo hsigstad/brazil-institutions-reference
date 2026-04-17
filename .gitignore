@@ -8,9 +8,12 @@ __pycache__/
 *~
 .*.swp
 
-# Local override databases (these are build artifacts, not source)
+# Build-artifact databases. Not shipped with the repo — users download
+# the consolidated institutions.db from the GitHub release.
 tools/leis_artigos/*.db
 tools/planalto_scraper/*.db
+tools/stf_constituicao/*.db
+tools/tse_ce_anotado/*.db
 *.pdf
 
 # Claude Code local state
