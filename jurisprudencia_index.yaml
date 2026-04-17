@@ -397,6 +397,27 @@ cases:
     supera: []
     superado_por: null
 
+  RE593727:
+    tipo: repercussao_geral
+    numero: 184
+    processo: RE 593.727
+    aliases: [Tema184]
+    decidido: 2015-05-14
+    tema: poder de investigação criminal do Ministério Público
+    status: vigente
+    holding_short: >
+      MP tem legitimidade para promover, por autoridade própria,
+      investigações de natureza penal, desde que respeitados os
+      direitos e garantias do investigado e observada a reserva de
+      jurisdição para medidas restritivas. Operacionalizado por
+      Resolução CNMP 181/2017 (PIC — Procedimento Investigatório
+      Criminal).
+    discussed_in: [topics/ministerio-publico.md, topics/policia-federal.md, jurisprudencia-stf.md]
+    related_leis: [CF, CPP]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=184
+
   # ---------------------------------------------------------------------
   # 7. NTEP / acidentes de trabalho
   # ---------------------------------------------------------------------

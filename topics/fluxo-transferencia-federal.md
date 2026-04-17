@@ -99,8 +99,8 @@ competitive bidding (`CF.37.XXI`).
   R$59,906.02 for goods/services (`L14133.75.II`, annually
   updated).
 - **Pregao** (reverse auction): dominant modality for common
-  goods/services since Lei 10.520/2002, now absorbed into
-  `L14133`. Electronic pregao mandatory for federal resources.
+  goods/services since `LP`, now absorbed into `L14133`. Electronic
+  pregao mandatory for federal resources.
 
 Procurement irregularities -- directed dispensas, fractioned
 purchases to stay below thresholds, bid rigging -- are the

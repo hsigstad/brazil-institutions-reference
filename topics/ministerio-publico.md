@@ -21,11 +21,11 @@ ajustamento de conduta, ação civil pública, ACP, GAECO, CAOs, promotor
 natural, Ficha Limpa MP, vitaliciedade, LOMP, LONMP.
 
 **Snapshot as of 2026**: constitutional structure is stable
-(CF 127–130). Lei Complementar 75/1993 (LC MPU) governs federal MP;
-Lei 8.625/1993 (LONMP) governs state MPs. Lei 14.230/2021 made the MP
+(`CF.127`–`CF.130`). `LCMP` (LC 75/1993) governs federal MP;
+`LOMP` (Lei 8.625/1993) governs state MPs. `L14230-2021` made the MP
 the exclusive holder of standing in improbidade actions (see
 `improbidade.md`). CNMP composition and rules updated periodically by
-constitutional amendment (EC 45/2004 created it).
+constitutional amendment (`EC45-2004` created it).
 
 ---
 
@@ -56,7 +56,7 @@ Key principles (`CF.127.§1`):
 - **Criminal prosecution** (`CF.129.I`): exclusive dominus litis of the
   public criminal action.
 - **Civil defense of the public patrimony and social interests**
-  (`CF.129.III`): via ação civil pública (Lei 7.347/1985) and `LIA`.
+  (`CF.129.III`): via ação civil pública (`LACP`) and `LIA`.
 - **Defense of indigenous, minority, consumer, environment, cultural
   heritage rights** (`CF.129.III`, `CF.129.V`).
 - **Inquérito civil**: exclusive investigative instrument for non-criminal
@@ -91,7 +91,7 @@ Members are forbidden from:
 
 ### Ministério Público da União (MPU)
 
-Governed by **LC 75/1993** (Lei Orgânica do MPU, "LOMPU"). Comprises
+Governed by `LCMP` (LC 75/1993, Lei Orgânica do MPU). Comprises
 four specialized branches:
 
 - **MPF — Ministério Público Federal**: federal criminal and civil cases,
@@ -118,7 +118,7 @@ a whole.
 
 ### Ministério Público Estadual (MPE)
 
-Governed by **Lei 8.625/1993** (Lei Orgânica Nacional do MP, "LONMP")
+Governed by `LOMP` (Lei 8.625/1993, Lei Orgânica Nacional do MP)
 and each state's own Lei Orgânica.
 
 - Each state has its own MPE with its own budget, career, and internal
@@ -221,6 +221,28 @@ training to the promotores who hold cases in the field.
 - Can be shelved (*arquivamento*) with internal review by the *Conselho
   Superior do MP* of the respective body.
 
+### PIC — Procedimento Investigatório Criminal
+
+MP-led criminal investigation, the post-2015 counterpart of the
+inquérito civil for criminal matters.
+
+- **Constitutional/jurisprudential basis**: STF `RE593727` (Tema 184,
+  decided 14 May 2015) recognized MP's autonomous power to conduct
+  criminal investigations, ending a long-running dispute with the
+  delegados' lobby (which argued investigation was exclusive to the
+  polícia judiciária).
+- **Procedural rules**: Resolução CNMP 181/2017.
+- **Practical role**: the PIC is a partial substitute for the
+  PF-led inquérito policial — MP can conduct criminal investigation
+  directly when strategic, when PF is slow, or when there is
+  institutional conflict. Intrusive measures (interceptação,
+  quebras de sigilo) still require judicial authorization under
+  reserva de jurisdição.
+- **Institutional effect**: reduces PF's former monopoly on criminal
+  investigation; the PF–MP triangular doctrine (see
+  `policia-federal.md` §4) is now a division of labor rather than a
+  strict dependency.
+
 ### Notícia de Fato (NF)
 
 - Initial intake of a report of irregularity. Must be processed within
@@ -229,7 +251,7 @@ training to the promotores who hold cases in the field.
 
 ### TAC — Termo de Ajustamento de Conduta
 
-- **Legal basis**: Lei 7.347/1985 Art. 5 §6 (Lei da ACP), plus sectoral
+- **Legal basis**: `LACP` Art. 5 §6, plus sectoral
   statutes.
 - Negotiated agreement between the MP and a violator, in which the
   violator commits to correct conduct, pay compensation, or perform
@@ -246,15 +268,15 @@ improbidade defendant, subject to judicial homologation. See
 ### Acordo de não persecução penal (criminal)
 
 - **Legal basis**: `CPP.28-A`, added by the *Pacote Anticrime*
-  (Lei 13.964/2019).
+  (`LPC`).
 - Alternative to criminal prosecution for offenses without violence,
   maximum penalty < 4 years, first-time offender conditions. Subject to
   judicial homologation.
 
 ### Colaboração premiada
 
-- Formal cooperation agreements in organized-crime cases under Lei
-  12.850/2013 Art. 4. See `anticorrupcao-penal.md` for details.
+- Formal cooperation agreements in organized-crime cases under
+  `LCO.4`. See `anticorrupcao-penal.md` for details.
 
 ### Requisições
 
@@ -266,7 +288,7 @@ improbidade defendant, subject to judicial homologation. See
 
 ## 6. Civil actions led by the MP
 
-### Ação Civil Pública (ACP) — Lei 7.347/1985
+### Ação Civil Pública (ACP) — `LACP`
 
 - Instrument for collective-interest litigation: environment, consumer,
   public patrimony, historical/cultural heritage.
@@ -283,7 +305,7 @@ improbidade defendant, subject to judicial homologation. See
 
 ### Other instruments
 
-- **Ação popular** (Lei 4.717/1965): any citizen may file; MP intervenes
+- **Ação popular** (`LAP`): any citizen may file; MP intervenes
   as fiscal da lei.
 - **Ação declaratória, mandado de segurança coletivo, ação rescisória**
   in relevant cases.
@@ -337,6 +359,30 @@ No public MP-SP report systematically documents investigation-to-prosecution
 rates. Research that uses the MP caseload as an outcome must address this
 selection explicitly.
 
+### Attrition — improbidade durability
+
+Even among cases that become ACPs, the attrition to *trânsito em
+julgado* is severe. A well-cited MP-SP snapshot: of ~572 improbidade
+suits filed between 1992 and 2008, fewer than 10 had reached trânsito
+em julgado (Arantes 2011, Ch. 8). This reflects the combined effect
+of first-instance delay, TJ appellate review, and STJ/STF recursos —
+not any single bottleneck. Pre-`L14230-2021` data; the post-reform
+prescription clock (8 years, `LIA.23 from:L14230-2021`) may tighten
+this profile but has not yet generated a comparable decade-scale
+dataset.
+
+### Institutional self-conception
+
+MP prosecutorial activism in the post-1988 constitutional architecture
+has been characterized as "voluntarismo político" (Arantes 2002,
+2007): a self-conception as protector of diffuse rights against
+elected branches treated with pessimism, combined with strong
+functional independence. This framing helps explain the MP's
+historical pivot to improbidade as a preferred instrument (relative
+to European public prosecutors who stay within the criminal track),
+and the post-Lava Jato partial pivot back toward criminal prosecution
+through the PIC.
+
 ---
 
 ## 9. Key statutes
@@ -345,14 +391,14 @@ selection explicitly.
 |---|---|
 | `CF.127`–`CF.130` | Constitutional framework of MP |
 | `CF.130-A` | CNMP |
-| LC 75/1993 | Lei Orgânica do MPU (federal MP) |
-| Lei 8.625/1993 | Lei Orgânica Nacional do MP (state MPs) |
-| Lei 7.347/1985 | Ação Civil Pública |
+| `LCMP` (LC 75/1993) | Lei Orgânica do MPU (federal MP) |
+| `LOMP` (Lei 8.625/1993) | Lei Orgânica Nacional do MP (state MPs) |
+| `LACP` (Lei 7.347/1985) | Ação Civil Pública |
 | `LIA` (+ `L14230-2021`) | Improbidade administrativa |
-| Lei 12.850/2013 | Organização criminosa, colaboração premiada |
-| Lei 13.964/2019 (Pacote Anticrime) | `CPP.28-A` (ANPP criminal) |
+| `LCO` (Lei 12.850/2013) | Organização criminosa, colaboração premiada |
+| `LPC` (Lei 13.964/2019 — Pacote Anticrime) | `CPP.28-A` (ANPP criminal) |
 
-**Sources**: LC 75/1993; Lei 8.625/1993.
+**Sources**: `LCMP`; `LOMP`.
 
 ---
 

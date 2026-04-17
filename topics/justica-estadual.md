@@ -59,7 +59,7 @@ Each TJ has broadly the same architecture, though nomenclature and
 size vary:
 
 - **Orgao Especial**: mandatory for TJs with >25 desembargadores
-  (CF Art. 93 XI). Exercises plenary functions (administrative,
+  (`CF.93.XI`). Exercises plenary functions (administrative,
   disciplinary, constitutional control). Composed of 25 members: half
   by seniority, half by election.
 - **Camaras / Turmas**: panels that hear appeals, typically grouped

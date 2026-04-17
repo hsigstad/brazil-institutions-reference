@@ -31,22 +31,42 @@ see `improbidade.md`. For criminal statutes, see
 Irregularities surface through four main channels, each with
 different selection profiles:
 
-- **CGU random municipal audit (PFS).** Federal auditors drawn by
-  public lottery audit municipal use of federal transfers. 40
-  lotteries ran 2003--2015, covering ~2,000 municipalities. Selection
-  is genuinely random conditional on population strata, which is why
-  the program anchors a large causal-inference literature
-  (Ferraz--Finan 2008, 2011; Avis--Ferraz--Finan 2018). Audit
-  reports enumerate irregularidades classified by severity; these
+- **CGU municipal audits.** Federal auditors audit municipal use of
+  federal transfers. 2003--2015: the PFS (*Programa de Fiscalizacao
+  por Sorteios*) drew ~2,000 municipalities by public lottery across
+  40 rounds -- genuinely random conditional on population strata,
+  which is why the program anchors a large causal-inference literature
+  (Ferraz--Finan 2008, 2011; Avis--Ferraz--Finan 2018). Post-2015:
+  reformulated as the *Programa de Fiscalizacao em Entes Federativos*
+  with risk-based / thematic selection -- still the primary federal
+  detection channel for municipal irregularities, but no longer random.
+  Audit reports enumerate irregularidades classified by severity; these
   feed into MP investigations and TCU/TCE proceedings. See
   `cgu-controle-interno.md` SS3.
 
-- **TCE automated monitoring.** TCE-SP's Audesp system ingests
-  municipal accounting data in real time and flags anomalies
-  (expenditure spikes, missing documentation, LRF limit breaches).
-  Other TCEs have lighter electronic systems. Audesp flags can
-  trigger *inspeções extraordinarias* or feed the relator's analysis
+- **TCE oversight (multiple channels).** TCE detection is not limited
+  to the annual contas review. TCE receives *representacoes* and
+  *denuncias* that trigger processos on specific acts (contracts,
+  dispensas, payments); conducts *inspecoes* and *auditorias* on
+  selected programs; and runs automated monitoring. TCE-SP's Audesp
+  system ingests municipal accounting and procurement data in real time
+  and flags anomalies (expenditure spikes, missing documentation, LRF
+  limit breaches, bid-rigging patterns); other TCEs have lighter
+  electronic systems. Flags can trigger *inspecoes extraordinarias*,
+  standalone processos on a single act, or feed the relator's analysis
   of the annual accounts. See `tribunais-contas.md`.
+
+- **TCU audits of federal money in municipalities.** TCU conducts its
+  own thematic audits of federal programs delivered through
+  municipalities (SUS, FUNDEB, convenios, emendas parlamentares). Its
+  *tomada de contas especial* (TCE -- same acronym as Tribunal de
+  Contas do Estado, different instrument) is triggered when a federal
+  convenio manager or CGU audit identifies irregularities in federal
+  transfers; TCU judges the responsible administrator and can impose
+  ressarcimento, multas, and *declaracao de inidoneidade* for
+  contracting. TCU findings feed into MP improbidade and criminal
+  proceedings. See `tribunais-contas.md` and `cgu-controle-interno.md`
+  on the TCU--CGU division of labor.
 
 - **Citizen complaints (ouvidoria / denuncia).** Citizens file
   complaints with the camara, the MP ouvidoria, the CGU ouvidoria,
@@ -72,10 +92,16 @@ with criminal dimensions.
 
 ---
 
-## 2. TCE phase
+## 2. External control phase (TCE and TCU)
 
-The TCE reviews the mayor's annual accounts and acts as the gatekeeper
-for fiscal consequences. Two distinct tracks (`CF.71.I`/`CF.71.II`):
+External fiscal control (`CF.70`--`CF.75`) runs on two parallel tracks
+for municipalities: TCE for the state/municipal money, TCU for federal
+transfers.
+
+### TCE -- annual contas review
+
+The TCE reviews the mayor's annual accounts in two distinct tracks
+(`CF.71.I`/`CF.71.II`):
 
 - **Contas de governo** (`CF.71.I`): TCE issues a *parecer previo*
   recommending approval or rejection of the consolidated annual
@@ -90,9 +116,107 @@ for fiscal consequences. Two distinct tracks (`CF.71.I`/`CF.71.II`):
   `ADPF982`, these sanctions bind but do not trigger Ficha Limpa
   ineligibility.
 
-TCE proceedings are administrative, not judicial. Typical timeline:
-accounts submitted by the mayor 60--90 days after fiscal year-end;
-TCE issues parecer 1--3 years later; backlogs vary by state.
+### TCE -- processos on specific acts
+
+Beyond the annual contas, TCE runs standalone processos that judge
+individual acts of the municipal administration -- most prominently
+licitacoes and contracts. These processos are typically faster than
+the annual contas review and can reach a decision on a single ato
+while that ato is still in progress.
+
+**Trigger channels** (TCE-SP Regimento Interno; analogues in other
+TCEs):
+
+- **Representacao**: any licitante, citizen, or public servant can
+  formally challenge an edital de licitacao, a contract award, or a
+  payment. TCE-SP receives hundreds per year.
+- **Denuncia**: formal whistleblower report, often from a
+  disappointed bidder.
+- **Audesp flags**: TCE-SP's Audesp system ingests municipal
+  procurement and contract data in real time; anomalies (price
+  outliers, repeat winners, edital specifications that match a single
+  firm) can trigger inspecao. See `tribunais-contas.md` on Audesp.
+- **Own-initiative auditoria**: TCE's corpo tecnico selects programs,
+  contracts, or municipalities for audit based on risk scoring or
+  thematic priorities.
+
+**Instrument types**:
+
+- **Auditoria / inspecao**: on-site or documentary examination of a
+  specific contract, obra, or program. Produces a relatorio with
+  findings.
+- **Processo de fiscalizacao de licitacao / contrato**: formal
+  processo targeting a specific edital, adjudication, or contract
+  execution. Can request information and documents, hear
+  administradores, and recommend action.
+- **Monitoramento**: ongoing tracking of implementation of earlier
+  TCE determinacoes.
+- **Consulta**: abstract legal question submitted by a gestor;
+  TCE-SP issues non-binding orientation.
+
+**Timing and remedies for in-progress licitacoes**:
+
+- **Medida cautelar**: TCE can suspend a licitacao or halt contract
+  execution pending analysis -- a significant power because licitacao
+  outcomes often cannot be unwound after contract signing and
+  execution.
+- **Determinacao**: order the municipality to correct irregularities
+  (republish edital, alter criteria, re-adjudicate).
+- **Declaracao de irregularidade / ilegalidade do ato**: formal
+  finding that the contract or licitacao was irregular. Triggers
+  sanctions and may feed into MP improbidade.
+- **Multa and debito**: financial sanctions against the gestor
+  personally (CF Art. 71 VIII), including when the licitacao harmed
+  the erario.
+- **Declaracao de inidoneidade**: TCE can bar firms from contracting
+  with the state's public administration for up to 5 years (TCE-SP
+  Regimento, analogous to `LOTCU.46` at federal level).
+- **Referral to MP**: findings are formally communicated to the MPE
+  (patrimonio publico promotoria) under standing convenios; the
+  relatorio de auditoria becomes a key piece of evidence in
+  subsequent ACP de improbidade.
+
+**Relationship to annual contas**: adverse findings in specific-act
+processos carry forward to the annual contas review -- a licitacao
+declared irregular in a specific processo is likely to appear as
+ressalva or motivo de rejeicao in that year's parecer previo.
+
+**Relator assignment**: non-contas processos are distributed by
+random electronic draw (TCE-SP Regimento Art. 36). See
+`tribunais-contas.md` on relator mechanics and the empirical
+exploitability of the random draw.
+
+**Selection effect**: specific-act processos cover only what reaches
+TCE through the trigger channels. Representacao skews toward
+competitive markets with active losing bidders; Audesp flags skew
+toward accounting-legible irregularities; own-initiative audit skews
+toward priority programs. Many irregular acts -- those with no
+displaced competitor, no accounting signature, and outside priority
+programs -- never enter this track.
+
+### TCU -- federal transfers to municipalities
+
+TCU oversees federal money that reaches municipalities via convenios,
+emendas parlamentares, and federally funded programs (SUS, FUNDEB,
+PAC). Main instruments:
+
+- **Tomada de contas especial** (`CF.71.II`, `LOTCU`): triggered when
+  a convenio manager, CGU auditor, or TCE identifies irregularity in
+  federal transfers. TCU judges the responsible administrator (often
+  the mayor or secretary), imposes ressarcimento, multas, and can
+  declare *inidoneidade* barring the firm or individual from federal
+  contracting for up to 5 years (`LOTCU.46`). Feeds into MP
+  improbidade and criminal proceedings.
+- **Thematic audits**: TCU runs program-level audits (e.g., Operacoes
+  Especiais) of federal programs delivered by municipalities.
+
+### Timing
+
+TCE/TCU proceedings are administrative, not judicial. Annual contas:
+submitted 60--90 days after fiscal year-end; parecer 1--3 years later.
+Processos on specific acts and TCEs (tomadas de contas especial) can
+run years longer depending on backlogs. Backlogs vary substantially by
+state.
 
 See `contas-municipais.md` SS1--SS2, `tribunais-contas.md`.
 
@@ -241,8 +365,16 @@ See `contas-municipais.md` SS3.
 ### TCE debitos and multas
 
 TCE can impose financial sanctions on contas de gestao directly
-(`CF.71.VIII`). These are executable as titulo executivo but do not
+(CF Art. 71 VIII). These are executable as titulo executivo but do not
 generate ineligibility (`ADPF982`).
+
+### TCU debitos, multas, and inidoneidade
+
+TCU imposes ressarcimento and multas via *tomada de contas especial*
+for federal funds (`CF.71.II`, `LOTCU`). TCU can also declare
+*inidoneidade* of firms or individuals for federal contracting up to
+5 years (`LOTCU.46`). Like TCE sanctions, these do not trigger Ficha
+Limpa by themselves (per `ADPF982` logic).
 
 ### Criminal sanctions
 

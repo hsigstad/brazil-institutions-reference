@@ -48,7 +48,9 @@ names, glossary.
 - **CESAF** — Componente Estratégico da Assistência Farmacêutica (SUS).
 - **CF** — Constituição Federal. The 1988 Brazilian Constitution.
 - **CFEM** — Compensação Financeira pela Exploração de Recursos Minerais. Mining royalty system. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
-- **CGE** — Controladoria-Geral do Estado. State-level analogue of CGU.
+- **CGE** — Controladoria-Geral do Estado. State-level analogue of CGU. → [`topics/controladorias-estaduais.md`](topics/controladorias-estaduais.md)
+- **CGM** — Controladoria-Geral do Município. Municipal analogue of CGU / CGE (large cities only). → [`topics/controladorias-estaduais.md`](topics/controladorias-estaduais.md)
+- **CONACI** — Conselho Nacional de Controle Interno. Voluntary cross-state coordination body for CGEs. → [`topics/controladorias-estaduais.md`](topics/controladorias-estaduais.md)
 - **CGU** — Controladoria-Geral da União. Federal internal-control body. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
 - **CID** — Classificação Internacional de Doenças. ICD classification used in NTEP and SUS data.
 - **CJF** — Conselho da Justiça Federal. Administrative council of federal courts. → [`topics/cortes-superiores.md`](topics/cortes-superiores.md)
@@ -59,6 +61,7 @@ names, glossary.
 - **CNJ** — Conselho Nacional de Justiça. Judicial-council oversight body. → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md), [`topics/cortes-superiores.md`](topics/cortes-superiores.md)
 - **CNMP** — Conselho Nacional do Ministério Público. MP oversight body. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
 - **CNPJ** — Cadastro Nacional da Pessoa Jurídica. Federal firm registry (Receita Federal).
+- **CPI / CPMI** — Comissão Parlamentar de Inquérito / Mista. Congressional committee of inquiry (CF Art. 58 §3; Lei 1.579/1952). → [`topics/controle-legislativo.md`](topics/controle-legislativo.md)
 - **COAF** — Conselho de Controle de Atividades Financeiras. Financial intelligence unit (AML). → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **CONITEC** — Comissão Nacional de Incorporação de Tecnologias no SUS. Health-tech incorporation body.
 - **COSIP** — Contribuição para Custeio do Serviço de Iluminação Pública. Municipal contribution for public lighting (CF Art. 149-A).
@@ -181,7 +184,10 @@ names, glossary.
 - **PAB** — Piso de Atenção Básica. SUS primary-care funding (pre-2017 structure).
 - **PAD** — Processo Administrativo Disciplinar. Federal civil-servant disciplinary process. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
 - **PEC** — Proposta de Emenda à Constituição. Constitutional-amendment proposal.
-- **PF** — Polícia Federal. Federal police.
+- **PC** — Polícia Civil. State judicial police, investigates common crimes under state jurisdiction (`CF.144.§4`). → [`topics/policias-estaduais.md`](topics/policias-estaduais.md)
+- **PF** — Polícia Federal. Federal police. → [`topics/policia-federal.md`](topics/policia-federal.md)
+- **PIC** — Procedimento Investigatório Criminal. MP-led criminal investigation (CNMP Resolução 181/2017; STF `RE593727`, Tema 184). → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
+- **PM** — Polícia Militar. State ostensive/preventive police (`CF.144.§5`); força auxiliar e reserva do Exército. → [`topics/policias-estaduais.md`](topics/policias-estaduais.md)
 - **PFS** — Programa de Fiscalização por Sorteios. CGU's random municipal audit program (2003–2015) — canonical instrument in the Ferraz–Finan literature. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
 - **PG / PGE / PGM / PGR / PGJ** — Procurador-Geral / da Estado / do Município / da República / de Justiça.
 - **PJe** — Processo Judicial Eletrônico. CNJ unified case-management platform (Res. 185/2013). → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md)

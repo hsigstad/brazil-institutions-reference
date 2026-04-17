@@ -34,16 +34,106 @@ through Resolução 16/2024. Conselheiro composition rules are stable
 
 ## Organization
 
-- **TCU**: federal audit court. Framework statute: Lei 8.443/1992.
+- **TCU**: federal audit court. Framework statute: `LOTCU` (Lei
+  8.443/1992, Lei Orgânica do TCU). Resolution-level procedure in
+  the Regimento Interno do TCU.
 - **TCEs**: one per state (26 + DF). As of 2026, only **Bahia, Goiás, and
   Pará** maintain active state-level TCMs. **Rio de Janeiro** and
   **São Paulo** have municipal TCMs for their capital cities specifically.
   (`CF.31.§4` prohibits new TCMs; this list only shrinks.)
-- **Composition**: typically 7 conselheiros. Appointment: 4 by the state
-  assembly, 3 by the governor (1 auditor, 1 MP de Contas member, 1 free
-  choice) — mirroring TCU rules per `CF.75`.
+- **Composition**: typically 7 conselheiros (9 ministros at TCU).
+  Appointment: 4 by the state assembly, 3 by the governor (1 auditor,
+  1 MP de Contas member, 1 free choice) — mirroring TCU rules per
+  `CF.75`.
 - Conselheiros are political appointees, raising questions about TCE
   independence.
+
+---
+
+## TCU — composition and procedure
+
+### Ministerial composition (`CF.73`, `LOTCU`)
+
+- **9 ministros**, life tenure to age 70.
+- **2 of 9 reserved for career TCU staff**: one chosen from the
+  Ministério Público junto ao TCU, one from the TCU auditores.
+  Presented to the President via *lista tríplice* from each corps.
+- **3 total chosen by the President** (including the 2 staff slots);
+  Senate confirms.
+- **6 chosen by Congress** (Câmara + Senado).
+- **Empirical pattern**: the majority of TCU ministros have prior
+  political-elective careers — institutional concern that weighs
+  against the audit-court framing. Speck (2011) documents seven of
+  nine in the 2008 composition as ex-politicians.
+
+### Quasi-judicial procedure
+
+TCU (and TCEs by analogy under `CF.75`) operate as *tribunais*
+despite being auxiliary organs of the Legislativo:
+
+- Each processo gets a **relator-ministro** who conducts the analysis
+  and drafts the proposta de decisão.
+- **Plenary votes** on the proposta. The defendant can appeal the
+  decision via *recurso* (e.g., pedido de reexame, embargos de
+  declaração, recurso de reconsideração), which triggers a second
+  round of analysis inside TCU.
+- **Judicial review by STF is limited to due-process and competence
+  grounds**, not substantive audit findings — STF recognizes TCU's
+  technical expertise on the merits.
+
+### Routine workload
+
+TCU's discretionary audit activity operates alongside three
+constitutionally-mandated workloads that consume the majority of
+plenary time:
+
+1. **Parecer prévio on presidential accounts** (`CF.71.I`) — annual.
+2. **Judgment of accounts of administrators of public funds**
+   (`CF.71.II`) — several thousand individual *tomadas de contas*
+   each year, covering every person with ordenadora responsibility
+   over federal funds.
+3. **Approval of admissão and aposentadoria of federal civil servants**
+   (CF Art. 71 III) — several thousand per year.
+
+This routine load constrains how much capacity TCU has for
+discretionary thematic auditing or own-initiative inspeções.
+
+### Three modes of sanction
+
+TCU imposes three distinct categories of sanction, all authorized by
+`CF.71` and `LOTCU`:
+
+- **Financial**: *débito* (ressarcimento) and *multa* (CF Art. 71 VIII,
+  `LOTCU.44`–`LOTCU.59`). Executable as título executivo via AGU.
+  **Fine collection rate historically ≤1%** (Speck 2011) — AGU-level
+  bottleneck; sanctions bind on paper but extract little value in
+  practice. Post-2011 reforms to AGU recovery procedures may have
+  marginally improved this; current data not verified here.
+- **Civil-service bar**: declaration of inabilitação for exercise of
+  federal commissioned/function posts (`LOTCU.60`), 5–8 years.
+  Executed directly by TCU without external enforcement.
+- **Contracting bar**: *declaração de inidoneidade* for firms to
+  contract with federal administration (`LOTCU.46`), up to 5 years.
+  Also self-executing.
+
+Plus:
+
+- **Blacklist for electoral candidacy**: TCU forwards the list of
+  rejected contas de gestão to the Justiça Eleitoral, feeding the
+  Ficha Limpa analysis under `LI.1.I.g` (see `contas-municipais.md`).
+- **Bloqueio preventivo** of federal transfers: under Lei 10.266/2001
+  and successive LDOs, TCU reports irregularities in priority
+  programs to the Comissão Mista de Orçamento, which can suspend
+  further transfers to the affected project.
+
+### Transparency portal
+
+Lei 9.755/1998 mandates TCU maintenance of a public-accounts web
+portal (*Contas Públicas*), aggregating federal, state, and municipal
+budget and procurement data. A cornerstone of the pre-LAI
+transparency infrastructure; partially superseded operationally by
+the 2011 LAI and the Portal da Transparência, but still a legal
+mandate.
 
 ---
 
@@ -103,11 +193,6 @@ the review and drafts the opinion. Assignment follows the Regimento Interno
   but does not affect the initial random assignment.
 - **Conselheiros substitutos-auditores** participate in the same
   distribution pool on equal footing with full conselheiros (Art. 35).
-
-**Empirical implication:** The random draw + two-year exclusion produces
-high year-over-year relator turnover for contas processos, which can be
-exploited as a quasi-experimental source of variation in relator identity
-for causal research on audit outcomes.
 
 **Sources:** [Regimento Interno compilado](https://www.tce.sp.gov.br/legislacao/lei-organica-e-regimento-interno/regimento-interno-compilado);
 [LC 709/1993](https://www.al.sp.gov.br/repositorio/legislacao/lei.complementar/1993/lei.complementar-709-14.01.1993.html);

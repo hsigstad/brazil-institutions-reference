@@ -77,8 +77,9 @@ expenditures for objects of the same nature within a fiscal year.
 
 ### Criminal provisions (Arts. 89–98)
 
-Crimes specific to procurement: fraud in bidding (`L8666.90`), unlawful
-dispensation (`L8666.89`), obstruction of competition (`L8666.95`).
+Crimes specific to procurement: fraud in bidding (`L8666` Art. 90),
+unlawful dispensation (`L8666` Art. 89), obstruction of competition
+(`L8666` Art. 95).
 
 ---
 
@@ -112,7 +113,7 @@ dispensation (`L8666.89`), obstruction of competition (`L8666.95`).
 
 ## CADE and cartel enforcement in procurement
 
-### Lei 12.529/2011 — Competition law
+### `LCADE` — Competition law
 
 - Established **CADE** (Conselho Administrativo de Defesa Econômica) as an
   autarquia with adjudicatory powers.
@@ -171,7 +172,7 @@ CADE guide Part IV (pp. 52–58):
   information to facilitate the cartel (p. 55).
 - The same conduct can be prosecuted in parallel:
   - Administrative infraction by CADE (`LCADE.36`).
-  - Criminal offense under Lei 8.137/1990 Art. 4 and `L8666.90`.
+  - Criminal offense under `LCOT.4` and `L8666` Art. 90.
   - Improbidade administrativa by MP (`LIA`).
   - Corporate liability under `LAC.5`.
 - Summary table on p. 58 maps sanctions, agreement types, and competent
@@ -204,7 +205,7 @@ CADE guide Part IV (pp. 52–58):
 
 - `LIA` — improbidade administrativa (civil corruption
   prosecution; see `contas-municipais.md` §3 for the Ficha Limpa interaction).
-- **Lei 8.137/1990** — crimes contra a ordem econômica (Art. 4 criminalizes
+- `LCOT` — crimes contra a ordem econômica (`LCOT.4` criminalizes
   cartel conduct).
 - `LAC` — Lei Anticorrupção (corporate liability).
 - `L14230-2021` — reform of improbidade (eliminated culposa conduct;

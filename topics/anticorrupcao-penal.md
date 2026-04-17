@@ -13,11 +13,11 @@ peculato, concussão, corrupção passiva, corrupção ativa, crimes contra a
 ordem econômica, Lei 8.137/1990, Lei Anticorrupção, Lei 12.846/2013,
 acordo de leniência, CEIS, CNEP, improbidade criminal parallel.
 
-**Snapshot as of 2026**: the *pacote anticrime* (Lei 13.964/2019)
-introduced ANPP (CPP Art. 28-A) and toughened several provisions.
-Lei 14.133/2021 updated procurement crimes (moved into the Código Penal
-as Arts. 337-E to 337-P, replacing Lei 8.666/93 Arts. 89–98 — but the
-old articles remain applicable to conduct before the transition). Lava
+**Snapshot as of 2026**: the *pacote anticrime* (`LPC`) introduced
+ANPP (`CPP.28-A`) and toughened several provisions. `L14133` updated
+procurement crimes (moved into the Código Penal as Arts. 337-E to
+337-P, replacing `L8666` Arts. 89–98 — but the old articles remain
+applicable to conduct before the transition). Lava
 Jato as an institutional phenomenon effectively ended by 2021, but much
 of the jurisprudence and procedural innovation it produced (colaboração
 premiada framework, acordos de leniência practice) remains in force.
@@ -310,7 +310,45 @@ prosecution:
 
 ---
 
-## 7. Parallel prosecution and the "rule against bis in idem"
+## 7. Three prosecutorial routes — Arantes taxonomy
+
+A useful framing of the Brazilian anti-corruption enforcement
+architecture distinguishes **three juridical routes** that can
+address the same underlying conduct (Arantes 2011, Ch. 8):
+
+| Route | Forum | Actors | Sanction type | Evidentiary standard |
+|---|---|---|---|---|
+| **Political** | Congress (impeachment, cassação) | Legislative | Loss of mandate | Political majority |
+| **Criminal** | Justiça Federal / Estadual | PF/PC → MP → Juiz | Prison, fine | Beyond reasonable doubt |
+| **Administrative-improbidade** | TJ/TRF (civil) | MP (`LIA` reform 2021 exclusive) | Civil sanctions, ineligibility | Preponderance |
+
+**Historical pivot (1988–present)**:
+
+- 1988–2003: MP invested heavily in the **improbidade route** as a
+  workaround for the slow-moving criminal track and the political
+  unreliability of Congress. "Political voluntarism" (Arantes 2002,
+  2007) framed improbidade as the MP's signature instrument.
+- 2003–2014: PF budget/staffing doubled (Lei 9.266/1996 career
+  reforms, Tomaz Bastos / Paulo Lacerda direction). Operações
+  modality crystallized as the joint PF–MPF response. See
+  `policia-federal.md`.
+- 2014–2021: **Lava Jato** concentrated enforcement on the criminal
+  route via `LCO` (colaboração premiada) and `LL2` (expanded
+  money-laundering reach). Triangular PF–MPF–judiciary cooperation
+  became the dominant model.
+- 2019–2021: STF reassertions (`ADC43`, `LulaMoro2021`) plus
+  `L14230-2021` narrowed both the criminal and improbidade routes.
+  The "political voluntarism" model runs into tighter procedural
+  controls.
+
+**Research-design implication**: "Brazilian anti-corruption enforcement"
+is not a single pipeline but three parallel pipelines with different
+selection, attrition, and timing profiles. Any measure of
+"enforcement" must specify the route.
+
+---
+
+## 8. Parallel prosecution and the "rule against bis in idem"
 
 A single corruption scheme typically triggers **multiple parallel
 proceedings** across different regimes:
@@ -342,7 +380,7 @@ the civil-prosecution perspective.
 
 ---
 
-## 8. Key jurisprudence
+## 9. Key jurisprudence
 
 - `HC126292` (2016): permitted execution of prison sentence
   after second-instance confirmation, before trânsito em julgado.
@@ -363,7 +401,7 @@ the civil-prosecution perspective.
 
 ---
 
-## 9. The Lava Jato episode — institutional aftermath
+## 10. The Lava Jato episode — institutional aftermath
 
 Though the operation itself is largely concluded, its institutional
 legacy shapes the current enforcement landscape:
@@ -384,7 +422,7 @@ legacy shapes the current enforcement landscape:
 
 ---
 
-## 10. Sources and cross-references
+## 11. Sources and cross-references
 
 **Statutes**: `CP`, `CPP`, `LCOT`, `LL`, `LL2`, `LCO`, `LAC`, `LPC`.
 

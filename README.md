@@ -3,11 +3,12 @@
 A dense, citation-backed reference on Brazilian legal and political
 institutions, designed to be read by both researchers and LLM agents.
 Covers courts, procedure, the Ministério Público, fiscal federalism,
-electoral system, procurement, corruption statutes, and related topics.
+electoral system, procurement, corruption statutes, labor justice,
+and related topics.
 
 **What this gives you:**
 
-- **28 topical files** with inline statute and jurisprudence citations
+- **32 topical files** with inline statute and jurisprudence citations
 - **Citation resolver** (`cite.py`) that looks up any statute article,
   STF case, or súmula from a compact backtick citation
 - **Annotated legislation databases** — STF decisions mapped to each CF
@@ -101,12 +102,16 @@ acronyms and [`glossario.md`](glossario.md) for Portuguese legal terms.
 
 - [`topics/carreira-juizes.md`](topics/carreira-juizes.md) — Concurso, entrância, promoção, quinto constitucional
 - [`topics/reformas-judiciais.md`](topics/reformas-judiciais.md) — Chronology of reforms 1965–2019
-- [`topics/organizacao-historica.md`](topics/organizacao-historica.md) — Judiciary structural overview
+- [`topics/organizacao-judiciario.md`](topics/organizacao-judiciario.md) — Judiciary structural overview
 
 ### Institutions
 
 - [`topics/ministerio-publico.md`](topics/ministerio-publico.md) — MP structure, career, CNMP, investigative instruments
+- [`topics/policia-federal.md`](topics/policia-federal.md) — Polícia Federal, jurisdiction, operações, PF–MP triangular relationship
+- [`topics/policias-estaduais.md`](topics/policias-estaduais.md) — Polícia Civil, Polícia Militar, Guarda Municipal; state-level PC–MPE flow
 - [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) — CGU, random municipal audits, PAD, Lei Anticorrupção
+- [`topics/controladorias-estaduais.md`](topics/controladorias-estaduais.md) — CGE / state controladorias, state-level PAD, PAR, state leniency
+- [`topics/controle-legislativo.md`](topics/controle-legislativo.md) — CPIs, impeachment, decoro parlamentar, Senate approvals, congressional contas review
 - [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — Open-list PR, coligações/federações, campaign finance, Ficha Limpa
 - [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, ICMS, SUS transfers, LRF limits
 

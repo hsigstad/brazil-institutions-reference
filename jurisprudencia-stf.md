@@ -39,12 +39,12 @@ modulated, overruled, or superseded by checking
   even when sanctions are time-barred.
 - **Cited in**: [`topics/improbidade.md`](topics/improbidade.md) §1.
 
-### Tema 1199 — ARE 843.989 — Retroatividade da Lei 14.230/2021
+### `Tema1199` — ARE 843.989 — Retroatividade de `L14230`
 
 - **Decided**: 18 August 2022.
 - **Rel.**: Min. Alexandre de Moraes.
 - **Holdings**:
-  1. The elimination of culposa improbidade by Lei 14.230/2021 is
+  1. The elimination of culposa improbidade by `L14230` is
      **irretroactive** for cases with final judgment (*trânsito em
      julgado*) — culposa convictions and ongoing enforcement are not
      undone.
@@ -63,17 +63,17 @@ modulated, overruled, or superseded by checking
   [`topics/licitacoes.md`](topics/licitacoes.md) §"Related statutes".
 - **Source**: <https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1199>.
 
-### ADI 2797 — Inconstitucionalidade de foro privilegiado para improbidade
+### `ADI2797` — Inconstitucionalidade de foro privilegiado para improbidade
 
 - **Decided**: 15 September 2005, Plenário.
 - **Rel.**: Min. Sepúlveda Pertence.
 - **Votação**: maioria (julgada em conjunto com ADI 2860).
-- **Holding**: Declared unconstitutional § 2º of CPP Art. 84,
-  introduced by Lei 10.628/2002, which had extended foro por
-  prerrogativa de função to ações de improbidade administrativa.
-  The CF reserves foro especial to "infrações penais comuns";
-  improbidade has civil nature and must be adjudicated in first
-  instance regardless of the defendant's office.
+- **Holding**: Declared unconstitutional § 2º of `CPP.84`, introduced
+  by `L10628`, which had extended foro por prerrogativa de função to
+  ações de improbidade administrativa. The CF reserves foro especial
+  to "infrações penais comuns"; improbidade has civil nature and must
+  be adjudicated in first instance regardless of the defendant's
+  office.
 - **Why it matters for empirical work**: establishes that all
   improbidade defendants — mayors through ministers — appear in
   first-instance dockets. No parallel STF improbidade track to
@@ -82,24 +82,24 @@ modulated, overruled, or superseded by checking
   [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) §"Foro privilegiado".
 - **Source**: <https://portal.stf.jus.br/processos/detalhe.asp?incidente=2093529>.
 
-### Pet 3.240 AgR — Inexistência de foro por prerrogativa em improbidade
+### `Pet3240` AgR — Inexistência de foro por prerrogativa em improbidade
 
 - **Decided**: 10 May 2018, Plenário (DJe 22 August 2018).
 - **Rel.**: Min. Roberto Barroso (after redistribution from Min. Teori
   Zavascki).
 - **Votação**: 10–1.
 - **Holding**: Improbidade administrativa actions are *civil*, not
-  criminal. The foro por prerrogativa de função established in CF
-  Arts. 102 and 105 covers only "infrações penais comuns" and does
-  not extend to civil improbidade actions. Even authorities with
+  criminal. The foro por prerrogativa de função established in
+  `CF.102` and `CF.105` covers only "infrações penais comuns" and
+  does not extend to civil improbidade actions. Even authorities with
   criminal foro privilegiado (ministros de Estado, governadores,
   parlamentares, including in principle the President) respond to
   improbidade actions in **first instance**, alongside ordinary
   defendants.
 - **Doctrinal posture**: reaffirms `ADI2797` (2005), which had already
-  declared unconstitutional the legislative attempt in Lei 10.628/2002
-  to add § 2º to CPP Art. 84 and create a foro privilegiado for
-  improbidade. Pet 3240 closes the door on revival of that argument.
+  declared unconstitutional the legislative attempt in `L10628` to add
+  § 2º to `CPP.84` and create a foro privilegiado for improbidade.
+  `Pet3240` closes the door on revival of that argument.
 - **Why it matters for empirical work**: this is the case that lets
   researchers study improbidade caseloads at the first-instance level
   uniformly, without segregating defendants by political rank.
@@ -110,7 +110,7 @@ modulated, overruled, or superseded by checking
   [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) §"Foro privilegiado".
 - **Source**: <https://portal.stf.jus.br/processos/detalhe.asp?incidente=2230342>.
 
-### AP 937 QO — Restrição do foro privilegiado criminal
+### `AP937` QO — Restrição do foro privilegiado criminal
 
 - **Decided**: 3 May 2018, Plenário.
 - **Rel.**: Min. Roberto Barroso.
@@ -120,8 +120,8 @@ modulated, overruled, or superseded by checking
   whether committed before the mandate or unconnected to office — are
   tried at first instance even if the defendant currently holds a
   foro-bearing position.
-- **Companion to `Pet3240`**: decided one week before Pet 3.240
-  (2018-05-10). AP 937 restricts the *criminal* foro; Pet 3240
+- **Companion to `Pet3240`**: decided one week before `Pet3240`
+  (2018-05-10). `AP937` restricts the *criminal* foro; `Pet3240`
   confirms the *civil* (improbidade) foro never existed. Together they
   define the current scope of foro privilegiado.
 - **Movement of cases**: when a defendant takes office, qualifying
@@ -135,7 +135,7 @@ modulated, overruled, or superseded by checking
 
 ## 2. Contas municipais e Ficha Limpa
 
-### Tema 157 — RE 848.826 — Apreciação das contas de prefeito
+### `Tema157` — RE 848.826 — Apreciação das contas de prefeito
 
 - **Decided**: 10 August 2016. **Tese certified**: 18 October 2019.
 - **Vote**: 6–5 (narrow majority).
@@ -151,15 +151,15 @@ modulated, overruled, or superseded by checking
   terços dos vereadores."*
 - **Holding**: Both contas de governo and contas de gestão fall under
   câmara municipal jurisdiction for purposes of Ficha Limpa
-  ineligibility (LC 64/1990 Art. 1 I "g"). A TCE parecer alone does
-  not trigger ineligibility — the câmara must vote to reject. Omission
+  ineligibility (`LI.1.I.g`). A TCE parecer alone does not trigger
+  ineligibility — the câmara must vote to reject. Omission
   by the câmara also does not generate ineligibility ("inadmissível o
   julgamento ficto das contas por decurso de prazo").
 - **Cited in**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §2,
   [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §7.
 - **Source**: <https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157>.
 
-### ADPF 982 — TCE / câmara boundary revisited
+### `ADPF982` — TCE / câmara boundary revisited
 
 - **Decided**: ~2025.
 - **Holdings**:
@@ -169,17 +169,17 @@ modulated, overruled, or superseded by checking
   2. Clarifies that **electoral ineligibility** under Ficha Limpa
      arises only from câmara rejection of contas de governo, not from
      TCE decisions on contas de gestão.
-  3. Complements rather than contradicts Tema 157.
+  3. Complements rather than contradicts `Tema157`.
 - **Cited in**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §2.
 - **Source**: [Migalhas analysis](https://www.migalhas.com.br/depeso/433107/adpf-982-quem-julga-as-contas-do-prefeito-afinal).
 
-### ADC 29/30 + ADI 4578 (2012) — Constitucionalidade da Ficha Limpa
+### `ADC29` / ADC 30 + ADI 4578 (2012) — Constitucionalidade da Ficha Limpa
 
 - **Decided**: 16 February 2012.
-- **Holding**: Upheld the constitutionality of LC 135/2010 (Lei da
-  Ficha Limpa), including the provision that ineligibility attaches
-  upon a **collegiate body** decision (not requiring trânsito em
-  julgado). Rejected the *presunção de inocência* objection on the
+- **Holding**: Upheld the constitutionality of `LFL` (LC 135/2010,
+  Lei da Ficha Limpa), including the provision that ineligibility
+  attaches upon a **collegiate body** decision (not requiring trânsito
+  em julgado). Rejected the *presunção de inocência* objection on the
   ground that ineligibility is a non-criminal restriction on
   candidacy, not a punishment.
 - **Cited in**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §7.
@@ -188,16 +188,16 @@ modulated, overruled, or superseded by checking
 
 ## 3. Justiça do Trabalho — reforma trabalhista
 
-### ADI 5766 (October 2021) — Justiça gratuita pós-reforma trabalhista
+### `ADI5766` (October 2021) — Justiça gratuita pós-reforma trabalhista
 
 - **Decided**: 20 October 2021.
 - **Holdings**:
-  1. **Art. 790-B caput and §4 CLT** (expert fees from credits
-     obtained in the case) — **declared unconstitutional**. Justiça
-     gratuita beneficiaries cannot be forced to pay perícia fees out
-     of credits won in the action.
-  2. **Art. 791-A §4 CLT** (deduction of honorários sucumbenciais
-     from credits obtained in *other* proceedings) — **declared
+  1. `CLT.790-B` caput and §4 (expert fees from credits obtained in
+     the case) — **declared unconstitutional**. Justiça gratuita
+     beneficiaries cannot be forced to pay perícia fees out of credits
+     won in the action.
+  2. `CLT.791-A` §4 (deduction of honorários sucumbenciais from
+     credits obtained in *other* proceedings) — **declared
      unconstitutional**. Obligation to pay is suspended for 2 years
      from trânsito em julgado; extinguished if economic situation does
      not change.
@@ -212,18 +212,18 @@ modulated, overruled, or superseded by checking
 
 ## 4. Sistema eleitoral — financiamento de campanha
 
-### ADI 4650 (September 2015) — Doações empresariais
+### `ADI4650` (September 2015) — Doações empresariais
 
 - **Decided**: September 2015.
 - **Rel.**: Min. Luiz Fux.
-- **Holding**: Declared unconstitutional the provisions of Lei
-  9.504/1997 and Lei 9.096/1995 that permitted corporate donations to
-  campaigns and political parties. Rationale: corporate donations
-  distort political equality and create systematic dependencies
-  between donors and elected officials.
+- **Holding**: Declared unconstitutional the provisions of `LE` and
+  `LPP` that permitted corporate donations to campaigns and political
+  parties. Rationale: corporate donations distort political equality
+  and create systematic dependencies between donors and elected
+  officials.
 - **Effective from**: 2016 elections onward.
-- **Significance**: Triggered creation of the FEFC (Lei 13.487/2017)
-  as the public-funding replacement for corporate money. The
+- **Significance**: Triggered creation of the FEFC (`L13487`) as the
+  public-funding replacement for corporate money. The
   pre-2016 vs. post-2016 campaign finance regimes are fundamentally
   different and any empirical work crossing the boundary must
   account for it.
@@ -234,14 +234,14 @@ modulated, overruled, or superseded by checking
 
 ## 5. Federalismo fiscal
 
-### ADI 875 et al. (2010) — FPE coefficients
+### `ADI875` et al. (2010) — FPE coefficients
 
 - **Decided**: 2010.
 - **Holding**: Declared the rigid FPE distribution coefficients of
-  LC 62/1989 unconstitutional for perpetuating fixed shares without
-  meaningful update. Gave Congress a deadline to legislate a new
-  formula.
-- **Aftermath**: Congress responded with **LC 143/2013**, which
+  `LC62` (LC 62/1989) unconstitutional for perpetuating fixed shares
+  without meaningful update. Gave Congress a deadline to legislate a
+  new formula.
+- **Aftermath**: Congress responded with `LC143` (LC 143/2013), which
   introduced a population + per-capita-income formula transitioning
   toward more equalizing distribution.
 - **Cited in**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2.
@@ -250,7 +250,7 @@ modulated, overruled, or superseded by checking
 
 ## 6. Anticorrupção penal — Lava Jato e Pacote Anticrime
 
-### HC 126.292 (2016) — Execução provisória da pena
+### `HC126292` (2016) — Execução provisória da pena
 
 - **Decided**: 2016.
 - **Holding**: Permitted execution of prison sentence after
@@ -258,16 +258,16 @@ modulated, overruled, or superseded by checking
 - **Significance**: Enabled the imprisonment of high-profile Lava
   Jato defendants while their extraordinary appeals remained pending.
 
-### ADC 43/44/54 (November 2019) — Reversão de HC 126.292
+### `ADC43` / ADC 44 / ADC 54 (November 2019) — Reversão de `HC126292`
 
 - **Decided**: November 2019.
-- **Holding**: Reversed HC 126.292; restored the requirement of
+- **Holding**: Reversed `HC126292`; restored the requirement of
   **trânsito em julgado** before prison execution.
 - **Significance**: Triggered release of high-profile defendants
   including former President Lula. Re-affirmed the *presunção de
   inocência* in its full procedural form.
 
-### Lula vs. Moro cases (2021)
+### `LulaMoro2021` — Lula vs. Moro cases
 
 - **Decided**: 2021.
 - **Holdings**:
@@ -280,31 +280,49 @@ modulated, overruled, or superseded by checking
   grounds; major institutional moment in the post-Lava Jato phase.
 - **Cited in**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §9.
 
-### ADIs 6.298–6.305 (August 2023) — Juiz das garantias
+### `ADI6298` et al. (August 2023) — Juiz das garantias
 
 - **Decided**: August 2023.
-- **Holding**: The juiz das garantias institute introduced by Lei
-  13.964/2019 (Pacote Anticrime, CPP Art. 3-A) is constitutional, with
-  implementation guidelines set by the STF. Effective implementation
-  from 2024.
+- **Holding**: The juiz das garantias institute introduced by `LPC`
+  (`CPP.3-A`) is constitutional, with implementation guidelines set by
+  the STF. Effective implementation from 2024.
 - **Significance**: Mandates separation of investigatory and trial
   judges in criminal proceedings — a structural change to Brazilian
   criminal procedure.
 - **Cited in**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §6.
 
-### HC 127.483 (Ulisses Ramos) and HC 164.493 (Bendine)
+### `HC127483` (Ulisses Ramos) and HC 164.493 (Bendine)
 
 - **Holdings**: Defined the scope of judicial review over colaboração
-  premiada agreements (Lei 12.850/2013 Art. 4) and the evidentiary
-  standards for collaborator testimony. A colaboração alone cannot
-  sustain a conviction (Art. 4 §16); corroboration is required.
+  premiada agreements (`LCO.4`) and the evidentiary standards for
+  collaborator testimony. A colaboração alone cannot sustain a
+  conviction (Art. 4 §16); corroboration is required.
 - **Cited in**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §3.
+
+### `RE593727` — Tema 184 — Poder de investigação criminal do MP
+
+- **Decided**: 14 May 2015.
+- **Relator**: Min. Cezar Peluso (vencido na parte vencedora);
+  acórdão redigido por Min. Gilmar Mendes.
+- **Holding**: O MP tem legitimidade para promover, por autoridade
+  própria, investigações de natureza penal, desde que respeitados os
+  direitos e garantias constitucionais dos investigados e observada a
+  reserva de jurisdição para medidas restritivas.
+- **Significance**: Ended a long-running institutional dispute (the
+  delegados' lobby had argued investigation was exclusive to the
+  polícia judiciária). Operationalized by **CNMP Resolução 181/2017**
+  via the PIC (Procedimento Investigatório Criminal). Creates a
+  partial substitute for PF-led inquérito policial; MP can conduct
+  criminal investigation directly when strategic or when PF is slow
+  or conflicted.
+- **Cited in**: [`topics/ministerio-publico.md`](topics/ministerio-publico.md) §5,
+  [`topics/policia-federal.md`](topics/policia-federal.md) §1.
 
 ---
 
 ## 7. NTEP / acidentes de trabalho
 
-### ADI 3.931 (April 2020) — Constitucionalidade do NTEP
+### `ADI3931` (April 2020) — Constitucionalidade do NTEP
 
 - **Decided**: April 2020.
 - **Holding**: Upheld the constitutionality of Art. 21-A of Lei
@@ -321,12 +339,12 @@ modulated, overruled, or superseded by checking
 
 ## 8. Transparência
 
-### ARE 652.777 (2015, repercussão geral) — Salários de servidores públicos
+### `ARE652777` (2015, repercussão geral) — Salários de servidores públicos
 
 - **Decided**: 23 April 2015 (repercussão geral).
 - **Holding**: The disclosure of nominal salaries of individual
   public servants is constitutional and consistent with both the
-  publicity principle (CF Art. 37) and the right to privacy. Servants
+  publicity principle (`CF.37`) and the right to privacy. Servants
   do not have a privacy interest in concealing their compensation
   paid from public funds.
 - **Significance**: Foundational ruling for the federal Portal da
@@ -341,21 +359,21 @@ modulated, overruled, or superseded by checking
 
 | Case | Theme | File |
 |---|---|---|
-| Tema 897 (RE 852.475) | Imprescritibilidade do ressarcimento | improbidade |
-| Tema 1199 (ARE 843.989) | Retroatividade Lei 14.230/2021 | improbidade |
-| Tema 157 (RE 848.826) | Câmara julga contas prefeito | contas-municipais |
-| ADPF 982 | TCE × câmara × Ficha Limpa | contas-municipais |
-| ADC 29/30 + ADI 4578 | Ficha Limpa constitucional | partidos-e-sistema-eleitoral |
-| ADI 5766 | Justiça gratuita pós-reforma | justica-trabalho |
-| ADI 4650 | Fim doações empresariais | partidos-e-sistema-eleitoral |
-| ADI 875 et al. | FPE coefficients inconstitucionais | federalismo-fiscal |
-| HC 126.292 | Execução provisória da pena | anticorrupcao-penal |
-| ADC 43/44/54 | Reversão de HC 126.292 | anticorrupcao-penal |
-| Lula vs. Moro | Incompetência + parcialidade | anticorrupcao-penal |
-| ADIs 6.298–6.305 | Juiz das garantias | anticorrupcao-penal |
-| HC 127.483 / HC 164.493 | Colaboração premiada | anticorrupcao-penal |
-| ADI 3.931 | NTEP constitucional | (referenciado externamente) |
-| ARE 652.777 | Salários de servidores públicos | transparencia-dados |
+| `Tema897` (RE 852.475) | Imprescritibilidade do ressarcimento | improbidade |
+| `Tema1199` (ARE 843.989) | Retroatividade `L14230` | improbidade |
+| `Tema157` (RE 848.826) | Câmara julga contas prefeito | contas-municipais |
+| `ADPF982` | TCE × câmara × Ficha Limpa | contas-municipais |
+| `ADC29` / ADC 30 + ADI 4578 | Ficha Limpa constitucional | partidos-e-sistema-eleitoral |
+| `ADI5766` | Justiça gratuita pós-reforma | justica-trabalho |
+| `ADI4650` | Fim doações empresariais | partidos-e-sistema-eleitoral |
+| `ADI875` et al. | FPE coefficients inconstitucionais | federalismo-fiscal |
+| `HC126292` | Execução provisória da pena | anticorrupcao-penal |
+| `ADC43` / ADC 44 / ADC 54 | Reversão de `HC126292` | anticorrupcao-penal |
+| `LulaMoro2021` | Incompetência + parcialidade | anticorrupcao-penal |
+| `ADI6298` et al. | Juiz das garantias | anticorrupcao-penal |
+| `HC127483` / HC 164.493 | Colaboração premiada | anticorrupcao-penal |
+| `ADI3931` | NTEP constitucional | (referenciado externamente) |
+| `ARE652777` | Salários de servidores públicos | transparencia-dados |
 
 ---
 
