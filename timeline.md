@@ -92,7 +92,7 @@ most likely to be affected by reforms in that period:
 | 2013-08-01 | **LC 143/2013** | FPE distribution reform (responding to ADI 875) | federalismo-fiscal |
 | 2013-08-01 | **Lei 12.846/2013** (`LAC` — Lei Anticorrupção) | Corporate liability for corruption. Objective standard. CGU enforcement. | anticorrupcao-penal, cgu-controle-interno |
 | 2013-08-02 | **Lei 12.850/2013** (`LCO`) | Lei das Organizações Criminosas. Colaboração premiada framework. **Critical for Lava Jato**. | anticorrupcao-penal, ministerio-publico |
-| 2013-11-28 | **EC 76/2013** | Voto aberto in Congress for cassação and vetoes. Federal precedent for municipal câmara reforms. | contas-municipais, quasi-experimentos |
+| 2013-11-28 | **EC 76/2013** | Voto aberto in Congress for cassação and vetoes. Federal precedent for municipal câmara reforms. | contas-municipais |
 | 2014-03 | **Operação Lava Jato begins** | Federal task force investigation in Curitiba. | anticorrupcao-penal |
 | 2014-07-31 | **Lei 13.019/2014** (`L13019`) | Lei das OSCs (parcerias com organizações da sociedade civil) | federalismo-fiscal |
 | 2015-04-23 | **STF ARE 652.777 (repercussão geral)** | Disclosure of public servant salaries is constitutional | transparencia-dados, jurisprudencia-stf |
@@ -111,7 +111,7 @@ most likely to be affected by reforms in that period:
 | Date | Event | Effect | Files |
 |---|---|---|---|
 | 2017-06-06 | **Lei 13.487/2017** (`L13487`) | Criação do FEFC (Fundo Especial de Financiamento de Campanha). Replaces corporate money post-ADI 4650. | partidos-e-sistema-eleitoral |
-| 2017-10-04 | **EC 97/2017** | Fim das coligações proporcionais (effective 2020 elections). Cláusula de desempenho introduced. | partidos-e-sistema-eleitoral, quasi-experimentos |
+| 2017-10-04 | **EC 97/2017** | Fim das coligações proporcionais (effective 2020 elections). Cláusula de desempenho introduced. | partidos-e-sistema-eleitoral |
 | 2017-11-11 | **Lei 13.467/2017 effective** (Reforma trabalhista) | Filing costs introduced in labor courts. *Justiça gratuita* tightened. **Sharp filing-cost shock — 34% drop in 2018 filings**. | justica-trabalho, quasi-experimentos |
 | 2017-12-26 | **Decreto 9.412/2018** | Updated Lei 8.666 monetary thresholds | licitacoes |
 
@@ -133,14 +133,14 @@ most likely to be affected by reforms in that period:
 | 2020-09 | **LGPD enforcement begins** | Lei 13.709/2018 (`LGPD`) general provisions effective. Sanctions effective August 2021. | transparencia-dados |
 | 2020-08-25 | **EC 108/2020** | FUNDEB permanente. Federal complementação raised from 10% to 23% (phased). | federalismo-fiscal |
 | 2020-12-25 | **Lei 14.113/2020** | Regulamentação do FUNDEB permanente | federalismo-fiscal |
-| 2020 | **First post-EC 97/2017 elections (municipais 2020)** | First election with no proportional coligações. | partidos-e-sistema-eleitoral, quasi-experimentos |
+| 2020 | **First post-EC 97/2017 elections (municipais 2020)** | First election with no proportional coligações. | partidos-e-sistema-eleitoral |
 | 2020 | **CNJ Res. 331/2020** | DataJud framework. Tribunals must feed unified judicial data base. | cnj-administracao-judicial |
 | 2021 | **STF Lula vs Moro cases** | Annulled multiple Lula convictions on parcialidade and incompetência grounds. | anticorrupcao-penal |
 | 2021-04-01 | **Lei 14.133/2021** (`L14133` — Nova Lei de Licitações) | Replaces Lei 8.666, Lei 10.520, RDC. Transition until 30 December 2023. | licitacoes |
 | 2021-09-29 | **Lei 14.208/2021** | Federações partidárias. First used in 2022 elections. | partidos-e-sistema-eleitoral |
 | 2021 | **CNJ Res. 363/2021** | LGPD compliance in the judiciary | cnj-administracao-judicial, transparencia-dados |
-| 2021-10-20 | **STF ADI 5766** | Partial reversal of 2017 reforma trabalhista filing-cost provisions for *justiça gratuita* beneficiaries. | justica-trabalho, jurisprudencia-stf, quasi-experimentos |
-| 2021-10-26 | **Lei 14.230/2021** (`L14230` — reforma improbidade) | Eliminated culposa improbidade. Exclusive MP standing. New 8-year prescription. | improbidade, quasi-experimentos |
+| 2021-10-20 | **STF ADI 5766** | Partial reversal of 2017 reforma trabalhista filing-cost provisions for *justiça gratuita* beneficiaries. | justica-trabalho, jurisprudencia-stf |
+| 2021-10-26 | **Lei 14.230/2021** (`L14230` — reforma improbidade) | Eliminated culposa improbidade. Exclusive MP standing. New 8-year prescription. | improbidade |
 | 2021 | **Lava Jato force task formally dissolved** | End of the operational era. Institutional aftermath continues. | anticorrupcao-penal |
 
 ### 2022–2026
@@ -151,9 +151,9 @@ most likely to be affected by reforms in that period:
 | 2022-08-18 | **STF ARE 843.989 (Tema 1199) decided** | Retroactivity of Lei 14.230/2021. Irretroactive for trânsito em julgado; immediate for pending cases. | improbidade, jurisprudencia-stf |
 | 2022-09-22 | **Lei 14.460/2022** | ANPD as autarquia (independent data protection authority) | transparencia-dados |
 | 2023-08 | **STF ADIs 6.298–6.305** | Juiz das garantias ruled constitutional with implementation guidelines. Effective from 2024. | anticorrupcao-penal, jurisprudencia-stf |
-| 2023-12-20 | **EC 132/2023** (Reforma tributária) | Replaces ICMS, ISS, IPI, PIS, COFINS with CBS + IBS + IS. Phase-in 2026–2033. | federalismo-fiscal, quasi-experimentos |
+| 2023-12-20 | **EC 132/2023** (Reforma tributária) | Replaces ICMS, ISS, IPI, PIS, COFINS with CBS + IBS + IS. Phase-in 2026–2033. | federalismo-fiscal |
 | 2023-12-30 | **Lei 14.133/2021 mandatory** | End of transition period. Lei 8.666 no longer applies to new procurement. | licitacoes |
-| 2024 | **CNJ Res. 547/2024** | Authorized judges to extinguish low-value execuções fiscais (≤R$10,000). Triggered mass extinction of >10M cases by Dec 2025. | cnj-administracao-judicial, quasi-experimentos |
+| 2024 | **CNJ Res. 547/2024** | Authorized judges to extinguish low-value execuções fiscais (≤R$10,000). Triggered mass extinction of >10M cases by Dec 2025. | cnj-administracao-judicial |
 | 2024 | **Juiz das garantias implementation begins** | Per ADIs 6.298–6.305 guidelines | anticorrupcao-penal |
 | ~2025 | **STF ADPF 982** | Revisited contas de governo / contas de gestão boundary. TCEs can independently judge contas de gestão; only câmara rejection of contas de governo triggers Ficha Limpa. | contas-municipais, jurisprudencia-stf |
 | 2025 | **First state elections under cláusula de desempenho 2.5%** | (no — cláusula tightens at 2026 elections) | partidos-e-sistema-eleitoral |

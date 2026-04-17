@@ -20,9 +20,9 @@ highest conciliation rate in the Brazilian judiciary. They also offer a
 relatively rare empirical feature: **nearly all settlements are
 judicially mediated and observable in the data**.
 
-For the 2017 reform as a quasi-experiment (Lei 13.467/17 + `ADI5766`),
-see [`../quasi-experimentos.md`](../quasi-experimentos.md) §§5–6. For
-the date timeline of related events, see [`../timeline.md`](../timeline.md).
+For the 2017 reform (Lei 13.467/17) as a published identification
+strategy, see [`../quasi-experimentos.md`](../quasi-experimentos.md) §5.
+For the date timeline of related events, see [`../timeline.md`](../timeline.md).
 For common confusions (pre-2017 vs post-2017 cost regimes), see
 [`../pitfalls.md`](../pitfalls.md) "Labor courts".
 

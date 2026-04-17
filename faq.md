@@ -254,7 +254,7 @@ answer lives.
 ## Empirical research
 
 **Q. What natural experiments are available in Brazilian institutions?**
-→ [`quasi-experimentos.md`](quasi-experimentos.md). 18 entries covering CGU audits, FPM step function, electoral cutoffs, reform shocks, STF rulings, LRF kinks, etc.
+→ [`quasi-experimentos.md`](quasi-experimentos.md). 13 entries covering identification strategies used in published work: CGU audits, FPM step function, electoral cutoffs, reform shocks, STF rulings, LRF kinks, etc.
 
 **Q. Where are the canonical Ferraz–Finan replication files?**
 → Outside this directory — search the AEA / authors' replication archives. The institutional context is in [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) and [`quasi-experimentos.md`](quasi-experimentos.md).

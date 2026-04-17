@@ -1,14 +1,19 @@
 # Quasi-experimentos — natural experiments in Brazilian institutions
 
 Index of identification strategies and natural experiments embedded in
-Brazilian institutional features. Each entry: the institutional source,
-the cutoff/threshold/event, what it identifies, and the canonical
-paper(s) that exploited it.
+Brazilian institutional features that have been used in the published
+empirical literature. Each entry: the institutional source, the
+cutoff/threshold/event, what it identifies, and the canonical paper(s)
+that exploited it.
 
 This file is for **empirical researchers** designing causal studies on
 Brazilian institutions. It complements the topical files by surfacing
 the parts of those institutions that researchers have used as sources
 of variation.
+
+**Scope**: only entries that have been exploited in published (or
+widely-circulated working) papers. Novel or unexploited identification
+ideas are deliberately not here.
 
 **Topics / keywords**: natural experiment, quasi-experiment,
 identification strategy, regression discontinuity, RD, difference in
@@ -25,14 +30,11 @@ work in the literature.
 
 For institutional context behind each entry, follow the cited file:
 - [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md) — CGU random audits
-- [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, FPE, royalties, LRF kinks
-- [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — electoral cutoffs and reforms
-- [`topics/justica-trabalho.md`](topics/justica-trabalho.md) — labor reform shocks
-- [`topics/improbidade.md`](topics/improbidade.md) — improbidade reform
-- [`topics/contas-municipais.md`](topics/contas-municipais.md) — Ficha Limpa, voto secreto reforms
-- [`topics/tribunais-contas.md`](topics/tribunais-contas.md) — TCE relator random assignment
-- [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) — Lava Jato structural breaks
-- [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — STF rulings as cutoffs
+- [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, FUNDEB
+- [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — electoral cutoffs
+- [`topics/contas-municipais.md`](topics/contas-municipais.md) — Ficha Limpa
+- [`topics/justica-trabalho.md`](topics/justica-trabalho.md) — labor reform (2017)
+- [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) — judicial random assignment
 
 ---
 
@@ -159,7 +161,7 @@ the constitutionality despite presunção de inocência objections.
 
 ---
 
-## 5. Reforma trabalhista (Lei 13.467/2017) — sharp filing-cost shock
+## 5. Reforma trabalhista (Lei 13.467/2017) — filing-cost shock
 
 **Institutional source**: Lei 13.467/2017, effective 11 November 2017.
 
@@ -177,353 +179,21 @@ composition. The November 2017 cutoff produces:
 - **Composition change**: speculative claims (*pedidos aventureiros*)
   dropped disproportionately.
 
-**Partial reversal**: STF ADI 5766 (October 2021) struck down the
-harshest cost provisions for *justiça gratuita* beneficiaries —
-introduces a second discontinuity around October 2021.
+**Partial reversal**: STF `ADI5766` (October 2021) struck down the
+harshest cost provisions for *justiça gratuita* beneficiaries.
+
+**Canonical papers**:
+- Corbi, Narita, Ferreira & Souza (2022, SSRN WP) — exploits
+  quasi-random assignment of labor-court judges and simulates the
+  2017 reform, finding that shifting legal costs onto workers reduces
+  firm financial distress and increases hiring at small firms.
 
 **See**: [`topics/justica-trabalho.md`](topics/justica-trabalho.md) §"Filing costs"
 and §"Impact on filing volumes".
 
 ---
 
-## 6. STF ADI 5766 (October 2021) — partial reversal of reforma trabalhista
-
-**Institutional source**: STF ADI 5766, decided 20 October 2021.
-
-**Mechanism**: declared unconstitutional CLT Arts. 790-B caput/§4
-(expert fees from credits) and 791-A §4 (honorários from credits in
-other proceedings) for **justiça gratuita beneficiaries**. The ruling
-restored partial pre-reform protection for low-income workers.
-
-**Identifies**: heterogeneous effects of cost-regime reversal —
-treatment effect differs by *justiça gratuita* status. The November
-2017 to October 2021 window is the period of maximum filing-cost
-deterrence; post-October 2021 is a partial restoration.
-
-**See**: [`topics/justica-trabalho.md`](topics/justica-trabalho.md) §"STF ADI 5766",
-[`jurisprudencia-stf.md`](jurisprudencia-stf.md) §3.
-
----
-
-## 7. Lei 14.230/2021 — improbidade reform
-
-**Institutional source**: Lei 14.230/2021, published 26 October 2021;
-STF Tema 1199 (ARE 843.989, 18 August 2022) governs retroactivity.
-
-**Mechanism**: eliminated culposa improbidade entirely; only **dolosa**
-(intentional) conduct is now actionable. Centralized standing in MP
-exclusively. New 8-year absolute prescription regime.
-
-**Identifies**: effects of narrowing the improbidade standard on:
-- Filing volume
-- Conviction rates
-- Type of conduct prosecuted
-- Selection of cases pursued by MP
-
-**Retroactivity nuance** (per STF Tema 1199):
-- Cases with **trânsito em julgado** before the reform: irretroactive,
-  past convictions stand.
-- **Pending cases without final judgment**: new law applies; courts
-  must re-examine intent.
-- This creates a within-state-court pre/post comparison conditional on
-  case status.
-
-**See**: [`topics/improbidade.md`](topics/improbidade.md) §2,
-[`jurisprudencia-stf.md`](jurisprudencia-stf.md) §1.
-
----
-
-## 8. STF ADI 4650 (September 2015) — corporate donation ban
-
-**Institutional source**: STF ADI 4650, decided September 2015,
-Rel. Min. Luiz Fux. Effective from the **2016 elections** onward.
-
-**Mechanism**: declared unconstitutional the provisions of Lei
-9.504/1997 and Lei 9.096/1995 that permitted corporate donations to
-campaigns and political parties. Corporate money was abruptly
-prohibited; FEFC (public campaign fund, Lei 13.487/2017) was created
-to partially replace it.
-
-**Identifies**: effects of the campaign finance regime on:
-- Candidate selection (especially incumbents who relied on corporate
-  donations)
-- Political competition
-- Pork-barrel allocation
-- Public-policy outcomes
-- Connection between donor firms and policy
-
-**Caveat**: the 2016 elections were the **first** affected — the
-campaign finance regime has been unstable since (FEFC introduced,
-expenditure caps changed, allocation rules altered).
-
-**See**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §6,
-[`jurisprudencia-stf.md`](jurisprudencia-stf.md) §4.
-
----
-
-## 9. EC 97/2017 — fim das coligações proporcionais
-
-**Institutional source**: Emenda Constitucional 97/2017, promulgated
-October 2017, effective from **2020** elections (proportional ban),
-2018 elections (cláusula de desempenho phase-in).
-
-**Mechanism**: prohibits coligações in proportional elections
-(deputado federal, deputado estadual, vereador). Replaced by
-**federações partidárias** (Lei 14.208/2021), which require multi-year
-commitments.
-
-**Identifies**: effects of removing vote-pooling on:
-- Party fragmentation / consolidation
-- Candidate selection within parties
-- Vote-buying and brokerage networks
-- Cross-party transfers (popular candidates "carrying" weak slate-mates)
-
-**Cláusula de desempenho** (separate but related): tightening thresholds
-2018 → 2022 → 2026 → 2030 generate within-party variation.
-
-**See**: [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) §§3–4.
-
----
-
-## 10. EC 76/2013 — voto aberto in Congress
-
-**Institutional source**: Emenda Constitucional 76/2013, promulgated
-28 November 2013.
-
-**Mechanism**: abolished secret voting in Congress for cassação de
-mandatos and appreciation of presidential vetoes. Triggered by the
-**Natan Donadon case** (August 2013), where deputies in secret ballot
-upheld the mandate of a congressman sentenced to 13 years for
-embezzlement.
-
-**Identifies**: effects of vote transparency on legislator behavior.
-Within-Congress comparison: same legislators voting on similar matters
-under different transparency regimes.
-
-**Spillover**: served as a federal **precedent** for municipal câmara
-reforms abolishing secret voting on contas de prefeito. Many municipal
-reforms cite EC 76/2013 explicitly. This generates a *municipal-level*
-diffusion process from ~2014 onward, with reforms staggered across
-municipalities.
-
-**See**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §4
-("EC 76/2013 — federal precedent" and "Municipal reform examples").
-
----
-
-## 11. Municipal câmara voting modality reforms (~2004–2025)
-
-**Institutional source**: each municipality's Lei Orgânica Municipal,
-amended over time; no federal mandate.
-
-**Mechanism**: pre-reform, many small municipalities used **secret
-ballot** to vote on contas de prefeito. Reforms by câmara (often
-prompted by MP recommendations or civil-society campaigns) amended the
-Lei Orgânica to require **open nominal roll call**. The reform wave
-diffused over two decades, accelerating after EC 76/2013.
-
-**Identifies**: effects of voting transparency on:
-- Whether câmara follows TCE recommendations
-- Mayor accountability
-- Selection of councilors
-- Re-election rates
-
-**Identification challenges**: reform timing is endogenous (politically
-motivated), so DiD requires careful parallel-trends checks. Municipality
-fixed effects + state-year FE help.
-
-**See**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §4 ("Municipal
-reform examples").
-
----
-
-## 12. TCE-SP relator random assignment
-
-**Institutional source**: TCE-SP Regimento Interno (compilado, com
-Resolução 16/2024), Art. 36 (random electronic draw) + Art. 38 (annual
-contas with two-year exclusion rule).
-
-**Mechanism**: each TCE-SP processo is assigned a relator (rapporteur
-conselheiro) by **random electronic draw**. For mayoral contas, the
-draw excludes the conselheiro who was relator in either of the two
-preceding fiscal years. Once assigned, the relator becomes the
-"julgador certo" for all subsequent acts in the same processo
-(prevenção, Art. 40 IV).
-
-**Identifies**: effects of relator characteristics
-(harshness, ideology, career trajectory) on:
-- Outcome of contas judgments
-- Mayoral political careers
-- Subsequent municipal behavior
-
-**Caveat**: random assignment applies to the **initial** relator. Once
-fixed, prevenção persists across appeals.
-
-**See**: [`topics/tribunais-contas.md`](topics/tribunais-contas.md).
-
----
-
-## 13. STF Tema 157 (RE 848.826) — câmara competence on mayoral accounts
-
-**Institutional source**: STF, decided 10 August 2016, certified
-18 October 2019. Vote 6–5.
-
-**Mechanism**: clarified that the câmara municipal — not the TCE — is
-the competent body for judging contas de prefeito for purposes of
-Ficha Limpa ineligibility. After Tema 157, the câmara vote became the
-single decision point for inelegibilidade under `LI.1.I.g`.
-
-**Identifies**: effects of legal salience on câmara behavior. Pre-Tema
-157, the câmara vote was politically meaningful but the legal stakes
-were ambiguous. Post-Tema 157, the legal stakes are unambiguous —
-câmara behavior may have shifted in response.
-
-**Caveat**: the Tese was certified in October 2019, three years after
-the decision. The "effective" date depends on whether you treat the
-2016 decision or the 2019 certification as the cutoff.
-
-**See**: [`topics/contas-municipais.md`](topics/contas-municipais.md) §2,
-[`jurisprudencia-stf.md`](jurisprudencia-stf.md) §2.
-
----
-
-## 14. Pre-sal royalty distribution shocks
-
-**Institutional source**: Lei 12.858/2013, dedicating 75% of União's
-pre-sal royalty share to education and 25% to health. Lei 12.734/2012
-(partially suspended by STF) attempted to redistribute royalties more
-broadly.
-
-**Mechanism**: time-varying royalty windfalls to producing
-municipalities (and earmark to specific spending categories). Multiple
-court rulings altered the distribution rules across time.
-
-**Identifies**: effects of windfall revenue on:
-- Public spending composition
-- Education and health outcomes
-- Political behavior (re-election, corruption, accountability)
-
-**Compare with**: mining royalties (CFEM, Lei 13.540/2017) which use a
-different base and distribution formula.
-
-**See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2 ("Royalties").
-
----
-
-## 15. LRF personnel-spending limit (Arts. 19–20)
-
-**Institutional source**: LC 101/2000 (Lei de Responsabilidade Fiscal).
-
-**Mechanism**: cap on personnel spending as a share of *receita
-corrente líquida* (RCL): 60% for municipalities (54% Executivo + 6%
-Legislativo). Three thresholds:
-- **Limite de alerta** (90% of cap): TCE warning.
-- **Limite prudencial** (95%): restrictions on new hiring/raises.
-- **Above 100%**: must correct within 2 quadrimestres; further
-  non-compliance triggers transfer suspension and personal liability.
-
-**Identifies**: kink/threshold designs around the 60% limit. Effects of
-binding LRF constraints on:
-- Hiring decisions
-- Wage policy
-- Service delivery
-- Audit/sanction outcomes
-
-**Caveat**: RCL is itself endogenous to local economic conditions. The
-kink works best when combined with other revenue shocks.
-
-**See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §4.
-
----
-
-## 16. Lava Jato as institutional shock
-
-**Institutional source**: not a legal cutoff but an **operational
-phenomenon** (2014–2021) that changed prosecutorial practice across
-Brazilian institutions.
-
-**Mechanism**: the Operação Lava Jato model (force-task with MPF + PF +
-COAF + Receita Federal; aggressive use of colaboração premiada, leniency
-agreements with corporations, prison execution after second-instance
-conviction) became the template for subsequent corruption
-investigations.
-
-**Identifies**: effects of prosecutorial intensity on:
-- Corporate investment behavior
-- Political donation patterns
-- Politician selection
-- Electoral outcomes
-
-**Cutoffs** (multiple, with different identifying variations):
-- **2014**: operation begins.
-- **HC 126.292 (2016)**: prison execution after second-instance
-  conviction permitted. Imprisonment of high-profile defendants begins.
-- **ADC 43/44/54 (Nov 2019)**: prison execution requirement reversed.
-  High-profile defendants released.
-- **STF Lula vs Moro (2021)**: incompetência da 13ª Vara Federal +
-  parcialidade. Multiple convictions annulled.
-- **Lei 13.964/2019 Pacote Anticrime**: tightens colaboração premiada
-  formalities.
-- **2021**: Lava Jato force task formally dissolved.
-
-Each of these is its own quasi-experiment within the broader Lava Jato
-era.
-
-**See**: [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md) §§7–9,
-[`jurisprudencia-stf.md`](jurisprudencia-stf.md) §6.
-
----
-
-## 17. Reforma tributária (EC 132/2023) — phase-in 2026–2033
-
-**Institutional source**: Emenda Constitucional 132/2023, December 2023.
-Phase-in begins 2026, full effect by 2033.
-
-**Mechanism**: replaces ICMS, ISS, IPI, PIS, COFINS with a dual VAT
-(CBS federal + IBS state/municipal) plus an excise (IS). The transition
-period sees the old and new systems coexisting at different proportions.
-
-**Identifies**: effects of tax-system changes on:
-- Sectoral price levels
-- Inter-state trade
-- Firm location decisions
-- Municipal fiscal position (especially services-heavy municipalities
-  losing ISS base)
-- Compliance costs
-
-**Caveat**: as of 2026, the reform is **just beginning** — empirical
-analysis will need data from 2026 onward.
-
-**See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §1
-("Reforma tributária").
-
----
-
-## 18. CNJ Resolução 547/2024 — execução fiscal mass extinction
-
-**Institutional source**: CNJ Res. 547/2024.
-
-**Mechanism**: authorized judges to extinguish low-value execuções
-fiscais (≤R$10,000) on economic-unviability grounds. Resulted in
->10 million case extinctions in <2 years; the stock fell from 26.9M
-(Dec 2023) to ~16.5M (Dec 2025), a ~37% reduction.
-
-**Identifies**: effects of administrative case-clearing on:
-- Court congestion measures
-- Judge workload
-- Other case durations (does clearing congestion help non-tax cases
-  move faster?)
-
-**Caveat**: the extinction is **not** randomly assigned across cases —
-it targets low-value cases below a sharp threshold. RD on the value
-threshold could work for cases just above/below R$10,000.
-
-**See**: [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md)
-§7.
-
----
-
-## 19. FUNDEB complementação — federal top-up threshold
+## 6. FUNDEB complementação — federal top-up threshold
 
 - **Source**: FUNDEB (EC 108/2020, Lei 14.113/2020). Federal government
   tops up state-level FUNDEB funds when per-student spending falls
@@ -540,7 +210,7 @@ threshold could work for cases just above/below R$10,000.
 
 ---
 
-## 20. Judicial random case assignment — judge fixed effects
+## 7. Judicial random case assignment — judge fixed effects
 
 - **Source**: CNJ case-assignment rules. Cases distributed by electronic
   *sorteio* within groups of varas of the same competence.
@@ -562,25 +232,7 @@ threshold could work for cases just above/below R$10,000.
 
 ---
 
-## 21. Quinto constitucional — OAB/MP vs career judges
-
-- **Source**: `CF.94`. 1/5 of seats in TJs, TRFs, and TRTs reserved
-  for lawyers (OAB) and MP members.
-- **Mechanism**: within the same tribunal, some judges entered via
-  concurso (career track) and others via quinto (OAB/MP track).
-  Different professional formation, age at appointment, and career
-  incentives.
-- **Identifies**: effect of judge background (career vs. external
-  appointment) on judicial behavior, voting patterns, case outcomes.
-- **Caveats**: quinto judges are selected (not random); need to account
-  for selection on observables. Chambers/turmas may not be randomly
-  composed.
-- **See**: [`topics/carreira-juizes.md`](topics/carreira-juizes.md) §2,
-  [`topics/juizes.md`](topics/juizes.md) §3.
-
----
-
-## 22. Municipal emancipation wave (1988–2000)
+## 8. Municipal emancipation wave (1988–2000)
 
 - **Source**: CF/88 Art. 18 §4 (original) gave states authority to
   create new municipalities by state law. ~1,438 new municípios
@@ -610,6 +262,8 @@ add an entry to this file with:
 4. **Caveats**: known threats to identification (selection, anticipation,
    spillover, etc.).
 5. **Canonical paper(s)**: the seminal use(s) of the variation in the
-   literature.
+   literature. This file is scoped to variations used in published
+   work — if the strategy hasn't been used yet, keep it in your own
+   notes rather than listing it here.
 6. **Cross-reference**: link to the topical file(s) where the
    institutional details are explained.
