@@ -186,6 +186,19 @@ Coverage is uneven — not every file is revisited on every change in
 the law. Each topical file carries a `Snapshot as of YYYY` line. For
 legally-current details, verify against the primary source.
 
+## Related repos
+
+Part of a set of repositories I use across my research projects:
+
+- [research-kit](https://github.com/hsigstad/research-kit) — Claude Code
+  skills, conventions, methodology docs, tools (includes the
+  `/institutions` skill that consumes this reference)
+- [diarios](https://github.com/hsigstad/diarios) — Brazilian
+  official-diary parsing
+- [llmkit](https://github.com/hsigstad/llmkit) — LLM extraction toolkit
+  with caching and audit
+- [newsbr](https://github.com/hsigstad/newsbr) — Brazilian news collection
+
 ## License
 
 Released under **CC BY 4.0** (see [`LICENSE`](LICENSE)). You are free
