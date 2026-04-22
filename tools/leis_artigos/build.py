@@ -529,6 +529,12 @@ LAW_CATALOG = [
     ('LC200',   '200',   '2023', 53,    'lei_complementar'),
     # Previdência / NTEP — scraper stored wrong numero (357); hardcode id.
     ('L8213',   '8213',  '1991', 4059,  'lei'),
+    # Execução fiscal — scraper stored wrong numero for LEF (4320), LCF (9532),
+    # and L10522 (526); hardcode id + date.
+    ('LEF',     '6830',  '1980', 9683,  'lei', '1980-09-22'),   # Lei de Execuções Fiscais
+    ('LCF',     '8397',  '1992', 3349,  'lei', '1992-01-06'),   # Medida Cautelar Fiscal
+    ('L10522',  '10522', '2002', 12842, 'lei', '2002-07-19'),   # CADIN / gestão de débitos federais
+    ('L13606',  '13606', '2018', 5162,  'lei', '2018-01-09'),   # Averbação pré-executória + protesto CDA
 ]
 
 

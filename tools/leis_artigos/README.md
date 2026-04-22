@@ -98,7 +98,7 @@ consolidated targets).
 
 ## Catalog (as of 2026)
 
-68 laws cataloged. Apelidos used in the backtick-form citations:
+72 laws cataloged. Apelidos used in the backtick-form citations:
 
 | apelido | lei | scope |
 |---|---|---|
@@ -170,6 +170,10 @@ consolidated targets).
 | **LANS** | Lei 9.961/2000 | Cria a ANS |
 | **LC200** | LC 200/2023 | Arcabouço Fiscal |
 | **L8213** | Lei 8.213/1991 | Previdência Social (NTEP em Art. 21-A) |
+| **LEF** | Lei 6.830/1980 | Lei de Execuções Fiscais |
+| **LCF** | Lei 8.397/1992 | Medida Cautelar Fiscal |
+| **L10522** | Lei 10.522/2002 | CADIN / gestão de débitos federais |
+| **L13606** | Lei 13.606/2018 | Averbação pré-executória + protesto da CDA |
 
 The full mapping with metadata, statuses, and reform relationships is
 in [`../../leis_index.yaml`](../../leis_index.yaml).

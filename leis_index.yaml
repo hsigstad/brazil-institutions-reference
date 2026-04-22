@@ -23,7 +23,7 @@
 #   (e.g., [[Lei 13.709/2018 Art. 7]]).
 
 schema_version: 1
-last_updated: 2026-04-20
+last_updated: 2026-04-22
 
 statutes:
 
@@ -133,9 +133,16 @@ statutes:
     titulo: Código Tributário Nacional (CTN)
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm
-    topics: [tax_law, federalism]
+    topics: [tax_law, federalism, tax_enforcement]
     key_articles:
       - "Art. 91 (FPM distribution)"
+      - "Art. 151 (suspensão da exigibilidade do crédito tributário)"
+      - "Art. 156 (extinção do crédito tributário — inclui pagamento e prescrição)"
+      - "Art. 174 (prescrição da cobrança do crédito tributário — 5 anos)"
+      - "Art. 185 (presunção de fraude à execução fiscal após inscrição)"
+      - "Art. 185-A (indisponibilidade judicial de bens)"
+      - "Arts. 201-204 (dívida ativa, CDA, presunção de liquidez e certeza)"
+      - "Art. 206 (certidão positiva com efeitos de negativa)"
     discussed_in: [topics/federalismo-fiscal.md]
 
   dl_1881_1981:
@@ -1155,6 +1162,88 @@ statutes:
     topics: [constitutional_amendment, fiscal_rules, health, social_policy]
     discussed_in: []
 
+  # Execução fiscal — judicial tax enforcement.
+  # Cataloged to support projects/fisc. LEF is the core procedural
+  # statute; LCF adds pre-enforcement cautelar seizure; L10522 governs
+  # federal debt management (CADIN, dispensa de inscrição, parcelamento);
+  # L13606 layered in averbação pré-executória and protesto da CDA.
+
+  lei_6830_1980:
+    tipo: Lei
+    numero: "6830"
+    ano: 1980
+    apelido: LEF
+    titulo: Lei de Execuções Fiscais
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l6830.htm
+    topics: [tax_enforcement, civil_procedure, dívida_ativa]
+    key_articles:
+      - "Art. 1 (aplicação; CPC subsidiário)"
+      - "Art. 2 (dívida ativa tributária e não tributária)"
+      - "Art. 3 (CDA — presunção de liquidez e certeza)"
+      - "Art. 6 (petição inicial)"
+      - "Art. 8 (citação — 5 dias para pagar ou garantir)"
+      - "Art. 9 (formas de garantia)"
+      - "Art. 11 (ordem de penhora)"
+      - "Art. 16 (embargos à execução — 30 dias, exige garantia)"
+      - "Art. 40 (suspensão e arquivamento; prescrição intercorrente)"
+    discussed_in: [topics/processo-civil.md]
+
+  lei_8397_1992:
+    tipo: Lei
+    numero: "8397"
+    ano: 1992
+    apelido: LCF
+    titulo: Medida Cautelar Fiscal
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8397.htm
+    topics: [tax_enforcement, civil_procedure]
+    key_articles:
+      - "Art. 1 (cabimento — antes ou durante a execução fiscal)"
+      - "Art. 2 (hipóteses — ex.: devedor que tenta alienar bens)"
+      - "Art. 4 (efeito — indisponibilidade de bens até o limite da dívida)"
+      - "Art. 7 (concessão liminar)"
+      - "Art. 15 (caducidade — não propositura da execução fiscal em 60 dias)"
+    discussed_in: []
+
+  lei_10522_2002:
+    tipo: Lei
+    numero: "10522"
+    ano: 2002
+    apelido: L10522
+    titulo: CADIN e gestão de débitos federais
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/2002/l10522.htm
+    topics: [tax_enforcement, federal_debt, CADIN]
+    key_articles:
+      - "Art. 2 (criação do CADIN — cadastro federal de inadimplentes)"
+      - "Art. 6 (efeitos da inscrição — veda concessão de crédito público)"
+      - "Art. 10 (consulta obrigatória ao CADIN)"
+      - "Art. 19 (dispensa de recursos pela PFN em teses perdedoras)"
+      - "Art. 20 (arquivamento de execuções fiscais federais de baixo valor)"
+      - "Art. 20-B (notificação do devedor, incluído por L13606)"
+      - "Art. 20-C (protesto da CDA, incluído por L13606)"
+      - "Art. 20-D (averbação pré-executória, incluído por L13606)"
+      - "Art. 20-E (regulamentação, incluído por L13606)"
+    reformed_by: [lei_13606_2018]
+    notes: "Parser limitation: Arts. 20-C e 20-D not present in planalto's consolidated L10522 HTML (only 20-B and 20-E ingested as separate rows); full texts exist inline within `L13606.25` via the inserting Art. 25. Consulte o texto consolidado diretamente para 20-C / 20-D."
+    discussed_in: []
+
+  lei_13606_2018:
+    tipo: Lei
+    numero: "13606"
+    ano: 2018
+    apelido: L13606
+    titulo: Averbação pré-executória e protesto da CDA (altera L 10.522/2002)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13606.htm
+    topics: [tax_enforcement, federal_debt]
+    key_articles:
+      - "Art. 25 (insere Arts. 20-B a 20-E na L 10.522/2002)"
+    reforms: [lei_10522_2002]
+    notes: "Art. 20-E teve constitucionalidade da averbação pré-executória questionada em ADIs (6.040, 6.055); STF reconheceu constitucionalidade parcial em 2020"
+    discussed_in: []
+
 # Topic glossary (controlled vocabulary used in the topics field above)
 # Useful for grep-based filtering: e.g., "topics:.*federalism" finds
 # all federalism-related statutes.
@@ -1211,8 +1300,12 @@ topics_vocabulary:
   - social_security
   - SUS
   - tax_crimes
+  - tax_enforcement
   - tax_law
   - tax_reform
+  - CADIN
+  - dívida_ativa
+  - federal_debt
   - TCU
   - TCE_SP
   - transparency
