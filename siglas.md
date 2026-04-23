@@ -92,6 +92,7 @@ names, glossary.
 - **DL** — Decreto-Lei. Pre-1988 legislative instrument with statute force.
 - **DOU** — Diário Oficial da União. Federal official gazette.
 - **DPU** — Defensoria Pública da União. Federal public defender.
+- **DREI** — Departamento Nacional de Registro Empresarial e Integração. Federal coordinator of state Juntas Comerciais (Ministério do Desenvolvimento, Indústria, Comércio e Serviços). Issues normative instructions regulating business-registration procedure. → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **DRJ** — Delegacia da Receita Federal de Julgamento. RFB 1st-instance administrative tribunal for tax impugnações. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 
 ## E
@@ -127,6 +128,7 @@ names, glossary.
 - **IBS** — Imposto sobre Bens e Serviços. State+municipal VAT under EC 132/2023 reform. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **IC** — Inquérito Civil. MP investigative proceeding for non-criminal matters. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
 - **ICMS** — Imposto sobre Circulação de Mercadorias e Serviços. State VAT (largest single tax base in Brazil). → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
+- **IDPJ** — Incidente de Desconsideração da Personalidade Jurídica (`CPC.133`–`CPC.137`). Required before piercing the corporate veil to reach a different PJ (same economic group) for a debt originally owed by the executed company, when the hypothesis does not fit `CTN.134` or `CTN.135` (per STJ 2023). → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **INDA** — Infraestrutura Nacional de Dados Abertos. Federal open-data framework.
 - **Infojud** — Sistema de Informações ao Judiciário. CNJ–RFB online access for magistrates to Receita Federal data (DIRPF, DIRF, DITR, cadastros) via digital certification. Rolled out late 2000s. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **IOF** — Imposto sobre Operações Financeiras. Federal tax on financial transactions.
@@ -140,6 +142,10 @@ names, glossary.
 - **ITBI** — Imposto sobre Transmissão de Bens Imóveis. Municipal real-estate transfer tax.
 - **ITCMD** — Imposto sobre Transmissão Causa Mortis e Doação. State estate/gift tax.
 - **ITR** — Imposto Territorial Rural. Federal rural-land tax.
+
+## J
+
+- **Junta Comercial / JUCESP / JUCEB / JUCERJA / JUCERGS / JUCEMG** — State-level business-registration authorities (one per estado + DF), regulated by Lei 8.934/1994 and coordinated federally by DREI. Issue and maintain NIRE; arquivam atos societários (incorporação, fusão, cisão, alteração de QSA, baixa). Lei 14.195/2021 revogou a baixa-de-ofício por inatividade (antes Art. 60 da Lei 8.934). → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 
 ## L
 
@@ -193,6 +199,7 @@ names, glossary.
 ## N
 
 - **NCPC** — Novo Código de Processo Civil (Lei 13.105/2015).
+- **NIRE** — Número de Identificação do Registro de Empresas. State-level business-registration number assigned by the Junta Comercial, distinct from CNPJ (federal tax ID). A firm has one NIRE and one CNPJ; both must be baixados for full formal dissolution. → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **NF** — Notícia de Fato. Initial intake at the MP for an alleged violation.
 - **NR-17** — Norma Regulamentadora 17. Ergonomic / break standards (referenced in labor cases).
 - **NTEP** — Nexo Técnico Epidemiológico Previdenciário. Statistical presumption of occupational origin in workplace-injury social-security claims (Lei 8.213/91 Art. 21-A).
@@ -233,6 +240,7 @@ names, glossary.
 - **RCED** — Recurso Contra Expedição de Diploma. Post-election challenge to a diploma. → [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md)
 - **RDC** — Regime Diferenciado de Contratações (Lei 12.462/2011). Special procurement regime, replaced by Lei 14.133/2021.
 - **RE** — Recurso Extraordinário. Appeal to STF on constitutional questions.
+- **REDESIM** — Rede Nacional para a Simplificação do Registro e da Legalização de Empresas e Negócios (Lei 11.598/2007; expandida pela Lei 14.195/2021). Integrates business registration across Junta Comercial, RFB (CNPJ), and state/municipal tax cadastros. → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **Refis** — Informal label for the recurring special federal tax-parcelamento programs (Lei 9.964/2000, Lei 10.684/2003, Lei 11.941/2009, Lei 13.496/2017, etc.). → [`topics/divida-ativa.md`](topics/divida-ativa.md)
 - **Renajud** — Online CNJ–Denatran system for judicial restrictions on motor vehicles (bloqueio de transferência, penhora) registered in the Renavam base. Launched formally 28/08/2008. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **RENAME** — Relação Nacional de Medicamentos Essenciais. SUS essential-medications list.

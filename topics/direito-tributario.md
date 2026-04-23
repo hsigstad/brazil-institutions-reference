@@ -293,6 +293,160 @@ Combinado com `CTN.185-A` (indisponibilidade judicial de bens via
 Bacenjud/Sisbajud quando o devedor citado não paga nem indica bens),
 constitui a principal proteção patrimonial da Fazenda no curso da EF.
 
+### Mecânica do phoenix-CNPJ: registros, desconsideração, grupo econômico
+
+O redirecionamento ao sócio-gerente por dissolução irregular (coberto
+acima via Súmulas 430/435 + Temas 444/962/981) é apenas uma das duas
+vias pelas quais o sistema fiscal tenta alcançar patrimônio após a
+empresa executada se tornar inoperante. A segunda via — cada vez mais
+relevante empiricamente — é o **redirecionamento a outra pessoa
+jurídica** tida como sucessora de fato ou parte do mesmo **grupo
+econômico**. Esta subseção consolida a mecânica registral e
+processual que governa este fluxo.
+
+#### Junta Comercial e o fim da inatividade automática (2021)
+
+O registro empresarial é descentralizado: cada estado tem sua **Junta
+Comercial** (JUCESP, JUCEB, JUCERJA, JUCERGS, JUCEMG, etc.), regulada
+por Lei 8.934/1994 e coordenada federalmente pelo DREI (Departamento
+Nacional de Registro Empresarial e Integração).
+
+**Quebra estrutural em 2021**: a Lei 14.195/2021 ("Lei do Ambiente de
+Negócios") **revogou o Art. 60 da Lei 8.934/1994**, que previa a
+baixa-de-ofício de empresas sem qualquer arquivamento por 10 anos na
+Junta. **Desde 2021, uma PJ pode permanecer inativa na Junta
+indefinidamente sem cancelamento do NIRE** — a "limpeza" automática
+do registro empresarial deixou de existir. Implicação direta para
+estudos de phoenix-CNPJ: empresas com dívida acumulada e sócios
+migrados para nova PJ podem permanecer "vivas" no registro
+indefinidamente, sem gatilho administrativo de baixa, preservando o
+NIRE como entidade passível de redirecionamento.
+
+#### CNPJ: situação cadastral na Receita Federal
+
+O CNPJ (IN RFB 1863/2018) tem cinco estados principais relevantes
+para o universo de dívida tributária:
+
+- **Ativa**: operação regular.
+- **Suspensa**: pedido de baixa em tramitação; decisão judicial;
+  inconsistência cadastral; indícios de fraude; comunicação de
+  interrupção temporária.
+- **Inapta**: omissão contumaz no cumprimento de obrigações
+  acessórias (declarações/escriturações) — antes 2 anos, desde 2022,
+  90 dias em algumas obrigações específicas. Três hipóteses
+  clássicas: **Omissa Contumaz**, **Omissa Não Localizada**,
+  **Inexistente de Fato** (esta última é frequentemente associada a
+  empresas-fachada).
+- **Baixada**: por solicitação do contribuinte (após regularização)
+  ou pela RFB após longo período em inaptidão.
+- **Nula**: registro com vício insanável.
+
+**Correspondência com a dissolução irregular**: quando o oficial de
+justiça certifica não-localização da empresa no endereço cadastrado
+(e.g., AR "mudou-se, não procurou"), e o CNPJ aparece como **inapta
+- não localizada** ou **inexistente de fato**, tem-se a configuração
+típica que aciona `SSTJ435` e o redirecionamento aos sócios. Projetos
+empíricos podem combinar o estado do CNPJ na base pública da RFB com
+o status processual da EF para identificar o ponto em que a empresa
+"morre operacionalmente" — antes, frequentemente, da EF reconhecer
+formalmente a dissolução.
+
+#### Sucessão formal vs. dissolução informal
+
+O direito tributário distingue quatro trajetórias de saída de uma
+PJ devedora:
+
+1. **Dissolução regular com quitação fiscal**: baixa na Junta + CND +
+   baixa no CNPJ. Encerra o débito e encerra a PJ. Path ideal mas
+   raro em empresas devedoras.
+2. **Incorporação, fusão, cisão**: reorganização societária formal.
+   Sucessão tributária aplica pelos arts. `CTN.132` e `CTN.133`.
+   Alienações em recuperação judicial ou falência foram **excluídas**
+   da sucessão tributária por `LC118` (`CTN.133.§1`) — o adquirente
+   arremata livre de ônus fiscais.
+3. **Trespasse** (alienação de fundo de comércio — CC Arts. 1.142–
+   1.149): adquirente responde nos termos do `CTN.133` (integral se
+   alienante cessa; subsidiária se continua ou reinicia em 6 meses).
+4. **Dissolução irregular** ("desaparecimento"): a empresa deixa de
+   operar sem baixa formal, sem quitação, sem sucessão documentada.
+   É o padrão empiricamente dominante em empresas devedoras —
+   precisamente por permitir a migração de atividade para nova PJ
+   controlada pelos mesmos sócios sem ter que absorver o passivo.
+
+**O phoenix-CNPJ é uma estratégia (4) combinada com criação paralela
+de nova PJ**. A questão jurídico-fiscal se divide em duas frentes:
+alcançar os sócios (via CTN.135 + Súmulas 430/435 + Temas 444/962/981
+— coberta acima); e alcançar a nova PJ (via desconsideração da
+personalidade jurídica ou grupo econômico — coberto abaixo).
+
+#### Desconsideração da personalidade jurídica e grupo econômico
+
+Quando a Fazenda tenta alcançar uma **nova PJ** (não o sócio, mas
+outra empresa controlada pelos mesmos sócios, ou no mesmo endereço,
+ou com atividade equivalente), o caminho legal é distinto do
+redirecionamento ao sócio-gerente:
+
+- **Base material**: `CC.50` — requisitos da desconsideração:
+  demonstração de **abuso da personalidade jurídica**, caracterizado
+  por **desvio de finalidade** ou **confusão patrimonial**. Mero
+  vínculo societário, parentesco entre sócios, ou coincidência de
+  endereço **não** bastam, segundo jurisprudência consolidada do STJ.
+- **Base processual**: `CPC.133`–`CPC.137` — Incidente de
+  Desconsideração da Personalidade Jurídica (IDPJ), introduzido pelo
+  CPC/2015. Procedimento específico com contraditório prévio antes
+  da penhora sobre a nova PJ.
+- **STJ (2023)**: em execução fiscal, o redirecionamento a **pessoa
+  jurídica de fato pertencente ao mesmo grupo econômico** exige a
+  instauração prévia do **IDPJ** quando a hipótese **não se enquadra
+  em `CTN.134` ou `CTN.135`**. Há divergência entre turmas sobre o
+  alcance da regra; parte da jurisprudência ainda admite
+  redirecionamento direto quando há evidência robusta de confusão
+  patrimonial (teoria da "expropriação imediata"). **NEEDS PRIMARY
+  SOURCE**: tese fixada e sua modulação; acompanhar acórdãos
+  posteriores a 2023.
+- **"Grupo econômico de fato"**: configuração em que múltiplos CNPJs
+  formalmente distintos operam como uma única unidade negocial. A
+  caracterização exige, cumulativamente: (i) desvio de finalidade,
+  (ii) confusão patrimonial, **ou** (iii) dissolução irregular da
+  original. Simples compartilhamento de sócios ou controle comum
+  **não** é suficiente — a solidariedade tributária do `CTN.124.I`
+  exige **interesse comum no fato gerador**, não apenas controle
+  societário.
+
+#### Implicações empíricas
+
+- **`L14195/2021` é quebra estrutural registral**: empresas
+  devedoras inseridas no estoque pós-2021 podem permanecer
+  formalmente ativas na Junta Comercial indefinidamente. Séries de
+  "baixa da PJ como indicador de dissolução" antes e depois de 2021
+  não são comparáveis.
+- **Ponte CNPJ ↔ processo**: a situação cadastral do CNPJ na base
+  pública da RFB ("inapta não localizada", "inexistente de fato",
+  "suspensa") é um **marcador observável de dissolução informal** que
+  pode preceder o reconhecimento processual da dissolução irregular
+  pela EF em meses ou anos. Combinar as duas séries identifica o
+  timing real do "desaparecimento" da empresa.
+- **Universo phoenix observável**: para identificar migração de
+  atividade, os marcadores registrais são: mesmos sócios/QSA, CNAE
+  equivalente, endereço próximo ou idêntico, constituição temporal
+  próxima à inaptidão da original, trabalhadores em comum via RAIS.
+  Nenhum marcador isolado é suficiente; combinação de 3+ é a prática
+  empírica em pesquisa de grupos de fato.
+- **Dois universos jurídicos distintos**: redirecionamento a
+  sócio-gerente (via `CTN.135` + `SSTJ435`, sem IDPJ) e
+  redirecionamento a PJ de grupo econômico (com IDPJ, via `CPC.133`
+  + `CC.50`) seguem ritos e ônus probatórios diferentes. Em dados
+  processuais, aparecem como movimentações distintas — o primeiro é
+  uma "inclusão de polo passivo" simples; o segundo abre um incidente
+  autônomo com contraditório prévio.
+- **Sniper (2022-)** centralizou a investigação de vínculos
+  patrimoniais e societários entre PFs e PJs, tornando a detecção
+  operacional de grupos de fato dramaticamente mais rápida. Efeito
+  esperado: aumento na frequência de IDPJs e de redirecionamentos a
+  PJs pós-2022, à medida que a Fazenda passa a identificar vínculos
+  que antes exigiriam diligência manual prolongada (ver
+  `execucao-fiscal.md` §3, rollout de sistemas).
+
 ---
 
 ## 4. Reforma tributária (EC 132/2023)
