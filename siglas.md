@@ -35,7 +35,7 @@ names, glossary.
 ## B
 
 - **BACEN** — Banco Central do Brasil. Central bank.
-- **Bacenjud** — Online asset-blocking system run jointly by CNJ and BACEN; succeeded by Sisbajud in 2020. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md), [`topics/divida-ativa.md`](topics/divida-ativa.md)
+- **Bacenjud** — Online asset-blocking system for judicial orders to the financial system. Bacenjud 1.0 launched 2001 (BCB–STJ/CJF convênio); Bacenjud 2.0 reformulated 2005. Succeeded by Sisbajud in 2020. Base legal posterior: `CPC.854`. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **BNDES** — Banco Nacional de Desenvolvimento Econômico e Social. Federal development bank.
 
 ## C
@@ -128,6 +128,7 @@ names, glossary.
 - **IC** — Inquérito Civil. MP investigative proceeding for non-criminal matters. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
 - **ICMS** — Imposto sobre Circulação de Mercadorias e Serviços. State VAT (largest single tax base in Brazil). → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **INDA** — Infraestrutura Nacional de Dados Abertos. Federal open-data framework.
+- **Infojud** — Sistema de Informações ao Judiciário. CNJ–RFB online access for magistrates to Receita Federal data (DIRPF, DIRF, DITR, cadastros) via digital certification. Rolled out late 2000s. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **IOF** — Imposto sobre Operações Financeiras. Federal tax on financial transactions.
 - **IPI** — Imposto sobre Produtos Industrializados. Federal industrial-products tax.
 - **IPTU** — Imposto Predial e Territorial Urbano. Municipal urban property tax. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
@@ -233,6 +234,7 @@ names, glossary.
 - **RDC** — Regime Diferenciado de Contratações (Lei 12.462/2011). Special procurement regime, replaced by Lei 14.133/2021.
 - **RE** — Recurso Extraordinário. Appeal to STF on constitutional questions.
 - **Refis** — Informal label for the recurring special federal tax-parcelamento programs (Lei 9.964/2000, Lei 10.684/2003, Lei 11.941/2009, Lei 13.496/2017, etc.). → [`topics/divida-ativa.md`](topics/divida-ativa.md)
+- **Renajud** — Online CNJ–Denatran system for judicial restrictions on motor vehicles (bloqueio de transferência, penhora) registered in the Renavam base. Launched formally 28/08/2008. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **RENAME** — Relação Nacional de Medicamentos Essenciais. SUS essential-medications list.
 - **RESp** — Recurso Especial. Appeal to STJ on federal-law questions.
 - **RFB** — Receita Federal do Brasil. Federal tax administration (super-Receita since Lei 11.457/2007, absorbing former SRF + INSS collection). → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
@@ -257,8 +259,10 @@ names, glossary.
 - **SIOPE** — Sistema de Informações sobre Orçamentos Públicos em Educação. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **SIOPS** — Sistema de Informações sobre Orçamentos Públicos em Saúde. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **SISAB** — Sistema de Informação em Saúde para a Atenção Básica (SUS).
-- **Sisbajud** — Sistema de Busca de Ativos do Poder Judiciário. CNJ online system for asset-blocking and patrimonial queries, successor of Bacenjud (2020); central tool in execução fiscal. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
+- **Sisbajud** — Sistema de Busca de Ativos do Poder Judiciário. CNJ online system for asset-blocking and patrimonial queries, successor of Bacenjud (25/08/2020). Key innovation: "teimosinha" (auto-reiteration of blocking orders). → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **SISCOR** — Sistema de Correição do Poder Executivo Federal. CGU coordination system for federal disciplinary actions. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
+- **Sniper** — Sistema Nacional de Investigação Patrimonial e Recuperação de Ativos. CNJ investigation tool that integrates Sisbajud, Infojud, Renajud, juntas comerciais, Serasajud to map patrimonial/societary links. Launched 16/08/2022 under Programa Justiça 4.0 (CNJ–PNUD). → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
+- **Serasajud** — CNJ–Serasa Experian online integration for credit-bureau queries and negativação by the Judiciary. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **SPCE** — Sistema de Prestação de Contas Eleitorais. TSE campaign-finance filing system. → [`topics/prestacao-contas-eleitorais.md`](topics/prestacao-contas-eleitorais.md)
 - **SSTJ** — cite.py prefix for STJ Súmulas (e.g., `SSTJ359`). Resolved against [`sumulas_stj.yaml`](sumulas_stj.yaml).
 - **STF** — Supremo Tribunal Federal. Brazilian constitutional court. → [`topics/cortes-superiores.md`](topics/cortes-superiores.md), [`jurisprudencia-stf.md`](jurisprudencia-stf.md)

@@ -119,6 +119,97 @@ CPF/CNPJ executado em todas as instituições financeiras. Combina com
 `CTN.185-A` (indisponibilidade judicial de bens) quando citado não
 paga nem indica bens.
 
+### Sistemas eletrônicos de descoberta e constrição — rollout e timeline
+
+Ao longo de 2001–2022 o Judiciário construiu uma pilha progressivamente
+mais densa de sistemas eletrônicos para localizar e constringir ativos
+do executado. Para pesquisa empírica, **o rollout destes sistemas é
+uma das principais fontes de variação temporal (e, para alguns, de
+variação entre tribunais) na tecnologia de cobrança** — independente
+de reformas legais. Timeline:
+
+- **Bacenjud 1.0 — 2001**. Sistema inicial de convênio do BCB com o
+  STJ/CJF, voltado à transmissão eletrônica de ordens de bloqueio para
+  instituições financeiras. Operação manual; adesão gradual entre
+  tribunais; inicialmente concentrada na Justiça do Trabalho.
+- **Bacenjud 2.0 — 2005**. Convênio BCB–STJ–CJF reformula o sistema
+  com cobertura bancária mais ampla e interface aperfeiçoada. Base
+  legal processual posteriormente consolidada em `CPC.854` (CPC 2015).
+  Usa-se também para `CTN.185-A` (indisponibilidade judicial de bens e
+  direitos) quando o devedor citado não paga nem indica bens.
+- **Renajud — 2006–2008**. Convênio CNJ / Secretaria de Reforma do
+  Judiciário / Denatran celebrado em 2006; projeto piloto no TRT-10
+  em maio de 2008; lançamento formal em 28/08/2008. Desenvolvido pelo
+  Serpro. Permite consulta e gravação de restrições (bloqueio de
+  transferência, penhora) sobre veículos registrados no Renavam, em
+  tempo real.
+- **Infojud — 2007–2010**. Convênio CNJ–RFB para acesso do Judiciário
+  a dados da Receita Federal (DIRPF, DIRF, DITR, cadastros) via
+  certificação digital. Adoção progressiva ao longo do final dos anos
+  2000; coberta por Termo de Adesão ao Convênio assinado por cada
+  tribunal.
+- **Sisbajud — agosto/setembro 2020**. Substituto do Bacenjud,
+  resultante de **Acordo de Cooperação Técnica CNJ–BCB–PGFN de
+  dezembro de 2019**. Lançado em 25/08/2020; migração concluída em
+  08/09/2020 (Bacenjud desligado em 04/09/2020). Inovações principais:
+  (i) **"teimosinha"** — reiteração automática das ordens de bloqueio
+  (o sistema recalcula e reenvia ordens residuais até a satisfação do
+  valor); (ii) requisição de extratos bancários detalhados no formato
+  SIMBA/MPF; (iii) cópias de contratos de abertura de conta, extratos
+  de cartão, contratos de câmbio, cheques, extratos PIS/FGTS; (iv)
+  integração direta com a PGFN. A inclusão da PGFN no acordo reflete
+  o interesse da Fazenda Federal em usar o sistema para créditos em
+  EF de grande volume.
+- **Sniper — agosto/2022**. Sistema Nacional de Investigação
+  Patrimonial e Recuperação de Ativos, lançado pelo CNJ em 16/08/2022
+  no âmbito do **Programa Justiça 4.0** (CNJ–PNUD, desde 2020).
+  Agrega e cruza bases de dados (Sisbajud, Infojud, Renajud, Juntas
+  Comerciais, Receita Federal, Serasajud) para **identificar vínculos
+  patrimoniais, societários e financeiros** entre PFs e PJs em
+  segundos — usado sobretudo para mapear redes de grupo econômico e
+  para redirecionamento. Menos uma ferramenta de bloqueio e mais uma
+  de investigação cruzada. Nova versão do Sniper com funcionalidades
+  de constrição lançada em 23/09/2025.
+- **Serasajud** — sistema que integra base da Serasa Experian ao
+  Judiciário; permite consulta a dívidas de PFs/PJs e negativação
+  (quando cabível) em tempo real. Coexiste com os anteriores.
+
+**Base legal principal**: `CPC.854` (penhora de dinheiro em depósito ou
+aplicação financeira por sistema eletrônico da autoridade supervisora
+do SFN); `CTN.185-A` (indisponibilidade judicial de bens e direitos).
+A obrigatoriedade do uso foi ampliada pela Resolução CNJ que tornou
+obrigatório o uso dos sistemas eletrônicos para bloqueio patrimonial
+antes de diligências físicas de menor eficácia.
+
+**Implicações empíricas do rollout**:
+
+- **Variação temporal exógena na tecnologia de cobrança** entre 2001 e
+  2022. Para projetos que medem efetividade da EF sobre horizonte
+  longo, o rollout destes sistemas é uma das fontes de mudança na
+  probabilidade de localização de ativos — separadamente de reformas
+  legais como `LC118` (2005), `Tema566` (2018), ou Lei 13.988 (2020).
+- **Adoção não-uniforme entre tribunais** na fase inicial de cada
+  sistema (Bacenjud 1.0, Renajud pré-2010, Infojud pré-2012). A
+  interação rollout × tribunal gera potencial para *event-study* com
+  corte por TJ/TRT/TRF, embora dados precisos de adoção por vara não
+  sejam públicos.
+- **Sisbajud "teimosinha" como quebra pós-2020**: a reiteração
+  automática de ordens altera a distribuição de valores efetivamente
+  bloqueados vis-à-vis Bacenjud (onde a reiteração exigia novo
+  despacho). Em séries de outcome (valor recuperado / tempo até
+  constrição), 2020–2021 é quebra estrutural.
+- **Sniper e redirecionamento**: para desenhos que estudam phoenix
+  firms, a chegada do Sniper (2022) muda a capacidade do sistema de
+  mapear grupos econômicos e redes societárias em segundos — afeta a
+  probabilidade observada de redirecionamento após 2022, e pode
+  alterar o perfil dos sócios alcançados (ver `Tema981`,
+  `direito-tributario.md` §3).
+- **Dados quantitativos do CNJ** sobre taxas de bloqueio (valor
+  bloqueado / valor solicitado) existem para alguns cortes (ex.:
+  relatório "Um ano de Sisbajud", 2021), mas não são
+  sistematicamente publicados por tribunal/vara. **NEEDS PRIMARY
+  SOURCE**: confirmar séries de hit-rate ao usar quantitativamente.
+
 ---
 
 ## 4. Defesa do executado
