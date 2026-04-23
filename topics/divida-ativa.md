@@ -293,7 +293,154 @@ estrutural de resolução em massa.
 
 ---
 
-## 10. Implicações para desenho empírico
+## 10. PGFN em Números — o funil observável (dados 2024)
+
+O **relatório "PGFN em Números"** (publicado anualmente desde meados
+da década de 2010, com dados do ano anterior) é a principal fonte
+quantitativa pública sobre o estoque e o fluxo da dívida ativa
+federal. Os números desta seção são da edição 2025 (dados fechados em
+dez/2024). Servem como *ground truth* macro para validar totais
+extraídos de DataJud ou de consulta processual em EFs federais.
+
+### Estoque (dez/2024)
+
+- **Total (DA União + DA FGTS)**: R$ 3 trilhões.
+- **DA União em cobrança**: R$ 2 trilhões (após subtrair créditos
+  em situação regular — negociados, garantidos ou suspensos).
+- **DA FGTS em cobrança**: R$ 52,9 bi; 399 mil inscrições; 236 mil
+  devedores.
+- **Por natureza do crédito** (do total de R$ 3 tri):
+  - Tributário não-previdenciário: R$ 2,1 tri (70,15%).
+  - Tributário previdenciário: R$ 748,9 bi (24,56%).
+  - Não-tributário: R$ 105,7 bi (3,46%).
+  - Contribuições FGTS: R$ 55,6 bi (1,82%).
+- **Quantidades**: 8,4 milhões de devedores agregados; 28,4 milhões
+  de inscrições.
+- **Regularidade**: 65,8% em situação irregular (R$ 2 tri); 34,2% em
+  situação regular (R$ 1 tri) — parcelados, garantidos, ou com
+  exigibilidade suspensa.
+- **Por rating de recuperabilidade**:
+  - A (alta): R$ 255,7 bi (8,3%); 1,1 mi devedores.
+  - B (média-alta): R$ 979,3 bi (32%); 1,5 mi devedores.
+  - C (média-baixa): R$ 456,5 bi (15%); 629 mil devedores.
+  - **D (baixa, "irrecuperável"): R$ 1,3 tri (44%); 3,8 mi devedores**.
+- **Concentração**: 26,9 mil "grandes devedores" respondem por R$
+  2,1 tri (71,7% do valor); 7 milhões de "não-grandes" somam apenas
+  R$ 862 bi (28,2%).
+
+**Observação central**: 44% do estoque é classificado pela própria
+PGFN como baixa recuperabilidade (rating D). Em termos de valor, a
+maior parte da dívida ativa federal **não é realisticamente cobrável**
+— é passivo contábil. Qualquer métrica de "sucesso da cobrança" que
+use estoque no denominador subestima a performance real.
+
+### Recuperação em 2024 (fluxo)
+
+- **Total recuperado** (DA União + FGTS): **R$ 61,3 bilhões** —
+  recorde histórico.
+  - DA União: R$ 59,9 bi.
+  - DA FGTS: R$ 1,4 bi.
+- **Série histórica (DA União, valores correntes)**: R$ 25,7 bi
+  (2020) → R$ 31,7 bi (2021) → R$ 39,1 bi (2022) → R$ 48,3 bi
+  (2023) → **R$ 59,9 bi (2024)** — dobrou em 4 anos.
+- **Taxa de recuperação bruta**: R$ 61,3 bi / R$ 3 tri ≈ **~2,0%**.
+  Sobre o estoque em situação irregular (R$ 2 tri), ≈ **~3,1%**.
+
+### Composição da recuperação por estratégia de cobrança (R$ 61,3 bi total em 2024)
+
+| Estratégia | R$ bi | % |
+|---|---|---|
+| Parcelamento | 31,2 | 53,79% |
+| Dívida Previdenciária (destacada) | 8,3 | 14,29% |
+| Protesto | 6,1 | 10,48% |
+| **Execução Forçada (EF)** | **5,3** | **9,20%** |
+| Corresponsável (redirecionamento) | 3,9 | 6,66% |
+| CADIN/CND | 1,9 | 3,28% |
+| FGTS/CS | 1,5 | 2,26% |
+
+**Resultado central para pesquisa em EF**: a execução fiscal judicial
+responde por **apenas ~9% da recuperação total** (≈ R$ 5,3 bi em
+2024). Parcelamento + transação dominam. Uma análise de "efetividade
+da cobrança fiscal federal" que se limite a EFs captura só uma
+fração — e a fração residual, composta por créditos que não foram
+cobráveis por canais mais baratos.
+
+### Transação tributária (2019–2024, acumulado)
+
+- **Valor consolidado original negociado**: R$ 777,1 bi (sem
+  descontos legais).
+- **Acordos firmados**: 3,2 milhões.
+- **Inscrições parceladas em transação**: 8,4 milhões.
+- **Fluxo anual de recuperação via transação**:
+  - 2020: R$ 1,7 bi.
+  - 2021: R$ 6,4 bi.
+  - 2022: R$ 14,1 bi.
+  - 2023: R$ 20,7 bi.
+  - 2024: R$ 34,1 bi — ≈ **57% da recuperação anual total em 2024**.
+- **Transação individual simplificada**: créditos entre R$ 1 mi e R$
+  10 mi (Portaria PGFN específica).
+- **PTI (Programa de Transação Integral)**: Portaria Normativa MF nº
+  1.383/2024, para discussões judiciais em 17 teses de controvérsia.
+
+### Contencioso judicial — intimações/citações em 2024
+
+- **Total de intimações/citações**: **3,1 milhões** processos ao
+  longo de 2024.
+- **Por instância**:
+  - 1ª instância: 2,7 mi.
+  - 2ª instância (TRF, TR, TJ, TRT, TRE): 365 mil.
+  - Cortes superiores (STJ, TNU, TST, TSE, STF): 52 mil.
+- **Classes mais trabalhadas em 2024 (intimações/citações, excluídas
+  EFs para não distorcer)**: Procedimento de Juizado Especial Cível
+  (270 mil), Mandado de Segurança (233 mil), Cumprimento de sentença
+  contra Fazenda (186 mil), Apelação (145 mil), Proc. Comum (125 mil),
+  Agravo de Instrumento (109 mil), **Embargos à Execução Fiscal (41
+  mil)**, Recurso Especial STJ (17 mil).
+
+### Contencioso administrativo — CARF (perdas evitadas)
+
+Série R$ bi evitados em favor da Fazenda no CARF:
+- 2020: 51,9
+- 2021: **8,4** (mínimo — coincide com o período sem voto de
+  qualidade pró-Fazenda, extinto pela `LTT` em 2020).
+- 2022: 34,8
+- 2023: 110,4
+- 2024: **321,4** (salto de ~195% vs. 2023, coincidindo com a
+  restauração do voto de qualidade pela Lei 14.689/2023).
+
+**Implicação**: a trajetória 2020→2024 das perdas evitadas no CARF é
+altamente sugestiva do efeito operacional do voto de qualidade — cai
+com a extinção (2020–2021), recupera parcialmente, salta após a
+restauração (2023–2024). É a quebra estrutural empírica mais clara
+documentada em dados PGFN públicos.
+
+### Contencioso judicial — perdas evitadas 2024
+
+- STF + STJ combinados: R$ 405,8 bi evitados (teses tributárias de
+  grande porte — Tema 881/885 quanto à cobrança de tributos após
+  trânsito em julgado individual; Tema 1.182 STJ sobre benefícios
+  fiscais de ICMS na base do IRPJ/CSLL — R$ 288 bi de impacto só
+  este; Tema 1.079 STJ sobre limite de 20 SM nas contribuições
+  parafiscais — R$ 94,16 bi; etc.).
+- Total "perdas evitadas 2024" (CARF + judicial): **R$ 727,19 bi** —
+  ≈ 12× o valor recuperado no ano. Contencioso defensivo é, em
+  ordem de magnitude, mais relevante para o caixa da União do que
+  cobrança ativa.
+
+### Plataforma Comprei (alienação de bens penhorados)
+
+- Lançada 2023; em seu 2º ano em 2024.
+- **R$ 1,37 bi em dívidas negociadas e pagas**; R$ 326,32 mi em
+  bens efetivamente vendidos.
+- 1,17 mil imóveis cadastrados; 7,3 mil compradores; 371 imóveis
+  vendidos; 20 mil anúncios; 961,3 mil visitas à plataforma.
+- Percentual da venda sobre avaliação: **65,16%** — leilão
+  institucional recupera cerca de 2/3 do valor de avaliação do bem.
+- Valor médio da venda: R$ 886,75 mil; maior venda: R$ 27,8 mi.
+
+---
+
+## 11. Implicações para desenho empírico
 
 - **Inscrição em dívida ativa ≠ ajuizamento em EF**. Boa parte do
   estoque de dívida ativa nunca vira EF: dispensa por valor, protesto
@@ -315,6 +462,26 @@ estrutural de resolução em massa.
   documentada; PGEs e PGMs variam enormemente em estrutura, dados
   publicados, políticas de cobrança. Comparações entre estados ou
   entre municípios requerem caracterização caso a caso.
+- **EF ≈ 9% da recuperação, não ≈ 100%**: dados PGFN em Números 2024
+  mostram que execução forçada responde por apenas R$ 5,3 bi dos R$
+  61,3 bi recuperados. Parcelamento (54%) e transação (~57% em
+  2024 — há sobreposição com parcelamento no enquadramento PGFN)
+  dominam. Qualquer claim de que EF é "o" mecanismo de cobrança
+  federal é empiricamente falso em magnitude; é um canal residual.
+- **44% do estoque em rating D** (R$ 1,3 tri) é classificado como
+  baixa recuperabilidade pela própria PGFN. Modelos que usam
+  "estoque de DA" como potencial de recuperação superestimam
+  enormemente — o passivo real cobrável é uma fração do estoque
+  nominal.
+- **Concentração em grandes devedores**: 26,9 mil devedores = 72%
+  do valor; 7 mi de devedores "não-grandes" = 28% do valor.
+  Desenhos que modelam o devedor representativo pesando por valor
+  olham um universo completamente diferente dos desenhos ponderando
+  por quantidade de inscrições.
+- **Perdas evitadas >> recuperação**: contencioso defensivo (R$
+  727 bi evitados em 2024) é ≈ 12× o valor recuperado no ano.
+  Avaliações de "produtividade" da PGFN que olham só recuperação
+  desconsideram a dimensão dominante da atuação.
 
 See also:
 - `direito-tributario.md` — parte geral (obrigação, crédito,
