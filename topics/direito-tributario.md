@@ -222,7 +222,7 @@ com seus bens** pelos créditos tributários decorrentes de atos
 praticados com **excesso de poderes ou infração de lei, contrato
 social ou estatutos**.
 
-Dois precedentes operacionais dominam a prática:
+Dois precedentes sumulares dominam a prática:
 
 - **STJ Súmula 435**: dissolução irregular da sociedade (mudança de
   endereço sem comunicação ao fisco, sem baixa na junta comercial)
@@ -231,13 +231,42 @@ Dois precedentes operacionais dominam a prática:
 - **STJ Súmula 430**: inadimplemento tributário *por si só* **não**
   gera responsabilidade dos sócios. Requer conduta do `CTN.135`.
 
+Três repetitivos do STJ refinaram a doutrina em 2019–2022, formando o
+**cluster operacional do redirecionamento**:
+
+- **`Tema444`** (REsp 1.201.993/SP, 1ª Seção, Rel. Min. Herman Benjamin,
+  j. 08/05/2019): prazo quinquenal de redirecionamento com base em
+  `SSTJ435` conta-se **da citação da PJ** quando a dissolução é anterior
+  à citação, e **do ato inequívoco da dissolução irregular** quando é
+  posterior. Em ambos os casos, exige-se demonstração de inércia da
+  Fazenda no lustro seguinte.
+- **`Tema962`** (REsp 1.377.019/SP + 1.776.138/RJ + 1.787.156/RS,
+  1ª Seção, Rel. Min. Assusete Magalhães, j. 24/11/2021): **não cabe**
+  redirecionamento contra o sócio/administrador que, embora tivesse
+  poderes no fato gerador, retirou-se regularmente da sociedade antes
+  da dissolução irregular e não deu causa a ela.
+- **`Tema981`** (REsp 1.645.333/SP, 1ª Seção, Rel. Min. Assusete
+  Magalhães, j. 25/05/2022): **cabe** redirecionamento contra quem
+  detinha poderes de administração **na data da dissolução irregular**,
+  ainda que não fosse gerente no fato gerador.
+
+Lendo em conjunto: a responsabilidade pessoal ancora-se no **momento
+da dissolução**, não no do fato gerador. O sócio que entrou depois do
+fato gerador mas estava na administração na dissolução responde
+(`Tema981`); o que saiu regularmente antes da dissolução não responde,
+mesmo que fosse gerente no fato gerador (`Tema962`); e o clock da
+prescrição depende da ordem temporal entre dissolução e citação
+(`Tema444`).
+
 Implicação empírica: universos amostrais de EF tratam o réu inicial
 (PJ) como unidade estável, mas **uma fração substancial de EFs é
 redirecionada a sócios-gerentes** após diligência negativa — mudando o
 réu efetivo e o patrimônio visado. Análises que categorizam apenas o
 réu inicial perdem o redirecionamento. O CNJ DataJud registra
-movimentações de redirecionamento ("inclusão de polo passivo"), mas
-sinal é ruidoso.
+movimentações de "inclusão de polo passivo", mas o sinal é ruidoso.
+A doutrina pós-`Tema981` amplia o conjunto de administradores
+alcançáveis em fluxos de reorganização societária (relevante para
+estudos de "phoenix firms" e sucessão societária informal).
 
 ### Sucessão empresarial (CTN.133)
 
@@ -317,6 +346,13 @@ texto atual antes de citar dispositivos específicos.
   exige lançamento definitivo.
 - **STJ Súmulas 435 e 430** — redirecionamento por dissolução irregular
   (435) e insuficiência do mero inadimplemento (430).
+- **`Tema444`** (STJ, REsp 1.201.993, 2019) — termo inicial da
+  prescrição do redirecionamento: citação da PJ (dissolução anterior)
+  ou ato inequívoco (dissolução posterior).
+- **`Tema962`** (STJ, REsp 1.377.019 e outros, 2021) — sócio que se
+  retirou regularmente antes da dissolução irregular não responde.
+- **`Tema981`** (STJ, REsp 1.645.333, 2022) — administrador à época da
+  dissolução irregular responde, mesmo sem gerência no fato gerador.
 - **STJ Súmula 555** — decadência em homologação sem pagamento segue
   `CTN.173.I`.
 - **`Tema566`** (STJ, REsp 1.340.553) — prescrição intercorrente em EF.

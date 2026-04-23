@@ -593,6 +593,30 @@ cases:
     superado_por: null
     fonte: https://portal.stf.jus.br/
 
+  Tema444:
+    tipo: repetitivo_stj
+    numero: 444
+    processo: REsp 1.201.993 / SP
+    aliases: [REsp1201993]
+    relator: Herman Benjamin
+    tribunal: STJ
+    decidido: 2019-05-08
+    publicado: 2019-12-12
+    tema: prescrição para redirecionamento da execução fiscal ao sócio
+    status: vigente
+    holding_short: >
+      Prazo quinquenal de redirecionamento da EF com base em dissolução
+      irregular (CTN.135.III): (i) se a dissolução é anterior à citação
+      da PJ, o prazo conta-se da citação; (ii) se posterior, conta-se do
+      ato inequívoco da dissolução irregular. Em ambos os casos, exige-se
+      demonstração de inércia da Fazenda no lustro seguinte.
+    discussed_in: [topics/direito-tributario.md, topics/execucao-fiscal.md, jurisprudencia-stf.md]
+    related_leis: [CTN, LEF]
+    supera: []
+    superado_por: null
+    complementado_por: [Tema962, Tema981]
+    fonte: https://www.stj.jus.br/repetitivos/temas_repetitivos/
+
   Tema566:
     tipo: repetitivo_stj
     numero: 566
@@ -613,6 +637,52 @@ cases:
     related_leis: [LEF, CTN]
     supera: []
     superado_por: null
+    fonte: https://www.stj.jus.br/repetitivos/temas_repetitivos/
+
+  Tema962:
+    tipo: repetitivo_stj
+    numero: 962
+    processo: REsp 1.377.019 / SP (+ 1.776.138 / RJ, 1.787.156 / RS)
+    aliases: [REsp1377019]
+    relator: Assusete Magalhães
+    tribunal: STJ
+    decidido: 2021-11-24
+    tema: redirecionamento ao sócio que se retirou regularmente antes da dissolução irregular
+    status: vigente
+    holding_short: >
+      Não cabe redirecionamento da EF fundado em dissolução irregular
+      (CTN.135.III) contra o sócio ou administrador que, embora tivesse
+      poderes de gerência no fato gerador, sem praticar atos com excesso
+      de poder ou infração à lei, retirou-se regularmente da sociedade e
+      não deu causa à sua posterior dissolução irregular.
+    discussed_in: [topics/direito-tributario.md, topics/execucao-fiscal.md, jurisprudencia-stf.md]
+    related_leis: [CTN]
+    supera: []
+    superado_por: null
+    complementa: [Tema444, Tema981]
+    fonte: https://www.stj.jus.br/repetitivos/temas_repetitivos/
+
+  Tema981:
+    tipo: repetitivo_stj
+    numero: 981
+    processo: REsp 1.645.333 / SP
+    aliases: [REsp1645333]
+    relator: Assusete Magalhães
+    tribunal: STJ
+    decidido: 2022-05-25
+    tema: redirecionamento ao administrador à época da dissolução irregular, ainda que não fosse gerente no fato gerador
+    status: vigente
+    holding_short: >
+      O redirecionamento da EF fundado em dissolução irregular (CTN.135.III)
+      pode ser autorizado contra o sócio ou terceiro não sócio com poderes
+      de administração na data em que configurada ou presumida a dissolução,
+      ainda que não tenha exercido poderes de gerência quando do fato
+      gerador do tributo não adimplido.
+    discussed_in: [topics/direito-tributario.md, topics/execucao-fiscal.md, jurisprudencia-stf.md]
+    related_leis: [CTN]
+    supera: []
+    superado_por: null
+    complementa: [Tema444, Tema962]
     fonte: https://www.stj.jus.br/repetitivos/temas_repetitivos/
 
   Tema1115:

@@ -493,6 +493,43 @@ in shaping execução fiscal practice.
 - **Cited in**: [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md) §5,
   [`topics/direito-tributario.md`](topics/direito-tributario.md) §5.
 
+### `Tema444` / `Tema962` / `Tema981` (STJ, repetitivos) — Cluster do redirecionamento da execução fiscal
+
+Three Primeira Seção repetitivos (2019–2022) that together define
+when, against whom, and within what prescriptive window EFs can be
+redirected to sócios/administradores under `CTN.135.III` + `SSTJ435`.
+
+- **`Tema444`** (REsp 1.201.993/SP, Rel. Min. Herman Benjamin,
+  j. 08/05/2019, DJe 12/12/2019). **Holding**: (i) o prazo quinquenal
+  de redirecionamento conta-se **da citação da PJ** quando o ilícito
+  (dissolução irregular) é anterior à citação; (ii) conta-se **do ato
+  inequívoco** da dissolução quando posterior; (iii) em ambos, exige
+  inércia da Fazenda no lustro seguinte.
+- **`Tema962`** (REsp 1.377.019/SP, 1.776.138/RJ, 1.787.156/RS,
+  Rel. Min. Assusete Magalhães, j. 24/11/2021). **Holding**: não cabe
+  redirecionamento contra sócio/administrador que, embora tivesse
+  poderes no fato gerador, retirou-se regularmente da sociedade antes
+  da dissolução irregular e não deu causa a ela.
+- **`Tema981`** (REsp 1.645.333/SP, Rel. Min. Assusete Magalhães,
+  j. 25/05/2022). **Holding**: cabe redirecionamento contra quem
+  detinha poderes de administração **na data da dissolução irregular**,
+  ainda que não fosse gerente no fato gerador.
+
+**Read together**: responsabilidade pessoal ancora-se no momento da
+dissolução, não no do fato gerador. `Tema981` amplia o conjunto de
+administradores alcançáveis; `Tema962` exclui os que saíram
+regularmente; `Tema444` fixa o clock da prescrição por ordem temporal
+entre dissolução e citação.
+
+**Significance**: o cluster endurece o alcance patrimonial em fluxos
+de reorganização societária informal (relevante para estudos de
+"phoenix firms"), mas disciplina temporalmente a cobrança contra
+ex-sócios — limitando a prática de redirecionamento tardio sem
+inércia demonstrada.
+
+- **Cited in**: [`topics/direito-tributario.md`](topics/direito-tributario.md) §3,
+  [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md) §9.
+
 ### `Tema1115` (STJ, repetitivo) — Prazo de 360 dias para decisão administrativa
 
 - **Tribunal**: Superior Tribunal de Justiça, Primeira Seção.
@@ -536,6 +573,9 @@ in shaping execução fiscal practice.
 | `ADI6040` / `ADI6055` | Averbação pré-executória parcial | divida-ativa |
 | `ADI7053` | Atos PGFN sobre averbação (pendente) | divida-ativa |
 | `Tema566` (STJ, REsp 1.340.553) | Prescrição intercorrente em EF | execucao-fiscal |
+| `Tema444` (STJ, REsp 1.201.993) | Termo inicial da prescrição do redirecionamento | direito-tributario, execucao-fiscal |
+| `Tema962` (STJ, REsp 1.377.019 et al.) | Redirecionamento vs. sócio retirado regularmente | direito-tributario, execucao-fiscal |
+| `Tema981` (STJ, REsp 1.645.333) | Redirecionamento ao administrador à época da dissolução | direito-tributario, execucao-fiscal |
 | `Tema1115` (STJ) | 360 dias para decisão administrativa | processo-administrativo-fiscal |
 
 ---

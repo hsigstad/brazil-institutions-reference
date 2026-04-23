@@ -258,6 +258,11 @@ conciliação (Semana Nacional da Execução Fiscal).
 - **STJ Súmula 414** — citação por edital em EF.
 - **STJ Súmula 430 e 435** — redirecionamento ao sócio-gerente (ver
   `direito-tributario.md` §3).
+- **`Tema444` / `Tema962` / `Tema981`** — cluster operacional do
+  redirecionamento: termo inicial da prescrição (444), exclusão do
+  sócio retirado regularmente antes da dissolução (962), inclusão do
+  administrador à época da dissolução ainda que não fosse gerente no
+  fato gerador (981). Detalhe em `direito-tributario.md` §3.
 - **STJ Súmula 436** — entrega de declaração pelo contribuinte
   reconhece débito e dispensa procedimento administrativo para cobrar
   o saldo declarado não pago.
