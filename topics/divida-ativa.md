@@ -293,7 +293,179 @@ estrutural de resolução em massa.
 
 ---
 
-## 10. PGFN em Números — o funil observável (dados 2024)
+## 10. Regras de triagem da PGFN — que crédito recebe qual tratamento
+
+As ferramentas descritas acima (protesto, averbação, transação,
+parcelamento, dispensa por valor, ajuizamento de EF) não se aplicam
+uniformemente a todos os créditos. A PGFN opera uma **matriz de
+triagem** baseada em portarias que classifica cada inscrição por
+perfil de recuperabilidade e direciona o tratamento adequado. Para
+pesquisa empírica, **o arranjo destas regras é o que define quais
+créditos chegam a virar EF** — entender a triagem é pré-requisito
+para interpretar qualquer universo de execução fiscal federal.
+
+### Regime Diferenciado de Cobrança de Créditos (RDCC)
+
+Instituído pela **Portaria PGFN nº 396/2016** (posteriormente
+integrado em `L13606/2018` e em atos subsequentes). O RDCC é o
+arcabouço pelo qual a PGFN organiza diferenciadamente a cobrança
+conforme o perfil do devedor e do crédito.
+
+Três procedimentos estruturantes:
+
+- **PEDP** — Procedimento Especial de Diligenciamento Patrimonial:
+  investigação patrimonial prévia ao ajuizamento, para localizar
+  bens passíveis de constrição. Desde 2018, é quase pré-requisito
+  do ajuizamento (ver "ajuizamento parametrizado" abaixo).
+- **PECDA** — Procedimento Especial de Protesto Extrajudicial da
+  CDA: encaminhamento para cartório de protesto sem ajuizamento de
+  EF.
+- **PEAN** — Procedimento Especial de Acompanhamento de Negociações:
+  gestão de parcelamentos/transações em curso.
+
+### Rating de recuperabilidade (A / B / C / D)
+
+Regulamentado originalmente pela **Portaria PGFN nº 293/2017** (e
+portarias subsequentes), aplicado operacionalmente sobre toda a DAU.
+A classificação é bidimensional:
+
+- **V-Dev** (do devedor): capacidade de pagamento, endividamento
+  total, histórico de adimplemento.
+- **V-Deb** (do débito): garantias oferecidas, parcelamentos ativos,
+  liquidez.
+
+Combinação produz quatro classes:
+
+| Rating | Descrição | Share do estoque 2024 |
+|---|---|---|
+| **A** | Alta perspectiva de recuperação | 8,3% (R$ 255,7 bi) |
+| **B** | Média perspectiva de recuperação | 32% (R$ 979,3 bi) |
+| **C** | Baixa perspectiva de recuperação | 15% (R$ 456,5 bi) |
+| **D** | Créditos considerados irrecuperáveis | 44% (R$ 1,3 tri) |
+
+**Implicação da matriz**: os instrumentos diferem por classe.
+Créditos C e D são os alvos preferenciais de transação com
+descontos substanciais (a `LTT` permite descontos de até 65% sobre
+multa/juros para créditos classificados como de difícil ou
+irrecuperável). Créditos A e B concentram ajuizamento ativo,
+protesto, e investigação patrimonial para constrição. A classificação
+é revisada periodicamente, e reclassificações movem o crédito entre
+trilhas de tratamento.
+
+### Ajuizamento parametrizado (Portaria PGFN nº 33/2018)
+
+Portaria estrutural do novo fluxo pós-2018. Entrou em vigor em
+01/10/2018. Regulamenta `L10522.20-B` (notificação com 5 dias) e o protesto da
+CDA (Art. 20-C da Lei 10.522, inserido pela `L13606`) e articula o encadeamento: inscrição em DAU →
+notificação com 5 dias para pagamento → PEDP → protesto/averbação
+(se couber) → ajuizamento (se localizados bens passíveis de
+constrição).
+
+Princípio central: **só se ajuíza EF quando a diligência
+administrativa prévia (PEDP) identificou ativos com potencial de
+satisfazer a dívida**. É o fim oficial do ajuizamento indiscriminado.
+Impacto quantitativo documentado (ver `execucao-fiscal.md` §8 e o
+brief `fisc/docs/briefs/exfis-state-of-play.md` §7): ajuizamentos da
+PGFN caíram de 382 mil (2016) para 33,8 mil (2020), queda de ~91% em
+quatro anos.
+
+Outro instrumento criado pela Portaria 33/2018: **revisão de dívida
+inscrita** — contribuinte pode requerer revisão da CDA em até 30 dias
+da notificação; o pedido suspende as medidas restritivas enquanto
+tramita. Canal de contestação pré-judicial que reduz o volume
+eventualmente ajuizado.
+
+### Limites de valor (Portaria MF nº 75/2012 e sucessoras)
+
+- **R$ 1.000**: limite abaixo do qual o crédito **não é sequer
+  inscrito em DAU** (permanece no estoque da RFB).
+- **R$ 20.000** (atualmente vigente): limite abaixo do qual a PGFN
+  **não ajuíza EF**. Acima do limite, ajuizamento é a regra (sujeita
+  à triagem por rating e à existência de ativos localizáveis).
+  Portaria MF nº 75/2012 elevou o limite de R$ 10k (vigente desde
+  Portaria MF nº 49/2004) para R$ 20k. Atos posteriores flexibilizam
+  (ex.: Portaria MF/PGFN nº 51/2024 e atualizações).
+- **Exceção**: a PGFN pode ajuizar créditos abaixo do limite em
+  casos de alto potencial de recuperabilidade (rating A) ou por
+  razões estratégicas (tese repetitiva, devedor estratégico).
+
+**Implicação amostral**: universos de EF federal têm **truncamento à
+esquerda pelo limite vigente no ano de ajuizamento**. Séries
+temporais que cruzam mudanças de portaria precisam rastrear o limite
+— a composição por valor muda quando o limite muda, mesmo sem
+alteração no comportamento do fisco.
+
+### Transação — modalidades e portarias
+
+Regulamentação da `LTT` (Lei 13.988/2020) via múltiplas portarias
+PGFN/MF:
+
+- **Transação por adesão**: editais específicos por classe de
+  crédito. Exemplos: editais de contencioso de relevante controvérsia
+  (créditos em discussão administrativa/judicial com tese
+  controvertida — `LTT.14`), editais de pequeno valor, editais
+  setoriais (Saúde, MEI, etc.).
+- **Transação individual**: para grandes devedores. Originalmente
+  limitada a créditos acima de R$ 15 milhões; flexibilizada
+  posteriormente.
+- **Transação individual simplificada**: créditos entre R$ 1 milhão
+  e R$ 10 milhões, procedimento mais leve.
+- **PTI — Programa de Transação Integral** (Portaria Normativa MF
+  nº 1.383/2024, com flexibilização pela Portaria PGFN nº
+  2.044/2025): transação em casos de alto impacto econômico em
+  discussão no Judiciário, cobrindo 17 teses específicas de
+  controvérsia jurídica. Destina-se a grandes contribuintes com
+  passivos judiciais relevantes.
+
+Descontos padrão: até **65% sobre multa e juros** (o principal
+nunca é descontado); prazos de até **120 meses**. Descontos maiores
+e prazos mais longos exigem classificação C ou D do crédito.
+
+### Como a matriz se combina
+
+Um crédito típico, após inscrição em DAU, passa por este fluxo de
+triagem:
+
+```
+Inscrição em DAU
+  │
+  ▼
+Classificação por rating (A/B/C/D)
+  │
+  ├─► Rating A/B: prioridade para ajuizamento (se >R$20k e
+  │   PEDP localizou ativos)
+  │
+  ├─► Rating C/D: prioridade para protesto, negativação,
+  │   transação (não ajuíza em geral)
+  │
+  └─► Qualquer rating: pode ser objeto de parcelamento
+      (adesão do devedor) ou de transação por adesão
+      (se houver edital ativo aplicável)
+```
+
+**Pontos críticos para pesquisa empírica**:
+
+- O ajuizamento é **endógeno ao rating**. Quando se observa uma EF
+  ajuizada, isso é um sinal de que a PGFN classificou o crédito como
+  A ou B **e** a PEDP localizou ativos. Este é um filtro duplo de
+  seleção, não apenas valor.
+- **O rating é dinâmico** — um crédito pode ser reclassificado, e
+  a disponibilidade de transação em nova classe pode levá-lo a sair
+  da EF. Quebras estruturais nas portarias de rating geram quebras
+  estruturais observáveis no fluxo de EF.
+- **Editais de transação por adesão** têm periodicidade alta (vários
+  por ano). Cada edital é uma quasi-intervenção que remove do
+  estoque ativo créditos com perfil alvo específico. Em dados de EF,
+  aparecem como extinções clusterizadas por tema/setor/período de
+  adesão.
+- **PEDP e Sisbajud interagem**: desde 2020 (com a centralização em
+  Sisbajud + integração PGFN), o PEDP é crescentemente automatizado.
+  Rollout de funcionalidades Sisbajud altera o *output* do PEDP e,
+  portanto, altera quais créditos passam no filtro de ajuizamento.
+
+---
+
+## 11. PGFN em Números — o funil observável (dados 2024)
 
 O **relatório "PGFN em Números"** (publicado anualmente desde meados
 da década de 2010, com dados do ano anterior) é a principal fonte
@@ -440,7 +612,7 @@ documentada em dados PGFN públicos.
 
 ---
 
-## 11. Implicações para desenho empírico
+## 12. Implicações para desenho empírico
 
 - **Inscrição em dívida ativa ≠ ajuizamento em EF**. Boa parte do
   estoque de dívida ativa nunca vira EF: dispensa por valor, protesto
