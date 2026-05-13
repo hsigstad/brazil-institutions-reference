@@ -74,17 +74,39 @@ size vary:
 ### TJSP specifics
 
 TJSP is the largest court in Latin America. Key structural facts for
-research design:
+research design (TJSP Relatório de Gestão 2023, unless noted):
 
-- ~360 desembargadores (largest TJ by far; second is TJMG with ~140).
-- Three *secoes*: Direito Criminal, Direito Privado, Direito Publico,
-  each subdivided into numbered camaras (5 desembargadores per
-  camara).
-- Grupos de Camaras follow ordinal sequence: two consecutive camaras
+- **Structure (as of 2023):** 10 regiões administrativas, 57
+  circunscrições judiciárias, 320 comarcas, 1,570 varas (312 Capital,
+  1,258 Interior).
+- **Magistratura:** 2,556 magistrados (356 desembargadores, 2,200
+  first-instance judges). 937 women, 1,619 men. 3,160 first-instance
+  positions created; 960 vacant or not installed (30%). Vacancy
+  concentrated in entrância intermediária auxiliar (227/374 vacant)
+  and juízes substitutos (328/400 vacant).
+- **Staff:** 39,388 servidores efetivos (26,016 Interior, 13,372
+  Capital).
+- **Caseload (Jan–Oct 2023):** 19.2M cases em andamento in 1st
+  instance; 3.0M new cases filed; 4.6M sentenças; 18.1M decisões
+  interlocutórias. 2nd instance: 917K em andamento; 736K new; 869K
+  acórdãos.
+- **Budget:** R$ 15.5 billion (2023 initial dotação). R$ 11.5B
+  personnel; R$ 3.6B custeio; R$ 500M investimentos.
+- **2nd instance:** 356 desembargadores in three seções: Direito
+  Criminal (80), Direito Público (90), Direito Privado (190). Each
+  seção subdivided into numbered câmaras (5 desembargadores per
+  câmara).
+- Grupos de Câmaras follow ordinal sequence: two consecutive câmaras
   form one grupo (Art. 36 RITJSP).
 - Cases decided by turma of 3 desembargadores; embargos infringentes
-  and CPC Art. 942 cases go to full 5-member camara.
-- Electronic system: ESAJ (*e-SAJ*), widely used for data extraction.
+  and CPC Art. 942 cases go to full 5-member câmara.
+- **Electronic system:** ESAJ (*e-SAJ*), widely used for data
+  extraction. 75% of 1st-instance cases now digital (Capital fully
+  digitalized 2022). UPJ model (unified processing units merging 3+
+  varas of same competence) increasing productivity by ~60% on average.
+- **Improbidade caseload:** TJSP handles ~13% of national improbidade
+  filings (~2,000–2,700/year, 2020–2023 DataJud data). Largest single
+  forum for improbidade cases nationally.
 
 ## Comarca organization
 

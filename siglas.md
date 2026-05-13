@@ -66,6 +66,7 @@ names, glossary.
 - **CMRI** — Comissão Mista de Reavaliação de Informações. Federal interministerial LAI appeal board. → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
 - **CMT** — Conselho Municipal de Tributos (São Paulo). Paritary 2nd-instance municipal tax-appeals body created by Lei municipal 14.107/2005. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
 - **CNAE** — Classificação Nacional de Atividades Econômicas. Economic-activity classification.
+- **CNCIAI** — Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade. CNJ's national registry of improbidade convictions (~36K convictions, ~30K individuals as of 2022). Courts report convictions; TSE queries the registry during candidacy registration to verify Ficha Limpa compliance. Public search at cnj.jus.br/improbidade_adm/. → [`topics/improbidade.md`](topics/improbidade.md)
 - **CNEP** — Cadastro Nacional de Empresas Punidas. Public list of firms sanctioned under Lei Anticorrupção. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md), [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **CNJ** — Conselho Nacional de Justiça. Judicial-council oversight body. → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md), [`topics/cortes-superiores.md`](topics/cortes-superiores.md)
 - **CND** — Certidão Negativa de Débitos. Document attesting absence of tax debts; required for several public-sector transactions. → [`topics/divida-ativa.md`](topics/divida-ativa.md)
@@ -128,6 +129,7 @@ names, glossary.
 - **IBS** — Imposto sobre Bens e Serviços. State+municipal VAT under EC 132/2023 reform. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **IC** — Inquérito Civil. MP investigative proceeding for non-criminal matters. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
 - **ICMS** — Imposto sobre Circulação de Mercadorias e Serviços. State VAT (largest single tax base in Brazil). → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
+- **IEG-M** — Índice de Efetividade da Gestão Municipal. TCE-SP's composite municipal governance index covering 644 SP municipalities (since 2015). Sub-indices for education, health, planning, fiscal management, environment, transparency, and governance. → [`topics/tribunais-contas.md`](topics/tribunais-contas.md)
 - **IDPJ** — Incidente de Desconsideração da Personalidade Jurídica (`CPC.133`–`CPC.137`). Required before piercing the corporate veil to reach a different PJ (same economic group) for a debt originally owed by the executed company, when the hypothesis does not fit `CTN.134` or `CTN.135` (per STJ 2023). → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **INDA** — Infraestrutura Nacional de Dados Abertos. Federal open-data framework.
 - **Infojud** — Sistema de Informações ao Judiciário. CNJ–RFB online access for magistrates to Receita Federal data (DIRPF, DIRF, DITR, cadastros) via digital certification. Rolled out late 2000s. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)

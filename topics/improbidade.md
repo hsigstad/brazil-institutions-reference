@@ -256,7 +256,8 @@ regimes:
 | Cartel / competition | `LCADE` | CADE (admin) | Administrative fines up to 20% of revenue |
 | Corporate liability | `LAC` (Lei Anticorrupção) | CGU / MP | Administrative + judicial sanctions on firms |
 | Fiscal / audit | `LRF`, TC statutes | TCU / TCE / TCM | Débitos, multas, inabilitação |
-| Electoral ineligibility | `LI.1.I.g` | Câmara → TSE | 8-year ineligibility (Ficha Limpa) |
+| Electoral ineligibility (contas) | `LI.1.I.g` | TCE parecer → Câmara → TSE | 8-year ineligibility (Ficha Limpa) |
+| Electoral ineligibility (judicial) | `LI.1.I.l` | TJ/TRF acórdão → TSE | 8-year ineligibility (Ficha Limpa; requires `LIA.9` + collegial conviction) |
 
 Parallel prosecution is expressly permitted. A TCE finding of
 irregularity is **not** itself a judicial finding of improbidade, but
@@ -288,3 +289,156 @@ What's improbidade-specific:
   of *alleged* improbidade. Specialized varas (Promotor de Justiça do
   Patrimônio Público in the capital, where they exist) further skew
   the selection.
+
+---
+
+## 6. CNCIAI — national conviction registry
+
+The **Cadastro Nacional de Condenações Cíveis por Ato de Improbidade
+Administrativa e Inelegibilidade** (CNCIAI, commonly "CNC") is CNJ's
+centralized registry of improbidade convictions. Created in 2009;
+expanded in 2013 to include decisions causing inelegibilidade (renamed
+from CNCIA to CNCIAI). Public search at
+cnj.jus.br/improbidade_adm/consultar_requerido.php.
+
+As of July 2022 (ABJ/CNJ descriptive report): 35,977 convictions,
+26,825 judicial processes, 30,541 individuals/entities. Covers state,
+federal, military, and superior courts.
+
+**How it works**: courts are required to report improbidade convictions
+to CNJ. TSE queries the CNCIAI during candidacy registration to verify
+Ficha Limpa compliance. The registry is thus the operational bridge
+between a judicial conviction and electoral ineligibility.
+
+**Conviction statistics** (CNCIAI data, 1995–Feb 2024; Rocha, Monteiro
+& Castro 2024):
+
+- 53,051 total conviction records, of which 23,811 (44.9%) are
+  improbidade administrativa.
+- **By category**: dano ao erário (`LIA.10`) 27.6%; violação dos
+  princípios (`LIA.11`) 25.3%; unspecified 24.4%; combined
+  `LIA.10`+`LIA.11` 10.9%; enriquecimento ilícito (`LIA.9`) 6.8%;
+  combined `LIA.9`+`LIA.10`+`LIA.11` 2.6%; combined `LIA.9`+`LIA.10`
+  1.5%; combined `LIA.9`+`LIA.11` 0.9%.
+- **By sphere**: municipal 58%; estadual 6%; federal 5%; unspecified
+  31%.
+- **By position**: prefeito/ex-prefeito 33%; vereador 5%; secretário
+  municipal 4%; unspecified 37%; other 18%.
+- **Case duration** (filing → conviction): median ~5–10 years. <1 year
+  0.3%; 1–2 years 4.5%; 2–3 years 7.4%; 3–4 years 9.6%; 4–5 years
+  9.8%; 5–10 years 45.2%; >10 years 23.2%. Mean 7 years 2 months.
+
+The dominance of `LIA.10` and `LIA.11` convictions, combined with the
+narrow `LI.1.I.l` requirements (see section 7), means that **the
+majority of CNCIAI registrations do not trigger Ficha Limpa
+ineligibility via the judicial pathway**.
+
+**Data quality**: the ABJ descriptive analysis identified ~60
+potentially duplicated process records and 826 individuals with missing
+gender data. Structured dataset available on Base dos Dados (BigQuery);
+ABJ R package `cnc` (github.com/abjur/cnc) scrapes and parses the HTML
+pages.
+
+---
+
+## 7. Improbidade convictions and Ficha Limpa ineligibility
+
+An improbidade conviction does **not** automatically trigger Ficha
+Limpa ineligibility. The pathways from conviction to electoral bar are
+narrower than commonly assumed.
+
+### The two Ficha Limpa pathways involving improbidade
+
+The Lei das Inelegibilidades (`LI`, LC 64/1990 as amended by `LFL`,
+LC 135/2010) contains two distinct provisions that can render an
+improbidade-connected official ineligible:
+
+1. **`LI.1.I.g`** — **Rejected accounts pathway.** Ineligibility for
+   those who had public accounts rejected by the competent body (TCE
+   parecer prévio → câmara vote) for "ato doloso de improbidade
+   administrativa." This is the contas de governo route, not a
+   judicial conviction. It is the most common Ficha Limpa trigger:
+   ~64% of barred mayoral candidates fall under this provision
+   (Biblioteca Jurídica SP). See `contas-municipais.md` for the
+   institutional mechanics of the TCE/câmara procedure.
+
+2. **`LI.1.I.l`** — **Judicial conviction pathway.** Ineligibility
+   for those convicted by a **collegial judicial body** (i.e.,
+   appellate court or equivalent, not first instance) for doloso
+   improbidade. This is the judicial route — an ACIA filed by MP,
+   tried at TJ/TRF, convicted on appeal.
+
+### Cumulative requirements for alínea "l" ineligibility
+
+TSE has interpreted `LI.1.I.l` as requiring **all** of the following
+(TSE, March 2013 ruling; reaffirmed in subsequent jurisprudence):
+
+1. Conviction by a **collegial body** (órgão colegiado) — a
+   first-instance ACIA conviction alone does not suffice.
+2. The act must be **doloso** (intentional).
+3. The conviction must involve **lesão ao erário** (damage to the
+   public treasury) — i.e., a conviction under `LIA.10` or `LIA.9`.
+4. The conviction must involve **enriquecimento ilícito** (illicit
+   enrichment) — i.e., a conviction under `LIA.9`.
+
+The TSE's interpretation effectively requires a `LIA.9` conviction
+(or a combined `LIA.9` + `LIA.10` conviction) for alínea "l"
+ineligibility. Convictions exclusively under `LIA.10` (prejuízo ao
+erário without personal enrichment) or `LIA.11` (violação de
+princípios) do **not** trigger Ficha Limpa ineligibility under this
+provision.
+
+### Practical implications for research
+
+- **First-instance convictions** are informative but not legally
+  disqualifying under Ficha Limpa. They may still affect electoral
+  outcomes through voter information, candidate attrition (voluntary
+  withdrawal), or candidacy challenges on other grounds.
+- **Most improbidade convictions do not trigger alínea "l".**
+  `LIA.10` (prejuízo ao erário) is the most common category in TJSP
+  caseloads, but without accompanying `LIA.9` enrichment it does not
+  cause ineligibility. `LIA.11` convictions never trigger it.
+- **The contas rejeitadas pathway (`LI.1.I.g`) is quantitatively more
+  important** than the judicial conviction pathway (`LI.1.I.l`) for
+  Ficha Limpa enforcement at the municipal level.
+- **Enforcement scale**: ~868 candidates barred in 2012 (first Ficha
+  Limpa election), ~2,382 in 2020, ~1,968 in 2024, cumulative 6,829
+  across 2016–2024 (Metrópoles, citing TSE data). These totals cover
+  all Ficha Limpa provisions, not just improbidade-related ones.
+
+### CNJ Meta 4 — priority judging
+
+CNJ established Meta 4 requiring courts to prioritize the resolution
+of improbidade cases facing prescrição intercorrente. As of the
+relevant period, 28,379 cases were in this category nationally. Courts
+(including TJSP) created task forces in response. This institutional
+pressure on case resolution speed is relevant context for why
+conviction timing varies across varas and comarcas.
+
+### Post-2021 reform impact on filings
+
+New first-instance improbidade filings dropped sharply after the reform.
+DataJud data (Movimento Pessoas à Frente, 2024 technical note):
+
+| Year | New filings | Δ vs. 2021 |
+|------|------------|------------|
+| 2020 | 21,615 | — |
+| 2021 | 21,991 | — |
+| 2022 | 14,109 | −36% |
+| 2023 | 12,825 | −42% |
+
+By category, violação de princípios (`LIA.11`) dropped 48% (2023 vs.
+2021) — the steepest decline, consistent with the taxative list
+narrowing that category. Enriquecimento ilícito (`LIA.9`) dropped least
+(−29%), consistent with it already requiring dolo pre-reform.
+
+By court: Justiça Estadual handles 77% of cases; TJSP is the single
+largest forum (13% of national filings, ~2,000–2,700/year). The drop in
+TJSP was less severe than the national average (−25% in 2023 vs. 2021,
+compared to −42% nationally), possibly because SP already had a more
+selective filing culture.
+
+**Source**: Rocha, Monteiro & Castro, "Balanço sobre a alteração da Lei
+de Improbidade Administrativa," Movimento Pessoas à Frente, July 2024
+(using CNJ DataJud via Painel de Estatísticas do Poder Judiciário,
+2020–2023). TJSP-specific numbers from Table 2 of the report.
