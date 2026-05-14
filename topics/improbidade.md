@@ -111,6 +111,8 @@ zero after October 2021.
 
 ---
 
+<a id="lia-reform-2021"></a>
+
 ## 2. The 2021 reform (`L14230-2021`)
 
 Published 26 October 2021. Six structural changes that, taken together,

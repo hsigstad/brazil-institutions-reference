@@ -30,6 +30,8 @@ instead of PJe. Interoperability remains partial.
 
 ---
 
+<a id="cnj"></a>
+
 ## 1. CNJ — mandate and normative power
 
 ### Creation
@@ -47,6 +49,8 @@ instead of PJe. Interoperability remains partial.
 - **Normative power** via **Resoluções CNJ**.
 - **No merits jurisdiction**: cannot review or overturn judicial decisions
   on their legal substance.
+
+<a id="resolucoes-cnj"></a>
 
 ### Resoluções CNJ
 

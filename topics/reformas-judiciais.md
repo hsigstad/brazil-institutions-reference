@@ -37,6 +37,8 @@ up to 40 minimum wages (civil) and minor offenses (criminal).
 Juizados Especiais Federais: extended the small-claims model to federal
 jurisdiction (cases up to 60 minimum wages).
 
+<a id="reforma-do-judiciario"></a>
+
 ### 2004 — `EC45-2004` (Reforma do Judiciário)
 The largest structural reform to the judiciary since 1988:
 
@@ -58,6 +60,8 @@ Lei das Organizações Criminosas: introduced colaboração premiada,
 ação controlada, infiltração de agentes. See
 `anticorrupcao-penal.md` §3.
 
+<a id="ncpc-reform"></a>
+
 ### 2015 — `CPC` (Lei 13.105/2015)
 New Código de Processo Civil, effective March 2016:
 
@@ -72,6 +76,8 @@ New Código de Processo Civil, effective March 2016:
 - Mandatory conciliation attempt.
 - Fines for procrastinating appeals.
 - See `processo-civil.md` for full treatment.
+
+<a id="pacote-anticrime"></a>
 
 ### 2019 — `LPC` (Lei 13.964/2019, Pacote Anticrime)
 Criminal-procedure reform. See `anticorrupcao-penal.md` §6:

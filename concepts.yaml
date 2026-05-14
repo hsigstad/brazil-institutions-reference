@@ -1,0 +1,92 @@
+# Institutional concepts — the I:slug manifest for the brazil-institutions site.
+#
+# Each concept is a named institution, doctrine, or reform episode with a
+# canonical title and a stable anchor in a topic file. Project sites cite
+# concepts as `I:slug` tokens, which render as the concept's title (not the
+# slug) and link to the anchor here. The site build (tools/site/build_site.py)
+# reads this file to generate concepts.html and to resolve I:slug tokens.
+#
+# Fields per concept:
+#   title    one-line noun phrase used as the rendered link text
+#   page     topic file that explains it (path relative to repo root)
+#   anchor   stable <a id="..."> anchor in that file (omit to link the page top)
+#   summary  one-sentence gloss, shown as the link's hover tooltip
+
+concepts:
+
+  ncpc-reform:
+    title: "2015 civil procedure reform"
+    page: topics/reformas-judiciais.md
+    anchor: ncpc-reform
+    summary: "Lei 13.105/2015, in force March 2016 — the current Code of Civil Procedure (NCPC), replacing the 1973 code."
+
+  reforma-do-judiciario:
+    title: "2004 Reforma do Judiciário"
+    page: topics/reformas-judiciais.md
+    anchor: reforma-do-judiciario
+    summary: "EC 45/2004 — the largest structural reform to the judiciary since 1988; created the CNJ, repercussão geral, and súmula vinculante."
+
+  pacote-anticrime:
+    title: "2019 Pacote Anticrime"
+    page: topics/reformas-judiciais.md
+    anchor: pacote-anticrime
+    summary: "Lei 13.964/2019 — criminal-justice reform package; introduced the juiz das garantias and tightened plea-bargain and sentencing rules."
+
+  impedimento:
+    title: "impedimento"
+    page: topics/processo-civil.md
+    anchor: impedimento-suspeicao
+    summary: "Objective grounds requiring a judge's recusal (kinship, prior involvement); recognised ex officio, nullity if violated (CPC.144)."
+
+  suspeicao:
+    title: "suspeição"
+    page: topics/processo-civil.md
+    anchor: impedimento-suspeicao
+    summary: "Subjective grounds for recusal (friendship, enmity, financial interest); must be raised by a party, unlike impedimento (CPC.145)."
+
+  recusal-impedimento:
+    title: "labor-court recusal rules"
+    page: topics/justica-trabalho.md
+    anchor: recusal-impedimento
+    summary: "How impedimento operates in the labor courts — who must recuse, how the conflict is raised, and where a recused case goes."
+
+  labor-reform-2017:
+    title: "2017 labor reform"
+    page: topics/justica-trabalho.md
+    anchor: labor-reform-2017
+    summary: "Lei 13.467/2017 — introduced filing costs and honorários de sucumbência and tightened justiça gratuita, reshaping labor-litigation incentives."
+
+  audiencia-una:
+    title: "audiência una"
+    page: topics/justica-trabalho.md
+    anchor: audiencia-una
+    summary: "The labor courts' single unified hearing — conciliation, defense, evidence, and judgment in one session; fractionated into 2-3 sessions in practice."
+
+  settlement-observability:
+    title: "settlement observability in labor courts"
+    page: topics/justica-trabalho.md
+    anchor: settlement-observability
+    summary: "Nearly all labor-court settlements are judicially mediated and observable in the case data — a measurement advantage unusual internationally."
+
+  cnj:
+    title: "Conselho Nacional de Justiça"
+    page: topics/cnj-administracao-judicial.md
+    anchor: cnj
+    summary: "The national judicial-oversight council created by EC 45/2004 — administrative supervision, disciplinary power, and binding normative resolutions."
+
+  resolucoes-cnj:
+    title: "CNJ resolutions"
+    page: topics/cnj-administracao-judicial.md
+    anchor: resolucoes-cnj
+    summary: "Normative acts of the CNJ, binding across the judiciary — the instrument behind e.g. Resolução 200/2015 on impedimento."
+
+  lia-reform-2021:
+    title: "2021 improbidade reform"
+    page: topics/improbidade.md
+    anchor: lia-reform-2021
+    summary: "Lei 14.230/2021 — rewrote the Lei de Improbidade Administrativa, eliminating culpable improbidade and requiring proof of dolo."
+
+  justica-do-trabalho:
+    title: "Justiça do Trabalho"
+    page: topics/justica-trabalho.md
+    summary: "Brazil's specialised federal labor judiciary — Varas do Trabalho, 24 regional TRTs, and the national TST."

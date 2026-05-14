@@ -48,6 +48,8 @@ For common confusions (pre-2017 vs post-2017 cost regimes), see
 
 ---
 
+<a id="recusal-impedimento"></a>
+
 ## Recusal — impedimento
 
 - Judge must recuse if a lawyer for any party is a relative up to the
@@ -89,6 +91,8 @@ For common confusions (pre-2017 vs post-2017 cost regimes), see
 - Workers earning up to 2× minimum wage automatically entitled to
   *justiça gratuita*; above that, a simple *declaração de hipossuficiência*
   sufficed. In practice, nearly all workers obtained free access.
+
+<a id="labor-reform-2017"></a>
 
 ### Post-2017 regime (Lei 13.467/17, effective 11 Nov 2017)
 
@@ -156,6 +160,8 @@ CNJ *Justiça em Números*.
 
 ---
 
+<a id="audiencia-una"></a>
+
 ## Hearing procedure
 
 The CLT prescribes an *audiência una* (single unified hearing) in which
@@ -192,6 +198,8 @@ Labor courts have the highest conciliation rate in the Brazilian judiciary.
 - TST's *Cejusc/TST* (created 2023): >68% conciliation in referred cases.
 
 ---
+
+<a id="settlement-observability"></a>
 
 ## Settlement observability — a data advantage
 

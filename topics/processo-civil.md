@@ -93,6 +93,8 @@ measuring duration.
   merits binds the parties. Material coisa julgada attaches to the
   dispositivo.
 
+<a id="impedimento-suspeicao"></a>
+
 ## 4. Impedimento and suspeição
 
 - **Impedimento** (`CPC.144`): objective grounds (judge was witness,
