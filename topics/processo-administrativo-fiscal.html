@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Processo administrativo fiscal — Brazilian Institutions</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="../index.html">Brazilian Institutions</a>
+  <a href="../index.html">Topics</a>
+  <a href="../laws/index.html">Laws</a>
+  <a href="../concepts.html">Concepts</a>
+</header>
+<main>
+<h1 id="processo-administrativo-fiscal">Processo administrativo fiscal</h1>
+<p>Contencioso <strong>administrativo</strong> em matéria tributária: o que acontece
+entre o <strong>lançamento</strong> (auto de infração ou notificação) e a
+<strong>inscrição em dívida ativa</strong>. Escopo principal: o PAF federal
+(<code class="legal-cite">PAF</code> = Decreto 70.235/1972), as DRJs, o CARF, e a Câmara Superior.
+PATs estaduais e municipais são citados em contorno — cada unidade
+federativa tem legislação própria, fora do escopo deste repositório.</p>
+<p><strong>Importante</strong>: este é o file da fase administrativa. Para o crédito
+que sai do PAF em direção à cobrança, ver <code><a href="../topics/divida-ativa.html">divida-ativa.md</a></code>. Para
+execução judicial, ver <code><a href="../topics/execucao-fiscal.html">execucao-fiscal.md</a></code>. Para a parte geral do
+direito tributário (lançamento como ato, decadência, prescrição), ver
+<code><a href="../topics/direito-tributario.html">direito-tributario.md</a></code>.</p>
+<p><strong>Topics / keywords</strong>: processo administrativo fiscal, PAF, CARF, DRJ,
+CSRF, auto de infração, impugnação, recurso voluntário, recurso
+especial, voto de qualidade, representação fiscal para fins penais,
+contencioso tributário administrativo, tax administrative procedure,
+tax court administrative, administrative tax challenge.</p>
+<p><strong>Snapshot as of 2026</strong>: estrutura PAF estável. Voto de qualidade no
+CARF mudou duas vezes em 4 anos — <code class="legal-cite">LTT</code> (2020) extinguiu o voto
+pró-Fazenda; Lei 14.689/2023 restaurou com contrapartidas
+(perdão de multas e juros quando o empate prevalece). Prazo de 360
+dias (<code class="legal-cite">L11457.24</code>) foi consolidado como direito subjetivo pelo STJ
+em Tema 1.115 (2022).</p>
+<hr />
+<h2 id="1-onde-o-paf-se-encaixa-no-ciclo-do-crédito">1. Onde o PAF se encaixa no ciclo do crédito</h2>
+<p>Sequência típica de um crédito tributário federal em disputa:</p>
+<ol>
+<li><strong>Fato gerador</strong> → obrigação tributária (<a class="legal-cite" href="../laws/CTN.html#CTN-113" title="Art. 113. A obrigação tributária é principal ou acessória. | § 1º A obrigação principal surge com a ocorrência do fato gerador, tem por objeto o pagamento de tributo ou penalidade pecuniária e extingue-se juntamente com o crédito dela decorrente. | § 2º A obrigação acessória decorre da legislação tributária e tem por objeto as prestações, positivas ou negativas, nela previstas no interêsse da arrecadação ou da fiscalização dos tributos.">CTN.113</a>).</li>
+<li><strong>Lançamento</strong> (de ofício, por declaração, ou por homologação) →
+constitui o crédito (<a class="legal-cite" href="../laws/CTN.html#CTN-142" title="Art. 142. Compete privativamente à autoridade administrativa constituir o crédito tributário pelo lançamento, assim entendido o procedimento administrativo tendente a verificar a ocorrência do fato gerador da obrigação correspondente, determinar a matéria tributável, calcular o montante do tributo d | Parágrafo único. A atividade administrativa de lançamento é vinculada e obrigatória, sob pena de responsabilidade funcional.">CTN.142</a>).</li>
+<li>Se homologação e o contribuinte pagou o que declarou: encerra.</li>
+<li>Se a RFB discorda (auto de infração) ou se o lançamento foi de
+ofício: contribuinte recebe notificação, abrindo <strong>30 dias</strong> para
+impugnar (<code class="legal-cite">PAF.15</code>).</li>
+<li><strong>Impugnação</strong> → <strong>DRJ</strong> julga em 1ª instância.</li>
+<li><strong>Recurso voluntário</strong> → <strong>CARF</strong> julga em 2ª instância (turma
+paritária Fazenda-contribuinte).</li>
+<li><strong>Recurso especial</strong> (cabível em caso de divergência entre câmaras)
+→ <strong>CSRF</strong> (Câmara Superior de Recursos Fiscais).</li>
+<li>Decisão administrativa definitiva (<code class="legal-cite">PAF.42</code>):<ul>
+<li>Favorável ao contribuinte → extingue o crédito.</li>
+<li>Favorável à Fazenda → encaminhamento à PGFN para <strong>inscrição em
+dívida ativa</strong> e eventual <strong>execução fiscal</strong>.</li>
+</ul>
+</li>
+</ol>
+<p>O PAF é assim um <strong>filtro</strong> — só uma fração dos autos de infração
+lavrados pela RFB chega à cobrança. Os percentuais variam ao longo do
+tempo e por tema, mas o volume de reversões nas DRJs e no CARF é
+material para qualquer projeto que use processos tributários
+judiciais como base amostral.</p>
+<hr />
+<h2 id="2-decreto-702351972-o-paf-federal">2. Decreto 70.235/1972 — o PAF federal</h2>
+<p>Embora formalmente um <strong>decreto</strong>, o <code class="legal-cite">PAF</code> tem <strong>força de lei</strong> por ter
+sido recepcionado sob o DL 822/1969 que autorizava o Executivo a
+disciplinar o processo administrativo fiscal. Alterações ao <code class="legal-cite">PAF</code>
+normalmente ocorrem por MP ou lei ordinária.</p>
+<h3 id="ritos-fundamentais">Ritos fundamentais</h3>
+<ul>
+<li><strong>Início do procedimento</strong> (<code class="legal-cite">PAF.7</code>–<code class="legal-cite">PAF.9</code>) — auto de infração,
+notificação de lançamento, ou termo de início de fiscalização.
+Do lançamento nasce o contencioso administrativo.</li>
+<li><strong>Impugnação</strong> (<code class="legal-cite">PAF.15</code>–<code class="legal-cite">PAF.17</code>) — 30 dias do recebimento da
+notificação. A impugnação <strong>suspende a exigibilidade</strong> do crédito
+(<a class="legal-cite" href="../laws/CTN.html#CTN-151-III" title="III - as reclamações e os recursos, nos têrmos das leis reguladoras do processo tributário administrativo;">CTN.151.III</a>) — durante o PAF, a Fazenda não pode cobrar nem
+inscrever em dívida ativa.</li>
+<li><strong>Instrução e julgamento em 1ª instância</strong> — pelas DRJs.</li>
+<li><strong>Recurso voluntário</strong> — ao CARF (em 30 dias da intimação da decisão
+da DRJ). Recurso de ofício pela DRJ se a decisão exonerar valor
+acima do limite fixado em regulamento.</li>
+<li><strong>Recurso especial à CSRF</strong> (<code class="legal-cite">PAF.37</code>) — admissível em caso de
+divergência entre câmaras ou turmas do CARF; fundamento análogo ao
+recurso especial ao STJ por divergência jurisprudencial.</li>
+<li><strong>Decisão definitiva</strong> (<code class="legal-cite">PAF.42</code>) — encerra o contencioso
+administrativo e abre o prazo prescricional de 5 anos para a PGFN
+inscrever em dívida ativa e ajuizar a EF.</li>
+</ul>
+<h3 id="representação-fiscal-para-fins-penais">Representação fiscal para fins penais</h3>
+<p><code class="legal-cite">L9430.83</code>: ocorrendo crime tributário (<a class="legal-cite" href="../laws/LCOT.html#LCOT-1" title="Art. 1° Constitui crime contra a ordem tributária suprimir ou reduzir tributo, ou contribuição social e qualquer acessório, mediante as seguintes condutas: | I - omitir informação, ou prestar declaração falsa às autoridades fazendárias; | II - fraudar a fiscalização tributária, inserindo elementos inexatos, ou omitindo operação de qualquer natureza, em documento ou livro exigido pela lei fiscal;">LCOT.1</a>, <a class="legal-cite" href="../laws/LCOT.html#LCOT-2" title="Art. 2° Constitui crime da mesma natureza: | I - fazer declaração falsa ou omitir declaração sobre rendas, bens ou fatos, ou empregar outra fraude, para eximir-se, total ou parcialmente, de pagamento de tributo; | II - deixar de recolher, no prazo legal, valor de tributo ou de contribuição social, descontado ou cobrado, na qualidade de sujeito passivo de obrigação e que deveria recolher aos cofres públicos;">LCOT.2</a>) no auto de
+infração, a RFB formaliza <strong>representação fiscal para fins penais</strong>,
+que fica <strong>sobrestada</strong> enquanto pendente o contencioso administrativo
+e só é encaminhada ao MPF <strong>após a decisão definitiva</strong>.</p>
+<p>Esta regra é a face operacional da <code class="legal-cite" title="SV24 — Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da Lei 8.137/1990, antes do lançamento definitivo do tributo.">SV24</code> (tipicidade de crime material
+tributário exige lançamento definitivo). O PAF, portanto, <strong>posterga
+qualquer persecução penal</strong> — e o parcelamento do débito durante o PAF
+<strong>suspende a pretensão punitiva</strong> (Lei 9.964/2000, Lei 10.684/2003).</p>
+<hr />
+<h2 id="3-delegacias-de-julgamento-drj-1ª-instância">3. Delegacias de Julgamento (DRJ) — 1ª instância</h2>
+<p>Órgãos da RFB, não independentes. Julgadores são auditores da Receita.
+Competência: impugnações contra lançamentos de ofício (auto de
+infração e notificação de lançamento) e contra não-homologação de
+compensações.</p>
+<p>Estrutura:</p>
+<ul>
+<li><strong>17 DRJs</strong> distribuídas pelo território nacional (número varia
+conforme reorganizações).</li>
+<li><strong>Turmas de julgamento</strong> compostas por auditores.</li>
+<li>Decisões colegiadas, sem paridade com contribuinte — é a RFB se
+autotutelando.</li>
+</ul>
+<p>Taxa de reversão nas DRJs é significativa, mas substancialmente menor
+do que no CARF (a composição paritária do CARF, quando combinada com
+voto de qualidade pró-contribuinte entre 2020 e 2023, resultou em
+desfechos mais favoráveis ao contribuinte nessa fase).</p>
+<hr />
+<h2 id="4-carf-2ª-instância">4. CARF — 2ª instância</h2>
+<p><strong>Conselho Administrativo de Recursos Fiscais</strong>. Órgão colegiado
+vinculado ao Ministério da Fazenda, <strong>paritário</strong>: metade dos
+conselheiros são representantes da Fazenda Nacional (auditores e
+procuradores), metade são representantes dos contribuintes (indicados
+por entidades de classe). Decisões não são bindingly apeláveis pela
+Fazenda em juízo — decisão do CARF em favor do contribuinte <strong>extingue
+o crédito tributário</strong> (<a class="legal-cite" href="../laws/CTN.html#CTN-156" title="Art. 156. Extinguem o crédito tributário: | I - o pagamento; | II - a compensação;">CTN.156</a>).</p>
+<h3 id="estrutura">Estrutura</h3>
+<ul>
+<li><strong>3 Seções</strong>, cada uma especializada em temas (IR/CSLL, IPI/PIS/COFINS,
+ICMS-ST/previdenciárias/multas).</li>
+<li>Cada Seção tem <strong>4 Câmaras</strong> com <strong>turmas ordinárias</strong> paritárias.</li>
+<li>Em cima das Seções fica a <strong>Câmara Superior de Recursos Fiscais</strong>
+(CSRF), também paritária, com competência para recurso especial por
+divergência.</li>
+</ul>
+<h3 id="voto-de-qualidade-a-alternância-20202023">Voto de qualidade — a alternância 2020–2023</h3>
+<p>Em votações empatadas (frequentes dada a paridade), o <strong>voto de
+qualidade</strong> era tradicionalmente do <strong>presidente</strong> (sempre um
+representante da Fazenda). Portanto empate = Fazenda vence.</p>
+<ul>
+<li><strong><code class="legal-cite">LTT</code> (2020), Art. 28</strong> introduziu no <code class="legal-cite">PAF</code> o princípio de que,
+em caso de empate, prevalece a interpretação <strong>favorável ao
+contribuinte</strong> — inverteu décadas de prática.</li>
+<li><strong>Lei 14.689/2023</strong> restaurou o voto de qualidade pró-Fazenda, <strong>mas</strong>
+com contrapartidas: quando o empate prevalece, há perdão de multas
+e juros de mora, limites à exigibilidade e facilidades de
+parcelamento (cobra-se só o tributo principal).</li>
+</ul>
+<p>Efeito empírico: a decisão final depende do ano em que o processo foi
+julgado. Projetos que usam desfechos do CARF como outcome precisam
+identificar o regime de voto de qualidade vigente na data do
+julgamento — a virada de 2020 e o retorno de 2023 produzem <strong>dois
+breaks estruturais</strong>.</p>
+<h3 id="csrf-recurso-especial">CSRF — recurso especial</h3>
+<p>Função análoga ao recurso especial ao STJ no processo civil: uniformiza
+jurisprudência administrativa. Admissibilidade por <strong>divergência</strong>
+entre câmaras/turmas. Ritos equivalentes (paridade, voto de qualidade
+sob o mesmo regime da Câmara).</p>
+<hr />
+<h2 id="5-lei-97841999-base-subsidiária">5. Lei 9.784/1999 — base subsidiária</h2>
+<p><code class="legal-cite">LPA</code> é a lei geral do processo administrativo federal. Aplica-se
+subsidiariamente ao PAF (<code class="legal-cite">LPA.69</code>) — quando o Decreto 70.235/72 for
+silente, recorre-se aos princípios e regras da <code class="legal-cite">LPA</code>. Relevantes na
+prática:</p>
+<ul>
+<li><strong>Motivação obrigatória</strong> (<code class="legal-cite">LPA.50</code>) — decisões administrativas,
+inclusive da DRJ e do CARF, precisam de fundamentação explícita.</li>
+<li><strong>Autotutela com decadência quinquenal</strong> (<code class="legal-cite">LPA.54</code>) — a
+Administração pode anular seus atos ilegais, mas decai em 5 anos
+o poder de anular atos que beneficiem administrado de boa-fé. Relevante
+em casos de revisão tardia de isenções, compensações, ou benefícios
+concedidos.</li>
+<li><strong>Recursos administrativos</strong> (<code class="legal-cite">LPA.56</code>–<code class="legal-cite">LPA.65</code>) — regra geral de
+recorribilidade a três instâncias, salvo disposição em contrário (o
+PAF impõe estrutura própria, que prevalece).</li>
+</ul>
+<hr />
+<h2 id="6-prazo-de-360-dias-stj-tema-1115">6. Prazo de 360 dias — STJ Tema 1.115</h2>
+<p><code class="legal-cite">L11457.24</code> estabelece prazo de <strong>360 dias</strong> para decisão administrativa
+em matéria tributária, a contar do protocolo da petição. Em 2022, no
+Tema 1.115, o STJ fixou a tese: <strong>o prazo é obrigatório</strong> e o
+contribuinte pode impetrar <strong>mandado de segurança</strong> para compelir a
+Fazenda a decidir.</p>
+<p>Efeito prático: embora o prazo não extinga o crédito nem altere a
+suspensão da exigibilidade, cria alavancagem processual contra o
+uso de instrução administrativa como instrumento de postergação.
+Operacionalmente, o CARF tem estoque acumulado significativo e o prazo
+é frequentemente descumprido; MS para forçar julgamento tornou-se
+rotineiro pós-Tema 1.115.</p>
+<hr />
+<h2 id="7-pats-estaduais-e-municipais-ver-arquivo-dedicado">7. PATs estaduais e municipais — ver arquivo dedicado</h2>
+<p>O contencioso administrativo tributário estadual (TIT-SP, CCMG,
+Conselho de Contribuintes do RJ, TARF-RS, CCRF-PR, etc.) e municipal
+(CMT-SP, CCM-Rio, estruturas menores) é tratado em arquivo próprio:
+<a href="../topics/tribunais-administrativos-fiscais.html"><code><a href="../topics/tribunais-administrativos-fiscais.html">tribunais-administrativos-fiscais.md</a></code></a>.</p>
+<p><strong>Caveat</strong>: PATs estaduais e municipais variam enormemente em
+estrutura, paridade, prazo de recursos e duração do contencioso.
+Qualquer projeto comparativo entre estados/municípios precisa
+caracterizar cada sistema separadamente — o PAF federal <strong>não</strong> é um
+bom proxy para o PAT estadual.</p>
+<hr />
+<h2 id="8-implicações-para-desenho-empírico">8. Implicações para desenho empírico</h2>
+<ul>
+<li><strong>PAF como filtro</strong>: amostras de execuções fiscais federais não são
+amostras de autos de infração. O que chega à EF passou por DRJ e
+(frequentemente) CARF. Taxas de reversão nas duas instâncias
+administrativas moldam a composição da amostra de EFs em termos de
+valor, matéria e perfil do contribuinte.</li>
+<li><strong>Voto de qualidade</strong> (2020 e 2023): dois <em>structural breaks</em> em
+estoque e composição de crédito no CARF. Qualquer desfecho CARF
+usado como outcome exige identificação do regime vigente.</li>
+<li><strong>Tempo entre lançamento e ajuizamento</strong>: 5–10 anos é típico.
+Relevante para interpretar &quot;idade&quot; do crédito em EFs e para
+calibrar desenhos com variação temporal no recebimento do auto.</li>
+<li><strong>Simultaneidade PAF/penal</strong>: crimes tributários ficam dormentes
+até definitividade administrativa (<code class="legal-cite">L9430.83</code>, <code class="legal-cite" title="SV24 — Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da Lei 8.137/1990, antes do lançamento definitivo do tributo.">SV24</code>). Projetos
+que estudam denúncias por crime tributário têm lag endógeno
+determinado pelo PAF.</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li><code><a href="../topics/direito-tributario.html">direito-tributario.md</a></code> — parte geral (lançamento, decadência,
+prescrição).</li>
+<li><code><a href="../topics/divida-ativa.html">divida-ativa.md</a></code> — o que acontece com o crédito depois do PAF.</li>
+<li><code><a href="../topics/execucao-fiscal.html">execucao-fiscal.md</a></code> — cobrança judicial.</li>
+<li><code><a href="../topics/anticorrupcao-penal.html">anticorrupcao-penal.md</a></code> — crimes tributários (<a class="legal-cite" href="../laws/LCOT.html" title="Art. 1° Constitui crime contra a ordem tributária suprimir ou reduzir tributo, ou contribuição social e qualquer acessório, mediante as seguintes condutas: | I - omitir informação, ou prestar declaração falsa às autoridades fazendárias; | II - fraudar a fiscalização tributária, inserindo elementos inexatos, ou omitindo operação de qualquer natureza, em documento ou livro exigido pela lei fiscal;">LCOT</a>) e relação
+com o PAF.</li>
+</ul>
+
+</main>
+<footer>
+  Reference for empirical research on Brazil's legal and administrative
+  system. Generated from
+  <a href="https://github.com/hsigstad/brazil-institutions">hsigstad/brazil-institutions</a>;
+  statute text from the consolidated <code>artigos.db</code>.
+</footer>
+</body>
+</html>

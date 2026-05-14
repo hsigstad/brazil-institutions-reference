@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quasi-experimentos — natural experiments in Brazilian institutions — Brazilian Institutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html">Brazilian Institutions</a>
+  <a href="index.html">Topics</a>
+  <a href="laws/index.html">Laws</a>
+  <a href="concepts.html">Concepts</a>
+</header>
+<main>
+<h1 id="quasi-experimentos-natural-experiments-in-brazilian-institutions">Quasi-experimentos — natural experiments in Brazilian institutions</h1>
+<p>Index of identification strategies and natural experiments embedded in
+Brazilian institutional features that have been used in the published
+empirical literature. Each entry: the institutional source, the
+cutoff/threshold/event, what it identifies, and the canonical paper(s)
+that exploited it.</p>
+<p>This file is for <strong>empirical researchers</strong> designing causal studies on
+Brazilian institutions. It complements the topical files by surfacing
+the parts of those institutions that researchers have used as sources
+of variation.</p>
+<p><strong>Scope</strong>: only entries that have been exploited in published (or
+widely-circulated working) papers. Novel or unexploited identification
+ideas are deliberately not here.</p>
+<p><strong>Topics / keywords</strong>: natural experiment, quasi-experiment,
+identification strategy, regression discontinuity, RD, difference in
+differences, event study, instrument, IV, cutoff, threshold, treatment
+effect, causal inference, Brazilian empirical literature.</p>
+<p><strong>Snapshot as of 2026</strong>: a representative but not exhaustive list. Many
+of these have multiple variations and active replication / extension
+work in the literature.</p>
+<hr />
+<h2 id="cross-references">Cross-references</h2>
+<p>For institutional context behind each entry, follow the cited file:</p>
+<ul>
+<li><a href="topics/cgu-controle-interno.html"><code>topics/cgu-controle-interno.md</code></a> — CGU random audits</li>
+<li><a href="topics/federalismo-fiscal.html"><code>topics/federalismo-fiscal.md</code></a> — FPM, FUNDEB</li>
+<li><a href="topics/partidos-e-sistema-eleitoral.html"><code>topics/partidos-e-sistema-eleitoral.md</code></a> — electoral cutoffs</li>
+<li><a href="topics/contas-municipais.html"><code>topics/contas-municipais.md</code></a> — Ficha Limpa</li>
+<li><a href="topics/justica-trabalho.html"><code>topics/justica-trabalho.md</code></a> — labor reform (2017)</li>
+<li><a href="topics/cnj-administracao-judicial.html"><code>topics/cnj-administracao-judicial.md</code></a> — judicial random assignment</li>
+</ul>
+<hr />
+<h2 id="1-cgu-random-municipal-audits-the-canonical-brazilian-rd">1. CGU random municipal audits — the canonical Brazilian RD</h2>
+<p><strong>Institutional source</strong>: Controladoria-Geral da União (CGU), <em>Programa
+de Fiscalização por Sorteios</em> (PFS), 2003–2015.</p>
+<p><strong>Mechanism</strong>: ~40 lotteries held in Caixa Econômica Federal
+headquarters, each randomly drawing ~60 municipalities for federal
+audit. Audits produced detailed reports of irregularities classified by
+type (procurement, health, education, social programs).</p>
+<p><strong>Identifies</strong>: causal effects of audit exposure (and audit-revealed
+corruption) on a wide variety of outcomes: voting, future spending,
+firm-level outcomes, future corruption, etc.</p>
+<p><strong>Population restriction</strong>: municipalities above certain population
+thresholds (initially ~500k, later lifted) were excluded from the random
+pool and audited on different criteria.</p>
+<p><strong>Canonical papers</strong>:</p>
+<ul>
+<li>Ferraz &amp; Finan (2008, <em>QJE</em>) — electoral punishment of corruption
+revealed by audit.</li>
+<li>Ferraz &amp; Finan (2011, <em>AER</em>) — re-election incentives and corruption.</li>
+<li>Avis, Ferraz &amp; Finan (2018, <em>JPE</em>) — deterrence effects of audits on
+future corruption.</li>
+<li>Many extensions in the broader Ferraz–Finan–Monteiro literature.</li>
+</ul>
+<p><strong>Caveat</strong>: random assignment applies <strong>strictly to 2003–2015</strong>. After
+2015, the program was reformulated as risk-based selection
+(<em>Programa de Fiscalização em Entes Federativos</em>). Post-2015 audits are
+not randomly assigned and require different identification assumptions.</p>
+<p><strong>See</strong>: <a href="topics/cgu-controle-interno.html"><code>topics/cgu-controle-interno.md</code></a> §3.</p>
+<hr />
+<h2 id="2-fpm-step-function-rd-on-municipal-revenue">2. FPM step function — RD on municipal revenue</h2>
+<p><strong>Institutional source</strong>: Fundo de Participação dos Municípios (FPM)
+distribution rules under Decreto-Lei 1.881/1981 + LC 62/1989.</p>
+<p><strong>Mechanism</strong>: FPM coefficients for interior municipalities follow a
+<strong>step function</strong> of population — 16 brackets, with discrete jumps in
+per-capita FPM as a municipality crosses a bracket boundary. Population
+estimates are published annually by IBGE; coefficients are set by TCU
+for year <em>t</em> based on the IBGE estimate published by August of year <em>t−1</em>.</p>
+<p><strong>Identifies</strong>: effects of marginal increases in municipal revenue on
+spending, public goods provision, electoral outcomes, corruption,
+political competition, etc.</p>
+<p><strong>Threshold detail</strong>: bracket boundaries depend on population tier;
+small towns cluster in lower brackets where the absolute jumps are
+smaller but per-capita effects are larger.</p>
+<p><strong>Reform</strong>: LC 143/2013 altered the reclassification mechanics — verify
+which regime applies for the period of interest.</p>
+<p><strong>Canonical papers</strong>:</p>
+<ul>
+<li>Litschig &amp; Morrison (2013, <em>AEJ Applied</em>) — public spending and
+political effects.</li>
+<li>Brollo, Nannicini, Perotti &amp; Tabellini (2013, <em>AER</em>) — corruption and
+political selection.</li>
+<li>Many extensions on health, education, infrastructure outcomes.</li>
+</ul>
+<p><strong>See</strong>: <a href="topics/federalismo-fiscal.html"><code>topics/federalismo-fiscal.md</code></a> §2 (&quot;FPM&quot;).</p>
+<hr />
+<h2 id="3-200k-voter-threshold-for-second-round-mayoral-elections">3. 200k voter threshold for second-round mayoral elections</h2>
+<p><strong>Institutional source</strong>: CF Art. 29 II.</p>
+<p><strong>Mechanism</strong>: in municipalities with <strong>more than 200,000 registered
+voters</strong>, prefeito elections require a second round if no candidate
+gets 50%+1 in the first round. In smaller municipalities, the
+first-round plurality wins outright.</p>
+<p><strong>Identifies</strong>: effects of two-round elections vs single-round on
+political competition, candidate selection, ideological positioning,
+corruption, policy outcomes.</p>
+<p><strong>Caveat</strong>: the 200k threshold is on <strong>registered voters</strong>, not
+population. The two are correlated but not identical (electorate
+expansion or contraction can move a municipality across the threshold
+without population change).</p>
+<p><strong>Canonical papers</strong>:</p>
+<ul>
+<li>Bordignon, Nannicini &amp; Tabellini (2016, <em>AER</em>) — moderation effects.</li>
+<li>Multiple Brazilian replication / extension papers on corruption and
+selection.</li>
+</ul>
+<p><strong>See</strong>: <a href="topics/partidos-e-sistema-eleitoral.html"><code>topics/partidos-e-sistema-eleitoral.md</code></a> §1.</p>
+<hr />
+<h2 id="4-ficha-limpa-lc-1352010-introduction-shock">4. Ficha Limpa (LC 135/2010) — introduction shock</h2>
+<p><strong>Institutional source</strong>: Lei Complementar 135/2010, amending LC 64/1990
+Art. 1 I &quot;g&quot; (Ficha Limpa).</p>
+<p><strong>Mechanism</strong>: pre-2010, ineligibility for past convictions required
+<strong>trânsito em julgado</strong> (final, unappealable conviction). Post-2010, a
+<strong>collegiate body decision</strong> (não unipessoal) suffices, vastly
+expanding the pool of ineligible candidates.</p>
+<p><strong>Identifies</strong>: effects of stricter eligibility rules on candidate
+quality, political competition, voter behavior, and turnover. Also
+within-politician variation: a politician convicted at first instance
+in 2009 was eligible for the 2010 election; the same conviction
+post-Ficha-Limpa ruling regime would render them ineligible.</p>
+<p><strong>Constitutional confirmation</strong>: STF ADC 29/30 + ADI 4578 (2012) upheld
+the constitutionality despite presunção de inocência objections.</p>
+<p><strong>Canonical papers</strong>:</p>
+<ul>
+<li>Avis, Ferraz, Finan &amp; Varjão (2022, <em>AEJ Applied</em>) and others on
+Ficha Limpa effects on electoral selection.</li>
+</ul>
+<p><strong>See</strong>: <a href="topics/partidos-e-sistema-eleitoral.html"><code>topics/partidos-e-sistema-eleitoral.md</code></a> §7,
+<a href="topics/contas-municipais.html"><code>topics/contas-municipais.md</code></a> §3.</p>
+<hr />
+<h2 id="5-reforma-trabalhista-lei-134672017-filing-cost-shock">5. Reforma trabalhista (Lei 13.467/2017) — filing-cost shock</h2>
+<p><strong>Institutional source</strong>: Lei 13.467/2017, effective 11 November 2017.</p>
+<p><strong>Mechanism</strong>: pre-reform, Brazilian labor courts had <strong>zero filing
+costs</strong> for workers and <strong>no honorários de sucumbência</strong> (loser-pays
+attorney fees). The 2017 reform introduced custas (2% of claim value),
+honorários (5–15%), no-show penalties, and tightened <em>justiça gratuita</em>
+eligibility (40% RGPS ceiling, down from 2× minimum wage).</p>
+<p><strong>Identifies</strong>: effects of filing costs on litigation volume and
+composition. The November 2017 cutoff produces:</p>
+<ul>
+<li>A <strong>mass-filing spike</strong> in November 2017 (workers rushing under old
+rules) — ~207k filings vs ~120k typical monthly volume.</li>
+<li><strong>34% drop</strong> in 2018 vs 2017 filings.</li>
+<li><strong>Composition change</strong>: speculative claims (<em>pedidos aventureiros</em>)
+dropped disproportionately.</li>
+</ul>
+<p><strong>Partial reversal</strong>: STF <code class="legal-cite" title="ADI5766 — Art. 790-B caput e §4 CLT (perícia) e Art. 791-A §4 CLT (sucumbenciais sobre créditos de outros processos) declarados inconstitucionais. Beneficiários da justiça gratuita não pagam perícia com créditos da causa; sucumbenciais ficam suspensos por 2 anos do trânsito em julgado.
+ — [vigente]">ADI5766</code> (October 2021) struck down the
+harshest cost provisions for <em>justiça gratuita</em> beneficiaries.</p>
+<p><strong>Canonical papers</strong>:</p>
+<ul>
+<li>Corbi, Narita, Ferreira &amp; Souza (2022, SSRN WP) — exploits
+quasi-random assignment of labor-court judges and simulates the
+2017 reform, finding that shifting legal costs onto workers reduces
+firm financial distress and increases hiring at small firms.</li>
+</ul>
+<p><strong>See</strong>: <a href="topics/justica-trabalho.html"><code>topics/justica-trabalho.md</code></a> §&quot;Filing costs&quot;
+and §&quot;Impact on filing volumes&quot;.</p>
+<hr />
+<h2 id="6-fundeb-complementação-federal-top-up-threshold">6. FUNDEB complementação — federal top-up threshold</h2>
+<ul>
+<li><strong>Source</strong>: FUNDEB (EC 108/2020, Lei 14.113/2020). Federal government
+tops up state-level FUNDEB funds when per-student spending falls
+below a national minimum.</li>
+<li><strong>Mechanism</strong>: states whose FUNDEB per-student value falls below the
+national complementação threshold receive federal top-up. Creates a
+kink/notch at the threshold.</li>
+<li><strong>Identifies</strong>: effect of incremental education funding on student
+outcomes, teacher salaries, school infrastructure.</li>
+<li><strong>Caveats</strong>: threshold moves annually; state-level sorting around the
+cutoff is possible via enrollment manipulation.</li>
+<li><strong>Canonical papers</strong>: Gordon &amp; Vegas (2005); Kosec (2014 <em>JDE</em>).</li>
+<li><strong>See</strong>: <a href="topics/federalismo-fiscal.html"><code>topics/federalismo-fiscal.md</code></a> §2.</li>
+</ul>
+<hr />
+<h2 id="7-judicial-random-case-assignment-judge-fixed-effects">7. Judicial random case assignment — judge fixed effects</h2>
+<ul>
+<li><strong>Source</strong>: CNJ case-assignment rules. Cases distributed by electronic
+<em>sorteio</em> within groups of varas of the same competence.</li>
+<li><strong>Mechanism</strong>: quasi-random assignment of cases to judges within the
+same vara-group. Prevenção creates persistence within a case but
+does not affect initial assignment.</li>
+<li><strong>Identifies</strong>: effect of judge identity/characteristics on case
+outcomes (duration, settlement rates, sentencing).</li>
+<li><strong>Caveats</strong>: specialization structures (cível vs. criminal, fazenda
+pública) create non-random sorting by subject matter. Must document
+the specialization structure when claiming random assignment.
+Titular/substituto splits (by case-number parity) add a second
+layer of quasi-randomness within a single vara.</li>
+<li><strong>Canonical papers</strong>: Abrams et al. (2012); for Brazil: various TJSP
+studies exploiting vara-level random assignment.</li>
+<li><strong>See</strong>: <a href="topics/cnj-administracao-judicial.html"><code>topics/cnj-administracao-judicial.md</code></a> §5,
+<a href="topics/justica-federal.html"><code>topics/justica-federal.md</code></a> §1,
+<a href="topics/justica-trabalho.html"><code>topics/justica-trabalho.md</code></a> §2.</li>
+</ul>
+<hr />
+<h2 id="8-municipal-emancipation-wave-19882000">8. Municipal emancipation wave (1988–2000)</h2>
+<ul>
+<li><strong>Source</strong>: CF/88 Art. 18 §4 (original) gave states authority to
+create new municipalities by state law. ~1,438 new municípios
+created between 1988 and 2000 before EC 15/1996 tightened the rules.</li>
+<li><strong>Mechanism</strong>: creation of new municipalities in response to state-
+level legislative incentives (typically FPM capture — smaller
+municipalities get higher per-capita FPM due to the step function).</li>
+<li><strong>Identifies</strong>: effects of government fragmentation on public goods,
+fiscal outcomes, political competition.</li>
+<li><strong>Caveats</strong>: municipality creation is endogenous to local political
+interests; need instruments or boundary-based designs.</li>
+<li><strong>Canonical papers</strong>: Litschig (2012 <em>JDE</em>); Arvate et al.</li>
+<li><strong>See</strong>: <a href="topics/federalismo-fiscal.html"><code>topics/federalismo-fiscal.md</code></a> §2.</li>
+</ul>
+<hr />
+<h2 id="how-to-add-an-entry">How to add an entry</h2>
+<p>When you find or use a new natural experiment in Brazilian institutions,
+add an entry to this file with:</p>
+<ol>
+<li><strong>Institutional source</strong>: the statute, regulation, or decision that
+creates the variation.</li>
+<li><strong>Mechanism</strong>: the precise rule that generates the assignment /
+threshold / event.</li>
+<li><strong>Identifies</strong>: what causal effect you can recover with this variation.</li>
+<li><strong>Caveats</strong>: known threats to identification (selection, anticipation,
+spillover, etc.).</li>
+<li><strong>Canonical paper(s)</strong>: the seminal use(s) of the variation in the
+literature. This file is scoped to variations used in published
+work — if the strategy hasn't been used yet, keep it in your own
+notes rather than listing it here.</li>
+<li><strong>Cross-reference</strong>: link to the topical file(s) where the
+institutional details are explained.</li>
+</ol>
+
+</main>
+<footer>
+  Reference for empirical research on Brazil's legal and administrative
+  system. Generated from
+  <a href="https://github.com/hsigstad/brazil-institutions">hsigstad/brazil-institutions</a>;
+  statute text from the consolidated <code>artigos.db</code>.
+</footer>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CNJ e administração judicial — Brazilian Institutions</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="../index.html">Brazilian Institutions</a>
+  <a href="../index.html">Topics</a>
+  <a href="../laws/index.html">Laws</a>
+  <a href="../concepts.html">Concepts</a>
+</header>
+<main>
+<h1 id="cnj-e-administração-judicial">CNJ e administração judicial</h1>
+<p>The Conselho Nacional de Justiça (CNJ) oversees the administrative,
+financial, and disciplinary management of the Brazilian judiciary. It
+does not rule on legal merits — that remains with each court — but it
+issues resoluções that bind judicial administration, publishes the
+authoritative judicial-statistics series (Justiça em Números), and
+coordinates the unified electronic case-management platform (PJe).</p>
+<p>This file focuses on <strong>judicial administration</strong>: CNJ's normative power,
+the main case-management systems (PJe, e-Proc, ESAJ), metadata and
+data-release conventions, and specialization rules. For the
+institutional composition of CNJ, see <code><a href="../topics/cortes-superiores.html">cortes-superiores.md</a></code>. For
+judicial career, discipline, and selection, see <code><a href="../topics/carreira-juizes.html">carreira-juizes.md</a></code>.</p>
+<p><strong>Topics / keywords</strong>: CNJ, Conselho Nacional de Justiça, Justiça em
+Números, PJe, Processo Judicial eletrônico, e-Proc, ESAJ, SAJ, CNPJ
+tribunais, Tabelas Unificadas, SGT, Assuntos Processuais, CNAE-like
+classification for cases, conciliação, Cejusc, Semana Nacional da
+Conciliação, Resolução CNJ, especialização, varas especializadas,
+combate à corrupção, vara de ações de improbidade, varas de fazenda
+pública.</p>
+<p><strong>Snapshot as of 2026</strong>: CNJ Resoluções change frequently — any specific
+resolution number cited here is a snapshot. The Tabelas Unificadas
+governance model has been stable since Res. 46/2007. PJe is the
+CNJ-sponsored unified platform but multiple tribunals still run e-Proc
+(CJF-developed, used by TRFs and some TJs) or ESAJ (TJSP) alongside or
+instead of PJe. Interoperability remains partial.</p>
+<hr />
+<p><a id="cnj"></a></p>
+<h2 id="1-cnj-mandate-and-normative-power">1. CNJ — mandate and normative power</h2>
+<h3 id="creation">Creation</h3>
+<ul>
+<li>Created by <code class="legal-cite" title="LXXVIII - a todos, no âmbito judicial e administrativo, são assegurados a razoável duração do processo e os meios que garantam a celeridade de sua tramitação | § 3º Os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros, serão equivalentes às emendas constitucionais. ( Vide Atos decorrentes do disposto no § 3º do art. 5º da Co | § 4º O Brasil se submete à jurisdição de Tribunal Penal Internacional a cuja criação tenha manifestado adesão">EC45-2004</code> (Reforma do Judiciário); installed in June
+2005.</li>
+<li>Constitutional basis: <a class="legal-cite" href="../laws/CF.html#CF-103-B" title="Art. 103-B. O Conselho Nacional de Justiça compõe-se de 15 (quinze) membros com mandato de 2 (dois) anos, admitida 1 (uma) recondução, sendo: | I - o Presidente do Supremo Tribunal Federal; | II - um Ministro do Superior Tribunal de Justiça, indicado pelo respectivo tribunal;">CF.103-B</a>.</li>
+<li>Composed of 15 conselheiros serving 2-year renewable terms (see
+<code><a href="../topics/cortes-superiores.html">cortes-superiores.md</a></code> §1 for composition).</li>
+</ul>
+<h3 id="mandate-cf103-b4">Mandate (<a class="legal-cite" href="../laws/CF.html#CF-103-B-p4" title="§ 4º Compete ao Conselho o controle da atuação administrativa e financeira do Poder Judiciário e do cumprimento dos deveres funcionais dos juízes, cabendo-lhe, além de outras atribuições que lhe forem conferidas pelo Estatuto da Magistratura:">CF.103-B.§4</a>)</h3>
+<ul>
+<li><strong>Administrative and financial control</strong> of the judiciary.</li>
+<li><strong>Disciplinary oversight</strong> of judges and court employees.</li>
+<li><strong>Normative power</strong> via <strong>Resoluções CNJ</strong>.</li>
+<li><strong>No merits jurisdiction</strong>: cannot review or overturn judicial decisions
+on their legal substance.</li>
+</ul>
+<p><a id="resolucoes-cnj"></a></p>
+<h3 id="resoluções-cnj">Resoluções CNJ</h3>
+<ul>
+<li>Binding normative acts that regulate judicial administration across
+all courts.</li>
+<li>Published on the CNJ website and indexed by subject.</li>
+<li><strong>Key examples</strong> relevant to research:<ul>
+<li><strong>Res. 46/2007</strong>: Tabelas Processuais Unificadas (the authoritative
+classification schema for case types, subjects, and movements —
+§3 below).</li>
+<li><strong>Res. 65/2008</strong>: numeração única de processos (the modern case
+number format: <code>NNNNNNN-DD.AAAA.J.TR.OOOO</code>).</li>
+<li><strong>Res. 121/2010</strong>: publication of judicial data to enable
+transparency.</li>
+<li><strong>Res. 125/2010</strong>: <em>Política Judiciária Nacional de Tratamento
+Adequado dos Conflitos</em> — created Cejusc and mandated conciliation
+policy.</li>
+<li><strong>Res. 185/2013</strong>: PJe as the unified case-management platform for
+the judiciary.</li>
+<li><strong>Res. 215/2015</strong>: LAI applied to the judiciary.</li>
+<li><strong>Res. 238/2016</strong>: health-litigation specialization.</li>
+<li><strong>Res. 331/2020</strong>: management of PJe and procedural data standards.</li>
+<li><strong>Res. 363/2021</strong>: LGPD compliance in the judiciary.</li>
+<li><strong>Res. 547/2024</strong>: authorized judges to extinguish low-value
+execuções fiscais (≤R$10,000), triggering mass extinction of tax
+enforcement cases.</li>
+</ul>
+</li>
+<li>When referring to a specific Resolução, <strong>always cite the number and
+year</strong> — numbers are reused as old resoluções are revoked or
+consolidated.</li>
+</ul>
+<h3 id="disciplinary-oversight">Disciplinary oversight</h3>
+<ul>
+<li><strong>Reclamação disciplinar</strong> and <strong>Processo Administrativo Disciplinar
+(PAD)</strong> against judges (CNJ Regimento Interno Arts. 67–77).</li>
+<li>CNJ has concurrent disciplinary jurisdiction with each tribunal's
+<strong>Corregedoria</strong> and can avocate cases.</li>
+<li>Sanctions: advertência, censura, removal, aposentadoria compulsória,
+disponibilidade.</li>
+</ul>
+<p><strong>Source</strong>: <a class="legal-cite" href="../laws/CF.html#CF-103-B" title="Art. 103-B. O Conselho Nacional de Justiça compõe-se de 15 (quinze) membros com mandato de 2 (dois) anos, admitida 1 (uma) recondução, sendo: | I - o Presidente do Supremo Tribunal Federal; | II - um Ministro do Superior Tribunal de Justiça, indicado pelo respectivo tribunal;">CF.103-B</a>; <a href="https://atos.cnj.jus.br/">Resoluções CNJ (portal)</a>.</p>
+<hr />
+<h2 id="2-justiça-em-números-the-authoritative-statistics-series">2. Justiça em Números — the authoritative statistics series</h2>
+<p>Annual statistical report published by CNJ, covering all branches of the
+Brazilian judiciary.</p>
+<ul>
+<li><strong>Publication</strong>: annual, typically late in the year (e.g., <em>Justiça em
+Números 2024</em> reports base-year 2023 data).</li>
+<li><strong>Coverage</strong>: Justiça Estadual, Federal, do Trabalho, Eleitoral,
+Militar, Superior Tribunals.</li>
+<li><strong>Key indicators</strong>:<ul>
+<li>New cases (<em>casos novos</em>), pending cases (<em>pendentes</em>), cases
+resolved (<em>baixados</em> and <em>julgados</em>).</li>
+<li>Congestion rate (<em>taxa de congestionamento</em>): share of cases
+unresolved.</li>
+<li>Productivity per judge (<em>IPM-Mag</em>, <em>IPM-Serv</em>).</li>
+<li>Average case duration by phase (<em>tempo de tramitação</em>).</li>
+<li>Expenditure per branch.</li>
+<li>Conciliation rate by branch.</li>
+</ul>
+</li>
+<li><strong>Underlying dataset</strong>: aggregated by CNJ from tribunal-reported data;
+the micro-level underlying data are not released in Justiça em Números
+itself but are partially available through DataJud (below).</li>
+<li>Used extensively for Brazilian judicial research as the <strong>authoritative
+macro-level reference</strong>.</li>
+</ul>
+<h3 id="datajud">DataJud</h3>
+<ul>
+<li><strong>Base Nacional de Dados do Poder Judiciário (DataJud)</strong>: CNJ
+initiative to centralize procedural data from all tribunals into a
+unified base. Provides a standardized data layer underlying Justiça
+em Números.</li>
+<li>Regulated by <strong>Res. 331/2020</strong>.</li>
+<li>Tribunals must feed DataJud on a monthly basis with structured case
+metadata.</li>
+<li>Access to DataJud for researchers has historically been limited;
+most research still relies on scraping tribunal-level web systems.</li>
+</ul>
+<hr />
+<h2 id="3-tabelas-processuais-unificadas-tpus">3. Tabelas Processuais Unificadas (TPUs)</h2>
+<p>CNJ Res. 46/2007 established the mandatory unified classification
+schema for case metadata across all Brazilian courts. This is the
+backbone of any structured analysis of court data.</p>
+<h3 id="three-main-tables">Three main tables</h3>
+<ol>
+<li><strong>Classe processual</strong>: the formal class of the case (e.g.,
+<em>Procedimento Comum Cível</em>, <em>Ação Civil Pública</em>, <em>Execução Fiscal</em>).
+Classes form a hierarchical tree.</li>
+<li><strong>Assunto</strong>: the substantive subject matter (e.g.,
+<em>Direito Tributário → Crédito Tributário → Execução Fiscal</em>). Also
+hierarchical, with several thousand leaf nodes.</li>
+<li><strong>Movimentação</strong>: the types of procedural acts that can be recorded
+in a case (e.g., <em>Distribuição</em>, <em>Conclusão ao Juiz</em>, <em>Sentença</em>).</li>
+</ol>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><strong>Hierarchical</strong>: each code has a parent, enabling aggregation.</li>
+<li><strong>Controlled vocabulary</strong>: tribunals must use TPU codes in their case
+management systems; local codes are not valid for CNJ reporting.</li>
+<li><strong>Periodically updated</strong>: new classes / assuntos are added by CNJ
+deliberation. Old codes are retired but remain valid for historical
+records.</li>
+<li><strong>Research use</strong>: any cross-tribunal or longitudinal analysis must
+map to TPU to be comparable. When scraping from ESAJ or e-Proc,
+verify the TPU code is captured.</li>
+</ul>
+<h3 id="cnj-case-numbering-res-652008">CNJ case numbering (Res. 65/2008)</h3>
+<ul>
+<li>Unified format: <code>NNNNNNN-DD.AAAA.J.TR.OOOO</code><ul>
+<li><code class="legal-cite">NNNNNNN</code> — sequential number.</li>
+<li><code class="legal-cite">DD</code> — check digit.</li>
+<li><code class="legal-cite">AAAA</code> — filing year.</li>
+<li><code class="legal-cite">J</code> — segmento do judiciário (1=STF, 2=CNJ, 3=STJ, 4=Federal,
+5=Trabalho, 6=Eleitoral, 7=Militar União, 8=Estadual, 9=Militar
+Estadual).</li>
+<li><code class="legal-cite">TR</code> — tribunal (each TJ, TRT, TRE, TRF has a two-digit code).</li>
+<li><code class="legal-cite">OOOO</code> — unidade de origem (vara, comarca, juizado).</li>
+</ul>
+</li>
+<li>Example: <code>0007153-26.2009.8.26.0081</code> = sequential 0007153,
+check 26, year 2009, estadual (8), TJSP (26), vara 0081
+(Adamantina).</li>
+<li><strong>Implication</strong>: the case number itself encodes the tribunal, year,
+and originating vara — useful for parsing without reading other fields.</li>
+</ul>
+<hr />
+<h2 id="4-case-management-systems">4. Case management systems</h2>
+<h3 id="pje-processo-judicial-eletrônico">PJe — Processo Judicial Eletrônico</h3>
+<ul>
+<li><strong>CNJ-sponsored</strong> unified platform (Res. 185/2013).</li>
+<li>Intended to be adopted across all tribunals.</li>
+<li><strong>Adoption is partial</strong>: as of 2026, most tribunais federais, a growing
+number of TJs, and the Justiça do Trabalho use PJe. TJSP remains on
+ESAJ; some TRFs use e-Proc.</li>
+<li>Interoperability via APIs is improving but still inconsistent.</li>
+</ul>
+<h3 id="e-proc">e-Proc</h3>
+<ul>
+<li>Developed by CJF for the <strong>Justiça Federal</strong> (TRFs). Now also used by
+several TJs (notably TJRS).</li>
+<li>Widely considered more user-friendly than PJe; CNJ has debated
+consolidation but neither platform has fully displaced the other.</li>
+</ul>
+<h3 id="esaj-saj">ESAJ / SAJ</h3>
+<ul>
+<li>Platform developed by <strong>Softplan</strong> and used by <strong>TJSP</strong> (the largest
+court in Brazil) and many other TJs.</li>
+<li>Proprietary; access is via TJSP's web consultation (<em>Consulta
+Processual</em>), with scrape-based research dominant.</li>
+<li>Most empirical research on TJSP case law relies on ESAJ data scraped
+from the public consultation interface.</li>
+</ul>
+<h3 id="other-systems">Other systems</h3>
+<ul>
+<li>Smaller tribunais may use Apolo, e-SAJ variants, or custom systems.</li>
+<li>The <strong>Justiça do Trabalho</strong> has a unified PJe deployment but historical
+data from pre-PJe systems is held separately and has uneven
+availability.</li>
+</ul>
+<hr />
+<h2 id="5-specialization-of-varas-and-tribunais">5. Specialization of varas and tribunais</h2>
+<h3 id="specialization-rules">Specialization rules</h3>
+<ul>
+<li><a class="legal-cite" href="../laws/CF.html#CF-96-I" title="I - aos tribunais:">CF.96.I</a>: tribunals have constitutional authority to organize
+their own structure, including creating specialized varas.</li>
+<li>In practice, specialization is driven by:<ul>
+<li>Local caseload pressure (e.g., dedicated execução fiscal varas in
+large comarcas).</li>
+<li>CNJ resoluções recommending specialization (health, environment,
+anti-corruption).</li>
+<li>State law (estadual organization statutes).</li>
+</ul>
+</li>
+<li><strong>Key examples</strong>:<ul>
+<li><strong>Varas da Fazenda Pública</strong>: specialized in cases involving public
+entities (state, municipalities, state-owned enterprises). Common
+in large comarcas.</li>
+<li><strong>Varas de combate a crimes organizados e corrupção</strong>: e.g., the
+13ª Vara Federal Criminal de Curitiba (Lava Jato), specialized
+varas in São Paulo and Rio.</li>
+<li><strong>Varas especializadas em saúde</strong>: CNJ Res. 238/2016 mandates
+specialized health-litigation varas in large comarcas.</li>
+<li><strong>Varas cíveis vs. criminais</strong>: the fundamental cível/criminal
+divide; most small comarcas have a single vara handling both.</li>
+</ul>
+</li>
+</ul>
+<h3 id="implications-for-research">Implications for research</h3>
+<ul>
+<li><strong>Case assignment quasi-randomness</strong> depends on the specialization
+structure: within a specialized vara-group, assignment is typically
+random; across specialization types, it is deterministic by subject
+matter. Always document the specialization structure when claiming
+random assignment.</li>
+<li><strong>Judge identity is often recoverable</strong> from the case number + vara<ul>
+<li>date, using tribunal lotações data.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="6-conciliation-infrastructure">6. Conciliation infrastructure</h2>
+<h3 id="política-nacional-de-tratamento-adequado-de-conflitos-res-1252010">Política Nacional de Tratamento Adequado de Conflitos (Res. 125/2010)</h3>
+<ul>
+<li>CNJ committed the judiciary to a conciliation-first policy.</li>
+<li>Created the framework for <strong>Cejusc</strong> (Centros Judiciários de Solução
+Consensual de Conflitos) in every tribunal.</li>
+</ul>
+<h3 id="cejusc">Cejusc</h3>
+<ul>
+<li>Specialized conciliation/mediation centers.</li>
+<li>Handle pre-litigation and in-process conciliation.</li>
+<li>Staffed by trained conciliators/mediators (often volunteers or
+interns under judge supervision).</li>
+<li>High conciliation rates in Cejusc-managed cases (e.g., Cejusc/TST
+achieved &gt;68% conciliation in referred cases — see
+<code><a href="../topics/justica-trabalho.html">justica-trabalho.md</a></code>).</li>
+</ul>
+<h3 id="semana-nacional-da-conciliação">Semana Nacional da Conciliação</h3>
+<ul>
+<li>Annual campaign (typically November) in which all tribunals
+concentrate conciliation efforts, with CNJ setting targets and
+tracking results.</li>
+</ul>
+<h3 id="conciliation-rates-by-branch-see-justiça-em-números-2019">Conciliation rates by branch (see Justiça em Números 2019)</h3>
+<ul>
+<li><strong>Justiça do Trabalho</strong>: ~24% overall, 42.9% at first instance —
+highest among branches.</li>
+<li><strong>Justiça Estadual</strong>: ~12% overall.</li>
+<li><strong>Justiça Federal</strong>: ~8% overall.</li>
+</ul>
+<hr />
+<h2 id="65-operational-baselines-justiça-em-números-2024">6.5 Operational baselines (Justiça em Números 2024)</h2>
+<p>Key structural numbers for the Brazilian judiciary (base year 2023):</p>
+<ul>
+<li><strong>Magistrates</strong>: 18,265 seated; 19.8% vacancy rate (~4,505 unfilled positions). Vacancy highest in Justiça Estadual (22%), lowest in Justiça do Trabalho (11.6%).</li>
+<li><strong>Judge density</strong>: 9 judges per 100k inhabitants (vs ~18 in the EU).</li>
+<li><strong>Court units</strong>: 10,451 state-court units (9,113 varas + 1,338 juizados especiais), 1,000 federal units, 1,585 varas do trabalho, 2,577 zonas eleitorais.</li>
+<li><strong>Comarcas</strong>: 2,496 (44.8% of municipalities are sede of Justiça Estadual).</li>
+<li><strong>Caseload</strong>: 35.3M new cases filed in 2023 (5.8% increase over 2022); 83.4M total pending.</li>
+<li><strong>Congestion rate</strong> (<em>taxa de congestionamento</em>): overall ~68.7%; estadual ~71.9%; federal ~56.7%; trabalho ~44.1%.</li>
+<li><strong>Productivity</strong>: 2,063 cases resolved per magistrate per year (~8.2 per business day).</li>
+<li><strong>Conciliation infrastructure</strong>: 1,930 Cejuscs installed; 4M homologatory sentences in 2023.</li>
+<li><strong>Conciliation rates</strong>: trabalho 20.2% (36.5% in fase de conhecimento 1st instance); estadual ~12%; federal ~8%.</li>
+</ul>
+<p><strong>Source</strong>: CNJ <em>Justiça em Números</em> 2024.</p>
+<hr />
+<h2 id="7-the-execução-fiscal-problem">7. The execução fiscal problem</h2>
+<p>A single largest source of judicial congestion. Relevant because it
+distorts aggregate statistics and because recent CNJ action has altered
+the case stock substantially.</p>
+<ul>
+<li><strong>Stock (end 2022)</strong>: &gt;27 million pending execuções fiscais, ~34–35%
+of total pending cases in the judiciary.</li>
+<li><strong>Congestion rate</strong>: ~88% (Justiça em Números 2023).</li>
+<li><strong>Average duration</strong>: 6 years and 7 months.</li>
+<li><strong>Distribution</strong>: ~86% in state courts (state + municipal tax
+debts); remainder in federal courts.</li>
+</ul>
+<h3 id="res-5472024-mass-extinction">Res. 547/2024 — mass extinction</h3>
+<ul>
+<li>Authorized judges to extinguish execuções fiscais ≤R$10,000 on
+economic-unviability grounds.</li>
+<li>Resulted in &gt;10 million case extinctions in &lt;2 years.</li>
+<li>Stock fell from 26.9M (Dec 2023) to ~16.5M (Dec 2025) — a ~37%
+reduction.</li>
+<li><strong>Implication</strong>: post-2024 Justiça em Números statistics show sudden
+improvements in congestion rate that are driven by this administrative
+cleanup rather than by genuine changes in case processing.</li>
+</ul>
+<hr />
+<h2 id="8-judicial-data-governance-what-researchers-should-know">8. Judicial data governance — what researchers should know</h2>
+<h3 id="access-mechanisms-in-order-of-ease">Access mechanisms (in order of ease)</h3>
+<ol>
+<li><strong>Consulta Processual via web</strong> — every tribunal offers basic web
+consultation. Limited to one case at a time, CAPTCHA-protected.</li>
+<li><strong>Bulk exports</strong> — some tribunals (e.g., TJSP for sentences) release
+bulk files. Quality and completeness vary.</li>
+<li><strong>API access</strong> — PJe has standardized APIs (not all enabled
+publicly); e-Proc and ESAJ have partial APIs.</li>
+<li><strong>DataJud</strong> — in principle the authoritative source, but researcher
+access is limited.</li>
+<li><strong>CNJ Painéis</strong> — aggregated dashboards for specific topics
+(improbidade, feminicídio, etc.), useful for descriptive work.</li>
+<li><strong>LAI requests</strong> — requests to tribunals for structured data can
+produce results but are inconsistent; appeal via CNJ.</li>
+</ol>
+<h3 id="data-governance-principles">Data governance principles</h3>
+<ul>
+<li><strong>Publicity is the rule</strong> (<a class="legal-cite" href="../laws/CF.html#CF-93-IX" title="IX todos os julgamentos dos órgãos do Poder Judiciário serão públicos, e fundamentadas todas as decisões, sob pena de nulidade, podendo a lei limitar a presença, em determinados atos, às próprias partes e a seus advogados, ou somente a estes, em casos nos quais a preservação do direito à intimidade ">CF.93.IX</a>), subject to segredo de
+justiça for specific case categories.</li>
+<li><strong>LGPD applies</strong> to the judiciary but has its own balancing framework
+(CNJ Res. 363/2021). See <code><a href="../topics/transparencia-dados.html">transparencia-dados.md</a></code> §4.</li>
+<li><strong>Anonymization for publication</strong>: even where raw data is publicly
+accessible, academic publications should consider anonymizing
+identified parties, especially for victims, minors, and non-public
+figures.</li>
+</ul>
+<h3 id="common-research-pitfalls">Common research pitfalls</h3>
+<ul>
+<li><strong>Count of &quot;cases&quot; vs. &quot;processos&quot;</strong>: a single <em>processo</em> can spawn
+multiple incidents, appeals, and derivative actions that may or may
+not be counted separately depending on the tribunal and the
+methodology.</li>
+<li><strong>Baixa vs. arquivamento</strong>: a case &quot;baixado&quot; is closed administratively
+(e.g., sentence issued) but may not be &quot;arquivado definitivamente&quot;
+(final archiving after all appeals).</li>
+<li><strong>Tabelas Unificadas coverage</strong>: older cases (pre-2007) use legacy
+classifications that do not map cleanly to TPU codes. Longitudinal
+work must document how the mapping was done.</li>
+<li><strong>Execução vs. conhecimento phases</strong>: many case &quot;durations&quot; conflate
+the two phases; CNJ statistics break them out separately.</li>
+</ul>
+<hr />
+<h2 id="9-cross-references">9. Cross-references</h2>
+<ul>
+<li><code><a href="../topics/cortes-superiores.html">cortes-superiores.md</a></code> — CNJ composition, STF/STJ structure.</li>
+<li><code><a href="../topics/carreira-juizes.html">carreira-juizes.md</a></code> — judicial career, promotions, discipline.</li>
+<li><code><a href="../topics/justica-trabalho.html">justica-trabalho.md</a></code> — conciliation, case-assignment mechanics.</li>
+<li><code><a href="../topics/justica-estadual.html">justica-estadual.md</a></code> — state-court organization.</li>
+<li><code><a href="../topics/justica-federal.html">justica-federal.md</a></code> — federal-court organization.</li>
+<li><code><a href="../topics/transparencia-dados.html">transparencia-dados.md</a></code> — LAI/LGPD as applied to judicial data.</li>
+<li><code>data_catalog/</code> (workspace) — actual datasets derived from tribunal
+systems.</li>
+</ul>
+<p><strong>Sources</strong>: <a class="legal-cite" href="../laws/CF.html#CF-103-B" title="Art. 103-B. O Conselho Nacional de Justiça compõe-se de 15 (quinze) membros com mandato de 2 (dois) anos, admitida 1 (uma) recondução, sendo: | I - o Presidente do Supremo Tribunal Federal; | II - um Ministro do Superior Tribunal de Justiça, indicado pelo respectivo tribunal;">CF.103-B</a>; <a href="https://atos.cnj.jus.br/">Portal de atos CNJ</a>; <a href="https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/">Justiça em Números</a>.</p>
+
+</main>
+<footer>
+  Reference for empirical research on Brazil's legal and administrative
+  system. Generated from
+  <a href="https://github.com/hsigstad/brazil-institutions">hsigstad/brazil-institutions</a>;
+  statute text from the consolidated <code>artigos.db</code>.
+</footer>
+</body>
+</html>

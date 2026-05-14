@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data pointers — Brazilian institutional data — Brazilian Institutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html">Brazilian Institutions</a>
+  <a href="index.html">Topics</a>
+  <a href="laws/index.html">Laws</a>
+  <a href="concepts.html">Concepts</a>
+</header>
+<main>
+<h1 id="data-pointers-brazilian-institutional-data">Data pointers — Brazilian institutional data</h1>
+<p>A guide to where Brazilian institutional data lives, organized by topic.
+For each topic: authoritative sources, access methods, and pointers to
+the topical files where the institutional context is explained.</p>
+<p>This file describes <strong>public data sources</strong> — websites, APIs, bulk
+downloads. It is <strong>not</strong> a catalog of cleaned datasets that anyone has
+prepared and shared. For that, look at <a href="https://basedosdados.org/">basedosdados</a>
+(the closest thing Brazil has to an authoritative aggregator) and the
+specific source pages linked below.</p>
+<p><strong>Topics / keywords</strong>: data, datasets, basedosdados, TSE, CNJ, DataJud,
+DATASUS, IBGE, INEP, RAIS, SICONFI, SIOPS, Comprasnet, Audesp, Portal
+da Transparência, Receita Federal, CNPJ, scraping, open data, dados
+abertos, BigQuery, microdados.</p>
+<p><strong>Snapshot as of 2026</strong>: URLs and dataset coverage change. Verify
+URLs before relying on them; basedosdados table IDs change occasionally
+as the project re-harmonizes datasets.</p>
+<h2 id="how-to-use-this-file">How to use this file</h2>
+<ul>
+<li><strong>By topic</strong>: jump to the section for the topic you need (electoral,
+fiscal, court, etc.). Each section lists the canonical sources with
+one-line descriptions and access notes.</li>
+<li><strong>Cross-references</strong>: each section links back to the topical files
+in this directory that explain the institutional context behind the
+data.</li>
+<li><strong>basedosdados first</strong>: when basedosdados has a cleaned version of
+a dataset, prefer it — it's harmonized, documented, and BigQuery-
+queryable. Fall back to the raw source only when basedosdados doesn't
+cover what you need.</li>
+</ul>
+<hr />
+<h2 id="authoritative-aggregators">Authoritative aggregators</h2>
+<p>These are the starting points before going to individual source portals.</p>
+<h3 id="basedosdados">basedosdados</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://basedosdados.org/">https://basedosdados.org/</a></li>
+<li><strong>What it is</strong>: an open-data project that harmonizes and republishes
+hundreds of Brazilian datasets in a unified BigQuery instance with
+documented schemas. Mediated by the <em>Base dos Dados</em> organization
+(now part of <em>Data.B</em>).</li>
+<li><strong>Access</strong>: BigQuery (query directly via SQL), Python SDK
+(<code>basedosdados</code>), R package, and dataset download from the web.</li>
+<li><strong>Free tier</strong>: queries up to a per-user budget; non-trivial volumes
+may require BigQuery billing.</li>
+<li><strong>Coverage</strong> (representative): TSE elections (<code>br_tse_eleicoes</code>),
+IBGE demographic and economic (<code>br_ibge_*</code>), INEP education
+(<code>br_inep_*</code>), RAIS labor (<code>br_me_rais</code>), CAGED hires/separations
+(<code>br_me_caged</code>), CNPJ firm registry (<code>br_receita_federal_cnpj</code>),
+SUS health (<code>br_ms_*</code>), SICONFI fiscal (<code>br_me_siconfi</code>), CADE
+cartel cases, BCB monetary series, Mais Médicos, Programa Bolsa
+Família, and many others.</li>
+<li><strong>License</strong>: CC BY 4.0 for the harmonized data; original sources
+retain their own terms.</li>
+<li><strong>Citing convention</strong>: when citing in papers, follow basedosdados
+guidance — credit both the original source and the basedosdados
+harmonization.</li>
+</ul>
+<h3 id="ipea-dados">IPEA dados</h3>
+<ul>
+<li><strong>URL</strong>: <a href="http://www.ipeadata.gov.br/">http://www.ipeadata.gov.br/</a></li>
+<li><strong>What it is</strong>: macroeconomic, regional, and historical time series
+curated by IPEA. Strong on aggregate indicators going back decades.</li>
+<li><strong>Access</strong>: web interface with download to CSV/Excel; Python wrapper
+(<code>ipeadatapy</code>).</li>
+<li><strong>Coverage</strong>: GDP series, inflation, interest rates, fiscal,
+demographic, regional indicators.</li>
+</ul>
+<h3 id="dadosgovbr">dados.gov.br</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://dados.gov.br/">https://dados.gov.br/</a></li>
+<li><strong>What it is</strong>: federal open-data catalog (INDA — Infraestrutura
+Nacional de Dados Abertos).</li>
+<li><strong>Coverage</strong>: heterogeneous; some agencies maintain their datasets
+here, others don't. Quality varies dramatically.</li>
+<li><strong>Best for</strong>: discovering what federal agencies have published; not
+for serious replication.</li>
+</ul>
+<hr />
+<h2 id="electoral-data">Electoral data</h2>
+<h3 id="tse-repositório-de-dados-eleitorais">TSE — Repositório de Dados Eleitorais</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://dadosabertos.tse.jus.br/">https://dadosabertos.tse.jus.br/</a></li>
+<li><strong>What it is</strong>: the canonical source for Brazilian electoral data.
+Bulk downloads by election year for: candidates, results, donations,
+filings, biographical info, voter demographics by município/zona/seção.</li>
+<li><strong>Access</strong>: bulk CSV downloads per election year and dataset type.</li>
+<li><strong>Coverage</strong>: every federal/state/municipal election since at least
+1994 (some series back to the 1980s).</li>
+<li><strong>basedosdados</strong>: <code>br_tse_eleicoes</code> (cleaned, harmonized across
+years).</li>
+<li><strong>Notable subsets</strong>:<ul>
+<li>Candidates (<code>consulta_cand_*</code>): name, party, office, status.</li>
+<li>Results (<code>votacao_candidato_munzona_*</code>): votes by município and
+zone.</li>
+<li>Donations (<code>receitas_candidatos_*</code>): campaign finance filings.</li>
+<li>Voter demographics (<code>perfil_eleitorado_*</code>): age, sex, education
+by zone.</li>
+</ul>
+</li>
+<li><strong>License</strong>: public; TSE attributes itself as the source.</li>
+<li><strong>See</strong>: <a href="topics/partidos-e-sistema-eleitoral.html"><code>topics/partidos-e-sistema-eleitoral.md</code></a>,
+<a href="topics/processo-eleitoral.html"><code>topics/processo-eleitoral.md</code></a>,
+<a href="topics/prestacao-contas-eleitorais.html"><code>topics/prestacao-contas-eleitorais.md</code></a>,
+<a href="topics/justica-eleitoral.html"><code>topics/justica-eleitoral.md</code></a>.</li>
+</ul>
+<h3 id="cepesp-fgv">CEPESP-FGV</h3>
+<ul>
+<li><strong>URL</strong>: <a href="http://cepesp.io/">http://cepesp.io/</a></li>
+<li><strong>What it is</strong>: an FGV-EAESP project that re-publishes TSE electoral
+data with cleaning, additional variables (gender inferred from
+names, party group classification), and an R package.</li>
+<li><strong>Best for</strong>: research that needs derived/inferred variables that
+TSE doesn't publish directly.</li>
+</ul>
+<h3 id="tse-candidate-filings">TSE candidate filings</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://divulgacandcontas.tse.jus.br/">https://divulgacandcontas.tse.jus.br/</a></li>
+<li><strong>What it is</strong>: per-candidate filings page (registration documents,
+asset declarations, criminal record certificates). Web only — no
+bulk export. Scraping required.</li>
+<li><strong>Useful for</strong>: candidate-level qualitative data, asset evolution.</li>
+</ul>
+<hr />
+<h2 id="câmara-dos-deputados-and-senado">Câmara dos Deputados and Senado</h2>
+<h3 id="câmara-dos-deputados-open-data-portal">Câmara dos Deputados — Open Data Portal</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://dadosabertos.camara.leg.br/">https://dadosabertos.camara.leg.br/</a></li>
+<li><strong>What it is</strong>: API + bulk downloads for: deputados (current and
+historical), votações nominais, proposições, despesas (cota
+parlamentar), órgãos, mesas, convocações.</li>
+<li><strong>Access</strong>: REST API (well-documented), JSON/XML responses, plus
+bulk downloads.</li>
+<li><strong>Coverage</strong>: detailed from ~2003 onward; some series further back.</li>
+<li><strong>Useful for</strong>: roll-call voting analysis, individual deputy
+spending, proposição co-authorship networks.</li>
+</ul>
+<h3 id="senado-federal-open-data">Senado Federal — Open Data</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://legis.senado.leg.br/dadosabertos/">https://legis.senado.leg.br/dadosabertos/</a></li>
+<li><strong>What it is</strong>: equivalent for the Senate. Senadores, votações,
+matérias, comissões.</li>
+<li><strong>Access</strong>: REST API (less mature than Câmara's).</li>
+</ul>
+<h3 id="câmaras-municipais-subnational">Câmaras municipais (subnational)</h3>
+<ul>
+<li>No unified portal. Each câmara municipal publishes (or doesn't)
+its own data. Larger cities (São Paulo, Rio, Belo Horizonte) have
+dedicated open-data efforts; most small municipalities have only
+PDF atas.</li>
+<li><strong>Best for</strong>: case studies of specific municipalities. Not a
+cross-municipal comparable source.</li>
+</ul>
+<hr />
+<h2 id="court-records">Court records</h2>
+<h3 id="cnj-datajud-bndp-base-nacional-de-dados-do-poder-judiciário">CNJ DataJud (BNDP — Base Nacional de Dados do Poder Judiciário)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.cnj.jus.br/sistemas/datajud/">https://www.cnj.jus.br/sistemas/datajud/</a></li>
+<li><strong>What it is</strong>: CNJ initiative to centralize structured procedural
+data from all Brazilian tribunals. Schema documented in CNJ Res.
+331/2020.</li>
+<li><strong>Access</strong>: not a fully public download by default. Access typically
+requires institutional or research-purpose authorization. Some
+derived dashboards are public.</li>
+<li><strong>Coverage</strong>: aspires to all tribunals; actual completeness varies
+by tribunal.</li>
+<li><strong>See</strong>: <a href="topics/cnj-administracao-judicial.html"><code>topics/cnj-administracao-judicial.md</code></a> §2.</li>
+</ul>
+<h3 id="cnj-justiça-em-números">CNJ Justiça em Números</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/">https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/</a></li>
+<li><strong>What it is</strong>: annual statistical report on the Brazilian judiciary
+with macro-level indicators per branch and tribunal. PDF + Excel.</li>
+<li><strong>Coverage</strong>: 2009–present.</li>
+<li><strong>Useful for</strong>: macro indicators, congestion rates, productivity,
+expenditure per branch.</li>
+</ul>
+<h3 id="cnj-painéis-dashboards">CNJ Painéis (dashboards)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://paineis.cnj.jus.br/">https://paineis.cnj.jus.br/</a></li>
+<li><strong>What it is</strong>: thematic dashboards built on DataJud — improbidade,
+feminicídio, ações trabalhistas, execução fiscal, etc.</li>
+<li><strong>Useful for</strong>: descriptive aggregates without needing DataJud
+access.</li>
+</ul>
+<h3 id="stf-jurisprudência">STF jurisprudência</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://portal.stf.jus.br/jurisprudencia/">https://portal.stf.jus.br/jurisprudencia/</a></li>
+<li><strong>What it is</strong>: search interface for STF decisions. Per-case detail
+pages including votes, rapporteur, parties, full text. Web only.</li>
+<li><strong>Bulk export</strong>: not generally available; scrapeable via the search
+pages.</li>
+<li><strong>Useful for</strong>: building a corpus of STF decisions on specific
+topics.</li>
+</ul>
+<h3 id="stj-jurisprudência">STJ jurisprudência</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.stj.jus.br/sites/portalp/Inicio">https://www.stj.jus.br/sites/portalp/Inicio</a></li>
+<li>Similar interface for STJ decisions.</li>
+</ul>
+<h3 id="tjsp-consulta-processual">TJSP — Consulta Processual</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://esaj.tjsp.jus.br/cpopg/open.do">https://esaj.tjsp.jus.br/cpopg/open.do</a></li>
+<li><strong>What it is</strong>: web consultation interface for TJSP first-instance
+cases (and equivalents for second-instance). Per-case detail pages
+with movements, parties, decisions.</li>
+<li><strong>Bulk export</strong>: NONE. Scraping is the only path; CAPTCHA-protected
+in places.</li>
+<li><strong>Useful for</strong>: building case-level datasets on specific subjects
+(improbidade, family law, civil disputes, etc.).</li>
+<li><strong>See</strong>: <a href="topics/cnj-administracao-judicial.html"><code>topics/cnj-administracao-judicial.md</code></a> §4.</li>
+</ul>
+<h3 id="trfs-and-justiça-federal">TRFs and Justiça Federal</h3>
+<ul>
+<li>Each TRF has its own consultation interface, plus the federal
+e-Proc system used by several TRFs.</li>
+<li><strong>Trf1</strong>: <a href="https://www.trf1.jus.br/">https://www.trf1.jus.br/</a></li>
+<li><strong>Trf2</strong>: <a href="https://www.trf2.jus.br/">https://www.trf2.jus.br/</a></li>
+<li>(analogous for TRF3, TRF4, TRF5, TRF6)</li>
+</ul>
+<h3 id="trts-labor-courts">TRTs (labor courts)</h3>
+<ul>
+<li>Each TRT has a PJe consultation interface. The Justiça do Trabalho
+also publishes some aggregated statistics via TST.</li>
+<li><strong>TST estatísticas</strong>: <a href="https://www.tst.jus.br/web/estatistica">https://www.tst.jus.br/web/estatistica</a></li>
+<li><strong>TRT2 (São Paulo)</strong>: <a href="https://ww2.trt2.jus.br/">https://ww2.trt2.jus.br/</a></li>
+<li><strong>See</strong>: <a href="topics/justica-trabalho.html"><code>topics/justica-trabalho.md</code></a>.</li>
+</ul>
+<h3 id="electoral-courts-tsetres">Electoral courts (TSE/TREs)</h3>
+<ul>
+<li><strong>TSE</strong>: <a href="https://www.tse.jus.br/sai">https://www.tse.jus.br/sai</a></li>
+<li><strong>Diários da Justiça Eleitoral</strong> are scraped from each TRE.</li>
+</ul>
+<h3 id="annotated-legislation-legislação-anotada">Annotated legislation (legislação anotada)</h3>
+<p>Freely available commented legislation with article-by-article
+jurisprudence cross-references:</p>
+<ul>
+<li><p><strong>TSE Código Eleitoral Anotado</strong> — the single best free resource.
+Article-by-article annotations of <a class="legal-cite" href="laws/CE.html" title="Art. 1º Este Código contém normas destinadas a assegurar a organização e o exercício de direitos políticos precipuamente os de votar e ser votado. | Parágrafo único. O Tribunal Superior Eleitoral expedirá Instruções para sua fiel execução. | Art. 2º Todo poder emana do povo e será exercido em seu nome, por mandatários escolhidos, direta e secretamente, dentre candidatos indicados por partidos políticos nacionais, ressalvada a eleição indireta nos casos previstos na Constituição e leis específicas.">CE</a> (Lei 4.737/1965) with
+TSE acórdãos, resoluções, and CF cross-references. Shows whether
+provisions were received by CF/88, links to implementing rules.
+<strong>URL</strong>: <a href="https://www.tse.jus.br/legislacao/codigo-eleitoral/codigo-eleitoral-1/codigo-eleitoral-lei-nb0-4.737-de-15-de-julho-de-1965">https://www.tse.jus.br/legislacao/codigo-eleitoral/codigo-eleitoral-1/codigo-eleitoral-lei-nb0-4.737-de-15-de-julho-de-1965</a>.
+HTML structure is clean and scrapeable (<code>&lt;li class=&quot;marcador-quadrado&quot;&gt;</code>
+for annotations, <code>&lt;p class=&quot;texto-corrido&quot;&gt;</code> for article text).</p>
+</li>
+<li><p><strong>TSE Sistematização das Normas Eleitorais (SNE)</strong> — consolidation of
+all electoral norms across 8 thematic axes, identifying conflicts
+and obsolete provisions. Free PDFs.
+<strong>URL</strong>: <a href="https://www.tse.jus.br/legislacao/sne/sistematizacao-das-normas-eleitorais">https://www.tse.jus.br/legislacao/sne/sistematizacao-das-normas-eleitorais</a>.</p>
+</li>
+<li><p><strong>Dizer o Direito</strong> — free blog with STF/STJ decision summaries
+organized by law/article. Not structured as annotated legislation
+but effectively functions as one for recent jurisprudence. Archive
+from 2011.
+<strong>URL</strong>: <a href="https://www.dizerodireito.com.br/">https://www.dizerodireito.com.br/</a>.</p>
+</li>
+<li><p><strong>STF &quot;A Constituição e o Supremo&quot;</strong> — article-by-article annotated
+CF with STF decisions (ADIs, repercussão geral, julgados correlatos).
+Clean JSON API. <strong>Scraped</strong> into <code>tools/stf_constituicao/cf_stf_anotada.db</code>
+(1,758 annotations, 183 articles, 1,655 case citations) and merged into
+<code>institutions.db</code> as <code>cf_stf_anotacao</code>. Integrated with
+<code>cite.py 'CF.109' --annotations</code>.
+<strong>URL</strong>: <a href="https://constituicao.stf.jus.br/">https://constituicao.stf.jus.br/</a>.</p>
+</li>
+</ul>
+<p><strong>Not freely available</strong>: annotated CPC, CPP, CP, CLT, or LIA exist
+only in paid platforms (RT Online, Vade Mecum Saraiva, JusBrasil Pro).
+LexML indexes legislation and jurisprudence separately but does not
+cross-reference them. Planalto.gov.br provides raw text with amendment
+notes only.</p>
+<h3 id="comarcas-and-judicial-organization">Comarcas and judicial organization</h3>
+<ul>
+<li><strong>CNJ Justiça em Números</strong>: annual comarca and vara counts per state
+are published in the report annexes. The authoritative public source
+for cross-state comparison of judicial infrastructure.</li>
+<li><strong>State COJs</strong> (Códigos de Organização Judiciária): each state's
+legislative assembly publishes the statute governing comarca
+creation, classification by entrância, and vara allocation.
+Thresholds (population, electors, feitos judiciais) vary by state
+and era — see <a href="topics/justica-estadual.html"><code>topics/justica-estadual.md</code></a> §3
+for a summary table.</li>
+<li><strong>TJSP</strong>: the largest state court publishes its current comarca/vara
+structure on <a href="https://www.tjsp.jus.br/">tjsp.jus.br</a>. Historical
+comarca creation decrees (Decreto 9.775/1938, Lei 1.940/1952) are
+available via the ALESP legislative archive.</li>
+<li><strong>See</strong>: <a href="topics/justica-estadual.html"><code>topics/justica-estadual.md</code></a>,
+<a href="topics/organizacao-judiciario.html"><code>topics/organizacao-judiciario.md</code></a> §4.</li>
+</ul>
+<hr />
+<h2 id="procurement">Procurement</h2>
+<h3 id="comprasnet-comprasgovbr">Comprasnet (compras.gov.br)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/compras/">https://www.gov.br/compras/</a></li>
+<li><strong>What it is</strong>: federal procurement platform. Tracks all federal
+licitações, contracts, registros de preços. Includes the catálogo
+de materiais and serviços.</li>
+<li><strong>Access</strong>: web interface + API + Painel de Compras for aggregated
+views. Bulk export available for some series.</li>
+<li><strong>Coverage</strong>: federal government only.</li>
+<li><strong>basedosdados</strong>: partial coverage in <code>br_governo_compras_*</code>.</li>
+<li><strong>See</strong>: <a href="topics/licitacoes.html"><code>topics/licitacoes.md</code></a>.</li>
+</ul>
+<h3 id="painel-de-compras">Painel de Compras</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://paineldecompras.economia.gov.br/">https://paineldecompras.economia.gov.br/</a></li>
+<li><strong>What it is</strong>: aggregated analytical dashboard built on Comprasnet
+data.</li>
+<li><strong>Useful for</strong>: descriptive aggregates without needing the raw API.</li>
+</ul>
+<h3 id="audesp-tce-sp">Audesp (TCE-SP)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.tce.sp.gov.br/audesp">https://www.tce.sp.gov.br/audesp</a></li>
+<li><strong>What it is</strong>: Auditoria Eletrônica de Órgãos Públicos. Mandatory
+reporting system for São Paulo state municipalities — uploads
+detailed procurement and contract data (licitações, ajustes,
+empenhos, with firm CNPJ identifiers).</li>
+<li><strong>Access</strong>: limited public download; the underlying data is more
+accessible via TCE-SP open data portal and via direct request.</li>
+<li><strong>Coverage</strong>: 644 non-capital São Paulo municipalities.</li>
+<li><strong>Useful for</strong>: the canonical source for São Paulo municipal
+procurement research.</li>
+<li><strong>See</strong>: <a href="topics/tribunais-contas.html"><code>topics/tribunais-contas.md</code></a>,
+<a href="topics/licitacoes.html"><code>topics/licitacoes.md</code></a>.</li>
+</ul>
+<h3 id="other-state-tces">Other state TCEs</h3>
+<ul>
+<li>Most state Tribunais de Contas have some open data portal, but
+quality and coverage vary enormously. Examples:<ul>
+<li><strong>TCE-MG</strong>: <a href="https://www.tce.mg.gov.br/">https://www.tce.mg.gov.br/</a></li>
+<li><strong>TCE-RJ</strong>: <a href="https://www.tce.rj.gov.br/">https://www.tce.rj.gov.br/</a></li>
+<li><strong>TCE-PR</strong>: <a href="https://www1.tce.pr.gov.br/">https://www1.tce.pr.gov.br/</a></li>
+<li><strong>TCE-RS</strong>: <a href="https://portal.tce.rs.gov.br/">https://portal.tce.rs.gov.br/</a></li>
+</ul>
+</li>
+<li><strong>TCE-MG SIACE-LRF</strong> publishes municipal fiscal data quarterly.</li>
+<li><strong>For São Paulo capital</strong>: TCM-SP (separate from TCE-SP).</li>
+</ul>
+<h3 id="cade-processos-administrativos">CADE — Processos Administrativos</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/cade/pt-br">https://www.gov.br/cade/pt-br</a></li>
+<li><strong>What it is</strong>: administrative cartel and merger cases at CADE.
+Per-process detail with documents (often heavily redacted) plus
+the aggregated annual reports.</li>
+<li><strong>Access</strong>: web search + per-case detail pages. Bulk export limited.</li>
+<li><strong>Useful for</strong>: cartel-prosecution research, merger control.</li>
+<li><strong>See</strong>: <a href="topics/licitacoes.html"><code>topics/licitacoes.md</code></a>,
+<a href="topics/anticorrupcao-penal.html"><code>topics/anticorrupcao-penal.md</code></a>.</li>
+</ul>
+<hr />
+<h2 id="fiscal-and-federalism">Fiscal and federalism</h2>
+<h3 id="siconfi-sistema-de-informações-contábeis-e-fiscais-do-setor-público-brasileiro">SICONFI (Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://siconfi.tesouro.gov.br/">https://siconfi.tesouro.gov.br/</a></li>
+<li><strong>What it is</strong>: STN's unified portal for fiscal and accounting
+data of all three federative levels (União, estados, municípios).
+Includes RREO, RGF, DCA (Declaração de Contas Anuais), MSC
+(Matriz de Saldos Contábeis).</li>
+<li><strong>Access</strong>: API + bulk download per municipality and year.</li>
+<li><strong>Coverage</strong>: 5,570 municipalities + 26 states + DF + União.
+Annual through ~2002 with monthly granularity for some series.</li>
+<li><strong>basedosdados</strong>: <code>br_me_siconfi</code>.</li>
+<li><strong>Useful for</strong>: the single most comprehensive municipal fiscal
+source. Standardized across all levels.</li>
+<li><strong>See</strong>: <a href="topics/federalismo-fiscal.html"><code>topics/federalismo-fiscal.md</code></a> §5,
+<a href="topics/contas-municipais.html"><code>topics/contas-municipais.md</code></a>.</li>
+</ul>
+<h3 id="siops-sistema-de-informações-sobre-orçamentos-públicos-em-saúde">SIOPS (Sistema de Informações sobre Orçamentos Públicos em Saúde)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="http://siops.datasus.gov.br/">http://siops.datasus.gov.br/</a></li>
+<li><strong>What it is</strong>: standardized municipal/state health-spending
+reports, mandatory under LC 141/2012.</li>
+<li><strong>Coverage</strong>: all Brazilian municipalities, ~2000–present.</li>
+<li><strong>Access</strong>: web interface + downloadable per município/state.</li>
+<li><strong>Useful for</strong>: studies of municipal health spending,
+constitutional minimums (15% of own-source revenue rule).</li>
+<li><strong>See</strong>: <a href="topics/federalismo-fiscal.html"><code>topics/federalismo-fiscal.md</code></a> §5.</li>
+</ul>
+<h3 id="siope-sistema-de-informações-sobre-orçamentos-públicos-em-educação">SIOPE (Sistema de Informações sobre Orçamentos Públicos em Educação)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/inep/pt-br">https://www.gov.br/inep/pt-br</a></li>
+<li><strong>What it is</strong>: equivalent of SIOPS for education spending.</li>
+<li><strong>Coverage</strong>: all Brazilian municipalities.</li>
+<li><strong>Useful for</strong>: studies of municipal education spending and FUNDEB
+outcomes.</li>
+</ul>
+<h3 id="finbra-finanças-do-brasil-legacy">FINBRA (Finanças do Brasil) — legacy</h3>
+<ul>
+<li>The legacy STN database, largely absorbed into SICONFI. Older
+series (pre-2014) are sometimes more accessible via FINBRA than
+SICONFI.</li>
+<li><strong>URL</strong>: <a href="https://www.tesourotransparente.gov.br/temas/financas-publicas/financas-publicas">https://www.tesourotransparente.gov.br/temas/financas-publicas/financas-publicas</a></li>
+</ul>
+<h3 id="tesouro-transparente">Tesouro Transparente</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.tesourotransparente.gov.br/">https://www.tesourotransparente.gov.br/</a></li>
+<li><strong>What it is</strong>: federal-level fiscal data, debt management, RREO at
+the federal level.</li>
+</ul>
+<h3 id="cfm-compensação-financeira-pela-exploração-mineral-cfem">CFM — Compensação Financeira pela Exploração Mineral (CFEM)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://app.anm.gov.br/">https://app.anm.gov.br/</a></li>
+<li><strong>What it is</strong>: ANM (Agência Nacional de Mineração) data on mining
+royalties (CFEM). Per-municipality royalty distributions.</li>
+<li><strong>Useful for</strong>: studies using mining-windfall identification.</li>
+</ul>
+<h3 id="royalties-petrolíferos-pre-sal">Royalties petrolíferos (pre-sal)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/anp/">https://www.gov.br/anp/</a></li>
+<li><strong>What it is</strong>: ANP data on oil royalty distributions per
+município/state.</li>
+</ul>
+<h3 id="receita-corrente-líquida-rcl">Receita corrente líquida (RCL)</h3>
+<ul>
+<li>Computed by each entity and published in RGF reports (in SICONFI).
+No single canonical national series — derived from SICONFI for
+cross-municipal work.</li>
+</ul>
+<hr />
+<h2 id="health-datasus">Health (DATASUS)</h2>
+<h3 id="datasus-tabnet">DATASUS — TabNet</h3>
+<ul>
+<li><strong>URL</strong>: <a href="http://www2.datasus.gov.br/DATASUS/index.php?area=02">http://www2.datasus.gov.br/DATASUS/index.php?area=02</a></li>
+<li><strong>What it is</strong>: the unified portal for SUS health data. Microdata
+via TabNet (web tabulator) and bulk DBC files.</li>
+<li><strong>Subsets</strong>:<ul>
+<li><strong>SIH</strong> (Sistema de Informações Hospitalares) — hospital
+admissions (AIH).</li>
+<li><strong>SIA</strong> (Sistema de Informações Ambulatoriais) — ambulatory
+procedures.</li>
+<li><strong>SIM</strong> (Sistema de Informações de Mortalidade) — death records.</li>
+<li><strong>SINASC</strong> (Sistema de Informações de Nascidos Vivos) — birth
+records.</li>
+<li><strong>SINAN</strong> (Sistema de Informação de Agravos de Notificação) —
+notifiable diseases.</li>
+<li><strong>SISAB</strong> (Sistema de Informação em Saúde para a Atenção Básica)
+— primary care registry.</li>
+<li><strong>SI-PNI</strong> — immunizations.</li>
+<li><strong>CNES</strong> (Cadastro Nacional de Estabelecimentos de Saúde) —
+facility registry.</li>
+</ul>
+</li>
+<li><strong>Access</strong>: TabNet web interface + bulk DBC files (datasus.saude.gov.br
+FTP). Multiple Python and R packages exist for parsing DBC
+(<code>microdatasus</code> in R; <code>pysus</code> in Python).</li>
+<li><strong>basedosdados</strong>: partial coverage in <code>br_ms_*</code> (SIM, SINASC,
+SIH, SIA, SISAB, CNES).</li>
+<li><strong>License</strong>: public, with caveats around small-area patient
+identifiability.</li>
+</ul>
+<h3 id="cadastro-nacional-de-estabelecimentos-de-saúde-cnes">Cadastro Nacional de Estabelecimentos de Saúde (CNES)</h3>
+<ul>
+<li>See above (part of DATASUS).</li>
+<li><strong>Useful for</strong>: facility-level data on hospitals, clinics, beds,
+doctors per município.</li>
+</ul>
+<h3 id="mais-médicos">Mais Médicos</h3>
+<ul>
+<li>Historical data on Mais Médicos placements available via SUS portal
+and academic replication archives. No single canonical bulk source.</li>
+</ul>
+<hr />
+<h2 id="education">Education</h2>
+<h3 id="inep-censo-escolar">INEP — Censo Escolar</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar">https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar</a></li>
+<li><strong>What it is</strong>: annual census of all Brazilian schools (~180k
+schools), students, teachers. School-level microdata available
+for download.</li>
+<li><strong>Coverage</strong>: 1995–present (modern format from ~2007).</li>
+<li><strong>basedosdados</strong>: <code>br_inep_censo_escolar</code>.</li>
+<li><strong>Useful for</strong>: school-level outcomes, teacher characteristics,
+enrollment.</li>
+</ul>
+<h3 id="inep-enem-exame-nacional-do-ensino-médio">INEP — ENEM (Exame Nacional do Ensino Médio)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem">https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem</a></li>
+<li><strong>What it is</strong>: national high-school exit exam. Microdata with
+per-student scores, demographic info, school identifier.</li>
+<li><strong>Coverage</strong>: 1998–present.</li>
+<li><strong>basedosdados</strong>: <code>br_inep_enem</code>.</li>
+</ul>
+<h3 id="inep-saeb-prova-brasil-ideb">INEP — SAEB / Prova Brasil / IDEB</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb">https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb</a></li>
+<li><strong>What it is</strong>: standardized assessment of basic education.
+School-level scores published as IDEB.</li>
+<li><strong>basedosdados</strong>: <code>br_inep_saeb</code>, <code>br_inep_ideb</code>.</li>
+</ul>
+<h3 id="inep-censo-da-educação-superior">INEP — Censo da Educação Superior</h3>
+<ul>
+<li>Annual census of higher education institutions and students.</li>
+<li><strong>basedosdados</strong>: <code>br_inep_censo_educacao_superior</code>.</li>
+</ul>
+<h3 id="fundeb-data">FUNDEB data</h3>
+<ul>
+<li>Distribution data via STN and the FNDE.</li>
+<li><strong>URL</strong>: <a href="https://www.gov.br/fnde/">https://www.gov.br/fnde/</a></li>
+</ul>
+<hr />
+<h2 id="economic-and-labor">Economic and labor</h2>
+<h3 id="rais-relação-anual-de-informações-sociais">RAIS (Relação Anual de Informações Sociais)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/trabalho-e-emprego/pt-br">https://www.gov.br/trabalho-e-emprego/pt-br</a></li>
+<li><strong>What it is</strong>: mandatory annual reporting by all formal-sector
+employers. Worker-level: hire/separation dates, wages, occupation
+(CBO), establishment, education. Establishment-level: CNPJ, sector
+(CNAE), location (município).</li>
+<li><strong>Access</strong>: bulk microdata under restricted-use access (signed data
+use agreement). Public aggregates available.</li>
+<li><strong>Coverage</strong>: 1985–present, comprehensive after 2003.</li>
+<li><strong>basedosdados</strong>: <code>br_me_rais</code>.</li>
+<li><strong>Useful for</strong>: the canonical source for Brazilian labor-market
+research. Linkable to firms and workers via CPF/CNPJ.</li>
+</ul>
+<h3 id="caged-cadastro-geral-de-empregados-e-desempregados">CAGED (Cadastro Geral de Empregados e Desempregados)</h3>
+<ul>
+<li><strong>URL</strong>: same as RAIS.</li>
+<li><strong>What it is</strong>: monthly hires/separations in the formal sector.</li>
+<li><strong>Access</strong>: monthly bulk files; aggregates public, microdata
+restricted.</li>
+<li><strong>Coverage</strong>: 1992–present.</li>
+<li><strong>basedosdados</strong>: <code>br_me_caged</code>.</li>
+</ul>
+<h3 id="ibge-pnad-contínua">IBGE — PNAD Contínua</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.ibge.gov.br/estatisticas/sociais/trabalho/">https://www.ibge.gov.br/estatisticas/sociais/trabalho/</a></li>
+<li><strong>What it is</strong>: continuous national household survey covering
+labor force, income, household characteristics.</li>
+<li><strong>Access</strong>: microdata download + IBGE Sidra portal for aggregates.</li>
+<li><strong>basedosdados</strong>: <code>br_ibge_pnadc</code>.</li>
+</ul>
+<h3 id="ibge-censo-demográfico">IBGE — Censo Demográfico</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html">https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html</a></li>
+<li><strong>What it is</strong>: decennial census. Latest: 2022 (released
+progressively 2023–2024). Pre-2022: 2010, 2000, 1991.</li>
+<li><strong>Access</strong>: per-municipality aggregates via Sidra; sample
+microdata (10–25% sample) via IBGE.</li>
+<li><strong>basedosdados</strong>: <code>br_ibge_censo_demografico</code>.</li>
+</ul>
+<h3 id="ibge-estimativas-anuais-de-população">IBGE — Estimativas anuais de população</h3>
+<ul>
+<li>Annual population estimates per municipality (used to update FPM
+coefficients). Released annually around August.</li>
+<li><strong>URL</strong>: <a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html">https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html</a></li>
+</ul>
+<h3 id="ibge-pib-municipal">IBGE — PIB Municipal</h3>
+<ul>
+<li>Annual GDP per município, with sectoral breakdown.</li>
+<li><strong>basedosdados</strong>: <code>br_ibge_pib</code>.</li>
+</ul>
+<h3 id="bcb-sistema-gerenciador-de-séries-temporais-sgs">BCB — Sistema Gerenciador de Séries Temporais (SGS)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www3.bcb.gov.br/sgspub/">https://www3.bcb.gov.br/sgspub/</a></li>
+<li><strong>What it is</strong>: Brazilian Central Bank time series — interest rates,
+monetary aggregates, exchange rates, credit, inflation.</li>
+<li><strong>Access</strong>: web interface + REST API + Python wrappers.</li>
+<li><strong>Useful for</strong>: macro time series.</li>
+</ul>
+<hr />
+<h2 id="firms-and-taxation">Firms and taxation</h2>
+<h3 id="receita-federal-cnpj-base-cadastro-nacional-da-pessoa-jurídica">Receita Federal — CNPJ base (Cadastro Nacional da Pessoa Jurídica)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/cadastros/cnpj">https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/cadastros/cnpj</a></li>
+<li><strong>What it is</strong>: registry of all legal entities (firms, foundations,
+associations) operating in Brazil. Includes razão social, CNAE,
+endereço, sócios (shareholders/partners), capital social.</li>
+<li><strong>Access</strong>: bulk download (large; updated periodically). Per-CNPJ
+lookup via web interface.</li>
+<li><strong>basedosdados</strong>: <code>br_receita_federal_cnpj</code>.</li>
+<li><strong>Useful for</strong>: foundational firm-level data; linkable to
+procurement (Comprasnet, Audesp), employment (RAIS), and political
+donations (TSE).</li>
+<li><strong>Snapshots</strong>: for a historical CNPJ state rather than the current
+registry, community mirrors of the Receita Federal bulk downloads
+are the typical path — search GitHub for &quot;cnpj brasil&quot; to find
+current maintainers.</li>
+</ul>
+<h3 id="receita-federal-sócios-corporate-ownership">Receita Federal — sócios (corporate ownership)</h3>
+<ul>
+<li>Same source as CNPJ base. Each CNPJ has linked records of <em>sócios</em>
+(with CPF, name, role, ownership share). The basedosdados table
+includes this.</li>
+<li><strong>Useful for</strong>: corporate-network analysis, ultimate ownership.</li>
+</ul>
+<h3 id="jucesp-state-jucesps-juntas-comerciais">JUCESP / state JUCESPs (juntas comerciais)</h3>
+<ul>
+<li>State commercial registries. Per-state, varied access. JUCESP (São
+Paulo): <a href="https://www.jucesponline.sp.gov.br/">https://www.jucesponline.sp.gov.br/</a>.</li>
+<li><strong>Useful for</strong>: when you need information not in the federal CNPJ
+base (e.g., specific state filings).</li>
+</ul>
+<h3 id="cade-sistema-eletrônico-de-informações-sei">CADE — Sistema Eletrônico de Informações (SEI)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://sei.cade.gov.br/sei/">https://sei.cade.gov.br/sei/</a></li>
+<li><strong>What it is</strong>: per-process documents from CADE administrative
+proceedings (cartel cases, merger reviews).</li>
+</ul>
+<hr />
+<h2 id="anti-corruption-and-sanctions">Anti-corruption and sanctions</h2>
+<h3 id="ceis-cadastro-nacional-de-empresas-inidôneas-e-suspensas">CEIS — Cadastro Nacional de Empresas Inidôneas e Suspensas</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://portaldatransparencia.gov.br/sancoes/ceis">https://portaldatransparencia.gov.br/sancoes/ceis</a></li>
+<li><strong>What it is</strong>: public list of firms barred from contracting with
+the public administration due to sanctions under Lei 8.666,
+Lei 14.133, Lei 12.846, etc.</li>
+<li><strong>Access</strong>: web search + bulk download (CSV).</li>
+<li><strong>Useful for</strong>: linking firm-level corruption sanctions to
+procurement and political activity.</li>
+<li><strong>See</strong>: <a href="topics/anticorrupcao-penal.html"><code>topics/anticorrupcao-penal.md</code></a> §5,
+<a href="topics/cgu-controle-interno.html"><code>topics/cgu-controle-interno.md</code></a> §4.</li>
+</ul>
+<h3 id="cnep-cadastro-nacional-de-empresas-punidas">CNEP — Cadastro Nacional de Empresas Punidas</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://portaldatransparencia.gov.br/sancoes/cnep">https://portaldatransparencia.gov.br/sancoes/cnep</a></li>
+<li><strong>What it is</strong>: public list of firms specifically sanctioned under
+Lei Anticorrupção (Lei 12.846/2013).</li>
+<li><strong>Access</strong>: web + bulk CSV.</li>
+</ul>
+<h3 id="cepim-cadastro-de-entidades-privadas-sem-fins-lucrativos-impedidas">CEPIM — Cadastro de Entidades Privadas Sem Fins Lucrativos Impedidas</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://portaldatransparencia.gov.br/sancoes/cepim">https://portaldatransparencia.gov.br/sancoes/cepim</a></li>
+<li>Public list of impeded private non-profit entities.</li>
+</ul>
+<h3 id="cgu-pfs-programa-de-fiscalização-por-sorteios">CGU PFS — Programa de Fiscalização por Sorteios</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/cgu/pt-br/assuntos/auditoria-e-fiscalizacao">https://www.gov.br/cgu/pt-br/assuntos/auditoria-e-fiscalizacao</a></li>
+<li><strong>What it is</strong>: CGU's random municipal audit reports (2003–2015).
+Reports per-municipality with detailed irregularities classified
+by type and severity.</li>
+<li><strong>Access</strong>: PDF reports per audit; <strong>canonical replication
+datasets</strong> from Ferraz–Finan and Avis–Ferraz–Finan papers.</li>
+<li><strong>Coverage</strong>: 2003–2015 (40 lotteries). Post-2015 audits use
+risk-based selection.</li>
+<li><strong>Useful for</strong>: the canonical Brazilian RD on corruption — see
+<a href="quasi-experimentos.html"><code><a href="quasi-experimentos.html">quasi-experimentos.md</a></code></a> §1.</li>
+<li><strong>See</strong>: <a href="topics/cgu-controle-interno.html"><code>topics/cgu-controle-interno.md</code></a> §3.</li>
+</ul>
+<h3 id="portal-da-transparência-federal">Portal da Transparência (federal)</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://portaldatransparencia.gov.br/">https://portaldatransparencia.gov.br/</a></li>
+<li><strong>What it is</strong>: federal expenditures, transfers (convênios, SUS,
+FPM, FUNDEB), servant salaries, beneficiaries of social programs.
+Maintained by CGU.</li>
+<li><strong>Access</strong>: web interface + bulk downloads + some API endpoints.</li>
+<li><strong>See</strong>: <a href="topics/transparencia-dados.html"><code>topics/transparencia-dados.md</code></a> §3.</li>
+</ul>
+<h3 id="siconv-plataforma-brasil">SICONV / Plataforma +Brasil</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.gov.br/plataformamaisbrasil/">https://www.gov.br/plataformamaisbrasil/</a></li>
+<li><strong>What it is</strong>: federal convênios with states, municipalities, and
+civil society entities. Agreement terms, values, execution,
+payments.</li>
+<li><strong>Useful for</strong>: research on federal-subnational transfers and
+political alignment.</li>
+</ul>
+<hr />
+<h2 id="geographic-and-demographic">Geographic and demographic</h2>
+<h3 id="ibge-malhas-geográficas">IBGE — Malhas geográficas</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.ibge.gov.br/geociencias/downloads-geociencias.html">https://www.ibge.gov.br/geociencias/downloads-geociencias.html</a></li>
+<li><strong>What it is</strong>: shapefiles for municípios, microrregiões,
+mesorregiões, estados, grade estatística, biomas, etc.</li>
+<li><strong>Coverage</strong>: per census year (2000, 2010, 2022).</li>
+<li><strong>Useful for</strong>: any GIS work on Brazilian municípios.</li>
+</ul>
+<h3 id="ibge-códigos-de-municípios">IBGE — Códigos de municípios</h3>
+<ul>
+<li>7-digit IBGE codes are the canonical municipal identifier in
+Brazilian data. Different sources use different prefixes (e.g.,
+TSE uses its own codes — TSE → IBGE crosswalk needed).</li>
+<li><strong>basedosdados</strong>: <code>br_bd_diretorios_brasil</code> (the canonical
+crosswalk).</li>
+</ul>
+<h3 id="inpe-terrabrasilis">INPE — TerraBrasilis</h3>
+<ul>
+<li><strong>URL</strong>: <a href="http://terrabrasilis.dpi.inpe.br/">http://terrabrasilis.dpi.inpe.br/</a></li>
+<li><strong>What it is</strong>: deforestation monitoring (PRODES, DETER), fire
+events, land-use change.</li>
+</ul>
+<h3 id="ibge-sidra">IBGE — Sidra</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://sidra.ibge.gov.br/">https://sidra.ibge.gov.br/</a></li>
+<li><strong>What it is</strong>: aggregated statistical tables — IBGE's main
+query interface for non-microdata.</li>
+</ul>
+<hr />
+<h2 id="transparency-portals-lai-infrastructure">Transparency portals (LAI infrastructure)</h2>
+<h3 id="portal-da-transparência">Portal da Transparência</h3>
+<ul>
+<li>See above (federal expenditures).</li>
+</ul>
+<h3 id="e-sic-falabr">e-SIC / Fala.BR</h3>
+<ul>
+<li><strong>URL</strong>: <a href="https://falabr.cgu.gov.br/">https://falabr.cgu.gov.br/</a></li>
+<li><strong>What it is</strong>: federal LAI request intake system. Maintained by
+CGU.</li>
+<li><strong>Useful for</strong>: when public data isn't accessible elsewhere — file
+a LAI request.</li>
+<li><strong>See</strong>: <a href="topics/transparencia-dados.html"><code>topics/transparencia-dados.md</code></a> §1.</li>
+</ul>
+<h3 id="state-and-municipal-transparency-portals">State and municipal transparency portals</h3>
+<ul>
+<li>Each state and municipality must maintain LAI compliance, but
+implementation quality varies enormously. CGE-SP (Controladoria
+Geral do Estado de São Paulo) is the most institutionalized state
+example.</li>
+</ul>
+<hr />
+<h2 id="sources-requiring-scraping">Sources requiring scraping</h2>
+<p>These sources have public web interfaces but no bulk download. Building
+a dataset means scraping (with the usual caveats: rate limiting, terms
+of service, ongoing maintenance).</p>
+<ul>
+<li><strong>TJSP first-instance sentenças</strong> — <a href="https://esaj.tjsp.jus.br/cpopg/open.do">esaj.tjsp.jus.br</a>.
+CAPTCHA in places. Schema captured by case classes (CNJ TPU).</li>
+<li><strong>Other state TJ consultas processuais</strong> — every state has one;
+format varies by software vendor (Softplan ESAJ, PJe, others).</li>
+<li><strong>Diários Oficiais</strong> — most states publish DOEs as PDFs only;
+some have web search but no bulk export.</li>
+<li><strong>Câmaras municipais atas</strong> — typically PDF only.</li>
+<li><strong>Specific TCEs</strong> that don't expose Audesp-style data — case-by-
+case scraping.</li>
+<li><strong>STF case detail pages</strong> — searchable but no bulk export.</li>
+</ul>
+<hr />
+<h2 id="cross-references">Cross-references</h2>
+<ul>
+<li><a href="topics/partidos-e-sistema-eleitoral.html"><code>topics/partidos-e-sistema-eleitoral.md</code></a>
+— institutional context for TSE data.</li>
+<li><a href="topics/federalismo-fiscal.html"><code>topics/federalismo-fiscal.md</code></a> — institutional
+context for SICONFI, SIOPS, FPM, etc.</li>
+<li><a href="topics/tribunais-contas.html"><code>topics/tribunais-contas.md</code></a> — institutional context
+for Audesp and TCE data.</li>
+<li><a href="topics/licitacoes.html"><code>topics/licitacoes.md</code></a> — institutional context for
+Comprasnet, Audesp, CADE.</li>
+<li><a href="topics/improbidade.html"><code>topics/improbidade.md</code></a> — institutional context for
+TJSP improbidade case data.</li>
+<li><a href="topics/cgu-controle-interno.html"><code>topics/cgu-controle-interno.md</code></a> — CGU PFS
+random audits, CEIS/CNEP.</li>
+<li><a href="topics/cnj-administracao-judicial.html"><code>topics/cnj-administracao-judicial.md</code></a> —
+DataJud, CNJ Painéis, Justiça em Números.</li>
+<li><a href="topics/transparencia-dados.html"><code>topics/transparencia-dados.md</code></a> — LAI/LGPD,
+Portal da Transparência, judicial data regime.</li>
+<li><a href="quasi-experimentos.html"><code><a href="quasi-experimentos.html">quasi-experimentos.md</a></code></a> — natural
+experiments using these data sources.</li>
+<li><a href="faq.html"><code><a href="faq.html">faq.md</a></code></a> — common research questions, including data
+access questions.</li>
+</ul>
+<hr />
+<h2 id="adding-to-this-file">Adding to this file</h2>
+<p>When you find a data source that should be listed here:</p>
+<ol>
+<li><strong>Confirm it's public</strong> — no private scrapes, no datasets that
+require an institutional agreement that not all readers can sign.</li>
+<li><strong>Add to the right topic section</strong>, or create a new one.</li>
+<li><strong>Compact format</strong>: name, URL, one-line description, access method,
+coverage, basedosdados table ID if applicable, license, cross-ref.</li>
+<li><strong>Don't enumerate every column</strong> — that's what the source's own
+data dictionary is for. Link to it.</li>
+<li><strong>Note known scraping requirements</strong> explicitly so readers don't
+waste time looking for an API that doesn't exist.</li>
+</ol>
+
+</main>
+<footer>
+  Reference for empirical research on Brazil's legal and administrative
+  system. Generated from
+  <a href="https://github.com/hsigstad/brazil-institutions">hsigstad/brazil-institutions</a>;
+  statute text from the consolidated <code>artigos.db</code>.
+</footer>
+</body>
+</html>

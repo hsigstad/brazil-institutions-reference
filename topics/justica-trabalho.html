@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Justiça do Trabalho — Brazilian Institutions</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="../index.html">Brazilian Institutions</a>
+  <a href="../index.html">Topics</a>
+  <a href="../laws/index.html">Laws</a>
+  <a href="../concepts.html">Concepts</a>
+</header>
+<main>
+<h1 id="justiça-do-trabalho">Justiça do Trabalho</h1>
+<p>Specialized federal judiciary branch for employment disputes. Three tiers:
+Varas do Trabalho (first instance) → TRTs (24 regional appellate courts) →
+TST (national superior court). TRT2 covers the São Paulo metropolitan area.</p>
+<p><strong>Topics / keywords</strong>: labor court, employment disputes, CLT, TRT, TST,
+vara do trabalho, 2017 labor reform, Lei 13.467, filing costs, justiça
+gratuita, honorários de sucumbência, conciliation, settlement, judicial
+homologation, direitos indisponíveis, overtime, horas extras, impedimento,
+case assignment, ADI 5766.</p>
+<p><strong>Snapshot as of 2026</strong>: 2017 reform provisions reflect <code class="legal-cite" title="ADI5766 — Art. 790-B caput e §4 CLT (perícia) e Art. 791-A §4 CLT (sucumbenciais sobre créditos de outros processos) declarados inconstitucionais. Beneficiários da justiça gratuita não pagam perícia com créditos da causa; sucumbenciais ficam suspensos por 2 anos do trânsito em julgado.
+ — [vigente]">ADI5766</code>
+(October 2021). Filing-volume figures are from CNJ <em>Justiça em Números</em>
+and TST reports through ~2024. Monetary thresholds (RGPS ceiling, minimum
+wage) update annually.</p>
+<p>Labor courts handle over 1 million new filings per year and have the
+highest conciliation rate in the Brazilian judiciary. They also offer a
+relatively rare empirical feature: <strong>nearly all settlements are
+judicially mediated and observable in the data</strong>.</p>
+<p>For the 2017 reform (Lei 13.467/17) as a published identification
+strategy, see <a href="../quasi-experimentos.html"><code>../quasi-experimentos.md</code></a> §5.
+For the date timeline of related events, see <a href="../timeline.html"><code>../timeline.md</code></a>.
+For common confusions (pre-2017 vs post-2017 cost regimes), see
+<a href="../pitfalls.html"><code>../pitfalls.md</code></a> &quot;Labor courts&quot;.</p>
+<hr />
+<h2 id="constitutional-and-statutory-basis">Constitutional and statutory basis</h2>
+<ul>
+<li><strong>TST</strong>: <a class="legal-cite" href="../laws/LOMAN.html#LOMAN-12" title="Art. 12 - O Tribunal Superior do Trabalho, com sede na Capital da União e jurisdição em todo o território nacional, compõe-se de dezessete Ministros, nomeados pelo Presidente da República, onze dos quais, togados e vitalícios, depois de aprovada a escolha pelo Senado Federal, sendo sete dentre magis">LOMAN.12</a>.</li>
+<li><strong>TRTs</strong>: <a class="legal-cite" href="../laws/LOMAN.html#LOMAN-13" title="Art. 13 - Os Tribunais Regionais do Trabalho, com sede, jurisdição e número definidos em lei, compõe-se de dois terços de Juízes togados e vitalícios e um terço de Juízes classistas e temporários, todos nomeados pelo Presidente da República, observada, quanto aos Juízes togados, a proporcionalidade ">LOMAN.13</a>.</li>
+<li>Substantive law: <strong>CLT</strong> (Consolidação das Leis do Trabalho, DL 5.452/1943).</li>
+<li>Procedure governed by CLT (<a class="legal-cite" href="../laws/CLT.html#CLT-763" title="Art. 763 - O processo da Justiça do Trabalho, no que concerne aos dissídios individuais e coletivos e à aplicação de penalidades, reger-se-á, em todo o território nacional, pelas normas estabelecidas neste Título.">CLT.763</a> onward) supplemented by CPC.</li>
+</ul>
+<hr />
+<h2 id="case-assignment-and-judge-composition">Case assignment and judge composition</h2>
+<ul>
+<li>Each court unit (<strong>vara</strong>) has one chief judge (<em>juiz titular</em>) and
+typically one substitute (<em>juiz substituto</em>).</li>
+<li>Cases are randomly distributed to varas within a foro trabalhista.</li>
+<li><strong>Exception</strong> (<em>dependência / prevenção</em>): cases connected to a prior
+case (same litigants, same issue) are assigned to the same vara.</li>
+<li>Quasi-random assignment enables judge fixed-effect estimation.</li>
+</ul>
+<hr />
+<p><a id="recusal-impedimento"></a></p>
+<h2 id="recusal-impedimento">Recusal — impedimento</h2>
+<ul>
+<li>Judge must recuse if a lawyer for any party is a relative up to the
+third degree (includes in-laws, excludes cousins).</li>
+<li>If recused: case goes to the substitute judge in the same vara, or to
+the next vara if no substitute.</li>
+<li><strong>Legal basis</strong>: <a class="legal-cite" href="../laws/CPC.html#CPC-144" title="Art. 144. Há impedimento do juiz, sendo-lhe vedado exercer suas funções no processo: | I - em que interveio como mandatário da parte, oficiou como perito, funcionou como membro do Ministério Público ou prestou depoimento como testemunha; | II - de que conheceu em outro grau de jurisdição, tendo proferido decisão;">CPC.144</a> and <a class="legal-cite" href="../laws/CPC.html#CPC-146" title="Art. 146. No prazo de 15 (quinze) dias, a contar do conhecimento do fato, a parte alegará o impedimento ou a suspeição, em petição específica dirigida ao juiz do processo, na qual indicará o fundamento da recusa, podendo instruí-la com documentos em que se fundar a alegação e com rol de testemunhas. | § 1º Se reconhecer o impedimento ou a suspeição ao receber a petição, o juiz ordenará imediatamente a remessa dos autos a seu substituto legal, caso contrário, determinará a autuação em apartado da petição e, no prazo de 15 (quinze) dias, apresentará suas razões, acompanhadas de documentos e de rol  | § 2º Distribuído o incidente, o relator deverá declarar os seus efeitos, sendo que, se o incidente for recebido:">CPC.146</a>; CNJ Resolution of March 2,
+2015.</li>
+<li><strong>Pre-2015</strong>: impedimento only when the lawyer was actively acting in
+the case (not merely a member of the firm).</li>
+<li><strong>2015 CNJ Resolution</strong>: extended to cases where the relative is sócio,
+associado, colaborador, or empregado of the law firm, or maintains any
+professional link.</li>
+<li><strong><a class="legal-cite" href="../laws/CPC.html#CPC-144-III-p3">CPC.144.III.§3</a></strong> (2016): formalized the extension to members of
+the same law firm &quot;even if they do not directly intervene in the case&quot;.</li>
+<li>Impedimento is <em>matéria de ordem pública</em>: judge can recognize ex
+officio. Suspeição (bias) is not — must be raised by a party.</li>
+</ul>
+<h3 id="compliance-notes">Compliance notes</h3>
+<ul>
+<li>Compliance with formal impedimento rules is high when the lawyer is a
+direct relative of the judge.</li>
+<li>Compliance is substantially weaker for looser connections (e.g.,
+relatives of colleagues in the same law firm), even after the 2015
+CPC reform explicitly extended the rule to members of the firm.</li>
+<li>Cousins (not covered by the rule) generate no observable change in
+case assignment.</li>
+</ul>
+<hr />
+<h2 id="filing-costs">Filing costs</h2>
+<h3 id="pre-2017-regime">Pre-2017 regime</h3>
+<ul>
+<li><strong>Zero filing costs</strong> for workers. No fees to file or appeal. Workers
+bore no financial risk from filing.</li>
+<li><strong>No honorários de sucumbência</strong> (loser-pays attorney fees) — each
+party bore its own attorney costs regardless of outcome.</li>
+<li>Workers earning up to 2× minimum wage automatically entitled to
+<em>justiça gratuita</em>; above that, a simple <em>declaração de hipossuficiência</em>
+sufficed. In practice, nearly all workers obtained free access.</li>
+</ul>
+<p><a id="labor-reform-2017"></a></p>
+<h3 id="post-2017-regime-lei-1346717-effective-11-nov-2017">Post-2017 regime (Lei 13.467/17, effective 11 Nov 2017)</h3>
+<p>Workers now face financial risk from filing (<a class="legal-cite" href="../laws/CLT.html#CLT-789" title="c) de mais de Cr$ 500,00 (quinhentos cruzeiros) até Cr$ 1.000,00 (mil cruzeiros), 8% (oito por cento); | d) de mais de 1.000,00 (mil cruzeiros), até Cr$ 5.000,00 (cinco mil cruzeiros), 6% (seis por cento); | § 1º Nas Juntas, nos Conselhos Regionais e no Conselho Nacional do Trabalho o pagamento das custas far-se-á em sêlo federal aposto aos autos. Nos Juízos de Direito, a importância das custas será dividida proporcionalmente entre o juiz e os funcionários que tiverem funcionamento no feito, excetuados ">CLT.789</a>, <a class="legal-cite" href="../laws/CLT.html#CLT-790" title="Art. 790. Nas Varas do Trabalho, nos Juízos de Direito, nos Tribunais e no Tribunal Superior do Trabalho, a forma de pagamento das custas e emolumentos obedecerá às instruções que serão expedidas pelo Tribunal Superior do Trabalho | § 1 o Tratando-se de empregado que não tenha obtido o benefício da justiça gratuita, ou isenção de custas, o sindicato que houver intervindo no processo responderá solidariamente pelo pagamento das custas devidas | § 2 o No caso de não-pagamento das custas, far-se-á execução da respectiva importância, segundo o procedimento estabelecido no Capítulo V deste Título">CLT.790</a>,
+<a class="legal-cite" href="../laws/CLT.html#CLT-790-B" title="Art. 790-B. A responsabilidade pelo pagamento dos honorários periciais é da parte sucumbente na pretensão objeto da perícia, ainda que beneficiária da justiça gratuita. (Declarado inconstitucional pela ADI 5766) | § 1 o Ao fixar o valor dos honorários periciais, o juízo deverá respeitar o limite máximo estabelecido pelo Conselho Superior da Justiça do Trabalho | § 2 o O juízo poderá deferir parcelamento dos honorários periciais">CLT.790-B</a>, <a class="legal-cite" href="../laws/CLT.html#CLT-791-A" title="Art. 791-A. Ao advogado, ainda que atue em causa própria, serão devidos honorários de sucumbência, fixados entre o mínimo de 5% (cinco por cento) e o máximo de 15% (quinze por cento) sobre o valor que resultar da liquidação da sentença, do proveito econômico obtido ou, não sendo possível mensurá-lo, | § 1 o Os honorários são devidos também nas ações contra a Fazenda Pública e nas ações em que a parte estiver assistida ou substituída pelo sindicato de sua categoria | § 2 o Ao fixar os honorários, o juízo observará:">CLT.791-A</a>, <a class="legal-cite" href="../laws/CLT.html#CLT-844-p2" title="§ 2 o Na hipótese de ausência do reclamante, este será condenado ao pagamento das custas calculadas na forma do art. 789 desta Consolidação , ainda que beneficiário da justiça gratuita, salvo se comprovar, no prazo de quinze dias, que a ausência ocorreu por motivo legalmente justificável">CLT.844.§2</a>):</p>
+<ul>
+<li><strong>Custas processuais</strong>: 2% of claim value, min R$10.64, max 4× RGPS
+ceiling. At the 2018 RGPS ceiling (R$5,645.80), max ≈ R$22,583. Ceiling
+is updated annually — verify current value before using the R$22k figure
+for post-2018 work. Charged to the losing party.</li>
+<li><strong>Honorários de sucumbência</strong>: 5%–15% of judgment value (or economic
+benefit, or updated claim value if neither is measurable). Assessed
+against the losing party <strong>on each claim</strong> — a plaintiff who wins some
+but loses others pays honorários on the lost claims.</li>
+<li><strong>Honorários periciais</strong>: the losing party on the technical issue pays
+the expert (<a class="legal-cite" href="../laws/CLT.html#CLT-790-B" title="Art. 790-B. A responsabilidade pelo pagamento dos honorários periciais é da parte sucumbente na pretensão objeto da perícia, ainda que beneficiária da justiça gratuita. (Declarado inconstitucional pela ADI 5766) | § 1 o Ao fixar o valor dos honorários periciais, o juízo deverá respeitar o limite máximo estabelecido pelo Conselho Superior da Justiça do Trabalho | § 2 o O juízo poderá deferir parcelamento dos honorários periciais">CLT.790-B</a>) — relevant for <em>insalubridade</em> and other
+expert-dependent claims.</li>
+<li><strong>No-show penalty</strong> (<a class="legal-cite" href="../laws/CLT.html#CLT-844-p2" title="§ 2 o Na hipótese de ausência do reclamante, este será condenado ao pagamento das custas calculadas na forma do art. 789 desta Consolidação , ainda que beneficiário da justiça gratuita, salvo se comprovar, no prazo de quinze dias, que a ausência ocorreu por motivo legalmente justificável">CLT.844.§2</a>): if plaintiff fails to attend the
+hearing, the case is archived and the plaintiff must pay court costs
+to refile, even if a <em>justiça gratuita</em> beneficiary.</li>
+<li><strong>Justiça gratuita threshold tightened</strong> (<a class="legal-cite" href="../laws/CLT.html#CLT-790-p3" title="§ 3 o É facultado aos juízes, órgãos julgadores e presidentes dos tribunais do trabalho de qualquer instância conceder, a requerimento ou de ofício, o benefício da justiça gratuita, inclusive quanto a traslados e instrumentos, àqueles que perceberem salário igual ou inferior a 40% (quarenta por cent">CLT.790.§3</a>): automatic only
+for those earning up to 40% of RGPS ceiling (≈ R$2,258 in 2018, ~2.4×
+minimum wage at that time — both the ceiling and the minimum wage are
+updated annually). Above that: must affirmatively prove economic
+insufficiency (<a class="legal-cite" href="../laws/CLT.html#CLT-790-p4" title="§ 4 o O benefício da justiça gratuita será concedido à parte que comprovar insuficiência de recursos para o pagamento das custas do processo">CLT.790.§4</a>).</li>
+</ul>
+<h3 id="adi5766-october-2021"><code class="legal-cite" title="ADI5766 — Art. 790-B caput e §4 CLT (perícia) e Art. 791-A §4 CLT (sucumbenciais sobre créditos de outros processos) declarados inconstitucionais. Beneficiários da justiça gratuita não pagam perícia com créditos da causa; sucumbenciais ficam suspensos por 2 anos do trânsito em julgado.
+ — [vigente]">ADI5766</code> (October 2021)</h3>
+<p>Declared unconstitutional two key provisions restricting access to justice
+for <em>justiça gratuita</em> beneficiaries:</p>
+<ul>
+<li><strong><a class="legal-cite" href="../laws/CLT.html#CLT-790-B" title="Art. 790-B. A responsabilidade pelo pagamento dos honorários periciais é da parte sucumbente na pretensão objeto da perícia, ainda que beneficiária da justiça gratuita. (Declarado inconstitucional pela ADI 5766) | § 1 o Ao fixar o valor dos honorários periciais, o juízo deverá respeitar o limite máximo estabelecido pelo Conselho Superior da Justiça do Trabalho | § 2 o O juízo poderá deferir parcelamento dos honorários periciais">CLT.790-B</a> caput and §4</strong>: provision requiring beneficiaries to pay
+expert fees from credits obtained in the case — struck down.</li>
+<li><strong><a class="legal-cite" href="../laws/CLT.html#CLT-791-A-p4" title="§ 4 o Vencido o beneficiário da justiça gratuita, desde que não tenha obtido em juízo, ainda que em outro processo, créditos capazes de suportar a despesa, as obrigações decorrentes de sua sucumbência ficarão sob condição suspensiva de exigibilidade e somente poderão ser executadas se, nos dois anos">CLT.791-A.§4</a></strong>: provision allowing deduction of honorários de
+sucumbência from credits in other proceedings — struck down. Obligation
+now suspended for 2 years from <em>trânsito em julgado</em>; extinguished if
+the economic situation does not change.</li>
+</ul>
+<p><strong>Implication</strong>: November 2017 – October 2021 is the period of maximum
+filing cost deterrence. The 40% RGPS threshold for automatic eligibility
+remains in force; non-beneficiaries still face the full cost regime.</p>
+<h3 id="impact-on-filing-volumes">Impact on filing volumes</h3>
+<table>
+<thead>
+<tr>
+  <th>Year</th>
+  <th>New cases (1st instance)</th>
+  <th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>2015</td>
+  <td>~2.6M</td>
+  <td>—</td>
+</tr>
+<tr>
+  <td>2016</td>
+  <td>~2.7M (peak)</td>
+  <td>+4%</td>
+</tr>
+<tr>
+  <td>2017</td>
+  <td>~2.6M (Nov spike ~207k in one month)</td>
+  <td>−3%</td>
+</tr>
+<tr>
+  <td>2018</td>
+  <td>~1.7M</td>
+  <td><strong>−34%</strong></td>
+</tr>
+<tr>
+  <td>2019</td>
+  <td>~1.5M</td>
+  <td>−12%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>November 2017 spike</strong>: monthly filings nearly doubled as workers
+rushed to file under the old rules (~207k vs. typical ~100k–120k).</li>
+<li><strong>Immediate collapse</strong>: Jan–Sep 2018 vs. same period 2017: 1.29M vs.
+2.01M (−36%).</li>
+<li><strong>Sustained reduction</strong> through 2019; gradual recovery from 2020,
+approaching pre-reform levels by 2023–2024 (as of 2026 data).</li>
+<li><strong>Composition change</strong>: speculative/low-probability claims
+(<em>pedidos aventureiros</em>) appear to have dropped disproportionately.</li>
+</ul>
+<p><strong>Sources:</strong> TST <em>Relatório Geral da Justiça do Trabalho</em>;
+TST, &quot;Primeiro ano da reforma trabalhista: efeitos&quot; (2018);
+CNJ <em>Justiça em Números</em>.</p>
+<hr />
+<p><a id="audiencia-una"></a></p>
+<h2 id="hearing-procedure">Hearing procedure</h2>
+<p>The CLT prescribes an <em>audiência una</em> (single unified hearing) in which
+conciliation attempt, defense, evidence, and judgment occur in one session
+(<a class="legal-cite" href="../laws/CLT.html#CLT-849" title="Art. 849 - A audiência de julgamento será contínua; mas, se não for possível, por motivo de força maior, concluí-la no mesmo dia, o juiz ou presidente marcará a sua continuação para a primeira desimpedida, independentemente de nova notificação.">CLT.849</a>–<a class="legal-cite" href="../laws/CLT.html#CLT-850" title="Art. 850 - Terminada a instrução, poderão as partes aduzir razões finais, em prazo não excedente de 10 (dez) minutos para cada uma. Em seguida, o juiz ou presidente renovará a proposta de conciliação, e não se realizando esta, será proferida a decisão. | Parágrafo único - O Presidente da Junta, após propor a solução do dissídio, tomará os votos dos vogais e, havendo divergência entre estes, poderá desempatar ou proferir decisão que melhor atenda ao cumprimento da lei e ao justo equilíbrio entre os votos divergentes e ao interesse social.">CLT.850</a>). In practice, most courts fractionate into 2–3 sessions.</p>
+<ol>
+<li><strong>Audiência inaugural / de conciliação</strong>: mandatory conciliation
+proposal (<a class="legal-cite" href="../laws/CLT.html#CLT-846" title="Art. 846 - Aberta a audiência, o juiz ou presidente proporá a conciliação | § 1º - Se houver acordo lavrar-se-á termo, assinado pelo presidente e pelos litigantes, consignando-se o prazo e demais condições para seu cumprimento | § 2º - Entre as condições a que se refere o parágrafo anterior, poderá ser estabelecida a de ficar a parte que não cumprir o acordo obrigada a satisfazer integralmente o pedido ou pagar uma indenização convencionada, sem prejuízo do cumprimento do acordo">CLT.846</a>). If both parties agree, settlement is homologated
+and the case ends. Otherwise, the defendant presents <em>contestação</em>
+orally (20 min) or in writing. Judge may take <em>depoimento pessoal</em> and
+schedule the next hearing.</li>
+<li><strong>Audiência de instrução e julgamento</strong>: evidence (witness testimony,
+documentary, expert reports); <em>razões finais</em> (10 min each, <a class="legal-cite" href="../laws/CLT.html#CLT-850" title="Art. 850 - Terminada a instrução, poderão as partes aduzir razões finais, em prazo não excedente de 10 (dez) minutos para cada uma. Em seguida, o juiz ou presidente renovará a proposta de conciliação, e não se realizando esta, será proferida a decisão. | Parágrafo único - O Presidente da Junta, após propor a solução do dissídio, tomará os votos dos vogais e, havendo divergência entre estes, poderá desempatar ou proferir decisão que melhor atenda ao cumprimento da lei e ao justo equilíbrio entre os votos divergentes e ao interesse social.">CLT.850</a>);
+renewed conciliation proposal (<a class="legal-cite" href="../laws/CLT.html#CLT-850" title="Art. 850 - Terminada a instrução, poderão as partes aduzir razões finais, em prazo não excedente de 10 (dez) minutos para cada uma. Em seguida, o juiz ou presidente renovará a proposta de conciliação, e não se realizando esta, será proferida a decisão. | Parágrafo único - O Presidente da Junta, após propor a solução do dissídio, tomará os votos dos vogais e, havendo divergência entre estes, poderá desempatar ou proferir decisão que melhor atenda ao cumprimento da lei e ao justo equilíbrio entre os votos divergentes e ao interesse social.">CLT.850</a>); judgment immediately or
+within a reserved period.</li>
+<li><strong>Rito sumaríssimo</strong> (claims up to 40 minimum wages, <a class="legal-cite" href="../laws/CLT.html#CLT-852-C">CLT.852-C</a>):
+hearing within 15 days of filing; designed for a single session.</li>
+</ol>
+<ul>
+<li>If interrupted, continuation must be scheduled within 30 days (<a class="legal-cite" href="../laws/CLT.html#CLT-849" title="Art. 849 - A audiência de julgamento será contínua; mas, se não for possível, por motivo de força maior, concluí-la no mesmo dia, o juiz ou presidente marcará a sua continuação para a primeira desimpedida, independentemente de nova notificação.">CLT.849</a>).</li>
+<li>After the hearing, judgment must be rendered within 15 days.</li>
+</ul>
+<hr />
+<h2 id="conciliation">Conciliation</h2>
+<p>Labor courts have the highest conciliation rate in the Brazilian judiciary.</p>
+<ul>
+<li>Overall rate across the <em>Justiça do Trabalho</em>: ~24% of cases resolved
+(CNJ <em>Justiça em Números</em> 2019).</li>
+<li>At first instance (<em>Varas do Trabalho</em>): <strong>42.9% of cases resolved by
+agreement in 2019</strong> — &gt;853,000 settlements totaling &gt;R$14.4 billion
+paid to workers (TST <em>Relatório da Conciliação</em> 2019).</li>
+<li>CNJ target for 2025: ≥38% conciliation in the <em>fase de conhecimento</em>.</li>
+<li>TST's <em>Cejusc/TST</em> (created 2023): &gt;68% conciliation in referred cases.</li>
+</ul>
+<hr />
+<p><a id="settlement-observability"></a></p>
+<h2 id="settlement-observability-a-data-advantage">Settlement observability — a data advantage</h2>
+<p><strong>Nearly all labor court settlements are judicially mediated and observable
+in the data</strong>, unlike most US/European settings where settlements are
+private and unobserved.</p>
+<p>Institutional reasons:</p>
+<ol>
+<li><strong>Pre-2017</strong>: out-of-court settlements were <strong>unenforceable</strong> against
+indisposable rights — a worker who signed a private release could
+still file a lawsuit. Employers therefore had no incentive to settle
+out of court, pushing virtually all settlement activity into the
+mandatory conciliation hearing (recorded in the case file).</li>
+<li><strong>Post-2017 (<a class="legal-cite" href="../laws/CLT.html#CLT-855-B" title="Art. 855-B. O processo de homologação de acordo extrajudicial terá início por petição conjunta, sendo obrigatória a representação das partes por advogado | § 1 o As partes não poderão ser representadas por advogado comum | § 2 o Faculta-se ao trabalhador ser assistido pelo advogado do sindicato de sua categoria">CLT.855-B</a>–<a class="legal-cite" href="../laws/CLT.html#CLT-855-E" title="Art. 855-E. A petição de homologação de acordo extrajudicial suspende o prazo prescricional da ação quanto aos direitos nela especificados | Parágrafo único. O prazo prescricional voltará a fluir no dia útil seguinte ao do trânsito em julgado da decisão que negar a homologação do acordo">CLT.855-E</a>, added by Lei 13.467/17)</strong>:
+formal procedure for judicial homologation of extrajudicial agreements.
+Both parties must be represented by <strong>separate</strong> attorneys. The agreement
+is submitted to a labor judge. Once homologated, it gains <em>título
+executivo judicial</em> force. Even these &quot;extrajudicial&quot; settlements flow
+through the court system and appear in records.</li>
+<li><strong>Direitos indisponíveis doctrine</strong>: many worker protections cannot be
+waived even voluntarily; judges verify this during homologation. Further
+channels settlement through the courts.</li>
+</ol>
+<p><strong>Contrast with civil courts</strong>: under <a class="legal-cite" href="../laws/CPC.html#CPC-784" title="Art. 784. São títulos executivos extrajudiciais: | I - a letra de câmbio, a nota promissória, a duplicata, a debênture e o cheque; | II - a escritura pública ou outro documento público assinado pelo devedor;">CPC.784</a>, private agreements
+signed by parties + 2 witnesses are directly enforceable as <em>título
+executivo extrajudicial</em>; judicial homologation is optional. Civil
+settlements are therefore largely unobservable, creating the standard
+selection problem. The observability advantage is <strong>specific to labor
+courts</strong>.</p>
+<hr />
+<h2 id="direitos-indisponíveis">Direitos indisponíveis</h2>
+<p>Brazilian labor law distinguishes <em>direitos disponíveis</em> (waivable) from
+<em>direitos indisponíveis</em> (non-waivable, considered protections of <em>ordem
+pública</em>). Grounded in <a class="legal-cite" href="../laws/CF.html#CF-7" title="Art. 7º São direitos dos trabalhadores urbanos e rurais, além de outros que visem à melhoria de sua condição social: | I - relação de emprego protegida contra despedida arbitrária ou sem justa causa, nos termos de lei complementar, que preverá indenização compensatória, dentre outros direitos; | II - seguro-desemprego, em caso de desemprego involuntário;">CF.7</a>.</p>
+<p>The 2017 reform clarified the boundary through two CLT articles:</p>
+<ul>
+<li><strong><a class="legal-cite" href="../laws/CLT.html#CLT-611-A" title="Art. 611-A. A convenção coletiva e o acordo coletivo de trabalho têm prevalência sobre a lei quando, entre outros, dispuserem sobre: | I - pacto quanto à jornada de trabalho, observados os limites constitucionais; | II - banco de horas anual;">CLT.611-A</a> — negotiable via collective bargaining</strong>: work schedules,
+banco de horas, intervalo interjornada, telework, time-tracking methods,
+and others.</li>
+<li><strong><a class="legal-cite" href="../laws/CLT.html#CLT-611-B" title="Art. 611-B. Constituem objeto ilícito de convenção coletiva ou de acordo coletivo de trabalho, exclusivamente, a supressão ou a redução dos seguintes direitos: | I - normas de identificação profissional, inclusive as anotações na Carteira de Trabalho e Previdência Social; | II - seguro-desemprego, em caso de desemprego involuntário;">CLT.611-B</a> — non-negotiable (direitos indisponíveis)</strong>, cannot be
+reduced even by collective agreement:<ul>
+<li>Salário mínimo and irredutibilidade salarial</li>
+<li>FGTS deposits and the 40% multa rescisória</li>
+<li>13º salário</li>
+<li>Adicional de horas extras (min 50% above regular rate, <a class="legal-cite" href="../laws/CF.html#CF-7-XVI" title="XVI - remuneração do serviço extraordinário superior, no mínimo, em cinqüenta por cento à do normal;">CF.7.XVI</a>)</li>
+<li>Adicional noturno</li>
+<li>Adicional de insalubridade/periculosidade</li>
+<li>Repouso semanal remunerado</li>
+<li>Férias anuais + 1/3 de férias</li>
+<li>Maternity/paternity leave</li>
+<li>Aviso prévio proporcional</li>
+<li>Normas de saúde, higiene e segurança</li>
+</ul>
+</li>
+</ul>
+<h3 id="interaction-with-settlement">Interaction with settlement</h3>
+<ul>
+<li><strong>In-court settlement</strong>: judges accept discounts on disputed amounts
+(e.g., 60% of claimed overtime) because existence/quantum are genuinely
+disputed, but will not approve waivers of rights proven to exist.</li>
+<li><strong>Extrajudicial settlement (<a class="legal-cite" href="../laws/CLT.html#CLT-855-B" title="Art. 855-B. O processo de homologação de acordo extrajudicial terá início por petição conjunta, sendo obrigatória a representação das partes por advogado | § 1 o As partes não poderão ser representadas por advogado comum | § 2 o Faculta-se ao trabalhador ser assistido pelo advogado do sindicato de sua categoria">CLT.855-B</a>)</strong>: same principle; judge may
+reject if it appears to waive indisposable rights.</li>
+<li><strong>Private release pre-2017</strong>: essentially no legal force regarding
+indisposable rights.</li>
+</ul>
+<h3 id="quitação-anual-clt507-b-added-by-lei-1346717">Quitação anual (<a class="legal-cite" href="../laws/CLT.html#CLT-507-B" title="Art. 507-B. É facultado a empregados e empregadores, na vigência ou não do contrato de emprego, firmar o termo de quitação anual de obrigações trabalhistas, perante o sindicato dos empregados da categoria">CLT.507-B</a>, added by Lei 13.467/17)</h3>
+<ul>
+<li>Employer and employee appear before the employee's union and sign a
+statement itemizing all labor obligations fulfilled for the year.</li>
+<li>Must be <strong>item-by-item</strong>; generic &quot;quitação geral&quot; is invalid.</li>
+<li>Has <em>eficácia liberatória</em> for listed items.</li>
+<li>Limitations: (a) constitutional access to justice preserved — worker can
+still file, but <em>termo</em> is a defense; (b) union participation required;
+(c) TST jurisprudence not yet consolidated.</li>
+<li><strong>Practical uptake limited</strong>: unions reluctant to participate; employers
+uncertain about legal strength.</li>
+</ul>
+<hr />
+<h2 id="overtime-disputes-horas-extras-evidentiary-rules">Overtime disputes (horas extras) — evidentiary rules</h2>
+<p>Overtime disputes are consistently the most frequent category of labor
+cases; exact share varies by sample and period.</p>
+<p>Key legal standards:</p>
+<ul>
+<li><strong>CLT Art. 74 §2</strong>: employers with &gt;20 employees must record working
+hours.</li>
+<li><strong>TST Súmula 338</strong>: if timecards are not presented, burden shifts to
+the employee — plaintiff's allegations presumed true.</li>
+<li><strong>CLT Art. 71</strong>: meal and rest breaks.</li>
+<li><strong>NR-17</strong>: ergonomic breaks for specific occupations.</li>
+<li><strong><a class="legal-cite" href="../laws/CLT.html#CLT-818" title="Art. 818. O ônus da prova incumbe: | I - ao reclamante, quanto ao fato constitutivo de seu direito; | II - ao reclamado, quanto à existência de fato impeditivo, modificativo ou extintivo do direito do reclamante">CLT.818</a></strong> (amended by Lei 13.467/17): burden of proof rules.</li>
+<li><strong>Portaria 1.510/2009</strong>: timecards with variable entry/exit times and no
+other irregularity are presumed valid; absence of signature does not
+invalidate.</li>
+</ul>
+<h3 id="other-evidentiary-rules-relevant-to-empirical-work">Other evidentiary rules relevant to empirical work</h3>
+<ul>
+<li>Employer absence from hearing: claimant's allegations typically taken
+as true (<strong>deemed confession</strong>).</li>
+<li>Witness credibility: contradictions between claimant and witness
+undermine credibility.</li>
+</ul>
+<hr />
+<h2 id="union-representation">Union representation</h2>
+<ul>
+<li>Workers may be represented by union attorneys (<em>sindicato</em>) at no cost.</li>
+<li>Common in labor courts; affects both filing rates and litigation strategy.</li>
+<li>Unions are institutional repeat players on the plaintiff side.</li>
+</ul>
+<hr />
+<h2 id="contingency-fees-and-lawyer-incentives">Contingency fees and lawyer incentives</h2>
+<ul>
+<li>Plaintiff lawyers: typically <strong>20–30% contingency fee</strong> (share of value
+awarded).</li>
+<li>Defendant lawyers: typically on <strong>fixed-wage</strong> contracts independent of
+case outcome.</li>
+<li>This asymmetry shapes incentives differently on the two sides of a
+case.</li>
+</ul>
+<hr />
+<h2 id="typical-timeline-first-instance">Typical timeline (first instance)</h2>
+<p>Based on aggregated CNJ and TRT data:</p>
+<ul>
+<li><strong>Filing → first hearing</strong>: ~135 days (~4.5 months).</li>
+<li><strong>First hearing → continuation hearing</strong>: ~300–450 days (high variance).</li>
+<li><strong>Continuation → sentença</strong>: ~60 days.</li>
+<li><strong>Fase de conhecimento (total)</strong>: ~1–2 years average.</li>
+<li><strong>Fase de execução</strong>: ~4 years 11 months (CNJ 2015 data).</li>
+<li><strong>Overall average duration</strong>: ~2 years 4 months (CNJ) with enormous
+variance by court, complexity, and early settlement.</li>
+</ul>
+<hr />
+<h2 id="operational-baselines">Operational baselines</h2>
+<p>Key structural numbers for the Justiça do Trabalho (base year 2023):</p>
+<ul>
+<li><strong>Conciliation rate</strong>: 20.2% overall, 36.5% in fase de conhecimento 1st instance — highest in the judiciary. TRT24 reached 48.1% in conhecimento.</li>
+<li><strong>Court units</strong>: 1,585 varas do trabalho; 610 municipalities with labor court presence (11% of all municipalities).</li>
+<li><strong>Vacancy rate</strong>: 11.6% (lowest of all branches).</li>
+<li><strong>Congestion rate</strong>: 44.1% (lowest of all branches — labor cases resolve faster than any other branch).</li>
+</ul>
+<p><strong>Source</strong>: CNJ <em>Justiça em Números</em> 2024.</p>
+<hr />
+<h2 id="peritos-court-experts">Peritos (court experts)</h2>
+<p>Notes on judicial expert appointment in labor courts:
+<a href="https://sentenca.com.br/pdf/palavra-perito/A_NOMEA%C3%87%C3%83O_DO_PERITO.pdf">https://sentenca.com.br/pdf/palavra-perito/A_NOMEA%C3%87%C3%83O_DO_PERITO.pdf</a></p>
+
+</main>
+<footer>
+  Reference for empirical research on Brazil's legal and administrative
+  system. Generated from
+  <a href="https://github.com/hsigstad/brazil-institutions">hsigstad/brazil-institutions</a>;
+  statute text from the consolidated <code>artigos.db</code>.
+</footer>
+</body>
+</html>

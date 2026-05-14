@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transparência e dados públicos — Brazilian Institutions</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="../index.html">Brazilian Institutions</a>
+  <a href="../index.html">Topics</a>
+  <a href="../laws/index.html">Laws</a>
+  <a href="../concepts.html">Concepts</a>
+</header>
+<main>
+<h1 id="transparência-e-dados-públicos">Transparência e dados públicos</h1>
+<p>Legal framework for access to public information and personal data
+protection in Brazil, plus the main public-data infrastructures that
+matter for empirical research: Portal da Transparência, Comprasnet,
+SICONV / Plataforma +Brasil, DATASUS, e-SIC, and state equivalents.</p>
+<p>This file is the institutional reference — <em>where the rules come from
+and what they permit</em>. For the actual catalog of datasets and their
+variable structures used in this workspace, see the <code>data_catalog/</code>
+directory, not this file.</p>
+<p><strong>Topics / keywords</strong>: LAI, Lei de Acesso à Informação, Lei 12.527, LGPD,
+Lei 13.709, data protection, privacy, Portal da Transparência, e-SIC,
+Fala.BR, transparência ativa, transparência passiva, sigilo, CGU, ANPD,
+Comprasnet, SICONV, Plataforma +Brasil, open data, dados abertos,
+Decreto 8.777, INDA, CEIS, CNEP.</p>
+<p><strong>Snapshot as of 2026</strong>: LAI (2011) and LGPD (2018, enforcement from
+2020) are the two foundational statutes, with ongoing tension at the
+intersection — especially over public-servant salary publication and
+court-data scraping. ANPD (Autoridade Nacional de Proteção de Dados)
+became an autarquia in 2022 (Lei 14.460/2022), consolidating its
+enforcement role. LAI review doctrine continues to evolve via STF and
+CGU guidance.</p>
+<hr />
+<h2 id="1-lai-lei-de-acesso-à-informação">1. <a class="legal-cite" href="../laws/LAI.html" title="Art. 1º Esta Lei dispõe sobre os procedimentos a serem observados pela União, Estados, Distrito Federal e Municípios, com o fim de garantir o acesso a informações previsto no inciso XXXIII do art. 5º , no inciso II do § 3º do art. 37 e no § 2º do art. 216 da Constituição Federal. | Parágrafo único. Subordinam-se ao regime desta Lei: | Art. 2º Aplicam-se as disposições desta Lei, no que couber, às entidades privadas sem fins lucrativos que recebam, para realização de ações de interesse público, recursos públicos diretamente do orçamento ou mediante subvenções sociais, contrato de gestão, termo de parceria, convênios, acordo, ajust">LAI</a> — Lei de Acesso à Informação</h2>
+<h3 id="constitutional-basis">Constitutional basis</h3>
+<ul>
+<li><strong><a class="legal-cite" href="../laws/CF.html#CF-5-XXXIII" title="XXXIII - todos têm direito a receber dos órgãos públicos informações de seu interesse particular, ou de interesse coletivo ou geral, que serão prestadas no prazo da lei, sob pena de responsabilidade, ressalvadas aquelas cujo sigilo seja imprescindível à segurança da sociedade e do Estado; (Regulamen">CF.5.XXXIII</a></strong>: &quot;todos têm direito a receber dos órgãos públicos
+informações de seu interesse particular, ou de interesse coletivo ou
+geral, que serão prestadas no prazo da lei, sob pena de
+responsabilidade, ressalvadas aquelas cujo sigilo seja imprescindível
+à segurança da sociedade e do Estado.&quot;</li>
+<li><strong><a class="legal-cite" href="../laws/CF.html#CF-37-p3-II" title="II - o acesso dos usuários a registros administrativos e a informações sobre atos de governo, observado o disposto no art. 5º, X e XXXIII;">CF.37.§3.II</a></strong>: access to administrative records and information on
+government acts.</li>
+<li><strong><a class="legal-cite" href="../laws/CF.html#CF-216-p2" title="§ 2º Cabem à administração pública, na forma da lei, a gestão da documentação governamental e as providências para franquear sua consulta a quantos dela necessitem">CF.216.§2</a></strong>: cultural/historical documents.</li>
+</ul>
+<h3 id="statutory-framework">Statutory framework</h3>
+<ul>
+<li><strong><a class="legal-cite" href="../laws/LAI.html" title="Art. 1º Esta Lei dispõe sobre os procedimentos a serem observados pela União, Estados, Distrito Federal e Municípios, com o fim de garantir o acesso a informações previsto no inciso XXXIII do art. 5º , no inciso II do § 3º do art. 37 e no § 2º do art. 216 da Constituição Federal. | Parágrafo único. Subordinam-se ao regime desta Lei: | Art. 2º Aplicam-se as disposições desta Lei, no que couber, às entidades privadas sem fins lucrativos que recebam, para realização de ações de interesse público, recursos públicos diretamente do orçamento ou mediante subvenções sociais, contrato de gestão, termo de parceria, convênios, acordo, ajust">LAI</a></strong> (promulgated November 2011, effective May 2012)
+regulates the constitutional right of access.</li>
+<li>Binds <strong>all branches</strong> (Executivo, Legislativo, Judiciário) at
+<strong>all levels</strong> (União, estados, DF, municípios), plus indirect
+administration, state-owned enterprises, and entities receiving public
+resources.</li>
+</ul>
+<h3 id="core-principles">Core principles</h3>
+<ul>
+<li><strong>Publicidade como regra, sigilo como exceção</strong> (<a class="legal-cite" href="../laws/LAI.html#LAI-3-I" title="I - observância da publicidade como preceito geral e do sigilo como exceção;">LAI.3.I</a>): publicity
+is the rule, secrecy the exception.</li>
+<li><strong>Divulgação proativa</strong> (transparência ativa): agencies must publish
+a minimum set of information without waiting for a request — budgets,
+contracts, convênios, salary structure, organograms, work hours, etc.</li>
+<li><strong>Atendimento a pedidos</strong> (transparência passiva): anyone can file a
+request (no justification required) and the agency must respond
+within 20 days (extendable by 10).</li>
+<li><strong>Procedimento informal</strong>: requests must be simple; no need for a
+lawyer; no cost except reproduction.</li>
+<li><strong>Recurso hierárquico</strong>: denials can be appealed internally, then to
+the competent external authority (CGU for federal Executivo;
+equivalent bodies elsewhere), then ultimately to the judiciary.</li>
+</ul>
+<h3 id="classification-of-sigilo-lai23lai25">Classification of sigilo (<a class="legal-cite" href="../laws/LAI.html#LAI-23" title="Art. 23. São consideradas imprescindíveis à segurança da sociedade ou do Estado e, portanto, passíveis de classificação as informações cuja divulgação ou acesso irrestrito possam: | I - pôr em risco a defesa e a soberania nacionais ou a integridade do território nacional; | II - prejudicar ou pôr em risco a condução de negociações ou as relações internacionais do País, ou as que tenham sido fornecidas em caráter sigiloso por outros Estados e organismos internacionais;">LAI.23</a>–<a class="legal-cite" href="../laws/LAI.html#LAI-25" title="Art. 25. É dever do Estado controlar o acesso e a divulgação de informações sigilosas produzidas por seus órgãos e entidades, assegurando a sua proteção. (Regulamento) | § 1º O acesso, a divulgação e o tratamento de informação classificada como sigilosa ficarão restritos a pessoas que tenham necessidade de conhecê-la e que sejam devidamente credenciadas na forma do regulamento, sem prejuízo das atribuições dos agentes públicos autorizados por lei. | § 2º O acesso à informação classificada como sigilosa cria a obrigação para aquele que a obteve de resguardar o sigilo.">LAI.25</a>)</h3>
+<p>Information can be classified as sigilosa only if disclosure would
+threaten:</p>
+<ol>
+<li>National defense or sovereignty.</li>
+<li>International relations.</li>
+<li>Life, safety, or health of the population.</li>
+<li>Financial/economic/monetary stability.</li>
+<li>Strategic defense or intelligence information.</li>
+<li>Investigations in course.</li>
+<li>Personal information of others.</li>
+</ol>
+<p>Classification levels:</p>
+<ul>
+<li><strong>Ultrassecreta</strong>: 25 years max.</li>
+<li><strong>Secreta</strong>: 15 years.</li>
+<li><strong>Reservada</strong>: 5 years.</li>
+</ul>
+<p>Classifications require authorization by high-ranking officials; any
+classification can be reviewed and overturned via CGU recourse or
+judicial action.</p>
+<h3 id="personal-information-lai31">Personal information (<a class="legal-cite" href="../laws/LAI.html#LAI-31" title="Art. 31. O tratamento das informações pessoais deve ser feito de forma transparente e com respeito à intimidade, vida privada, honra e imagem das pessoas, bem como às liberdades e garantias individuais. | § 1º As informações pessoais, a que se refere este artigo, relativas à intimidade, vida privada, honra e imagem: | I - terão seu acesso restrito, independentemente de classificação de sigilo e pelo prazo máximo de 100 (cem) anos a contar da sua data de produção, a agentes públicos legalmente autorizados e à pessoa a que elas se referirem; e">LAI.31</a>)</h3>
+<ul>
+<li>Personal information about <strong>third parties</strong> is protected for <strong>100
+years</strong> by default, but this protection does not override legitimate
+interests (historical research, public-interest investigation, etc.).</li>
+<li>Information about the <strong>requester themselves</strong> is always available.</li>
+</ul>
+<h3 id="transparência-ativa-mandatory-disclosures">Transparência ativa — mandatory disclosures</h3>
+<p>Each agency must maintain a website publishing:</p>
+<ul>
+<li>Budget execution, contracts, convênios.</li>
+<li>List of servants and salary structure.</li>
+<li>LAI contacts and e-SIC / Fala.BR interface.</li>
+<li>Statistics on LAI requests received and answered.</li>
+<li>Organograms, work hours, and responsible officials.</li>
+</ul>
+<p>Decree 7.724/2012 (federal regulamento) specifies details; states and
+municipalities must adopt their own decrees and systems.</p>
+<h3 id="e-sic-falabr">e-SIC / Fala.BR</h3>
+<ul>
+<li>Electronic system for LAI requests in federal Executivo.</li>
+<li>Now integrated into <strong>Fala.BR</strong> (the unified ouvidoria platform), also
+maintained by CGU.</li>
+<li>States, municipalities, Legislativo, Judiciário, and MP maintain their
+own SIC systems.</li>
+</ul>
+<h3 id="cgu-recourse-federal-executivo">CGU recourse — federal Executivo</h3>
+<ul>
+<li>If a federal agency denies a LAI request, the requester can appeal:<ol>
+<li>To the agency's own superior authority.</li>
+<li>To CGU.</li>
+<li>To the Comissão Mista de Reavaliação de Informações (CMRI) — a
+federal-level interministerial review board.</li>
+</ol>
+</li>
+<li>CGU has published hundreds of decisions setting precedent on what
+constitutes legitimate sigilo and what must be disclosed. These
+decisions are searchable and are often cited by researchers seeking
+to obtain data.</li>
+</ul>
+<h3 id="lai-for-researchers-what-works">LAI for researchers — what works</h3>
+<ul>
+<li><strong>Salary and identification of public servants</strong>: generally
+disclosable (affirmed by STF <code class="legal-cite" title="ARE652777 — Divulgação de salários nominais de servidores é constitucional e compatível com publicidade (CF Art. 37) e direito à privacidade. Servidor não tem interesse de privacidade em ocultar remuneração paga com recursos públicos. LGPD (2018) não revoga: divulgação segue válida sob base legal de interesse p — [vigente]">ARE652777</code>, 2015, repercussão geral).</li>
+<li><strong>Contract details, contractor names, payment records</strong>: generally
+disclosable.</li>
+<li><strong>Individual beneficiary data in social programs</strong>: partially
+restricted after Bolsa Família disclosure reversals; requests case by
+case.</li>
+<li><strong>Court records</strong>: governed by separate judicial transparency rules
+(see §4 below and <code><a href="../topics/cnj-administracao-judicial.html">cnj-administracao-judicial.md</a></code>).</li>
+<li><strong>Ongoing investigations</strong>: sigilo usually upheld until conclusion.</li>
+</ul>
+<p><strong>Source</strong>: <a class="legal-cite" href="../laws/LAI.html" title="Art. 1º Esta Lei dispõe sobre os procedimentos a serem observados pela União, Estados, Distrito Federal e Municípios, com o fim de garantir o acesso a informações previsto no inciso XXXIII do art. 5º , no inciso II do § 3º do art. 37 e no § 2º do art. 216 da Constituição Federal. | Parágrafo único. Subordinam-se ao regime desta Lei: | Art. 2º Aplicam-se as disposições desta Lei, no que couber, às entidades privadas sem fins lucrativos que recebam, para realização de ações de interesse público, recursos públicos diretamente do orçamento ou mediante subvenções sociais, contrato de gestão, termo de parceria, convênios, acordo, ajust">LAI</a>; Decreto 7.724/2012; <code class="legal-cite" title="ARE652777 — Divulgação de salários nominais de servidores é constitucional e compatível com publicidade (CF Art. 37) e direito à privacidade. Servidor não tem interesse de privacidade em ocultar remuneração paga com recursos públicos. LGPD (2018) não revoga: divulgação segue válida sob base legal de interesse p — [vigente]">ARE652777</code>.</p>
+<hr />
+<h2 id="2-lgpd-lei-geral-de-proteção-de-dados">2. <a class="legal-cite" href="../laws/LGPD.html" title="Lei Geral de Proteção de Dados Pessoais (LGPD). Vigência | Art. 1º Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa  | Parágrafo único. As normas gerais contidas nesta Lei são de interesse nacional e devem ser observadas pela União, Estados, Distrito Federal e Municípios. Vigência">LGPD</a> — Lei Geral de Proteção de Dados</h2>
+<h3 id="overview">Overview</h3>
+<p>Brazil's comprehensive data protection statute, modeled on the EU GDPR.</p>
+<ul>
+<li><strong>Promulgated</strong>: August 2018.</li>
+<li><strong>Effective</strong>: general provisions from September 2020 (originally
+2020, delayed slightly by pandemic); sanction provisions from August
+2021.</li>
+<li><strong>Scope</strong>: processing of personal data by any natural or legal entity
+operating in Brazil, regardless of where the processing occurs, when
+the data subject is in Brazil, the data collected in Brazil, or
+the processing aims to offer services to individuals in Brazil
+(<a class="legal-cite" href="../laws/LGPD.html#LGPD-3" title="Art. 3º Esta Lei aplica-se a qualquer operação de tratamento realizada por pessoa natural ou por pessoa jurídica de direito público ou privado, independentemente do meio, do país de sua sede ou do país onde estejam localizados os dados, desde que: | I - a operação de tratamento seja realizada no território nacional; | II - a atividade de tratamento tenha por objetivo a oferta ou o fornecimento de bens ou serviços ou o tratamento de dados de indivíduos localizados no território nacional; ou Vigência">LGPD.3</a>).</li>
+</ul>
+<h3 id="legal-bases-for-processing-lgpd7">Legal bases for processing (<a class="legal-cite" href="../laws/LGPD.html#LGPD-7" title="Art. 7º O tratamento de dados pessoais somente poderá ser realizado nas seguintes hipóteses: | I - mediante o fornecimento de consentimento pelo titular; | II - para o cumprimento de obrigação legal ou regulatória pelo controlador;">LGPD.7</a>)</h3>
+<p>Ten legal bases, any one sufficient:</p>
+<ol>
+<li>Consent.</li>
+<li>Compliance with legal or regulatory obligation.</li>
+<li>Execution of public policy by the public administration.</li>
+<li><strong>Studies by research entities</strong> (with anonymization when possible).</li>
+<li>Execution of contract.</li>
+<li>Exercise of rights in judicial/administrative/arbitration process.</li>
+<li>Protection of life or physical integrity.</li>
+<li>Protection of health, in procedures by health professionals.</li>
+<li><strong>Legitimate interest</strong> of the controller or third party (subject to
+balancing).</li>
+<li>Protection of credit.</li>
+</ol>
+<h3 id="research-specific-exemption">Research-specific exemption</h3>
+<ul>
+<li><strong><a class="legal-cite" href="../laws/LGPD.html#LGPD-7-IV" title="IV - para a realização de estudos por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais;">LGPD.7.IV</a></strong> permits processing for <strong>research by research entities</strong>
+(defined in <a class="legal-cite" href="../laws/LGPD.html#LGPD-5-XVIII" title="XVIII - órgão de pesquisa: órgão ou entidade da administração pública direta ou indireta ou pessoa jurídica de direito privado sem fins lucrativos legalmente constituída sob as leis brasileiras, com sede e foro no País, que inclua em sua missão institucional ou em seu objetivo social ou estatutário ">LGPD.5.XVIII</a> as bodies dedicated to basic or applied
+historical, scientific, or statistical research).</li>
+<li>Anonymization should be applied &quot;whenever possible&quot;.</li>
+<li><strong><a class="legal-cite" href="../laws/LGPD.html#LGPD-11-II-c" title="c) realização de estudos por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais sensíveis;">LGPD.11.II.c</a></strong> allows processing of <em>sensitive</em> personal data
+(health, race, religion, politics, etc.) for research by research
+entities.</li>
+<li><strong><a class="legal-cite" href="../laws/LGPD.html#LGPD-13" title="Art. 13. Na realização de estudos em saúde pública, os órgãos de pesquisa poderão ter acesso a bases de dados pessoais, que serão tratados exclusivamente dentro do órgão e estritamente para a finalidade de realização de estudos e pesquisas e mantidos em ambiente controlado e seguro, conforme prática">LGPD.13</a></strong>: specific allowance for public-health research
+(pandemic, epidemiology).</li>
+<li>Research entities can process personal data without consent but must
+apply the principles of adequacy, necessity, finality, security,
+non-discrimination, and accountability.</li>
+</ul>
+<h3 id="data-subject-rights-lgpd18">Data subject rights (<a class="legal-cite" href="../laws/LGPD.html#LGPD-18" title="Art. 18. O titular dos dados pessoais tem direito a obter do controlador, em relação aos dados do titular por ele tratados, a qualquer momento e mediante requisição: | I - confirmação da existência de tratamento; | II - acesso aos dados;">LGPD.18</a>)</h3>
+<ul>
+<li>Confirmation of processing.</li>
+<li>Access to data.</li>
+<li>Correction of incomplete/inaccurate data.</li>
+<li>Anonymization, blocking, or deletion of unnecessary or excessive data.</li>
+<li>Portability.</li>
+<li>Information about sharing.</li>
+<li>Revocation of consent.</li>
+</ul>
+<h3 id="sanctions-lgpd52">Sanctions (<a class="legal-cite" href="../laws/LGPD.html#LGPD-52" title="Art. 52. Os agentes de tratamento de dados, em razão das infrações cometidas às normas previstas nesta Lei, ficam sujeitos às seguintes sanções administrativas aplicáveis pela autoridade nacional: (Vigência) | X - suspensão parcial do funcionamento do banco de dados a que se refere a infração pelo período máximo de 6 (seis) meses, prorrogável por igual período, até a regularização da atividade de tratamento pelo controlador; | § 2º O disposto neste artigo não substitui a aplicação de sanções administrativas, civis ou penais definidas na Lei nº 8.078, de 11 de setembro de 1990, e em legislação específica. Vigência">LGPD.52</a>)</h3>
+<ul>
+<li>Warning, obligation to publicize the violation, blocking, erasure,
+and <strong>fines up to 2% of revenue (max R$50M per infraction)</strong>.</li>
+<li>Enforcement by ANPD.</li>
+</ul>
+<h3 id="anpd-autoridade-nacional-de-proteção-de-dados">ANPD — Autoridade Nacional de Proteção de Dados</h3>
+<ul>
+<li>Originally created as a body within the Presidência (Lei 13.853/2019).</li>
+<li><strong>Transformed into an autarquia de natureza especial</strong> by <strong>Lei
+14.460/2022</strong> — gained institutional independence, own budget, own
+career track.</li>
+<li>Functions: normative guidance, enforcement, public consultation,
+issuing regulations, sanctioning violators.</li>
+</ul>
+<h3 id="tension-with-lai">Tension with LAI</h3>
+<ul>
+<li><strong>Public salary disclosure</strong>: LGPD does not override LAI — public
+servant salaries, individually identified, remain disclosable under
+<code class="legal-cite" title="ARE652777 — Divulgação de salários nominais de servidores é constitucional e compatível com publicidade (CF Art. 37) e direito à privacidade. Servidor não tem interesse de privacidade em ocultar remuneração paga com recursos públicos. LGPD (2018) não revoga: divulgação segue válida sob base legal de interesse p — [vigente]">ARE652777</code>. LGPD applies to the data controller's duties but
+the public-interest legal basis (<a class="legal-cite" href="../laws/LGPD.html#LGPD-7-III" title="III - pela administração pública, para o tratamento e uso compartilhado de dados necessários à execução de políticas públicas previstas em leis e regulamentos ou respaldadas em contratos, convênios ou instrumentos congêneres, observadas as disposições do Capítulo IV desta Lei;">LGPD.7.III</a>) covers the processing.</li>
+<li><strong>Court data</strong>: scraping identified court records is more contested.
+CNJ and STF guidance is that identified data in judicial proceedings
+remains accessible under the publicity principle (<a class="legal-cite" href="../laws/CF.html#CF-93-IX" title="IX todos os julgamentos dos órgãos do Poder Judiciário serão públicos, e fundamentadas todas as decisões, sob pena de nulidade, podendo a lei limitar a presença, em determinados atos, às próprias partes e a seus advogados, ou somente a estes, em casos nos quais a preservação do direito à intimidade ">CF.93.IX</a>),
+with <strong>limited</strong> restrictions for specific categories (segredo de
+justiça). Researchers should document their legal basis and consider
+anonymization for publication.</li>
+<li><strong>Scraped personal data</strong>: projects that scrape identified data
+should document <a class="legal-cite" href="../laws/LGPD.html#LGPD-7-IV" title="IV - para a realização de estudos por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais;">LGPD.7.IV</a> as the legal basis, minimize personal data
+retention, anonymize for analysis where possible, and keep LGPD
+DPIA-style documentation of processing purposes.</li>
+</ul>
+<p><strong>Source</strong>: <a class="legal-cite" href="../laws/LGPD.html" title="Lei Geral de Proteção de Dados Pessoais (LGPD). Vigência | Art. 1º Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa  | Parágrafo único. As normas gerais contidas nesta Lei são de interesse nacional e devem ser observadas pela União, Estados, Distrito Federal e Municípios. Vigência">LGPD</a>; Lei 14.460/2022.</p>
+<hr />
+<h2 id="3-main-federal-transparency-infrastructures">3. Main federal transparency infrastructures</h2>
+<h3 id="portal-da-transparência">Portal da Transparência</h3>
+<ul>
+<li><strong>portaltransparencia.gov.br</strong> — maintained by CGU.</li>
+<li>Data on federal expenditures, transfers (convênios, SUS, FPM, FUNDEB),
+servant salaries, beneficiaries of some social programs.</li>
+<li>Updated daily for most series.</li>
+<li>Accessible via web interface and downloads; some endpoints available
+via API.</li>
+</ul>
+<h3 id="comprasnet">Comprasnet</h3>
+<ul>
+<li><strong>compras.gov.br</strong> — maintained by Ministério da Gestão (formerly
+Ministério da Economia / Ministério do Planejamento).</li>
+<li>Federal procurement platform: licitações, contracts, catálogo de
+materiais/serviços.</li>
+<li>Structured data on every federal procurement process.</li>
+<li>Data used in the federal-procurement research literature (parallel
+to TCE-SP Audesp data used in this workspace's municipal-level work).</li>
+</ul>
+<h3 id="siconv-plataforma-brasil">SICONV / Plataforma +Brasil</h3>
+<ul>
+<li><strong>plataformamaisbrasil.gov.br</strong> — maintained by Ministério da Gestão.</li>
+<li>Federal convênios with states, municipalities, and civil-society
+entities.</li>
+<li>Data on agreement terms, values, execution status, payments.</li>
+<li>Heavily used in research on federal-subnational transfers and
+political alignment.</li>
+</ul>
+<h3 id="painel-de-compras">Painel de Compras</h3>
+<ul>
+<li>Aggregated analytical dashboard for federal procurement data, built
+on Comprasnet.</li>
+</ul>
+<h3 id="dados-abertos">Dados abertos</h3>
+<ul>
+<li><strong>dados.gov.br</strong> — federal open-data catalog.</li>
+<li><strong>INDA — Infraestrutura Nacional de Dados Abertos</strong>: federal
+coordinating framework for open data (Instrução Normativa 4/2012).</li>
+<li><strong>Decreto 8.777/2016</strong> established the federal open-data policy
+requiring agencies to publish datasets in structured, machine-readable
+formats.</li>
+</ul>
+<h3 id="datasus">DATASUS</h3>
+<ul>
+<li>SUS data — hospital admissions (SIH/AIH), ambulatory (SIA/APAC),
+mortality (SIM), live births (SINASC), notifiable diseases (SINAN),
+primary care (SISAB), pharmaceutical dispensing (HORUS), and many
+others.</li>
+<li>Primary data source for health-related research.</li>
+</ul>
+<h3 id="siops-siope-finbra-siconfi">SIOPS / SIOPE / FINBRA / SICONFI</h3>
+<ul>
+<li>Fiscal and budget reporting databases — see <code><a href="../topics/federalismo-fiscal.html">federalismo-fiscal.md</a></code> §5.</li>
+</ul>
+<h3 id="receita-federal-cnpj-base">Receita Federal — CNPJ base</h3>
+<ul>
+<li>Public registry of legal entities. Used extensively in this workspace
+through the <code>cnpj</code> pipeline. Accessible via bulk download (Receita
+Federal makes full CNPJ snapshots available; see <code>pipelines/cnpj/</code>).</li>
+</ul>
+<h3 id="tse-electoral-data">TSE — electoral data</h3>
+<ul>
+<li><strong>cdn.tse.jus.br/estatistica</strong> — candidates, results, donations, filings.</li>
+<li>Primary source for electoral research.</li>
+</ul>
+<h3 id="sanctioned-entity-registries">Sanctioned-entity registries</h3>
+<ul>
+<li><strong>CEIS</strong> — firms barred from public contracting (<a class="legal-cite" href="../laws/LAC.html#LAC-23" title="Art. 23. Os órgãos ou entidades dos Poderes Executivo, Legislativo e Judiciário de todas as esferas de governo deverão informar e manter atualizados, para fins de publicidade, no Cadastro Nacional de Empresas Inidôneas e Suspensas - CEIS, de caráter público, instituído no âmbito do Poder Executivo f">LAC.23</a>,
+<a class="legal-cite" href="../laws/L8666.html" title="Art. 1 o Esta Lei estabelece normas gerais sobre licitações e contratos administrativos pertinentes a obras, serviços, inclusive de publicidade, compras, alienações e locações no âmbito dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios. | Parágrafo único. Subordinam-se ao regime desta Lei, além dos órgãos da administração direta, os fundos especiais, as autarquias, as fundações públicas, as empresas públicas, as sociedades de economia mista e demais entidades controladas direta ou indiretamente pela União, Estados, Distrito Federal e | Art. 2 o As obras, serviços, inclusive de publicidade, compras, alienações, concessões, permissões e locações da Administração Pública, quando contratadas com terceiros, serão necessariamente precedidas de licitação, ressalvadas as hipóteses previstas nesta Lei.">L8666</a>, <a class="legal-cite" href="../laws/L14133.html" title="Art. 1º Esta Lei estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios, e abrange: | I - os órgãos dos Poderes Legislativo e Judiciário da União, dos Estados e do Distrito Federal e os órgãos do Poder Legislativo dos Municípios, quando no desempenho de função administrativa; | II - os fundos especiais e as demais entidades controladas direta ou indiretamente pela Administração Pública.">L14133</a> sanctions). Maintained by CGU.</li>
+<li><strong>CNEP</strong> — firms sanctioned under <a class="legal-cite" href="../laws/LAC.html" title="Art. 1º Esta Lei dispõe sobre a responsabilização objetiva administrativa e civil de pessoas jurídicas pela prática de atos contra a administração pública, nacional ou estrangeira. | Parágrafo único. Aplica-se o disposto nesta Lei às sociedades empresárias e às sociedades simples, personificadas ou não, independentemente da forma de organização ou modelo societário adotado, bem como a quaisquer fundações, associações de entidades ou pessoas, ou sociedades estrangeiras, que tenha | Art. 2º As pessoas jurídicas serão responsabilizadas objetivamente, nos âmbitos administrativo e civil, pelos atos lesivos previstos nesta Lei praticados em seu interesse ou benefício, exclusivo ou não.">LAC</a> specifically. CGU.</li>
+<li><strong>CEPIM</strong> — entities impeded under Lei 10.522/02 (tax debtors).</li>
+<li>See <code><a href="../topics/cgu-controle-interno.html">cgu-controle-interno.md</a></code>.</li>
+</ul>
+<hr />
+<h2 id="4-judicial-transparency-a-separate-regime">4. Judicial transparency — a separate regime</h2>
+<p>Judicial data has its own transparency framework anchored in:</p>
+<ul>
+<li><strong><a class="legal-cite" href="../laws/CF.html#CF-93-IX" title="IX todos os julgamentos dos órgãos do Poder Judiciário serão públicos, e fundamentadas todas as decisões, sob pena de nulidade, podendo a lei limitar a presença, em determinados atos, às próprias partes e a seus advogados, ou somente a estes, em casos nos quais a preservação do direito à intimidade ">CF.93.IX</a></strong>: publicity of judicial acts (with exceptions for
+privacy and public interest).</li>
+<li><strong>CNJ Resoluções</strong>: Res. 121/2010 (publication of judicial data),
+Res. 215/2015 (LAI applied to judiciary), Res. 331/2020 (PJe and
+data-management).</li>
+<li><strong>LGPD interaction</strong>: CNJ Res. 363/2021 addressed data protection in
+judicial context; processing for judicial purposes has its own legal
+basis under <a class="legal-cite" href="../laws/LGPD.html#LGPD-7-VI" title="VI - para o exercício regular de direitos em processo judicial, administrativo ou arbitral, esse último nos termos da Lei nº 9.307, de 23 de setembro de 1996 (Lei de Arbitragem) ;">LGPD.7.VI</a>.</li>
+</ul>
+<p>Practical consequences for researchers:</p>
+<ul>
+<li>Most court decisions are public, but access mechanisms vary by
+tribunal: web consultation, e-Proc / PJe APIs, bulk exports where
+available.</li>
+<li><strong>Segredo de justiça</strong>: specific case types (family law, certain
+criminal investigations, juveniles) are restricted.</li>
+<li><strong>Anonymization in publication</strong>: LGPD pushes toward anonymizing
+identified parties when academic publications use scraped court data,
+even where the original data is public.</li>
+</ul>
+<p>See <code><a href="../topics/cnj-administracao-judicial.html">cnj-administracao-judicial.md</a></code> for CNJ case-management systems (PJe,
+e-Proc), tribunal-level data-release rules, and Justiça em Números.</p>
+<hr />
+<h2 id="5-state-and-municipal-transparency">5. State and municipal transparency</h2>
+<ul>
+<li>Each state and municipality must maintain LAI/transparency compliance,
+but implementation quality varies enormously.</li>
+<li><strong>CGE — Controladoria-Geral do Estado</strong>: state-level equivalent of
+CGU. CGE-SP is the largest and most institutionalized.</li>
+<li><strong>Portal da Transparência estadual/municipal</strong>: some states and large
+municipalities maintain high-quality portals; many small municipalities
+have minimal or non-functional portals, which is itself a research
+outcome (<em>transparência observada</em>).</li>
+<li><strong>TCE audits</strong> of LAI compliance are periodic but not uniform across
+states.</li>
+</ul>
+<hr />
+<h2 id="6-research-design-implications">6. Research design implications</h2>
+<ul>
+<li><strong>LAI as an instrument</strong>: a researcher can file an LAI request and, if
+refused, appeal through CGU, generating a binding precedent and
+opening data for analysis. This has been used strategically to obtain
+datasets.</li>
+<li><strong>Pre-LAI vs. post-LAI</strong> (2012 cutoff): dramatic change in data
+availability; projects spanning this boundary should account for
+measurement differences.</li>
+<li><strong>LGPD considerations in empirical work</strong>: document the legal basis
+for personal-data processing (<a class="legal-cite" href="../laws/LGPD.html#LGPD-7-IV" title="IV - para a realização de estudos por órgão de pesquisa, garantida, sempre que possível, a anonimização dos dados pessoais;">LGPD.7.IV</a> or <a class="legal-cite" href="../laws/LGPD.html#LGPD-7-V" title="V - quando necessário para a execução de contrato ou de procedimentos preliminares relacionados a contrato do qual seja parte o titular, a pedido do titular dos dados;">LGPD.7.V</a>); anonymize in
+publications where possible; set retention limits; keep processing
+documentation.</li>
+<li><strong>CEIS/CNEP linkage</strong>: the sanctioned-entity registries can be
+linked to procurement / improbidade / financial datasets through
+CNPJ, generating rich cross-source variables.</li>
+</ul>
+<hr />
+<h2 id="7-sources-and-cross-references">7. Sources and cross-references</h2>
+<p><strong>Statutes</strong>: <a class="legal-cite" href="../laws/LAI.html" title="Art. 1º Esta Lei dispõe sobre os procedimentos a serem observados pela União, Estados, Distrito Federal e Municípios, com o fim de garantir o acesso a informações previsto no inciso XXXIII do art. 5º , no inciso II do § 3º do art. 37 e no § 2º do art. 216 da Constituição Federal. | Parágrafo único. Subordinam-se ao regime desta Lei: | Art. 2º Aplicam-se as disposições desta Lei, no que couber, às entidades privadas sem fins lucrativos que recebam, para realização de ações de interesse público, recursos públicos diretamente do orçamento ou mediante subvenções sociais, contrato de gestão, termo de parceria, convênios, acordo, ajust">LAI</a>, Decreto 7.724/2012, <a class="legal-cite" href="../laws/LGPD.html" title="Lei Geral de Proteção de Dados Pessoais (LGPD). Vigência | Art. 1º Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa  | Parágrafo único. As normas gerais contidas nesta Lei são de interesse nacional e devem ser observadas pela União, Estados, Distrito Federal e Municípios. Vigência">LGPD</a>, Lei 14.460/2022, Decreto 8.777/2016, CNJ Res. 121/2010, 215/2015, 331/2020, 363/2021.</p>
+<p><strong>Cross-references</strong>:</p>
+<ul>
+<li><code><a href="../topics/cgu-controle-interno.html">cgu-controle-interno.md</a></code> — CGU runs most federal transparency infra</li>
+<li><code><a href="../topics/cnj-administracao-judicial.html">cnj-administracao-judicial.md</a></code> — judicial data specifically</li>
+<li><code><a href="../topics/federalismo-fiscal.html">federalismo-fiscal.md</a></code> — fiscal reporting databases</li>
+<li><code>data_catalog/</code> directory (workspace) — actual dataset inventory</li>
+</ul>
+
+</main>
+<footer>
+  Reference for empirical research on Brazil's legal and administrative
+  system. Generated from
+  <a href="https://github.com/hsigstad/brazil-institutions">hsigstad/brazil-institutions</a>;
+  statute text from the consolidated <code>artigos.db</code>.
+</footer>
+</body>
+</html>
